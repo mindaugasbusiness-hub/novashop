@@ -1,0 +1,82 @@
+Sukursiu greitą **MVP elektroninę parduotuvę** (produktų katalogas, krepšelis, suma, „checkout“) kaip veikiančią statinę svetainę.
+
+
+
+
+
+View C:\Users\M\.copilot\chats\ec167083-3a4e-4055-91f0-30799e9606c06 files
+
+
+
+
+
+
+
+
+
+
+
+
+
+Create index.html+41
+
+
+
+
+
+
+
+
+
+
+
+
+
+Create styles.css+120
+
+
+
+
+
+
+
+
+
+
+
+
+
+Create app.js+122
+
+
+
+
+
+
+
+
+
+
+
+
+
+List created storefront filesGet-ChildItem -Name·4 lines
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Copilot said: Padaryta — sukūriau veikiančią **mini elektroninę parduotuvę** su produktų sąrašu, krepšeliu, kiekių keitimu, sumos skaičiavimu ir demo užsakymo forma. Failai…
+
+Padaryta — sukūriau veikiančią **mini elektroninę parduotuvę** su produktų sąrašu, krepšeliu, kiekių keitimu, sumos skaičiavimu ir demo užsakymo forma.
+
+
+Failai sukurti čia: `C:\Users\M\.copilot\chats\ec167083-3a4e-4055-91f0-30799e9606c0` (`index.html`, `styles.css`, `app.js`). Atidaryk `index.html` naršyklėje ir parduotuvė veiks iš karto.

@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NovaShop | Elektroninė parduotuvė</title>
+    <meta name="description" content="Elektroninė parduotuvė su katalogu, krepšeliu ir demo užsakymu." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand-wrap">
+        <div class="logo">N</div>
+        <div>
+          <p class="brand-name">NovaShop</p>
+          <p class="brand-tag">Modernus stilius</p>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Pagrindinė navigacija">
+        <a href="#products">Produktai</a>
+        <a href="#featured">Pasiūlymai</a>
+        <a href="#reviews">Atsiliepimai</a>
+      </nav>
+
+      <button id="cart-toggle" class="cart-btn" type="button" aria-label="Atidaryti krepšelį">
+        Krepšelis <span id="cart-count">0</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow">Sezono pasiūlymai</span>
+          <h1>Gera technika ir gyvenimo būdo produktai už prieinamą kainą.</h1>
+          <p>
+            Atrask kuo puikiausius produktus: elektronika, aksesuarai, sporto prekės ir namų apyvokos daiktai.
+          </p>
+          <div class="hero-actions">
+            <a href="#products" class="primary-btn">Naršyti katalogą</a>
+            <button type="button" class="secondary-btn" id="featured-btn">Peržiūrėti pasiūlymus</button>
+          </div>
+          <ul class="hero-stats">
+            <li><strong>10k+</strong><span>užsakymų</span></li>
+            <li><strong>4.9/5</strong><span>įvertinimas</span></li>
+            <li><strong>2d</strong><span>pristatymas</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="promo-card large">
+            <span class="promo-tag">-25%</span>
+            <h3>Audio paketai</h3>
+            <p>Bluetooth ausinės + dėžutė</p>
+            <strong>€69.00</strong>
+          </div>
+          <div class="promo-card small">
+            <h3>Sportas</h3>
+            <p>Joga ir bėgimas</p>
+            <strong>€39.00</strong>
+          </div>
+        </div>
+      </section>
+
+      <section id="featured" class="featured">
+        <div class="section-heading">
+          <p class="section-kicker">Pasiūlymai</p>
+          <h2>Populiariausi produktai</h2>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-item">
+            <span>⚡</span>
+            <h3>Greitas pristatymas</h3>
+            <p>Pristatymas per 2 dienas šiuo metu.</p>
+          </div>
+          <div class="feature-item">
+            <span>🔒</span>
+            <h3>Patikimas apsipirkimas</h3>
+            <p>Saugus mokėjimas ir duomenų apsauga.</p>
+          </div>
+          <div class="feature-item">
+            <span>💬</span>
+            <h3>Pagalba 24/7</h3>
+            <p>Komanda pasiruošusi padėti bet kuriuo metu.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="products" class="catalog">
+        <div class="section-heading catalog-row">
+          <div>
+            <p class="section-kicker">Katalogas</p>
+            <h2>Produktai</h2>
+          </div>
+
+          <div class="filters" aria-label="Filtrai">
+            <button class="filter-btn active" type="button" data-filter="all">Visi</button>
+            <button class="filter-btn" type="button" data-filter="tech">Technika</button>
+            <button class="filter-btn" type="button" data-filter="sport">Sportas</button>
+            <button class="filter-btn" type="button" data-filter="home">Namai</button>
+          </div>
+        </div>
+
+        <div id="products-grid" class="products-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="inventory-panel" aria-labelledby="inventory-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Inventorius</p>
+            <h2 id="inventory-title">Prekių likučiai</h2>
+          </div>
+        </div>
+
+        <div id="inventory-grid" class="inventory-grid"></div>
+      </section>
+
+      <section id="reviews" class="reviews">
+        <div class="section-heading">
+          <p class="section-kicker">Atsiliepimai</p>
+          <h2>Klientų įvertinimai</h2>
+        </div>
+
+        <div class="review-grid">
+          <blockquote>
+            „Puiki kokybė, greitas pristatymas ir labai intuityvus parduotuvės dizainas.“
+            <footer>— Justina</footer>
+          </blockquote>
+          <blockquote>
+            „Lengva rasti reikiamą prekę ir apsipirkti. Labai patiko kainos ir patogus krepšelis.“
+            <footer>— Tomas</footer>
+          </blockquote>
+          <blockquote>
+            „Apsiperkant kaip profesionalui — greitai, paprastai ir patikimai.“
+            <footer>— Elena</footer>
+          </blockquote>
+        </div>
+      </section>
+    </main>
+
+    <aside id="cart-panel" class="cart-panel" aria-label="Krepšelis">
+      <div class="cart-header">
+        <h2>Krepšelis</h2>
+        <button id="cart-close" class="close-btn" type="button" aria-label="Uždaryti krepšelį">×</button>
+      </div>
+
+      <ul id="cart-items" class="cart-items"></ul>
+
+      <div class="summary-box">
+        <div class="summary-row">
+          <span>Tarpinė suma</span>
+          <strong id="subtotal">€0.00</strong>
+        </div>
+        <div class="summary-row">
+          <span>Pristatymas</span>
+          <strong id="shipping">€0.00</strong>
+        </div>
+        <div class="summary-row total-row">
+          <span>Viso</span>
+          <strong id="total">€0.00</strong>
+        </div>
+      </div>
+
+      <form id="checkout-form" class="checkout-form">
+        <input type="text" name="name" placeholder="Vardas" required />
+        <input type="email" name="email" placeholder="El. paštas" required />
+        <input type="text" name="address" placeholder="Adresas" required />
+        <button type="submit" class="primary-btn full-width">Apmokėti</button>
+      </form>
+
+      <p id="status" class="status" aria-live="polite"></p>
+    </aside>
+
+    <script src="app.js"></script>
+  </body>
+</html>
