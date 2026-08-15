@@ -12,6 +12,7 @@ const products = [
 const shipping = 3.99;
 const cart = new Map();
 const activeFilter = { value: 'all' };
+const STORE_PAUSED = true;
 
 const productsGrid = document.getElementById('products-grid');
 const inventoryGrid = document.getElementById('inventory-grid');
@@ -32,6 +33,31 @@ function formatCurrency(value) {
   return `€${value.toFixed(2)}`;
 }
 
+function showPausedStatus() {
+  if (!statusEl) return;
+  statusEl.textContent = 'Parduotuvė laikinai neveikia. Užsakymai ir mokėjimai laikinai išjungti.';
+}
+
+function applyStorePauseState() {
+  if (!checkoutForm) return;
+
+  const fields = checkoutForm.querySelectorAll('input, button, textarea, select');
+  fields.forEach((field) => {
+    field.disabled = STORE_PAUSED;
+  });
+
+  if (STORE_PAUSED) {
+    checkoutForm.setAttribute('aria-disabled', 'true');
+    checkoutForm.style.opacity = '0.45';
+    checkoutForm.style.pointerEvents = 'none';
+    showPausedStatus();
+  } else {
+    checkoutForm.removeAttribute('aria-disabled');
+    checkoutForm.style.opacity = '';
+    checkoutForm.style.pointerEvents = '';
+  }
+}
+
 function getFilteredProducts() {
   return activeFilter.value === 'all'
     ? products
@@ -50,8 +76,10 @@ function renderProducts() {
   productsGrid.innerHTML = visibleProducts
     .map((product) => {
       const available = Math.max(0, product.stock);
-      const disabled = available <= 0 ? 'disabled' : '';
+      const paused = STORE_PAUSED;
+      const disabled = available <= 0 || paused ? 'disabled' : '';
       const stockLabel = available <= 0 ? 'Išparduota' : `Likęs: ${available} vnt.`;
+      const buttonLabel = paused ? 'Laikinai neveikia' : 'Į krepšelį';
 
       return `
         <article class="product-card">
@@ -71,7 +99,7 @@ function renderProducts() {
 
             <div class="product-meta">
               <span class="product-rating">★ ${product.rating}</span>
-              <button class="product-btn ${disabled}" type="button" data-product-id="${product.id}" ${available <= 0 ? 'disabled' : ''}>Į krepšelį</button>
+              <button class="product-btn ${disabled}" type="button" data-product-id="${product.id}" ${available <= 0 || paused ? 'disabled' : ''}>${buttonLabel}</button>
             </div>
           </div>
         </article>
@@ -148,6 +176,11 @@ function renderCart() {
 }
 
 function addToCart(productId) {
+  if (STORE_PAUSED) {
+    showPausedStatus();
+    return;
+  }
+
   const product = products.find((item) => item.id === Number(productId));
   if (!product) return;
 
@@ -166,6 +199,11 @@ function addToCart(productId) {
 }
 
 function updateQty(productId, delta) {
+  if (STORE_PAUSED) {
+    showPausedStatus();
+    return;
+  }
+
   const product = products.find((item) => item.id === Number(productId));
   if (!product) return;
 
@@ -189,12 +227,20 @@ function updateQty(productId, delta) {
 productsGrid.addEventListener('click', (event) => {
   const button = event.target.closest('[data-product-id]');
   if (!button) return;
+  if (STORE_PAUSED) {
+    showPausedStatus();
+    return;
+  }
   addToCart(Number(button.dataset.productId));
 });
 
 cartItemsEl.addEventListener('click', (event) => {
   const button = event.target.closest('[data-action][data-id]');
   if (!button) return;
+  if (STORE_PAUSED) {
+    showPausedStatus();
+    return;
+  }
 
   const id = Number(button.dataset.id);
   const action = button.dataset.action;
@@ -224,6 +270,11 @@ featuredBtn.addEventListener('click', () => {
 checkoutForm.addEventListener('submit', (event) => {
   event.preventDefault();
 
+  if (STORE_PAUSED) {
+    showPausedStatus();
+    return;
+  }
+
   if (cart.size === 0) {
     statusEl.textContent = 'Pirmiausia pridėkite prekių į krepšelį.';
     return;
@@ -247,6 +298,7 @@ checkoutForm.addEventListener('submit', (event) => {
   statusEl.textContent = `Ačiū, ${name}! Užsakymas gautas demo režimu.`;
 });
 
+applyStorePauseState();
 renderProducts();
 renderInventory();
 renderCart();
