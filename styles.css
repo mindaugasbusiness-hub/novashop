@@ -257,6 +257,81 @@ main {
   margin-bottom: 20px;
 }
 
+.support-section {
+  margin-top: 48px;
+  padding: 40px 0 12px;
+}
+
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 26px;
+}
+
+.support-card {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 28px 22px;
+  box-shadow: 0 16px 30px rgba(15, 23, 42, 0.04);
+}
+
+.support-card h3 {
+  margin: 14px 0 10px;
+  font-size: 1.35rem;
+}
+
+.support-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+  min-height: 110px;
+}
+
+.support-icon {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  font-size: 1.8rem;
+  background: rgba(79, 70, 229, 0.08);
+}
+
+.support-badge {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 0.5rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(34, 197, 94, 0.1);
+  color: #157347;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.hotline-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: #fff;
+  border-radius: 14px;
+  padding: 0.9rem 1rem;
+  font-weight: 800;
+  box-shadow: 0 16px 24px rgba(220, 38, 38, 0.2);
+}
+
+.hotline-note {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.75rem;
+  text-align: center;
+}
+
 .promo-card h3, .promo-card p, .promo-card strong {
   margin: 0;
 }
@@ -509,6 +584,22 @@ main {
   margin-top: 10px;
   font-weight: 700;
   color: var(--text);
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .features-grid,
+  .review-grid,
+  .support-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .cart-panel {
