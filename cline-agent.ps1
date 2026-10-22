@@ -1,9 +1,6 @@
 # ============================================================
 #  Cline Agent - nuotoline prieiga per HTTP (PowerShell + cloudflared)
-#  Paleidimas (PowerShell, geriausia Administratorius):
-#      iex (irm <URL>)
-#  Nieko neinstaliuoja i sistema, naudoja tik PowerShell ir
-#  cloudflared (Cloudflare, pasirasytas).
+#  Paleidimas:  iex (irm <URL>)
 #  Stabdymas: Ctrl+C arba uzdaryti langa.
 # ============================================================
 
@@ -12,6 +9,7 @@ $PORT   = 8787
 $TOKEN  = -join ((48..57) + (97..122) | Get-Random -Count 28 | ForEach-Object { [char]$_ })
 $pwshExe = if ($PSVersionTable.PSEdition -eq 'Desktop') { 'powershell.exe' } else { 'pwsh' }
 $TMPDIR  = if ($env:TEMP) { $env:TEMP } else { [IO.Path]::GetTempPath() }
+$ERRFILE = Join-Path $TMPDIR 'cfagent.err'
 
 function Send-Text($ctx, $text, $code) {
     if (-not $code) { $code = 200 }
@@ -59,41 +57,7 @@ function Invoke-Cmd([string]$cmd) {
     return $text
 }
 
-# ---------- 1. Tunelis (cloudflared) ----------
-$tunnelUrl = $null
-if ($env:CLINE_AGENT_NO_TUNNEL -ne '1') {
-    $cf = Join-Path $TMPDIR 'cloudflared.exe'
-    if (-not (Test-Path $cf)) {
-        Write-Host 'Siunciu cloudflared...'
-        Invoke-WebRequest -Uri 'https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-windows-amd64.exe' -OutFile $cf -UseBasicParsing
-    }
-    $errFile = Join-Path $TMPDIR 'cfagent.err'
-    $outFile = Join-Path $TMPDIR 'cfagent.out'
-    Remove-Item $errFile, $outFile -Force -ErrorAction SilentlyContinue
-    $null = Start-Process -FilePath $cf -ArgumentList @('tunnel', '--url', "http://127.0.0.1:$PORT") -RedirectStandardError $errFile -RedirectStandardOutput $outFile -WindowStyle Hidden -PassThru
-    for ($i = 0; $i -lt 90; $i++) {
-        Start-Sleep -Seconds 1
-        if (Test-Path $errFile) {
-            $txt = Get-Content $errFile -Raw -ErrorAction SilentlyContinue
-            $m = [regex]::Match([string]$txt, 'https://[a-zA-Z0-9-]+\.trycloudflare\.com')
-            if ($m.Success) { $tunnelUrl = $m.Value; break }
-        }
-    }
-}
-
-Write-Host ''
-Write-Host '=========================================================' -ForegroundColor Green
-Write-Host '  CLINE AGENTAS VEIKIA' -ForegroundColor Green
-Write-Host '---------------------------------------------------------'
-Write-Host ('  ADRESAS : ' + $tunnelUrl)
-Write-Host ('  RAKTAS  : ' + $TOKEN)
-Write-Host '---------------------------------------------------------'
-Write-Host '  Atsiusk sitas DVI eilutes i Cline pokalbi.'
-Write-Host '  Svarbu: NEUZVERK sio lango.' -ForegroundColor Yellow
-Write-Host '=========================================================' -ForegroundColor Green
-Write-Host ''
-
-# ---------- 2. HTTP serveris ----------
+# ---------- 1. Serveris (pirmiau, kad cloudflared rastu origin) ----------
 $listener = New-Object System.Net.HttpListener
 $listener.Prefixes.Add("http://127.0.0.1:$PORT/")
 try {
@@ -101,11 +65,61 @@ try {
 } catch {
     Write-Host ''
     Write-Host ('KLAIDA: nepavyko paleisti serverio (' + $_.Exception.Message + ')') -ForegroundColor Red
-    Write-Host 'Uzdaryk si langa ir paleisk komanda ADMINISTRATORIAUS lange.' -ForegroundColor Yellow
-    Read-Host 'Spausk Enter, kad uzdarytum'
+    Write-Host 'Uzdaryk langa ir paleisk komanda ADMINISTRATORIAUS lange.' -ForegroundColor Yellow
+    Read-Host 'Spausk Enter'
     return
 }
+Write-Host ('Serveris klauso 127.0.0.1:' + $PORT) -ForegroundColor DarkGray
 
+# ---------- 2. Tunelis ----------
+$tunnelUrl = $null
+$cfOk = $false
+if ($env:CLINE_AGENT_NO_TUNNEL -ne '1') {
+    Get-Process cloudflared -ErrorAction SilentlyContinue | Stop-Process -Force -ErrorAction SilentlyContinue
+    $cf = Join-Path $TMPDIR 'cloudflared.exe'
+    if (-not (Test-Path $cf)) {
+        Write-Host 'Siunciu cloudflared...'
+        Invoke-WebRequest -Uri 'https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-windows-amd64.exe' -OutFile $cf -UseBasicParsing
+    }
+    Remove-Item $ERRFILE -Force -ErrorAction SilentlyContinue
+    $null = Start-Process -FilePath $cf -ArgumentList @('tunnel', '--url', "http://127.0.0.1:$PORT", '--no-autoupdate') -RedirectStandardError $ERRFILE -RedirectStandardOutput (Join-Path $TMPDIR 'cfagent.out') -WindowStyle Hidden -PassThru
+    for ($i = 0; $i -lt 120; $i++) {
+        Start-Sleep -Seconds 1
+        if (Test-Path $ERRFILE) {
+            $txt = [string](Get-Content $ERRFILE -Raw -ErrorAction SilentlyContinue)
+            if (-not $tunnelUrl) {
+                $m = [regex]::Match($txt, 'https://[a-zA-Z0-9-]+\.trycloudflare\.com')
+                if ($m.Success) { $tunnelUrl = $m.Value }
+            }
+            if ($txt -match 'Registered tunnel connection') { $cfOk = $true; break }
+            if ($txt -match 'no more connections active and exiting') { break }
+        }
+    }
+}
+
+Write-Host ''
+Write-Host '=========================================================' -ForegroundColor Green
+if ($cfOk -or $env:CLINE_AGENT_NO_TUNNEL -eq '1') {
+    Write-Host '  CLINE AGENTAS VEIKIA' -ForegroundColor Green
+} else {
+    Write-Host '  DEMESIO: TUNELIS NEPRISIJUNGE' -ForegroundColor Red
+}
+Write-Host '---------------------------------------------------------'
+Write-Host ('  ADRESAS : ' + $tunnelUrl)
+Write-Host ('  RAKTAS  : ' + $TOKEN)
+Write-Host '---------------------------------------------------------'
+if ($cfOk -or $env:CLINE_AGENT_NO_TUNNEL -eq '1') {
+    Write-Host '  Atsiusk sitas DVI eilutes i Cline pokalbi.'
+    Write-Host '  Svarbu: NEUZVERK sio lango.' -ForegroundColor Yellow
+} else {
+    Write-Host '  Paskutines cloudflared zinutes:' -ForegroundColor Yellow
+    if (Test-Path $ERRFILE) { Get-Content $ERRFILE -Tail 12 | ForEach-Object { Write-Host ('   ' + $_) } }
+    Write-Host '  Nukopijuok jas ir atsiusk i Cline pokalbi.' -ForegroundColor Yellow
+}
+Write-Host '=========================================================' -ForegroundColor Green
+Write-Host ''
+
+# ---------- 3. Uzklausu apdorojimas ----------
 while ($true) {
     $ctx = $null
     try {
@@ -118,8 +132,7 @@ while ($true) {
             Send-Text $ctx 'pong' 200
         }
         elseif ($path -eq '/exec') {
-            $cmd = Read-Body $req
-            Send-Text $ctx (Invoke-Cmd $cmd) 200
+            Send-Text $ctx (Invoke-Cmd (Read-Body $req)) 200
         }
         elseif ($path -eq '/read') {
             $p = Get-Param $req.Url.Query 'path'
@@ -148,6 +161,13 @@ while ($true) {
                 Send-Text $ctx (($items -join "`r`n")) 200
             }
         }
+        elseif ($path -eq '/diag') {
+            $t = ''
+            if (Test-Path $ERRFILE) { $t += ((Get-Content $ERRFILE -Tail 20) -join "`r`n") }
+            $t += "`r`n--- procesai ---`r`n"
+            $t += ((Get-Process cloudflared -ErrorAction SilentlyContinue | ForEach-Object { 'cloudflared pid=' + $_.Id }) -join "`r`n")
+            Send-Text $ctx $t 200
+        }
         else {
             Send-Text $ctx 'not found' 404
         }
@@ -156,4 +176,3 @@ while ($true) {
         Start-Sleep -Milliseconds 100
     }
 }
-
