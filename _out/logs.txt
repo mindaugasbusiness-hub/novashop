@@ -1,0 +1,83 @@
+=== n8n.out.log ===
+Database connection recovered
+Instance registered
+Discovered 4 cluster checks
+Sandbox: enabled=false provider=n8n-sandbox (from env)
+Version: 2.44.5
+Building workflow dependency index...
+
+Editor is now accessible via:
+http://localhost:5678
+Finished building workflow dependency index. Processed 0 draft workflows, 2 published workflows.
+=== n8n.err.log ===
+=== start-out.log (paskutines 12) ===
+   market already has 3 chunks (use -Reingest to reload)
+   finance already has 2481 chunks (use -Reingest to reload)
+   legal already has 725 chunks (use -Reingest to reload)
+   ops already has 1 chunks (use -Reingest to reload)
+   risk already has 136 chunks (use -Reingest to reload)
+   marketing already has 1 chunks (use -Reingest to reload)
+   technology already has 1 chunks (use -Reingest to reload)
+   people already has 1 chunks (use -Reingest to reload)
+
+Kumstis board is running natively at http://localhost:5678
+Submit a task with: .\submit-task.ps1 -Task "Describe the business decision"
+Stop all services with: .\stop-native.ps1
+=== n8n --help komandos ===
+Available commands:
+  [1m[32maudit[39m[22m: 
+    Generate a security audit report for this n8n instance
+  [1m[32mengine[39m[22m: 
+    Starts the engine v2 data plane. Needs a control plane (`n8n start` with N8N_ENGINE_MODE=remote) to report to and to resolve credentials from.
+  [1m[32mexecute-batch[39m[22m: 
+    Executes multiple workflows once
+  [1m[32mexecute[39m[22m: 
+    Executes a given workflow
+  [1m[32mstart[39m[22m: 
+    Starts n8n. Makes Web-UI available and starts active workflows
+  [1m[32mwebhook[39m[22m: 
+    Starts n8n webhook process. Intercepts only production URLs.
+  [1m[32mworker[39m[22m: 
+    Starts a n8n worker
+  [1m[32mdb:revert[39m[22m: 
+    Revert last database migration
+  [1m[32mexport:credentials[39m[22m: 
+    Export credentials
+  [1m[32mexport:entities[39m[22m: 
+    Export database entities to JSON files
+  [1m[32mexport:nodes[39m[22m: 
+    Export all node types to a JSON file
+  [1m[32mexport:workflow[39m[22m: 
+    Export workflows
+  [1m[32mimport:credentials[39m[22m: 
+    Import credentials
+  [1m[32mimport:entities[39m[22m: 
+    Import database entities from JSON files
+  [1m[32mimport:workflow[39m[22m: 
+    Import workflows
+  [1m[32mldap:reset[39m[22m: 
+    Resets the database to the default ldap state.
+  [1m[32mlicense:clear[39m[22m: 
+    Clear local license certificate
+  [1m[32mlicense:info[39m[22m: 
+    Print license information
+  [1m[32mlist:workflow[39m[22m: 
+    List workflows
+  [1m[32mmfa:disable[39m[22m: 
+    Disable MFA authentication for a user
+  [1m[32mpublish:workflow[39m[22m: 
+    Publish a specific version of a workflow. If no version is specified, publishes the current version.
+  [1m[32mttwf:generate[39m[22m: 
+    Create a workflow(s) using AI Text-to-Workflow builder
+  [1m[32munpublish:workflow[39m[22m: 
+    Unpublish workflow(s)
+  [1m[32mupdate:workflow[39m[22m: 
+    [DEPRECATED] Update workflows - use publish:workflow or unpublish:workflow instead
+  [1m[32muser-management:reset[39m[22m: 
+    Resets the database to the default user state
+  [1m[32mcommunity-node[39m[22m: 
+    Uninstall a community node and its credentials
+
+For more detailed information, visit:
+https://docs.n8n.io/hosting/cli-commands/
+

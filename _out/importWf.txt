@@ -1,0 +1,19 @@
+=== IMPORT ===
+[license SDK] Skipping renewal on init: renewOnInit is disabled in config
+[license SDK] Skipping renewal on init: license cert is not initialized
+Importing 1 workflows...
+Successfully imported 1 workflow.
+
+import exit: 0
+=== PUBLISH (aktyvavimas) ===
+Publishing workflow with ID: aukcionas0000001 (current version)
+Note: Changes will not take effect if n8n is running.
+Please restart n8n for changes to take effect if n8n is currently running.
+
+publish exit: 0
+=== DB PATIKRA ===
+WORKFLOW KIEKIS: 3
+  aukcionas0000001 | Aukciono stebejimas | active=1 | mazgu=8
+  kumstis0000000001 | Kumstis - daugiagentis vadovu ir specialistu board | active=1 | mazgu=16
+  kumstisdefi000001 | Kumstis - decentralizuotu projektu paieska (DeFi, DEX, kazino, skolinimas) | active=1 | mazgu=6
+

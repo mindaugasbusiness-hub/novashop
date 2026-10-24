@@ -1,0 +1,111 @@
+=== LOG PRIES ===
+2026-10-24 11:30:16  SMS issiustas (queued): TESTAS: SVETAINE NUKRITO
+2026-10-24 11:30:21  Windows pranesimas OK
+=== IMPORT TESTINIO ===
+[license SDK] Skipping renewal on init: renewOnInit is disabled in config
+[license SDK] Skipping renewal on init: license cert is not initialized
+Importing 1 workflows...
+Successfully imported 1 workflow.
+
+import exit: 0
+=== EXECUTE TESTINIO ===
+  }
+            ],
+            "hints": [],
+            "executionTime": 270,
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "data": "not found",
+                      "headers": {
+                        "content-length": "9",
+                        "content-type": "text/plain; charset=utf-8",
+                        "server": "Microsoft-HTTPAPI/2.0",
+                        "date": "Sat, 24 Oct 2026 18:37:26 GMT",
+                        "connection": "close"
+                      },
+                      "statusCode": 404,
+                      "statusMessage": "Not Found"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ],
+                []
+              ]
+            }
+          }
+        ],
+        "ok": [
+          {
+            "startTime": 1792867046742,
+            "executionIndex": 3,
+            "source": [
+              {
+                "previousNode": "Ar 200?",
+                "previousNodeOutput": 0,
+                "previousNodeRun": 0
+              }
+            ],
+            "hints": [],
+            "executionTime": 6,
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "busena": "ok"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "lastNodeExecuted": "ok"
+    },
+    "executionData": {
+      "contextData": {},
+      "nodeExecutionStack": [],
+      "metadata": {},
+      "waitingExecution": {},
+      "waitingExecutionSource": {},
+      "runtimeData": {
+        "version": 1,
+        "establishedAt": 1792867046267,
+        "source": "cli",
+        "triggerNode": {
+          "name": "Paleisti rankiniu budu",
+          "type": "n8n-nodes-base.manualTrigger"
+        }
+      }
+    },
+    "resumeToken": "35192bcf1b075c0bf2457061bd4a38864aa165a5be203174d449825c88518e79"
+  },
+  "mode": "cli",
+  "startedAt": "2026-10-24T18:37:26.259Z",
+  "stoppedAt": "2026-10-24T18:37:26.750Z",
+  "storedAt": "db",
+  "status": "success",
+  "finished": true
+}
+
+execute exit: 0
+=== LOG PO (paskutines 8) ===
+2026-10-24 10:10:55  Windows pranesimas OK
+2026-10-24 11:28:54  ntfy OK: PULTAS
+2026-10-24 11:28:59  Windows pranesimas OK
+2026-10-24 11:30:08  ntfy OK: TESTAS n8n tiltas
+2026-10-24 11:30:13  Windows pranesimas OK
+2026-10-24 11:30:15  ntfy OK: TESTAS: SVETAINE NUKRITO
+2026-10-24 11:30:16  SMS issiustas (queued): TESTAS: SVETAINE NUKRITO
+2026-10-24 11:30:21  Windows pranesimas OK

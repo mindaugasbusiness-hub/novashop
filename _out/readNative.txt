@@ -1,0 +1,64 @@
+BENDRAS EILUCIU: 243
+PIRMA RAKTINE EILUTE: 119
+=== EILUTES 74-134 ===
+    WorkingDirectory = $Root
+    WindowStyle = 'Hidden'
+    RedirectStandardOutput = (Join-Path $Logs "$name.out.log")
+    RedirectStandardError = (Join-Path $Logs "$name.err.log")
+    PassThru = $true
+  }
+  if ($arguments -and $arguments.Count -gt 0) { $options.ArgumentList = $arguments }
+  $process = Start-Process @options
+  return $process.Id
+}
+
+Step 'Preparing local configuration without displaying secrets'
+if (-not (Test-Path .env)) { Copy-Item .env.example .env }
+foreach ($name in @('WEBHOOK_TOKEN', 'N8N_ENCRYPTION_KEY', 'N8N_RUNNERS_AUTH_TOKEN')) {
+  if ([string]::IsNullOrWhiteSpace((Get-EnvValue $name))) { Set-EnvValue $name (New-Secret) }
+}
+if ([string]::IsNullOrWhiteSpace((Get-EnvValue 'ANTHROPIC_API_KEY'))) {
+  Write-Warning 'No Anthropic API key is configured. Services will run, but board tasks will be rejected until a valid key is added to .env and this script is rerun.'
+}
+New-Item -ItemType Directory -Force $Runtime, $Logs, $N8nData, $QdrantDir | Out-Null
+
+Step 'Building workflow and running offline tests'
+node build.js
+Assert-LastExit 'Workflow generation'
+node build-defi.js
+Assert-LastExit 'DeFi scanner workflow generation'
+node test-defi.js
+Assert-LastExit 'DeFi scanner tests'
+node test.js
+Assert-LastExit 'Offline orchestration tests'
+python -m unittest test_agent_tools.py
+Assert-LastExit 'Financial calculation tests'
+
+Step 'Installing native runtimes when missing'
+# n8n native modules ship prebuilt binaries for Node LTS only, so n8n gets a private portable Node 24.
+$Node24 = Join-Path $Runtime 'node24'
+if (-not (Test-Path (Join-Path $Node24 'node.exe'))) {
+  $version = (Invoke-RestMethod https://nodejs.org/dist/index.json | Where-Object { $_.version -like 'v24.*' -and $_.lts } | Select-Object -First 1).version
+  $zip = Join-Path $Runtime 'node.zip'
+  Invoke-WebRequest -UseBasicParsing -OutFile $zip -Uri "https://nodejs.org/dist/$version/node-$version-win-x64.zip"
+  Expand-Archive $zip -DestinationPath $Runtime -Force
+  Remove-Item $zip
+  Rename-Item (Join-Path $Runtime "node-$version-win-x64") 'node24'
+}
+$env:PATH = "$Node24;$env:PATH"
+$NodeExe = Join-Path $Node24 'node.exe'
+if (-not (Test-Path $N8nBin)) {
+  if (-not (Test-Path (Join-Path $N8nDir 'package.json'))) {
+    Set-Content (Join-Path $N8nDir 'package.json') '{ "name": "kumstis-n8n-runtime", "private": true }' -Encoding Ascii
+  }
+  Push-Location $N8nDir
+  try { npm install "n8n@$N8nVersion" --no-audit --no-fund --loglevel=error; Assert-LastExit 'n8n installation' } finally { Pop-Location }
+}
+if (-not (Test-Path $QdrantExe)) {
+  $zip = Join-Path $QdrantDir 'qdrant.zip'
+  Invoke-WebRequest -UseBasicParsing -OutFile $zip `
+    -Uri "https://github.com/qdrant/qdrant/releases/download/$QdrantVersion/qdrant-x86_64-pc-windows-msvc.zip"
+  Expand-Archive $zip -DestinationPath $QdrantDir -Force
+  Remove-Item $zip
+}
+if (-not (Test-Path $PyExe)) {

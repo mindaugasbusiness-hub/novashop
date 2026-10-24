@@ -1,0 +1,4 @@
+=== n8n execute --id=aukcionas0000001 ===
+n8n Task Broker's port 5679 is already in use. Do you have another instance of n8n running already?
+
+execute exit: 1

@@ -1,0 +1,246 @@
+{
+  "id": "aukcionas0000001",
+  "name": "Aukciono stebejimas",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutesInterval": 5
+            }
+          ]
+        }
+      },
+      "id": "aa000000-0000-4000-8000-000000000001",
+      "name": "Kas 5 min",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [-420, -120]
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 55 19 * * 5"
+            }
+          ]
+        }
+      },
+      "id": "aa000000-0000-4000-8000-000000000002",
+      "name": "Penktadienis 1955",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [-420, 240]
+    },
+    {
+      "parameters": {},
+      "id": "aa000000-0000-4000-8000-000000000003",
+      "name": "Paleisti rankiniu budu",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [-420, 20]
+    },
+    {
+      "parameters": {
+        "url": "https://penktadienioaukcionas.lt/",
+        "options": {
+          "timeout": 20000,
+          "response": {
+            "response": {
+              "fullResponse": true,
+              "neverError": true
+            }
+          }
+        }
+      },
+      "id": "aa000000-0000-4000-8000-000000000004",
+      "name": "Tikrinti svetaine",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [-160, -120],
+      "onError": "continueRegularOutput",
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose"
+          },
+          "conditions": [
+            {
+              "id": "c1000000-0000-4000-8000-000000000001",
+              "leftValue": "={{ $json.statusCode ?? 0 }}",
+              "rightValue": 200,
+              "operator": {
+                "type": "number",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "aa000000-0000-4000-8000-000000000005",
+      "name": "Ar 200?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [100, -120]
+    },
+    {
+      "parameters": {
+        "mode": "manual",
+        "duplicateItem": false,
+        "assignments": {
+          "assignments": [
+            {
+              "id": "a1",
+              "name": "busena",
+              "value": "ok",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": false,
+        "options": {}
+      },
+      "id": "aa000000-0000-4000-8000-000000000006",
+      "name": "ok",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [360, -220]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:8791/pranesti",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"tema\": \"SVETAINE NUKRITO\",\n  \"tekstas\": \"Statusas: {{ $json.statusCode || 0 }} | laikas {{ $now.format('yyyy-MM-dd HH:mm') }}\",\n  \"svarbu\": true\n}",
+        "options": {
+          "timeout": 90000,
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "id": "aa000000-0000-4000-8000-000000000007",
+      "name": "Pranesti NUKRITO",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [360, -20],
+      "onError": "continueRegularOutput",
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:8791/pranesti",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"tema\": \"Aukcionas prasideda po 5 min\",\n  \"tekstas\": \"Penktadienio aukcionas prasideda 20:00. Laikas {{ $now.format('yyyy-MM-dd HH:mm') }}\",\n  \"svarbu\": false\n}",
+        "options": {
+          "timeout": 90000,
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "id": "aa000000-0000-4000-8000-000000000008",
+      "name": "Pranesti AUKCIONAS",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [-160, 240],
+      "onError": "continueRegularOutput",
+      "alwaysOutputData": true
+    }
+  ],
+  "connections": {
+    "Kas 5 min": {
+      "main": [
+        [
+          {
+            "node": "Tikrinti svetaine",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Penktadienis 1955": {
+      "main": [
+        [
+          {
+            "node": "Pranesti AUKCIONAS",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Paleisti rankiniu budu": {
+      "main": [
+        [
+          {
+            "node": "Tikrinti svetaine",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Tikrinti svetaine": {
+      "main": [
+        [
+          {
+            "node": "Ar 200?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ar 200?": {
+      "main": [
+        [
+          {
+            "node": "ok",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Pranesti NUKRITO",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Europe/Vilnius"
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "pinData": {},
+  "versionId": "5b1f0c2e-1111-4222-8333-444455556666",
+  "triggerCount": 3,
+  "tags": []
+}

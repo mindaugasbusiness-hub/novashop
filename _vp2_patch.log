@@ -1,0 +1,30 @@
+[1] BACKUP rc=0 -rw-r--r-- 1 root root 449366 Oct 24 19:37 /opt/aukcionas/app.py.bak-vp2-20261024-1837
+[2] Nuskaityta baitu=452424 eiluciu=9699
+[3] _VP_RECENT/_VP_LAST atitikmenys: 1
+[4] sena _vp(): 3294 baitu / 80 eil.
+[5] senas phone ciklas: 2244 baitu / 35 eil.
+[6] Sintakses patikra (lokaliai) OK; naujas dydis 452524 baitu
+[7] Ikelta i /opt/aukcionas/app.py
+[8] Sintakses patikra serveryje rc=0 SYNTAX OK 
+[9] Eilutes po pakeitimo:
+2402:_VP_PHONE_ROUND = {"key": None}  # loto ratas, kuriame Vilkas jau kalbejo telefonu (phone_catchup)
+2403:_VP_PHONE_ROUND = {"key": None}  # loto ratas, kuriame Vilkas jau kalbejo telefonu (phone_catchup)
+2406:def _vp(kind, seed, fallback_list):
+2466:def _vp_names_lt(names):
+2467:    """Vardu sarasas lietuviskai: X | X ir Y | X, Y ir Z (phone_catchup {vardai})."""
+2925:                        # tęsiam su phone_catchup frazėmis ir pažymim {"catchup": True}.
+2927:                        _ph_catchup = (_VP_PHONE_ROUND.get("key") == _ph_round)
+2928:                        _ph_part = _vp("phone_catchup" if _ph_catchup else "phone", phone_seed, phone_lines)
+2950:                        _VP_PHONE_ROUND["key"] = _ph_round
+5611:  if(announceBusy && announceCurrentJob && (announceCurrentJob.tag==='phone'||announceCurrentJob.tag==='phone_catchup')) return true;
+5612:  try{ if(announceQueueHasTag('phone')||announceQueueHasTag('phone_catchup')) return true; }catch(e){}
+5702:      tag:'phone_catchup', priority:true, pose:'raise', bangs:0, fast:true, fx:'cheer',
+6537:  if(job.tag==='phone' || job.tag==='phone_catchup') return true;
+6815:     phone / phone_catchup — PRIVALO eiti (F11 „Atsiprašau“ / Alio / viršininkas).
+6819:    var phoneJob=peek && (peek.tag==='phone' || peek.tag==='phone_catchup');
+[10] restart rc=0 
+[11] is-active: active
+[12] HTTP / : %{http_code}
+[13] IVR /twilio/voice rc=0: <?xml version="1.0" encoding="UTF-8"?><Response><Dial timeout="20" action="https://penktadienioaukcionas.lt/twilio/after-dial" method="POST" callerId="+16672395281"><Sip>sip:mvisminas2026@mindaugas-ph
+[14] IVR /twilio/menu rc=0: <?xml version="1.0" encoding="UTF-8"?><Response><Play>https://penktadienioaukcionas.lt/voice/prekes.mp3</Play><Play>https://penktadienioaukcionas.lt/voice/grizti9.mp3</Play><Gather action="https://pen
+DONE backup=/opt/aukcionas/app.py.bak-vp2-20261024-1837

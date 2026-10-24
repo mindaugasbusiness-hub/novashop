@@ -1,0 +1,91 @@
+=== PASKUTINIS PERKROVIMAS ===
+LastBootUpTime: 10/24/2026 04:08:53
+Dabar         : 10/24/2026 11:32:12
+=== n8n PROCESU PRADZIA ===
+
+   Id  MB StartTime          
+   --  -- ---------          
+ 1388  36 2026-10-24 04:35:36
+ 7976 323 2026-10-24 04:44:48
+10636  43 2026-10-24 04:45:45
+
+
+
+=== pids.json ===
+{
+    "tools":  8516,
+    "qdrant":  9048,
+    "n8n":  8612
+}
+=== n8n-autostart.log (paskutines 25 eil.) ===
+Failas yra, 3.3 KB, keistas 10/24/2026 04:14:32
+Note: Changes will not take effect if n8n is running.
+Please restart n8n for changes to take effect if n8n is currently running.
+[license SDK] Skipping renewal on init: renewOnInit is disabled in config
+[license SDK] Skipping renewal on init: license cert is not initialized
+Importing 1 workflows...
+Deactivating workflow "Kumstis - decentralizuotu projektu paieska (DeFi, DEX, kazino, skolinimas)".
+Successfully imported 1 workflow.
+Publishing workflow with ID: kumstisdefi000001 (current version)
+Note: Changes will not take effect if n8n is running.
+Please restart n8n for changes to take effect if n8n is currently running.
+==> Starting n8n
+==> Loading specialist knowledge into Qdrant
+   strategy already has 3 chunks (use -Reingest to reload)
+   market already has 3 chunks (use -Reingest to reload)
+   finance already has 2481 chunks (use -Reingest to reload)
+   legal already has 725 chunks (use -Reingest to reload)
+   ops already has 1 chunks (use -Reingest to reload)
+   risk already has 136 chunks (use -Reingest to reload)
+   marketing already has 1 chunks (use -Reingest to reload)
+   technology already has 1 chunks (use -Reingest to reload)
+   people already has 1 chunks (use -Reingest to reload)
+
+Kumstis board is running natively at http://localhost:5678
+Submit a task with: .\submit-task.ps1 -Task "Describe the business decision"
+Stop all services with: .\stop-native.ps1
+=== runtime\logs ===
+
+Name               KB LastWriteTime      
+----               -- -------------      
+qdrant.err.log      0 2026-10-24 04:09:40
+qdrant.out.log      0 2026-10-24 04:09:40
+tools.err.log       0 2026-10-24 04:09:48
+tools.out.log       0 2026-10-24 04:09:48
+n8n-autostart.log 3,3 2026-10-24 04:14:32
+start-err.log     0,1 2026-10-24 04:42:53
+n8n.err.log         0 2026-10-24 04:44:48
+n8n.out.log       0,1 2026-10-24 04:45:44
+start-out.log     3,2 2026-10-24 04:46:18
+
+
+
+=== STARTUP NUORODOS BUSENA ===
+
+Name                         LastWriteTime      
+----                         -------------      
+CLINE-AUTOCONNECT.lnk        2026-10-22 15:06:30
+CLINE-BROWSER.lnk            2026-10-24 04:36:42
+CLINE-N8N.lnk                2026-10-24 04:36:48
+DARBAI_PaslaugosLT_Watch.lnk 2026-10-05 02:33:15
+desktop.ini                  2026-03-12 16:25:24
+Start_FB_Watcher.vbs         2026-10-05 04:22:29
+Vilkas_F8_F9_F10_hotkeys.vbs 2026-10-08 15:42:58
+Vilkas_mokykla_pull.vbs      2026-10-09 01:45:25
+ZVERIS_Keepalive.lnk         2026-09-27 13:26:24
+
+
+
+=== AR YRA UZDUOCIUS PLANUOTOJAS n8n ===
+
+TaskName          State
+--------          -----
+CLINE AutoBackup  Ready
+CLINE Budejimas   Ready
+CLINE HealthCheck Ready
+CLINE Perkelimas  Ready
+CLINE PreFlight   Ready
+CLINE VPS kopijos Ready
+
+
+

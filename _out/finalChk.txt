@@ -1,0 +1,85 @@
+WORKFLOW KIEKIS: 4
+  aukcionas0000001 | Aukciono stebejimas | active=1 | ver=ab513670-a760-4f04-b77e-73c5aa3b1e5b | 2026-10-24 18:40:11
+  kumstis0000000001 | Kumstis - daugiagentis vadovu ir specialistu board | active=1 | ver=661ed546-ee6c-47e5-b36e-7dae91652e14 | 2026-10-24 11:43:59
+  kumstisdefi000001 | Kumstis - decentralizuotu projektu paieska (DeFi, DEX, kazino, skolinimas) | active=1 | ver=df52ae93-497a-4510-a940-29610d3cfeff | 2026-10-24 11:44:47
+  aukc-test00000001 | TESTAS - nukritimo sakas (neaktyvus) | active=0 | ver=b2e1e280-f7ca-4113-b6a8-537a547eb3c2 | 2026-10-24 18:37:10.680
+=== TRIGGER STATUS (paskutines 6) ===
+  aukcionas0000001 aa000000-000 ver=ab513670-a76 activated upd=2026-10-24 18:40:19.063
+  aukcionas0000001 aa000000-000 ver=ab513670-a76 activated upd=2026-10-24 18:40:19.063
+  aukcionas0000001 aa000000-000 ver=ab513670-a76 activated upd=2026-10-24 18:40:19.063
+  kumstisdefi000001 defi-schedul ver=df52ae93-497 activated upd=2026-10-24 11:47:34.651
+  kumstisdefi000001 defi-manual ver=df52ae93-497 activated upd=2026-10-24 11:47:34.651
+  kumstisdefi000001 defi-webhook ver=df52ae93-497 activated upd=2026-10-24 11:47:34.651
+=== EXECUTIONS (paskutines 6) ===
+  #11 aukcionas0000001 success cli 2026-10-24 18:41:04.435
+  #10 aukc-test00000001 success cli 2026-10-24 18:40:39.400
+  #9 aukc-test00000001 success cli 2026-10-24 18:37:24.868
+  #8 aukcionas0000001 success cli 2026-10-24 18:36:14.474
+  #7 aukcionas0000001 success trigger 2026-10-24 18:35:18.067
+  #6 kumstisdefi000001 success webhook 2026-10-22 10:59:35.195
+
+=== n8n.out.log (paskutines 15) ===
+Database ping failed (1): Database connection timed out
+Registered runner "JS Task Runner" (xnFa4Cth6PWfUwoRJPGSi) 
+Database ping failed (2): Database connection timed out
+Database connection recovered
+Instance registered
+Discovered 4 cluster checks
+Sandbox: enabled=false provider=n8n-sandbox (from env)
+Version: 2.44.5
+Building workflow dependency index...
+
+Editor is now accessible via:
+http://localhost:5678
+Finished building workflow dependency index. Processed 0 draft workflows, 2 published workflows.
+Deregistered crons
+Deregistered crons
+=== CLINE HealthCheck uzduotis ===
+
+
+Id               : 
+Arguments        : -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File "C:\Users\M\CLINE\tools\sesijos-pradzia.ps1" -Quiet
+Execute          : powershell.exe
+WorkingDirectory : 
+PSComputerName   : 
+
+
+
+
+Trigeriai:
+
+
+Enabled            : True
+EndBoundary        : 
+ExecutionTimeLimit : 
+Id                 : 
+Repetition         : MSFT_TaskRepetitionPattern
+StartBoundary      : 2026-10-24T08:00:00-07:00
+DaysInterval       : 1
+RandomDelay        : 
+PSComputerName     : 
+
+
+
+
+=== start.ps1 (pirmos 20 eil.) ===
+$ErrorActionPreference = 'Stop'
+Set-Location $PSScriptRoot
+
+function Step([string]$message) {
+  Write-Host "==> $message" -ForegroundColor Cyan
+}
+
+function Assert-LastExit([string]$action) {
+  if ($LASTEXITCODE -ne 0) {
+    throw "$action failed with exit code $LASTEXITCODE"
+  }
+}
+
+function New-Secret {
+  $bytes = New-Object byte[] 48
+  $rng = [System.Security.Cryptography.RandomNumberGenerator]::Create()
+  try {
+    $rng.GetBytes($bytes)
+  } finally {
+    $rng.Dispose()

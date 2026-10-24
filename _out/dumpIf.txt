@@ -1,0 +1,35 @@
+=== VEIKIANTIS IF NODE (is kumstis workflow) ===
+{
+  "parameters": {
+    "conditions": {
+      "options": {
+        "caseSensitive": true,
+        "leftValue": "",
+        "typeValidation": "strict"
+      },
+      "conditions": [
+        {
+          "id": "c1f7a1de-0a52-4c0b-8a53-7a8d9b3e4f10",
+          "leftValue": "={{ $json.done }}",
+          "rightValue": "",
+          "operator": {
+            "type": "boolean",
+            "operation": "true",
+            "singleValue": true
+          }
+        }
+      ],
+      "combinator": "and"
+    },
+    "options": {}
+  },
+  "id": "done",
+  "name": "Patvirtinta ar limitas?",
+  "type": "n8n-nodes-base.if",
+  "typeVersion": 2,
+  "position": [
+    2860,
+    300
+  ]
+}
+

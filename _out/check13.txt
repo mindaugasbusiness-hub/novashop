@@ -1,0 +1,33 @@
+### Kumstis - daugiagentis vadovu ir specialistu board (kumstis0000000001)
+  n8n-nodes-base.webhook v2  [Webhook (uzduotis)]
+  n8n-nodes-base.code v2  [Init]
+  n8n-nodes-base.code v2  [Vadybininkas ir supervisor]
+  n8n-nodes-base.code v2  [Strategas]
+  n8n-nodes-base.code v2  [Rinkos analitikas]
+  n8n-nodes-base.code v2  [Finansu agentas]
+  n8n-nodes-base.code v2  [Teises agentas]
+  n8n-nodes-base.code v2  [Operaciju agentas]
+  n8n-nodes-base.code v2  [Marketingo ir pardavimu agentas]
+  n8n-nodes-base.code v2  [Produkto ir technologiju agentas]
+  n8n-nodes-base.code v2  [Zmoniu ir organizacijos agentas]
+  n8n-nodes-base.code v2  [Rizikos agentas]
+  n8n-nodes-base.code v2  [Kritikas]
+  n8n-nodes-base.if v2  [Patvirtinta ar limitas?]
+  n8n-nodes-base.code v2  [Sintetinantis agentas]
+  n8n-nodes-base.respondToWebhook v1.1  [Atsakymas]
+### Kumstis - decentralizuotu projektu paieska (DeFi, DEX, kazino, skolinimas) (kumstisdefi000001)
+  n8n-nodes-base.scheduleTrigger v1.2  [Kasdien 08:00]
+  n8n-nodes-base.manualTrigger v1  [Paleisti rankiniu budu]
+  n8n-nodes-base.webhook v2  [Webhook (defi-scan)]
+  n8n-nodes-base.code v2  [Surinkti ir sugrupuoti]
+  n8n-nodes-base.readWriteFile v1.1  [Irasyti ataskaita i Desktop]
+  n8n-nodes-base.code v2  [Santrauka]
+=== settings ===
+  userManagement.isInstanceOwnerSetUp = true
+  ui.banners.dismissed = ["V1"]
+  features.ldap = {"loginEnabled":false,"loginLabel":"","connectionUrl":"","allowUnauthorizedCerts
+  chat.access.enabled = false
+  userManagement.authenticationMethod = email
+  instance.firstProductionFailure = {"workflowId":"kumstis0000000001","projectId":"leuMSaXhuH7O4KHa","userId":"12265
+  instance.firstProductionSuccess = {"workflowId":"kumstisdefi000001","projectId":"leuMSaXhuH7O4KHa","userId":"12265
+

@@ -1,0 +1,60 @@
+=== EILUTES 155-205 ===
+if ([string]::IsNullOrWhiteSpace($env:EMBED_MODEL)) { $env:EMBED_MODEL = 'sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2' }
+$env:N8N_USER_FOLDER = $N8nData
+$env:N8N_BLOCK_ENV_ACCESS_IN_NODE = 'false'
+$env:N8N_RUNNERS_MODE = 'internal'
+$env:N8N_LISTEN_ADDRESS = '127.0.0.1'
+$env:N8N_HOST = 'localhost'
+$env:N8N_PORT = '5678'
+$env:N8N_PROTOCOL = 'http'
+$env:WEBHOOK_URL = 'http://localhost:5678/'
+$env:QDRANT_URL = 'http://127.0.0.1:6333'
+$env:AGENT_TOOLS_URL = 'http://127.0.0.1:8090'
+$env:GENERIC_TIMEZONE = 'Europe/Vilnius'
+$env:EXECUTIONS_TIMEOUT = '3600'
+$env:EXECUTIONS_TIMEOUT_MAX = '7200'
+$env:N8N_DIAGNOSTICS_ENABLED = 'false'
+$ReportsDir = Join-Path $Root 'DeFi ataskaitos'
+New-Item -ItemType Directory -Force (Join-Path $ReportsDir 'grupes') | Out-Null
+$env:REPORTS_DIR = $ReportsDir
+$env:N8N_RESTRICT_FILE_ACCESS_TO = $ReportsDir
+
+$pids = @{}
+if (Test-Path $PidFile) {
+  $saved = Get-Content $PidFile -Raw | ConvertFrom-Json
+  foreach ($p in $saved.PSObject.Properties) { $pids[$p.Name] = $p.Value }
+}
+
+Step 'Starting Qdrant vector database'
+if (-not (Test-Url 'http://127.0.0.1:6333/healthz')) {
+  $pids.qdrant = Start-Hidden $QdrantExe @() 'qdrant'
+  Wait-Url 'http://127.0.0.1:6333/healthz' 60 'Qdrant'
+}
+
+Step 'Starting local finance calculator and embedding service'
+if (-not (Test-Url 'http://127.0.0.1:8090/healthz')) {
+  $pids.tools = Start-Hidden $PyExe @("`"$(Join-Path $Root 'agent_tools.py')`"") 'tools'
+  Wait-Url 'http://127.0.0.1:8090/healthz' 60 'Agent tools'
+}
+$embedding = Invoke-RestMethod -Method Post -Uri 'http://127.0.0.1:8090/embed' -ContentType 'application/json' `
+  -Body '{"text":"startup health check","kind":"query"}' -TimeoutSec 900
+if ($embedding.dimensions -ne 384) { throw "Embedding model returned $($embedding.dimensions) dimensions; expected 384." }
+
+Step 'Importing and publishing the board workflow'
+$n8nRunning = Test-Url 'http://127.0.0.1:5678/healthz'
+if ($n8nRunning -and $pids.n8n) {
+  Stop-Process -Id $pids.n8n -ErrorAction SilentlyContinue
+  Start-Sleep -Seconds 3
+  $n8nRunning = Test-Url 'http://127.0.0.1:5678/healthz'
+}
+if ($n8nRunning) { throw 'Another n8n instance is using port 5678. Stop it, then rerun this script.' }
+foreach ($wf in @(@('workflow.json', 'kumstis0000000001'), @('defi-workflow.json', 'kumstisdefi000001'))) {
+  & $NodeExe $N8nBin import:workflow --input="$(Join-Path $Root $wf[0])"
+=== KAS KLAUSO 5678/5679/6333/8090 ===
+5678 -> PID 7976 (node, pradzia 10/24/2026 04:44:48)
+5679 -> PID 7976 (node, pradzia 10/24/2026 04:44:48)
+6333 -> PID 9048 (qdrant, pradzia 10/24/2026 04:09:40)
+8090 -> PID 8920 (python, pradzia 10/24/2026 04:09:48)
+8791 -> PID 4 (System, pradzia )
+=== broker env kintamojo pavadinimas ===
+C:\Users\M\Desktop\Kumstis\runtime\n8n\node_modules\n8n\dist\task-runners\task-broker\task-broker-server.js :: this.logger.info(`n8n Task Broker's port ${port} is already in use. Do you have another instance of n8n running already?`);

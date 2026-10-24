@@ -1,0 +1,30 @@
+$ErrorActionPreference = 'Continue'
+$root = 'C:\Users\M\Desktop\Kumstis'
+$envFile = Join-Path $root '.env'
+if (Test-Path $envFile) {
+    foreach ($line in Get-Content $envFile) {
+        if ($line -match '^\s*#' -or $line -notmatch '=') { continue }
+        $kv = $line.Split('=', 2)
+        [Environment]::SetEnvironmentVariable($kv[0].Trim(), $kv[1].Trim().Trim('"'), 'Process')
+    }
+}
+$env:N8N_USER_FOLDER = Join-Path $root 'runtime\n8n-data'
+$env:N8N_BLOCK_ENV_ACCESS_IN_NODE = 'false'
+$env:N8N_RUNNERS_MODE = 'internal'
+$env:N8N_LISTEN_ADDRESS = '127.0.0.1'
+$env:N8N_HOST = 'localhost'
+$env:N8N_PORT = '5678'
+$env:N8N_PROTOCOL = 'http'
+$env:WEBHOOK_URL = 'http://localhost:5678/'
+$env:GENERIC_TIMEZONE = 'Europe/Vilnius'
+$env:QDRANT_URL = 'http://127.0.0.1:6333'
+$env:AGENT_TOOLS_URL = 'http://127.0.0.1:8090'
+$env:TOOLS_PORT = '8090'
+$env:EXECUTIONS_TIMEOUT = '3600'
+$env:EXECUTIONS_TIMEOUT_MAX = '7200'
+$env:N8N_DIAGNOSTICS_ENABLED = 'false'
+$env:REPORTS_DIR = (Join-Path $root 'DeFi ataskaitos')
+$env:N8N_RESTRICT_FILE_ACCESS_TO = $env:REPORTS_DIR
+'=== n8n execute --id=aukcionas0000001 ==='
+& (Join-Path $root 'runtime\node24\node.exe') (Join-Path $root 'runtime\n8n\node_modules\n8n\bin\n8n') 'execute' '--id=aukcionas0000001' 2>&1 | Out-String
+'execute exit: ' + $LASTEXITCODE

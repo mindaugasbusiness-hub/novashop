@@ -1,0 +1,36 @@
+=== C:\Users\M\CLINE\n8n ===
+
+Name                     Length LastWriteTime      
+----                     ------ -------------      
+aukciono-stebejimas.json   5971 2026-10-24 11:38:56
+test-nukritimas.json       3993 2026-10-24 11:39:20
+
+
+
+=== C:\Users\M\CLINE\tools (nauji failai) ===
+
+Name                    Length LastWriteTime      
+----                    ------ -------------      
+pranesti-server.err.log      0 2026-10-24 11:29:27
+pranesti-server.log        280 2026-10-24 11:40:42
+pranesti-server.out.log      0 2026-10-24 11:29:27
+pranesti-server.pid          7 2026-10-24 11:29:27
+pranesti-server.ps1       3835 2026-10-24 11:28:49
+pranesti.ps1              2635 2026-10-24 07:32:20
+
+
+
+=== serverio PID failas ===
+10024
+8791 klauso: 1
+healthz: 200
+=== backup failai ===
+
+Name                             MB
+----                             --
+database.sqlite.bak-2026-10-24 33,2
+
+
+
+=== startup nuoroda (pakartotinai) ===
+CLINE-N8N.lnk: True

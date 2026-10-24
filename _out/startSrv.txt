@@ -1,0 +1,20 @@
+=== 1) DB BACKUP ===
+Backup sukurtas: C:\Users\M\Desktop\Kumstis\runtime\n8n-data\.n8n\database.sqlite.bak-2026-10-24 (33.2 MB)
+=== 2) SERVERIO PALEIDIMAS ===
+Paleistas PID=10024
+healthz OK po 1 s
+=== 3) BUSENA ===
+healthz: 200 | ok
+8791 klauso: 1
+
+   Id StartTime          
+   -- ---------          
+ 1324 2026-10-24 11:29:24
+ 2352 2026-10-24 06:26:09
+ 3224 2026-10-24 11:29:26
+ 3884 2026-10-24 04:35:12
+ 7812 2026-10-24 04:09:30
+10024 2026-10-24 11:29:27
+
+
+

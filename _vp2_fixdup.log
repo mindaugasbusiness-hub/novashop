@@ -1,0 +1,17 @@
+[1] BACKUP rc=0 -rw-r--r-- 1 root root 452524 Oct 24 19:38 /opt/aukcionas/app.py.bak-vp2dup-20261024-1838
+[2] dubliuotu eiluciu poru: 1 (turi buti 1)
+[3] liko _VP_PHONE_ROUND eiluciu: 3 (turi buti 4: def+get+set+? )
+[4] Sintakse serveryje rc=0 SYNTAX OK 
+[5] Eilutes:
+2402:_VP_PHONE_ROUND = {"key": None}  # loto ratas, kuriame Vilkas jau kalbejo telefonu (phone_catchup)
+2926:                        _ph_catchup = (_VP_PHONE_ROUND.get("key") == _ph_round)
+2949:                        _VP_PHONE_ROUND["key"] = _ph_round
+[6] restart rc=0 
+[7] is-active: active
+[8] HTTP / : 200
+[9] HTTP https://penktadienioaukcionas.lt/ : 200
+[10] IVR voice: <?xml version="1.0" encoding="UTF-8"?><Response><Dial timeout="20" action="https://penktadienioaukcionas.lt/twilio/after-dial" method="POST" callerId="+16672395
+[11] IVR menu: <?xml version="1.0" encoding="UTF-8"?><Response><Play>https://penktadienioaukcionas.lt/voice/prekes.mp3</Play><Play>https://penktadienioaukcionas.lt/voice/grizt
+[12] journal warnings:
+-- No entries --
+DONE backup=/opt/aukcionas/app.py.bak-vp2dup-20261024-1838

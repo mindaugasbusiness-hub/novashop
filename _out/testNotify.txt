@@ -1,0 +1,22 @@
+=== LOG PRIES ===
+2026-10-24 11:28:54  ntfy OK: PULTAS
+2026-10-24 11:28:59  Windows pranesimas OK
+=== TESTAS 1: be SMS ===
+ATSAKYMAS: {"svarbu":false,"ok":true,"tema":"TESTAS n8n tiltas","log":"2026-10-24 11:28:54  ntfy OK: PULTAS | 2026-10-24 11:28:59  Windows pranesimas OK | 2026-10-24 11:30:08  ntfy OK: TESTAS n8n tiltas | 2026-10-24 11:30:13  Windows pranesimas OK"}
+=== TESTAS 2: su -Svarbu (SMS) ===
+ATSAKYMAS: {"svarbu":true,"ok":true,"tema":"TESTAS: SVETAINE NUKRITO","log":"2026-10-24 11:30:13  Windows pranesimas OK | 2026-10-24 11:30:15  ntfy OK: TESTAS: SVETAINE NUKRITO | 2026-10-24 11:30:16  SMS issiustas (queued): TESTAS: SVETAINE NUKRITO | 2026-10-24 11:30:21  Windows pranesimas OK"}
+=== LOG PO (paskutines 10) ===
+2026-10-24 08:35:34  Windows pranesimas OK
+2026-10-24 10:10:50  ntfy OK: Svetaine buvo nukritusi - prikelta
+2026-10-24 10:10:55  Windows pranesimas OK
+2026-10-24 11:28:54  ntfy OK: PULTAS
+2026-10-24 11:28:59  Windows pranesimas OK
+2026-10-24 11:30:08  ntfy OK: TESTAS n8n tiltas
+2026-10-24 11:30:13  Windows pranesimas OK
+2026-10-24 11:30:15  ntfy OK: TESTAS: SVETAINE NUKRITO
+2026-10-24 11:30:16  SMS issiustas (queued): TESTAS: SVETAINE NUKRITO
+2026-10-24 11:30:21  Windows pranesimas OK
+=== SERVERIO LOG ===
+2026-10-24 11:29:27  server start, port 8791, pranesti.ps1 yra: True
+2026-10-24 11:30:06  pranesti: TESTAS n8n tiltas | svarbu=False
+2026-10-24 11:30:13  pranesti: TESTAS: SVETAINE NUKRITO | svarbu=True

@@ -1,0 +1,29 @@
+TRIGGER LENTELES: workflow_publication_trigger_status
+--- workflow_publication_trigger_status (7) ---
+  {"workflowId":"kumstisdefi000001","nodeId":"defi-schedule","versionId":"df52ae93-497a-4510-a940-29610d3cfeff","status":"activated","errorMessage":null,"createdAt":"2026-10-24 11:47:34.651","updatedAt":"2026-10-24 11:47:3
+  {"workflowId":"kumstisdefi000001","nodeId":"defi-manual","versionId":"df52ae93-497a-4510-a940-29610d3cfeff","status":"activated","errorMessage":null,"createdAt":"2026-10-24 11:47:34.651","updatedAt":"2026-10-24 11:47:34.
+  {"workflowId":"kumstisdefi000001","nodeId":"defi-webhook","versionId":"df52ae93-497a-4510-a940-29610d3cfeff","status":"activated","errorMessage":null,"createdAt":"2026-10-24 11:47:34.651","updatedAt":"2026-10-24 11:47:34
+  {"workflowId":"aukcionas0000001","nodeId":"aa000000-0000-4000-8000-000000000001","versionId":"ab513670-a760-4f04-b77e-73c5aa3b1e5b","status":"activated","errorMessage":null,"createdAt":"2026-10-24 18:40:19.063","updatedA
+  {"workflowId":"aukcionas0000001","nodeId":"aa000000-0000-4000-8000-000000000002","versionId":"ab513670-a760-4f04-b77e-73c5aa3b1e5b","status":"activated","errorMessage":null,"createdAt":"2026-10-24 18:40:19.063","updatedA
+  {"workflowId":"aukcionas0000001","nodeId":"aa000000-0000-4000-8000-000000000003","versionId":"ab513670-a760-4f04-b77e-73c5aa3b1e5b","status":"activated","errorMessage":null,"createdAt":"2026-10-24 18:40:19.063","updatedA
+=== EXECUTIONS (paskutines 12) ===
+  #11 wf=aukcionas0000001 success cli 2026-10-24 18:41:04.435 -> 2026-10-24 18:41:06.513
+  #10 wf=aukc-test00000001 success cli 2026-10-24 18:40:39.400 -> 2026-10-24 18:40:50.510
+  #9 wf=aukc-test00000001 success cli 2026-10-24 18:37:24.868 -> 2026-10-24 18:37:26.750
+  #8 wf=aukcionas0000001 success cli 2026-10-24 18:36:14.474 -> 2026-10-24 18:36:16.556
+  #7 wf=aukcionas0000001 success trigger 2026-10-24 18:35:18.067 -> 2026-10-24 18:35:18.961
+  #6 wf=kumstisdefi000001 success webhook 2026-10-22 10:59:35.195 -> 2026-10-22 11:01:03.809
+  #5 wf=kumstisdefi000001 success webhook 2026-10-22 10:10:06.512 -> 2026-10-22 10:11:35.874
+  #4 wf=kumstisdefi000001 success webhook 2026-10-22 10:05:23.755 -> 2026-10-22 10:05:49.156
+  #3 wf=kumstisdefi000001 success webhook 2026-10-22 10:00:24.528 -> 2026-10-22 10:00:46.704
+  #2 wf=kumstis0000000001 error webhook 2026-10-22 09:13:34.995 -> 2026-10-22 09:13:35.038
+  #1 wf=kumstis0000000001 error webhook 2026-10-22 09:13:34.559 -> 2026-10-22 09:13:34.881
+=== scheduled_job / poller_state ===
+--- scheduled_job (0) ---
+--- poller_state (0) ---
+--- workflow_publish_history (21) ---
+  {"id":18,"workflowId":"kumstisdefi000001","versionId":"36033f17-2630-4f87-a833-732ce75bfe2d","event":"deactivated","userId":"122654a7-9fdf-49d4-aae1-dfdd534435d1","createdAt":"2026-10-24 11:43:07.958"}
+  {"id":19,"workflowId":"kumstis0000000001","versionId":"745d2768-1c9f-44c9-aab2-e0efb8d8f3e1","event":"deactivated","userId":"122654a7-9fdf-49d4-aae1-dfdd534435d1","createdAt":"2026-10-24 11:43:34.463"}
+  {"id":20,"workflowId":"kumstisdefi000001","versionId":"49abfe4b-0c09-46ae-9288-95bae8224e2a","event":"deactivated","userId":"122654a7-9fdf-49d4-aae1-dfdd534435d1","createdAt":"2026-10-24 11:44:27.963"}
+  {"id":21,"workflowId":"aukcionas0000001","versionId":"5ac8f740-c74a-4f77-9965-8b65b7b9ac6d","event":"deactivated","userId":"122654a7-9fdf-49d4-aae1-dfdd534435d1","createdAt":"2026-10-24 18:39:57.163"}
+

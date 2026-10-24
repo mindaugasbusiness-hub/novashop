@@ -1,0 +1,33 @@
+=== n8n paketo struktura ===
+
+Name         
+----         
+bin          
+dist         
+node_modules 
+templates    
+LICENSE.md   
+LICENSE_EE.md
+package.json 
+README.md    
+
+
+
+=== ExecuteCommand mazgo kodas ===
+ExecuteCommand dir: True
+
+Name          
+----          
+ExecuteCommand
+
+
+
+=== NODES_EXCLUDE paieska (dist) ===
+FAILAS: C:\Users\M\Desktop\Kumstis\runtime\n8n\node_modules\n8n\dist\modules\breaking-changes\rules\v2\disabled-nodes.rule.js
+EILUTE: if (process.env.NODES_EXCLUDE) {
+FAILAS: C:\Users\M\Desktop\Kumstis\runtime\n8n\node_modules\n8n\dist\security-audit\risk-reporters\nodes-risk-reporter.js
+EILUTE: recommendation: `Consider reviewing the parameters in these nodes, replacing them with app nodes where possible, and not loading unneeded node types with the NODES_EXCLUDE environment variable. See: ${constants_1.ENV_VARS_DOCS_URL}`,
+=== default exclude reiksme ===
+FAILAS: C:\Users\M\Desktop\Kumstis\runtime\n8n\node_modules\n8n\dist\modules\breaking-changes\rules\v2\disabled-nodes.rule.js || 'n8n-nodes-base.executeCommand',
+FAILAS: C:\Users\M\Desktop\Kumstis\runtime\n8n\node_modules\n8n\dist\node-execution\ephemeral-node-executor.js || 'n8n-nodes-base.executeCommand',
+FAILAS: C:\Users\M\Desktop\Kumstis\runtime\n8n\node_modules\n8n\dist\security-audit\constants.js || 'n8n-nodes-base.executeCommand',

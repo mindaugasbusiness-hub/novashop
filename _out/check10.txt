@@ -1,0 +1,11 @@
+login ok, cookie: 1
+/rest/settings -> 200 | 475 B | {"data":{"settingsMode":"public","defaultLocale":"en","userManagement":{"authenticationMethod":"emai
+/rest/workflows -> KLAIDA 401
+/rest/active-workflows -> KLAIDA 401
+/rest/node-types -> KLAIDA 404
+/types/nodes.json -> KLAIDA 401
+/rest/me -> KLAIDA 404
+/rest/projects -> KLAIDA 401
+=== node-types paieska ===
+node-types KLAIDA: 404
+nodes.json KLAIDA: The remote server returned an error: (401) Unauthorized.

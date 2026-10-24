@@ -1,0 +1,6 @@
+login kodas: 200
+Set-Cookie headers:
+n8n-auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEyMjY1NGE3LTlmZGYtNDlkNC1hYWUxLWRmZGQ1MzQ0MzVkMSIsImhhc2giOiJnRHBXRDJXS2dNIiwidXNlZE1mYSI6ZmFsc2UsImlhdCI6MTc5Mjg2NjI5MiwiZXhwIjoxNzkzNDcxMDkyLCJhdWQiOiJuOG46c2Vzc2lvbiJ9.6T8tRn08Itg1WeRfcWRG72sVB9-3Wl8wiDA7SLftzuQ
+cookies objekte: 1
+bandymas su Cookie header:
+klaida: 401
