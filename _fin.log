@@ -1,0 +1,7 @@
+GEO: {"tarpas":24.4,"ov_name":0,"ov_strip":0,"ov_panel":0,"name":{"l":264.6,"r":644.9,"t":19.1,"b":46.9},"badge":{"l":669.3,"r":837.3,"t":21.7,"b":63.7},"strip":{"l":1046,"r":1266,"t":10,"b":93.8},"badgeText":"KLUBO BENDRUOMENĖ"}
+TAISYKLES: {"open":true,"display":"block","y":100,"h":214,"virsuje":"LI."}
+PAY-paypal: {"on":true,"name":"PayPal — privatūs mokė","y":100,"h":97,"virsuje":"P.psd-hint","radio":"paypal"}
+PAY-skrill: {"on":true,"name":"Skrill — privatūs mokė","y":100,"h":83,"virsuje":"DIV.pay-strip-detail on","radio":"skrill"}
+PAY-neteller: {"on":true,"name":"Neteller — privatūs mo","y":100,"h":83,"virsuje":"DIV.pay-strip-detail on","radio":"neteller"}
+PAY-paysafe: {"on":true,"name":"Paysafe — privatūs mok","y":100,"h":83,"virsuje":"DIV.pay-strip-detail on","radio":"paysafe"}
+JS klaidos: nera

@@ -1,0 +1,44 @@
+=== su_fontais ===
+{
+ "name": {
+  "l": 295,
+  "r": 675.3,
+  "t": 19.1,
+  "b": 46.9,
+  "w": 380.3,
+  "h": 27.8
+ },
+ "badge": {
+  "l": 726.4,
+  "r": 894.4,
+  "t": 21.7,
+  "b": 63.7,
+  "w": 168,
+  "h": 42
+ },
+ "evening": {
+  "l": 490.2,
+  "r": 656.3,
+  "t": 56.5,
+  "b": 80.5,
+  "w": 166.1,
+  "h": 24
+ },
+ "brandTop": {
+  "l": 346.4,
+  "r": 906.4,
+  "t": 12,
+  "b": 54,
+  "w": 560,
+  "h": 42
+ },
+ "badgeTransform": "matrix(1, 0, 0, 1, -10.08, 9.66)",
+ "nameTransform": "matrix(1, 0, 0, 1, -53.235, 0)",
+ "gapName_badge": 51.1,
+ "overlapH_name_badge": -51.1,
+ "overlapV_name_badge": 25.2,
+ "gapName_badge_v": -25.2,
+ "overlapH_badge_evening": -70.1,
+ "overlapV_badge_evening": 7.2,
+ "badgeText": "KLUBO BENDRUOMENĖ"
+}

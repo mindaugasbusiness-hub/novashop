@@ -1,0 +1,382 @@
+=== A) PO IKELIMO (intro / cover-mode) ===
+{
+ "body": "stage-on reg-closed",
+ "viewport": "1280x900",
+ "scrollY": 0,
+ "docH": 1346,
+ "els": {
+  ".stage": {
+   "rect": {
+    "x": 380,
+    "y": 28,
+    "w": 560,
+    "h": 1198,
+    "right": 940,
+    "bottom": 1226
+   },
+   "display": "block",
+   "visibility": "visible",
+   "opacity": "1",
+   "zIndex": "5",
+   "transform": "none",
+   "overflow": "visible",
+   "topAtCenter": "DIV.item-body#itemBody"
+  },
+  "#showcase": {
+   "rect": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0,
+    "right": 0,
+    "bottom": 0
+   },
+   "display": "none",
+   "visibility": "visible",
+   "opacity": "0",
+   "zIndex": "58",
+   "transform": "none",
+   "overflow": "visible",
+   "topAtCenter": null
+  },
+  "#showcaseImg": {
+   "rect": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0,
+    "right": 0,
+    "bottom": 0
+   },
+   "display": "block",
+   "visibility": "visible",
+   "opacity": "1",
+   "zIndex": "auto",
+   "transform": "none",
+   "overflow": "clip",
+   "topAtCenter": null
+  },
+  ".wolf-table": {
+   "rect": {
+    "x": 920,
+    "y": 686.9,
+    "w": 170,
+    "h": 213.1,
+    "right": 1090,
+    "bottom": 900
+   },
+   "display": "block",
+   "visibility": "visible",
+   "opacity": "0",
+   "zIndex": "61",
+   "transform": "matrix(1, 0, 0, 1, 102, 0)",
+   "overflow": "clip",
+   "topAtCenter": "BODY.stage-on reg-closed#"
+  },
+  "#wolfPop": {
+   "rect": {
+    "x": 1020.6,
+    "y": 578.2,
+    "w": 242.8,
+    "h": 320.9,
+    "right": 1263.4,
+    "bottom": 899.2
+   },
+   "display": "block",
+   "visibility": "visible",
+   "opacity": "1",
+   "zIndex": "60",
+   "transform": "matrix(0.995168, 0.0124293, -0.0125785, 1.00711, -0.036892, -3.45081)",
+   "overflow": "visible",
+   "topAtCenter": "BODY.stage-on reg-closed#"
+  },
+  ".wolf-photo": {
+   "rect": {
+    "x": 1148.9,
+    "y": 578,
+    "w": 98.1,
+    "h": 108.9,
+    "right": 1247.1,
+    "bottom": 687
+   },
+   "display": "block",
+   "visibility": "visible",
+   "opacity": "0",
+   "zIndex": "63",
+   "transform": "matrix(0.697336, 0.061009, -0.061009, 0.697336, 0, 30)",
+   "overflow": "visible",
+   "topAtCenter": "BODY.stage-on reg-closed#"
+  },
+  "#wolfPhotoImg": {
+   "rect": {
+    "x": 1156.1,
+    "y": 584.1,
+    "w": 84.9,
+    "h": 84.9,
+    "right": 1241,
+    "bottom": 669
+   },
+   "display": "block",
+   "visibility": "visible",
+   "opacity": "1",
+   "zIndex": "auto",
+   "transform": "none",
+   "overflow": "clip",
+   "topAtCenter": "BODY.stage-on reg-closed#"
+  },
+  ".brand": {
+   "rect": {
+    "x": 346.4,
+    "y": 32,
+    "w": 560,
+    "h": 50,
+    "right": 906.4,
+    "bottom": 82
+   },
+   "display": "block",
+   "visibility": "visible",
+   "opacity": "1",
+   "zIndex": "6",
+   "transform": "matrix(1, 0, 0, 1, -33.6, 0)",
+   "overflow": "visible",
+   "topAtCenter": "BUTTON.radio-choice active#"
+  },
+  ".brand-name": {
+   "rect": {
+    "x": 538.4,
+    "y": 53,
+    "w": 0,
+    "h": 0,
+    "right": 538.4,
+    "bottom": 53
+   },
+   "display": "block",
+   "visibility": "visible",
+   "opacity": "0.961008",
+   "zIndex": "auto",
+   "transform": "matrix(1, 0, 0, 1, 0, 0)",
+   "overflow": "visible",
+   "topAtCenter": null
+  }
+ },
+ "videos": [
+  {
+   "src": "aukcionas.lt/photos/dance_club_7.mp4?v=1792863993-1792864085",
+   "display": "block",
+   "vis": "hidden",
+   "rect": {
+    "x": 202.3,
+    "y": 145.4,
+    "w": 1064.5,
+    "h": 752.7,
+    "right": 1266.8,
+    "bottom": 898.2
+   },
+   "paused": false,
+   "ready": 4,
+   "cls": "dd-video"
+  }
+ ],
+ "dancerCount": "7/41",
+ "mainPanel": {
+  "x": 380,
+  "y": 104,
+  "w": 560,
+  "h": 1122,
+  "right": 940,
+  "bottom": 1226
+ }
+}
+=== B) PO INTRO ISJUNGIMO (aukciono rezimas) ===
+{
+ "body": "stage-on reg-closed",
+ "viewport": "1280x900",
+ "scrollY": 0,
+ "docH": 1346,
+ "els": {
+  ".stage": {
+   "rect": {
+    "x": 380,
+    "y": 28,
+    "w": 560,
+    "h": 1198,
+    "right": 940,
+    "bottom": 1226
+   },
+   "display": "block",
+   "visibility": "visible",
+   "opacity": "1",
+   "zIndex": "5",
+   "transform": "none",
+   "overflow": "visible",
+   "topAtCenter": "DIV.item-body#itemBody"
+  },
+  "#showcase": {
+   "rect": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0,
+    "right": 0,
+    "bottom": 0
+   },
+   "display": "none",
+   "visibility": "visible",
+   "opacity": "0",
+   "zIndex": "58",
+   "transform": "none",
+   "overflow": "visible",
+   "topAtCenter": null
+  },
+  "#showcaseImg": {
+   "rect": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0,
+    "right": 0,
+    "bottom": 0
+   },
+   "display": "block",
+   "visibility": "visible",
+   "opacity": "1",
+   "zIndex": "auto",
+   "transform": "none",
+   "overflow": "clip",
+   "topAtCenter": null
+  },
+  ".wolf-table": {
+   "rect": {
+    "x": 920,
+    "y": 686.9,
+    "w": 170,
+    "h": 213.1,
+    "right": 1090,
+    "bottom": 900
+   },
+   "display": "block",
+   "visibility": "visible",
+   "opacity": "0",
+   "zIndex": "61",
+   "transform": "matrix(1, 0, 0, 1, 102, 0)",
+   "overflow": "clip",
+   "topAtCenter": "BODY.stage-on reg-closed#"
+  },
+  "#wolfPop": {
+   "rect": {
+    "x": 1019.3,
+    "y": 582.6,
+    "w": 244.2,
+    "h": 317.9,
+    "right": 1263.5,
+    "bottom": 900.5
+   },
+   "display": "block",
+   "visibility": "visible",
+   "opacity": "1",
+   "zIndex": "60",
+   "transform": "matrix(1.00184, -0.0119069, 0.0118616, 0.998023, -0.571979, -0.571979)",
+   "overflow": "visible",
+   "topAtCenter": "BODY.stage-on reg-closed#"
+  },
+  ".wolf-photo": {
+   "rect": {
+    "x": 1148.9,
+    "y": 578,
+    "w": 98.1,
+    "h": 108.9,
+    "right": 1247.1,
+    "bottom": 687
+   },
+   "display": "block",
+   "visibility": "visible",
+   "opacity": "0",
+   "zIndex": "63",
+   "transform": "matrix(0.697336, 0.061009, -0.061009, 0.697336, 0, 30)",
+   "overflow": "visible",
+   "topAtCenter": "BODY.stage-on reg-closed#"
+  },
+  "#wolfPhotoImg": {
+   "rect": {
+    "x": 1156.1,
+    "y": 584.1,
+    "w": 84.9,
+    "h": 84.9,
+    "right": 1241,
+    "bottom": 669
+   },
+   "display": "block",
+   "visibility": "visible",
+   "opacity": "1",
+   "zIndex": "auto",
+   "transform": "none",
+   "overflow": "clip",
+   "topAtCenter": "BODY.stage-on reg-closed#"
+  },
+  ".brand": {
+   "rect": {
+    "x": 346.4,
+    "y": 32,
+    "w": 560,
+    "h": 50,
+    "right": 906.4,
+    "bottom": 82
+   },
+   "display": "block",
+   "visibility": "visible",
+   "opacity": "1",
+   "zIndex": "6",
+   "transform": "matrix(1, 0, 0, 1, -33.6, 0)",
+   "overflow": "visible",
+   "topAtCenter": "BUTTON.radio-choice active#"
+  },
+  ".brand-name": {
+   "rect": {
+    "x": 538.4,
+    "y": 53,
+    "w": 0,
+    "h": 0,
+    "right": 538.4,
+    "bottom": 53
+   },
+   "display": "block",
+   "visibility": "visible",
+   "opacity": "0.994605",
+   "zIndex": "auto",
+   "transform": "matrix(1, 0, 0, 1, 0, 0)",
+   "overflow": "visible",
+   "topAtCenter": null
+  }
+ },
+ "videos": [
+  {
+   "src": "aukcionas.lt/photos/dance_club_7.mp4?v=1792863993-1792864085",
+   "display": "block",
+   "vis": "hidden",
+   "rect": {
+    "x": 202.3,
+    "y": 145.4,
+    "w": 1064.5,
+    "h": 752.7,
+    "right": 1266.8,
+    "bottom": 898.2
+   },
+   "paused": false,
+   "ready": 4,
+   "cls": "dd-video"
+  }
+ ],
+ "dancerCount": "7/41",
+ "mainPanel": {
+  "x": 380,
+  "y": 104,
+  "w": 560,
+  "h": 1122,
+  "right": 940,
+  "bottom": 1226
+ }
+}
+=== C) API ===
+{"dancer":{"ok":true,"dancer":{"url":"/photos/dance_club_7.mp4","n":7,"total":41,"idx":6}},"next":{"ok":true,"dancer":{"url":"/photos/dance_club_8.mp4","n":8,"total":41,"idx":7}}}
+=== D) JS klaidos ===
+console: Blocked call to navigator.vibrate because user hasn't tapped on the frame or any embedded frame yet: https://www.chromestatus.com/feature/5644273861001216.

@@ -1,0 +1,11 @@
+panel | 1026,100 240x214 | auto
+BUTTON#aqrClose | ✕ | rect=1231..1259 | virsuje=BUTTON.ui-close-x
+LI. | Prieš siūlant kainą būtina užsireg | rect=1052..1255 | virsuje=LI.
+LI. | Vilkas pristato prekę, tada mygtuk | rect=1052..1255 | virsuje=LI.
+LI. | Kiekvienas pasiūlymas pratęsia lai | rect=1052..1255 | virsuje=LI.
+LI. | Paskutinis pasiūlęs, kai laikas ba | rect=1052..1255 | virsuje=LI.
+LI. | Siuntimas nurodytas prie daikto ir | rect=1052..1255 | virsuje=LI.
+DIV.aqr-contact | Kontaktai: mindaugasbusiness@gmail | rect=1037..1255 | virsuje=A.
+A. | mindaugasbusiness@gmail.com | rect=1084..1231 | virsuje=A.
+A. | +370 663 31913 | rect=1119..1193 | virsuje=A.
+panel apacia | 314 | viewport 800 | TELPA

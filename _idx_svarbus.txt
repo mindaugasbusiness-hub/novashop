@@ -1,0 +1,1263 @@
+﻿2026010.24d\CLINE_ATASKAITA_2026-10-24\00_ATASKAITA.md | 5813 B | # CLINE – IŠSAMI ATASKAITA
+atstatyk izanga\00_F8_PAKETO_MD5.txt | 182 B | app.py md5=edf269de0d59a9cff346a57bce19cefe bytes=445952
+atstatyk izanga\Muzika_Desktop\Paleisti_Muzika.bat | 54 B | @echo off
+aukciono prekes\00_IZANGA_NE_UZSTRIGTI.txt | 138 B | Po TTS klausymo: jei dingsta sokejos ā€” paleisk Desktop\\pakeitimai 111\\_ensure_izanga.p
+aukciono prekes\00_KAIP_RASYTI_VILKUI.txt | 898 B | ================================================================================
+aukciono prekes\00_SKAITYK.txt | 899 B | ================================================================================
+bordako sutvarkymas\taisykles.txt | 17886 B | 1 taisykle visiems matomas, deploy.vilkas ir jo prekes pardavinejamos viskas kas suseje su
+fable kodas vilko auksionui\vilko_mokykla_SAUGYKLA\00_PASKUTINIS_PULL.json | 361 B | {
+fable kodas vilko auksionui\vilko_mokykla_SAUGYKLA\busena.json | 130 B | {
+IZANGA_FONAS\Muzika_Desktop\Dainos\00_DAINU_SARASAS.txt | 1435 B | GRUPÄ–: BLU CANTRELL & SEAN PAUL | DAINA: BREATHE
+IZANGA_FONAS\Muzika_Desktop\Dainos\00_DAINU_SARASAS_2026-10-24.txt | 1489 B | GRUPĖ: BLOODHOUND GANG | DAINA: ALONG COMES MARY
+Kumstis\README.md | 6613 B | # Kumstis ā€” local multi-agent company board
+Kumstis\start.ps1 | 6944 B | $ErrorActionPreference = 'Stop'
+Kumstis\start-native.ps1 | 10154 B | param(
+pakeitimai 111\_smartchoice_iv_docs\00_MANIFEST.txt | 18425 B | uid18239_Screenshot_20241222_155740_com.google.android.apps.docs.jpg	959471
+pakeitimai 111\_start_aukcionas_only.py | 684 B | import paramiko
+pakeitimai 111\_start_buyer_demo_mindaugas.py | 4733 B | # -*- coding: utf-8 -*-
+pakeitimai 111\_start_pirkimo_maratona.py | 4425 B | # -*- coding: utf-8 -*-
+pakeitimai 111\_start_vilkas8_stop_norai_demo.py | 6024 B | # -*- coding: utf-8 -*-
+pakeitimai 111\_zveris_watch\_start_keepalive_now.ps1 | 902 B | $arg = '-NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File "C:\Users\M\Desktop\p
+pakeitimai 111\_zveris_watch\00_alt_offers.json | 625 B | [
+pakeitimai 111\_zveris_watch\00_alt_offers_broad.json | 869 B | [
+pakeitimai 111\_zveris_watch\00_CHROME_VAST_RENT.txt | 6448 B | START https://cloud.vast.ai/create/?ask_id=46312540&disk=200&label=zveris-70b-agent
+pakeitimai 111\_zveris_watch\00_eu_asia_offers.json | 1558 B | [
+pakeitimai 111\_zveris_watch\00_LOGIN_DIAG.txt | 1250 B | contexts=1
+pakeitimai 111\_zveris_watch\00_RENT_AFTER_2FA.txt | 121 B | STILL_NOT_LOGGED
+pakeitimai 111\_zveris_watch\00_RENT_NOW.txt | 8551 B | {
+pakeitimai 111\_zveris_watch\00_vast_70b_eu_live_latest.json | 9072 B | {
+pakeitimai 111\_zveris_watch\00_ZVERIS_API_FROM_CHROME.txt | 3580 B | ]0;root@C.52650975: ~root@C.52650975:~$ python3 -c "import base64; open('/tmp/rent_cooki
+pakeitimai 111\_zveris_watch\00_ZVERIS_CHROME_RENT.txt | 2891 B | ]0;root@C.52650975: ~root@C.52650975:~$ python3 -c "import base64; open('/tmp/chrome_zve
+pakeitimai 111\_zveris_watch\00_ZVERIS_CHROME_RENT2.txt | 4933 B | ]0;root@C.52650975: ~root@C.52650975:~$ python3 -c "import base64; open('/tmp/cz2.py','w
+pakeitimai 111\_zveris_watch\00_zveris_instance.json | 3687 B | {
+pakeitimai 111\_zveris_watch\00_ZVERIS_RENT_RESULT.txt | 2704 B | >>> export PATH=/opt/instance-tools/bin:$HOME/.local/bin:$PATH; ls -la /root/.vast_api_key
+pakeitimai 111\00_0PROC_IKI_LTV_SISTEMOS.txt | 3273 B | === 0% IKI LTV SLENKSCIO — SISTEMOS (ne tik auksas) ===
+pakeitimai 111\00_3_DIENU_IEJIMAI_VAST_IR_APMOKEJIMAI.txt | 3971 B | ================================================================================
+pakeitimai 111\00_3_OUTLOOK_NAUJOS_PASKYROS.txt | 216 B | 3 EL. PASTAI
+pakeitimai 111\00_A01_DESKTOP_ZEMELAPIS_2026-10-04.txt | 3760 B | ================================================================================
+pakeitimai 111\00_A01_STABO_STATUSAS_2026-10-06.txt | 1504 B | ================================================================================
+pakeitimai 111\00_A01_STATUSAS_2026-10-05.txt | 1591 B | ================================================================================
+pakeitimai 111\00_AGENTAS_NEMOKAMAS_PC_IR_VAST.txt | 1211 B | ================================================================================
+pakeitimai 111\00_AGENTAS1_12VAL_AUTO_SEIFE.txt | 789 B | ================================================================================
+pakeitimai 111\00_AGENTAS1_PASLAUGOS_LT_PRISKYRIMAS_2026-10-02.txt | 1121 B | ================================================================================
+pakeitimai 111\00_AI_AGENTAI_PIGUS_KAIP_CURSOR_AUTOMATIZACIJA.txt | 7008 B | ================================================================================
+pakeitimai 111\00_AUKCIONAS_24_7_PLANAS.txt | 1035 B | ================================================================================
+pakeitimai 111\00_AUKCIONAS_DOMENAS_NAMED_TUNNEL_2026-09-21.txt | 6246 B | ================================================================================
+pakeitimai 111\00_AUKSAS_1000_KIEK_GALIMA_SKOLINTIS.txt | 2783 B | ================================================================================
+pakeitimai 111\00_BYBIT_PRISIJUNGIMAS.txt | 2432 B | ================================================================================
+pakeitimai 111\00_BINANCE_PRISIJUNGIMAS.txt | 2332 B | ================================================================================
+pakeitimai 111\00_BROWSER_DATA_WIPE_2026-10-04.txt | 110618 B | 
+pakeitimai 111\00_BROWSER_DATA_WIPE_2026-10-05.txt | 45520 B | === FULL BROWSER WIPE ===
+pakeitimai 111\00_BUSENA_PO_SUTVARKYMO.txt | 2028 B | ================================================================================
+pakeitimai 111\00_CHECKPOINT_2026-10-06_PATAISYMAI_ARCIAUSIAI.txt | 451 B | ================================================================================
+pakeitimai 111\00_CHECKPOINT_IZANGA_FONAS_2026-10-07.txt | 596 B | ================================================================================
+pakeitimai 111\00_CURSOR_LAISKAS_PINIGU_GRAZINIMAS_MODELIO_SAVIVALIAVIMAS.txt | 6758 B | KAM SIÅ²STI
+pakeitimai 111\00_CURSOR_PRETENZIJA_GRIEZTA_2026-10-08.txt | 5332 B | Kam: hi@cursor.com
+pakeitimai 111\00_CURSOR_PRETENZIJA_IRODYMAI\_body_only.txt | 5098 B | Dear Cursor Billing / Legal / Support (Ticket T-G88097),
+pakeitimai 111\00_CURSOR_PRETENZIJA_IRODYMAI\_body_short_strict.txt | 3638 B | Dear Cursor Billing / Legal / Support (Ticket T-G88097),
+pakeitimai 111\00_CURSOR_PRETENZIJA_IRODYMAI\_build_cdp_set_body.py | 1418 B | import json
+pakeitimai 111\00_CURSOR_PRETENZIJA_IRODYMAI\_build_inj.py | 1170 B | import json
+pakeitimai 111\00_CURSOR_PRETENZIJA_IRODYMAI\_build_short_inj.py | 1504 B | import json
+pakeitimai 111\00_CURSOR_PRETENZIJA_IRODYMAI\_c0.txt | 7266 B | "Dear Cursor Billing / Legal / Support (Ticket T-G88097),\n\nThis is a FORMAL COMPLAINT an
+pakeitimai 111\00_CURSOR_PRETENZIJA_IRODYMAI\_c1.txt | 7278 B | "harged.\n2) Written confirmation of the refund transaction ID and date.\n3) Written confi
+pakeitimai 111\00_CURSOR_PRETENZIJA_IRODYMAI\_c2.txt | 7462 B | " EVIDENCE: TWO WARNINGS FULL TEXT =====\nCURSOR \u2014 DU PERSPEJIMAI / TWO WARNINGS (evi
+pakeitimai 111\00_CURSOR_PRETENZIJA_IRODYMAI\_c3.txt | 1366 B | "26 and auto-renew\nwas cancelled. Taking today\u2019s on-demand money by automatic means,
+pakeitimai 111\00_CURSOR_PRETENZIJA_IRODYMAI\_cdp_set_body.json | 12565 B | {"expression": "(() => {\n  const body = document.querySelector('div[g_editable=\"true\"]'
+pakeitimai 111\00_CURSOR_PRETENZIJA_IRODYMAI\_chunks.json | 11682 B | ["Dear Cursor Billing / Legal / Support (Ticket T-G88097),\n\nThis is a FORMAL COMPLAINT a
+pakeitimai 111\00_CURSOR_PRETENZIJA_IRODYMAI\_gmail_payload.json | 5419 B | {"body": "Dear Cursor Billing / Legal / Support (Ticket T-G88097),\n\nThis is a FORMAL COM
+pakeitimai 111\00_CURSOR_PRETENZIJA_IRODYMAI\_inline_evidence.json | 22886 B | {"img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA4wAAADRCAIAAAAIUKtBAAAQAElEQVR4nOz
+pakeitimai 111\00_CURSOR_PRETENZIJA_IRODYMAI\_prep_reply_b64.py | 239 B | import base64
+pakeitimai 111\00_CURSOR_PRETENZIJA_IRODYMAI\_print0.txt | 3735 B | (() => { window.__COMPLAINT=(window.__COMPLAINT||'') + "Dear Cursor Billing / Legal / Supp
+pakeitimai 111\00_CURSOR_PRETENZIJA_IRODYMAI\_reply_3punktai.txt | 1037 B | Ticket T-G88306 / T-G88097
+pakeitimai 111\00_CURSOR_PRETENZIJA_IRODYMAI\_reply_4punktai.txt | 1354 B | Ticket T-G88306 / T-G88361 / T-G88097
+pakeitimai 111\00_CURSOR_PRETENZIJA_IRODYMAI\_reply_b64.txt | 1384 B | VGlja2V0IFQtRzg4MzA2IC8gVC1HODgwOTcNCg0KRG8geW91IHdhbnQgcHJvYmxlbXM/IEhlcmUgYXJlIDMgcG9pbn
+pakeitimai 111\00_CURSOR_PRETENZIJA_IRODYMAI\_reply4_b64.txt | 1808 B | VGlja2V0IFQtRzg4MzA2IC8gVC1HODgzNjEgLyBULUc4ODA5Nw0KDQpMQVNUIERFTUFORC4gUmVwbHkgcmVxdWlyZW
+pakeitimai 111\00_CURSOR_PRETENZIJA_IRODYMAI\00_LAISKAS_SIUSTI.txt | 5332 B | Kam: hi@cursor.com
+pakeitimai 111\00_CURSOR_PRETENZIJA_IRODYMAI\02_du_perspejimai_zurnalas.txt | 1997 B | [2026-10-07 13:00:10] Prijungti 3 papildomi agentai vilko paieskai: A42 Mixkit+Pexels, A43
+pakeitimai 111\00_CURSOR_PRETENZIJA_IRODYMAI\03_DU_PERSPEJIMAI_IR_TAISYKLES.txt | 4256 B | CURSOR ā€” DU PERSPEJIMAI / TWO WARNINGS (evidence)
+pakeitimai 111\00_CURSOR_PRETENZIJA_IRODYMAI\04_ankstesnis_laiskas_modelio_savivaliavimas.txt | 6758 B | KAM SIÅ²STI
+pakeitimai 111\00_CURSOR_PRETENZIJA_IRODYMAI\05_CURSOR_ATSAKYMAS_PATIKRA_2026-10-09.txt | 4488 B | CURSOR PRETEZIJA ā€” AR ATRÄ„Å Ä–? (patikra 2026-10-09)
+pakeitimai 111\00_CURSOR_PRETENZIJA_IRODYMAI\06_MINDAUGAS_NEMOKES_VISKAS_VEIKIA.txt | 968 B | MINDAUGO SPRENDIMAS ā€” 2026-10-09
+pakeitimai 111\00_CURSOR_REFUND_LAISKAS.txt | 1709 B | Kam: hi@cursor.com
+pakeitimai 111\00_DIENA_2026-09-23_ELEKTRONIKA_IR_SMARTCHOICE.txt | 5111 B | ================================================================================
+pakeitimai 111\00_DIENA_2026-09-23_HOSTBRR_AUKCIONAS_24_7.txt | 6173 B | ================================================================================
+pakeitimai 111\00_DIENA_2026-09-23_VISKAS_ISSAUGOTA.txt | 3499 B | ================================================================================
+pakeitimai 111\00_DIENA_ZYURNALAS_REALUS_LAIKAS.txt | 308239 B | ================================================================================
+pakeitimai 111\00_DU_FOLDERIAI_IZANGA_IR_VILKAS_2026-10-06.txt | 700 B | ================================================================================
+pakeitimai 111\00_DUAL_DEPLOY_RO_VN_RESULT.txt | 78 B | {
+pakeitimai 111\00_ELEKTRONIKA_B2B_PALETES.txt | 6978 B | ================================================================================
+pakeitimai 111\00_ELEKTRONIKA_B2B_REZULTATAS.txt | 934 B | REALUS REZULTATAS 2026-09-23
+pakeitimai 111\00_ELEKTRONIKA_B2B_TIEKEJAI_PLUS.txt | 6656 B | ================================================================================
+pakeitimai 111\00_ELEVENLABS_RAKTAS.txt | 1099 B | ================================================================================
+pakeitimai 111\00_ELITO_STABAS_50_AGENTAI.md | 5746 B | # ELITO Å TABAS ā€” 50 agentÅ³
+pakeitimai 111\00_F1_GRAZINA_DABARTINI_STABILU_LYGI.txt | 2367 B | F1 ā€” GRÄ„Å½INTI DABARTINÄ® STABILÅ² AUKCIONO LYGÄ®
+pakeitimai 111\00_F1_PASKUTINIS_ATKURIMAS.txt | 1528 B | F1 PASKUTINIS ATKÅŖRIMAS
+pakeitimai 111\00_F11_TELEFONAS_TYLA_CATCHUP.txt | 572 B | F11 TELEFONAS ā€” TYLA + CATCHUP (AKTYVUOTA)
+pakeitimai 111\00_FABLE_STABILUMO_UZRAKTAS_BRIEF.txt | 3296 B | FABLE ā€” STABILUMO UÅ½RAKTAS (Mindaugas 2026-10-09)
+pakeitimai 111\00_FACEBOOK_BE_REKLAMU_IR_PROPAGANDOS.txt | 3881 B | ================================================================================
+pakeitimai 111\00_GOOGLE_IR_SEO_RAKTAI_IR_KAS_PADARYTA.txt | 6085 B | ================================================================================
+pakeitimai 111\00_GOOGLE_KOPIJA_RAPORTAS.txt | 1892 B | ================================================================================
+pakeitimai 111\00_GRALIS_TOP_MODELIAI_IR_7D_PALEIDIMAS_2026-10-01.txt | 3770 B | ================================================================================
+pakeitimai 111\00_HOSTBRR_ACTIVATION.txt | 566 B | 
+pakeitimai 111\00_HOSTBRR_PHILIP_LAISKAS.txt | 30377 B | HOSTBRR / PHILIP ā€” Gmail (naujausi pirmi)
+pakeitimai 111\00_HOSTBRR_VPS_PRISIJUNGIMAS.txt | 1778 B | ================================================================================
+pakeitimai 111\00_HUMANIDO_STABO_DARBO_MODELIS.txt | 2613 B | ================================================================================
+pakeitimai 111\00_KADA_NAUDOTI_CLINE_IR_KADA_COPILOT.txt | 3748 B | TAISYKLE: KAIP TAUPYTI KREDITUS
+pakeitimai 111\00_KAIP_ATSIDURTI_PAIESKOJE.txt | 1291 B | ================================================================================
+pakeitimai 111\00_KAIP_AUKCIONAS_VISADA_VEIKS.txt | 3417 B | ================================================================================
+pakeitimai 111\00_KAS_PADARYTA.txt | 1771 B | ================================================================================
+pakeitimai 111\00_KODO_PERZIURA_SVEICARISKAS_2026-09-22.txt | 2289 B | ================================================================================
+pakeitimai 111\00_KUR_REKLAMA.txt | 548 B | REKLAMA ā€” kur skaityti (PASIRUOÅ IMAS)
+pakeitimai 111\00_KUR_SLAPTAZODZIAI.txt | 2305 B | ================================================================================
+pakeitimai 111\00_LIETUVOS_PORTALAI_MEISTRAMS_kaip_PaslaugosLT_2026-10-02.txt | 4927 B | ================================================================================
+pakeitimai 111\00_LIVE_HEALTH_NOW.txt | 1539 B | === LIVE HEALTH Vilkas8 2026-10-08 10:55:19 ===
+pakeitimai 111\00_MASTER_KAS_KUR_IR_SEIFAS.txt | 4425 B | ================================================================================
+pakeitimai 111\00_MEISTRU_PORTALAI_PRISIJUNGIMAI.txt | 2713 B | ================================================================================
+pakeitimai 111\00_MEISTRU_PORTALAI_PROBE.json | 15209 B | {
+pakeitimai 111\00_MEISTRU_PORTALAI_REG_LOG.json | 3182 B | [
+pakeitimai 111\00_MEISTRUI_PaslaugosLT_KAINA_MENESIUI_IR_KONTAKTAI_2026-10-02.txt | 12071 B | ================================================================================
+pakeitimai 111\00_METALAS_RANKU_DARBAS_TRENDAI_2026.txt | 1348 B | METALAS RANKÅ² DARBAS ā€” kas ant bangos (2025ā€“2026)
+pakeitimai 111\00_MIN_PASKOLOS_SUMA_PLATFORMOS.txt | 2134 B | ================================================================================
+pakeitimai 111\00_MINDAUGO_NORAI_IZANGA_VILKAS_NEIVYKDYTA_ARBA_NE_IKI_GALO.txt | 17736 B | MINDAUGO NORAI ā€” Ä®Å½ANGA FONAS + VILKAS
+pakeitimai 111\00_MOKEJIMAI.json | 447 B | {
+pakeitimai 111\00_NORVEGIJA_VAST_DINGO.txt | 1733 B | ========================================================================
+pakeitimai 111\00_OPENROUTER_SEIFAS.txt | 879 B | ================================================================================
+pakeitimai 111\00_OPERA_MINI_7.6.4_HTC.txt | 1039 B | ================================================================================
+pakeitimai 111\00_PAYPAL_PRIJUNGTAS.txt | 633 B | ================================================================================
+pakeitimai 111\00_PASLAUGOS_LT_332_UZKLAUSOS_ISGRYNINTA_2026-10-02.txt | 2540 B | ================================================================================
+pakeitimai 111\00_PASLAUGOS_LT_DIENA_2026-10-02.txt | 2562 B | ================================================================================
+pakeitimai 111\00_PASLAUGOS_LT_MIESTAI_2026-10-02.txt | 2553 B | ================================================================================
+pakeitimai 111\00_PASLAUGOS_LT_PAKLAUSA_2026-10-02.txt | 4062 B | ================================================================================
+pakeitimai 111\00_PASLAUGOS_LT_VISOS_KATEGORIJOS_2026-10-02.txt | 10294 B | ================================================================================
+pakeitimai 111\00_PATAISYMAI_F8_F9_F10_KLAVIATURA.txt | 2235 B | ================================================================================
+pakeitimai 111\00_PATAISYMAI_SOKEJAI_BALSAS_2026-10-07.txt | 818 B | ================================================================================
+pakeitimai 111\00_PATIKRINTI_VISKA.ps1 | 5000 B | #Requires -Version 5.1
+pakeitimai 111\00_PIGIAUSI_SU_FOTO.html | 4253 B | <!DOCTYPE html>
+pakeitimai 111\00_PIGIAUSI_SU_FOTO.txt | 1251 B | PIGIAUSI GERO STOVIO (Grade A) ā€” su apraÅymu + Valid
+pakeitimai 111\00_PLANSETE_SM-T560.txt | 1736 B | ================================================================================
+pakeitimai 111\00_PLANSETE_SPRENDIMAS_GREITAI.txt | 1638 B | ================================================================================
+pakeitimai 111\00_POKALBIS_KAS_SUTVARKYS_BORDAKA_FABLE.txt | 8726 B | POKALBIS ā€” kas geriausiai sutvarkytÅ³ bordakÄ…
+pakeitimai 111\00_RAKTAI_IS_NEW_FOLDER.txt | 885 B | ================================================================================
+pakeitimai 111\00_REKLAMA_FACEBOOK_GILIAI_LT.txt | 8477 B | ================================================================================
+pakeitimai 111\00_REKLAMA_YOUTUBE_TIKTOK.txt | 5774 B | ================================================================================
+pakeitimai 111\00_REKLAMA_SCENARIJUS_LT.txt | 712 B | ================================================================================
+pakeitimai 111\00_REKLAMA_TONAS_PENKTADIENIO_SOU.txt | 1049 B | ================================================================================
+pakeitimai 111\00_REKLAMA_VISI_KANALAI_ZEMELAPIS.txt | 10782 B | ================================================================================
+pakeitimai 111\00_REKLAMA_WOW_BOMBA_VIENAS_PROJEKTAS.txt | 5146 B | ================================================================================
+pakeitimai 111\00_ROMANIA_PERSIUSTA_IR_ATSTATYMAS.txt | 3005 B | ================================================================================
+pakeitimai 111\00_S_KLASE_PIGIAUSIAS_NUORODOS.txt | 1992 B | ================================================================================
+pakeitimai 111\00_S22_PIGIAUSIAS_ATIDARYK.html | 2853 B | <!DOCTYPE html>
+pakeitimai 111\00_SEKSUALI_INTONACIJA_MOKYMAS_2026-10-10.txt | 1532 B | VILKO SEKSUALI INTONACIJA ā€” MOKYMAS Ä®JUNGTAS
+pakeitimai 111\00_SESIJA_2026-09-22_SUVESTINE_IR_SEIFAS.txt | 23190 B | ================================================================================
+pakeitimai 111\00_SESIJA_2026-09-25_SUVESTINE_IR_SEIFAS.txt | 5671 B | ================================================================================
+pakeitimai 111\00_SESIJA_2026-09-27_SUVESTINE_IR_SEIFAS.txt | 6221 B | ================================================================================
+pakeitimai 111\00_SESIJA_2026-10-01_BYBIT_EU_SUTVARKYTA.txt | 585 B | ================================================================================
+pakeitimai 111\00_SESIJA_2026-10-01_ELITO_STABAS_IR_KODAS.txt | 2025 B | ================================================================================
+pakeitimai 111\00_SESIJA_2026-10-01_SUVESTINE_IR_SEIFAS.txt | 3225 B | ================================================================================
+pakeitimai 111\00_SESIJA_2026-10-07_SUVESTINE_IR_SEIFAS.txt | 3599 B | SESIJA 2026-10-07
+pakeitimai 111\00_SESIJA_2026-10-08_SUVESTINE_IR_SEIFAS.txt | 4321 B | SESIJA 2026-10-08
+pakeitimai 111\00_SESIJA_2026-10-09_SUVESTINE_IR_SEIFAS.txt | 1686 B | SESIJA 2026-10-09
+pakeitimai 111\00_SKAITYK_PIRMA_BUSENA_2026-09-22.txt | 9062 B | ================================================================================
+pakeitimai 111\00_SMARTCHOICE_LAISKAS_APPROVAL.txt | 1290 B | Subject: PraÅymas patvirtinti reseller paskyrÄ… ā€” Mindaugas Visminas IV
+pakeitimai 111\00_SMARTCHOICE_SIUNTIMO_STATUSAS.txt | 248 B | 2026-09-23T02:57:52.955288 EMAIL FAIL: (550, b'5.4.5 Daily user sending limit exceeded. Fo
+pakeitimai 111\00_SMARTCHOICE_STATUS_NOW.txt | 5563 B | filled=False
+pakeitimai 111\00_SMOKE_PASKUTINIS.txt | 2410 B | AUKCIONO STABILUMO SMOKE ā€” PASKUTINIS
+pakeitimai 111\00_SPECTROCOIN_PRISIJUNGIMAS.txt | 2776 B | ================================================================================
+pakeitimai 111\00_SPECTROCOIN_TIPAS_SKOLINTI_SKOLINTIS_SARASAS.txt | 5834 B | ================================================================================
+pakeitimai 111\00_STABAS_UZDUOTIS_GRALIS_2026-10-01.txt | 2238 B | ================================================================================
+pakeitimai 111\00_STABILUS_VPS_PIRKIMAS.txt | 1132 B | ================================================================================
+pakeitimai 111\00_STEBEJIMAS_2026-10-10.txt | 6154 B | Autonominis stebÄ—jimas: 30 min, 60 s intervalas.
+pakeitimai 111\00_TAISYKLE_SEKSUALUS_BALSAS_TIK_MOTERIMS.txt | 1111 B | TAISYKLÄ– ā€” SEKSUALUS BALSAS TIK MOTERÅ² VARDAMS
+pakeitimai 111\00_TAISYKLE_VIRSUNE_NIEKADA_ZEMYN.txt | 768 B | TAISYKLÄ– ā€” VIRÅ ÅŖNÄ– NIEKADA Å½EMYN (Vilko mokykla)
+pakeitimai 111\00_TELEFONAI_ZINIA_UZDRAUDIMAS.txt | 6422 B | ================================================================================
+pakeitimai 111\00_TELEFONAS_MEDIA_KOPIJA_2026-10-01.txt | 566 B | ================================================================================
+pakeitimai 111\00_TELEFONAS_PRIVATUMAS_MAX_2026-10-01.txt | 1227 B | ================================================================================
+pakeitimai 111\00_TIK_AUKSAS_UZSTATAS_PROC_MIN_GRAZINIMAS.txt | 3575 B | ================================================================================
+pakeitimai 111\00_TOBULUMO_TEST_CHECKLIST.txt | 2141 B | ================================================================================
+pakeitimai 111\00_TOKENIZUOTAS_AUKSAS_UZSTATAS_KAS_PRIIMA.txt | 3442 B | ================================================================================
+pakeitimai 111\00_TOP_PIGIAUSIOS_PaslaugosLT_MEISTRUI_MENESIUI_2026-10-02.txt | 5053 B | ================================================================================
+pakeitimai 111\00_TWILIO_IR_VERTIMAS_ISSAUGOTA_2026-10-18.txt | 3070 B | TWILIO NUSTATYMAI IR REALIOJO LAIKO VERTIMO PLANAS - issaugota 2026-10-18
+pakeitimai 111\00_VAST_AI_INVENTORIUS_IR_KAS_KAM.txt | 4292 B | ================================================================================
+pakeitimai 111\00_VAST_DESKTOP_DIESGimas_2026-09-22.txt | 3318 B | ================================================================================
+pakeitimai 111\00_VAST_DINGO_GREITAS_ATSTATYMAS.txt | 1330 B | ================================================================================
+pakeitimai 111\00_VILKAS_KLAIDOS_STEBESENA.txt | 13204 B | ================================================================================
+pakeitimai 111\00_VILKAS_SYNC_PATIKRA.txt | 2580 B | VILKO TOBULINIMÅ² SYNC PATIKRA
+pakeitimai 111\00_VILKAS_SUSTABDYTA_IR_ISSaugota_2026-10-05.txt | 1197 B | VILKAS AI AUKCIONAS ā€” DARBAI SUSTABDYTI IR IÅ SAUGOTI
+pakeitimai 111\00_VILKAS_TOBULINIMAI_DEPLOY_IRASYTA.txt | 2152 B | VILKO TOBULINIMAI ā€” Ä®RAÅ YTA (Mindaugas patvirtino: SUPRATAU)
+pakeitimai 111\00_VILKAS8_HOSTBRR_PROBE.txt | 3230 B | ===== UNITS =====
+pakeitimai 111\00_VILKO_AGENTAS.md | 988 B | # Vilko agentas
+pakeitimai 111\00_VILKO_AGENTAS_KLAIDOS.txt | 19602 B | ================================================================================
+pakeitimai 111\00_VILKO_IGUDZIAI_PROCENTAI.txt | 1424 B | VILKO IGUDZIAI ā€” PROCENTAI IKI 100
+pakeitimai 111\00_VILKO_MOKYKLA_ATASKAITA_PER_NAKTI_2026-10-10.txt | 5087 B | VILKO MOKYKLA ā€” ATASKAITA PO NAKTYS (PC ÄÆjungtas)
+pakeitimai 111\00_VILKO_MOKYKLA_LYGIS_2026-10-09.txt | 3816 B | VILKO MOKYKLA ā€” KÄ„ MATAI / KOKS LYGIS (2026-10-09 ~00:52 PT)
+pakeitimai 111\00_VILKO_MOKYKLA_LYGIS_DABAR.txt | 973 B | VILKO MOKYKLA ā€” LYGIS DABAR
+pakeitimai 111\00_VILKO_MOKYKLA_SUSTABDYTA.txt | 406 B | VILKO MOKYKLA ā€” SUSTABDYTA (pauzÄ—)
+pakeitimai 111\00_VILKO_MOKYMAS_BUSENA_IRASYTA.txt | 1869 B | VILKO MOKYMAS ā€” BÅŖSENA (ÄÆraÅyta ÄÆ PC, kad niekas nepradingtÅ³)
+pakeitimai 111\00_VILKO_PRAKTIKA_1000_BOTU_2026-10-09.txt | 970 B | VILKO PRAKTIKA LIVE ā€” 2026-10-09 (Mindaugo OK)
+pakeitimai 111\00_VILKO_TOBULINIMO_SRITYS.txt | 2307 B | VILKO TOBULINIMO SRITYS ā€” DABAR
+pakeitimai 111\00_VIRSUNES_VISOS_SRITYS_2026-10-10.txt | 2471 B | VILKO MOKYKLA ā€” VISOS SRITYS NUO VIRÅ ÅŖNÄ–S IKI 100%
+pakeitimai 111\00_VISKAS_CIA_PAKEITIMAI_111.txt | 2189 B | ================================================================================
+pakeitimai 111\00_VISU_PROJEKTU_STATUSAS_KOPIJA.txt | 2605 B | ================================================================================
+pakeitimai 111\00_WINDOWS_UPDATE_ISJUNGTAS_WATCHDOG.txt | 2384 B | ================================================================================
+pakeitimai 111\00_ZALIAS_MYGTUKAS_ISSAUGOTA_2026-09-22.txt | 1016 B | ================================================================================
+pakeitimai 111\00_ZVERIS_70B_AGENTAS_STACK.txt | 3762 B | ================================================================================
+pakeitimai 111\00_ZVERIS_ROLES_SUDELIOJIMAS.txt | 765 B | # ZVERIS / CURSOR / DIREKTORIUS ā€” SUDÄ–LIOJIMAS (2026-09-27)
+pakeitimai 111\01_XXX_Token_App_Lojalumas\00_SKAITYK_PIRMA.txt | 3823 B | ================================================================================
+pakeitimai 111\01_XXX_Token_App_Lojalumas\README.md | 2152 B | # Lojalumo kortelÄ— - vietinio serverio prototipas
+pakeitimai 111\02_Aukcionas_Karstas_Lotas\00_AUKCIONO_TAISYKLES.txt | 6343 B | PENKTADIENIO AUKCIONAS ā€” TAISYKLÄ–S
+pakeitimai 111\02_Aukcionas_Karstas_Lotas\00_BUSENA.txt | 2524 B | AUKCIONAS (KarÅtas Lotas) ā€” BÅŖSENA
+pakeitimai 111\02_Aukcionas_Karstas_Lotas\00_DABAR_PADARYK_SIUO.txt | 2678 B | ================================================================================
+pakeitimai 111\02_Aukcionas_Karstas_Lotas\00_KAIP_VISADA_VEIKS.txt | 3417 B | ================================================================================
+pakeitimai 111\02_Aukcionas_Karstas_Lotas\00_PRIVATUS_MOKEJIMAS_ISSAGOTA.txt | 997 B | PENKTADIENIO AUKCIONAS — PRIVATUS MOKĖJIMAS
+pakeitimai 111\02_Aukcionas_Karstas_Lotas\00_SKAITYK_PIRMA.txt | 4956 B | ================================================================================
+pakeitimai 111\02_Aukcionas_Karstas_Lotas\deploy\00_CLOUDFLARE_VISIEMS_PRIEINAMA.txt | 1706 B | ================================================================================
+pakeitimai 111\02_Aukcionas_Karstas_Lotas\DIEGIMO_KOMANDOS.txt | 2401 B | KARSTAS LOTAS - PILNOS SVETAINES DIEGIMAS VAST.AI SERVERYJE
+pakeitimai 111\02_Aukcionas_Karstas_Lotas\PALEISTI_AUKCIONA.bat | 294 B | @echo off
+pakeitimai 111\02_Aukcionas_Karstas_Lotas\Patobulinimai\00_ZURNALAS.txt | 25439 B | AUKCIONO PATOBULINIMAS ā€” GYVAS Å½URNALAS
+pakeitimai 111\02_Aukcionas_Karstas_Lotas\Patobulinimai\app_private_pay_2026-09-27\00_SKAITYK.txt | 997 B | PENKTADIENIO AUKCIONAS — PRIVATUS MOKĖJIMAS
+pakeitimai 111\02_Aukcionas_Karstas_Lotas\vilko_mokykla\busena.json | 129 B | {
+pakeitimai 111\02_Aukcionas_Karstas_Lotas\vps_pack\vilko_mokykla\busena.json | 129 B | {
+pakeitimai 111\02_Aukcionas_Karstas_Lotas\Zurnalas\00_GYVAS_ZURNALAS.txt | 39585 B | GYVAS Å½URNALAS Nr. 3 ā€” TÄSINYS NUO Å IO MOMENTO
+pakeitimai 111\03_EmailAssistant\00_SKAITYK_PIRMA.txt | 3798 B | ================================================================================
+pakeitimai 111\03_EmailAssistant\start-email-assistant.cmd | 197 B | @echo off
+pakeitimai 111\03_Prekiu_idejimas_auto\00_DESKTOP_AUKCIONO_PREKES.txt | 249 B | Desktop folderis prekÄ—ms (nuotraukos + kainos + apraÅymai):
+pakeitimai 111\03_Prekiu_idejimas_auto\00_SKAITYK_PIRMA.txt | 2562 B | ================================================================================
+pakeitimai 111\03_Prekiu_idejimas_auto\automatinis_crypto_arbitrazas_paieska\00_SKAITYK_PIRMA.txt | 1207 B | ================================================================================
+pakeitimai 111\03_Prekiu_idejimas_auto\start.cmd | 319 B | @echo off
+pakeitimai 111\03_Prekiu_idejimas_auto\vast_ai_linux\00_BE_SSH_JUPYTER.txt | 792 B | ================================================================================
+pakeitimai 111\03_Prekiu_idejimas_auto\vast_ai_linux\00_SKAITYK_PIRMA.txt | 1253 B | ================================================================================
+pakeitimai 111\04_Minimaliu_uzduociu_darymas\00_SKAITYK_PIRMA.txt | 511 B | ================================================================================
+pakeitimai 111\04_Minimaliu_uzduociu_darymas\paleisti_mini.py | 804 B | # -*- coding: utf-8 -*-
+pakeitimai 111\04_Vinted_ir_Facebook_Watcher\00_SKAITYK_PIRMA.txt | 633 B | ================================================================================
+pakeitimai 111\04_Vinted_ir_Facebook_Watcher\readme.txt | 461 B | Samsung Vinted price monitor
+pakeitimai 111\04_Vinted_ir_Facebook_Watcher\start-watcher.cmd | 330 B | @echo off
+pakeitimai 111\05_Automatinis_Crypto_Arbitrazas_Paieska\00_SKAITYK_PIRMA.txt | 1207 B | ================================================================================
+pakeitimai 111\05_Samsung_S8_Sorter\00_SKAITYK_PIRMA.txt | 403 B | # Samsung S8 Sorter
+pakeitimai 111\05_Samsung_S8_Sorter\Paleisti_Sorter.cmd | 237 B | @echo off
+pakeitimai 111\05_Security_Monitor_ir_LibreWolf\00_SKAITYK_PIRMA.txt | 4279 B | ================================================================================
+pakeitimai 111\05_Security_Monitor_ir_LibreWolf\KAIP_RASTI_IR_PRAVERTI.txt | 2555 B | ===============================================================================
+pakeitimai 111\05_Security_Monitor_ir_LibreWolf\README.txt | 7140 B | ===============================================================================
+pakeitimai 111\05_Security_Monitor_ir_LibreWolf\Start_Security_Monitor.vbs | 890 B | ' Security Monitor - Hidden Background Launcher
+pakeitimai 111\06_Internetine_Parduotuve_1_10\00_SKAITYK_PIRMA.txt | 3025 B | ================================================================================
+pakeitimai 111\06_Internetine_Parduotuve_1_10\internetine parduotuve 10\start-local-store.cmd | 598 B | @echo off
+pakeitimai 111\06_Internetine_Parduotuve_1_10\internetine parduotuve 10\start-local-store-v10.cmd | 54 B | @echo off
+pakeitimai 111\06_Internetine_Parduotuve_1_10\internetine parduotuve 2\start-local-store.cmd | 598 B | @echo off
+pakeitimai 111\06_Internetine_Parduotuve_1_10\internetine parduotuve 2\start-local-store-v2.cmd | 54 B | @echo off
+pakeitimai 111\06_Internetine_Parduotuve_1_10\internetine parduotuve 3\start-local-store.cmd | 598 B | @echo off
+pakeitimai 111\06_Internetine_Parduotuve_1_10\internetine parduotuve 3\start-local-store-v3.cmd | 54 B | @echo off
+pakeitimai 111\06_Internetine_Parduotuve_1_10\internetine parduotuve 4\start-local-store.cmd | 598 B | @echo off
+pakeitimai 111\06_Internetine_Parduotuve_1_10\internetine parduotuve 4\start-local-store-v4.cmd | 54 B | @echo off
+pakeitimai 111\06_Internetine_Parduotuve_1_10\internetine parduotuve 5\start-local-store.cmd | 598 B | @echo off
+pakeitimai 111\06_Internetine_Parduotuve_1_10\internetine parduotuve 5\start-local-store-v5.cmd | 54 B | @echo off
+pakeitimai 111\06_Internetine_Parduotuve_1_10\internetine parduotuve 6\start-local-store.cmd | 598 B | @echo off
+pakeitimai 111\06_Internetine_Parduotuve_1_10\internetine parduotuve 6\start-local-store-v6.cmd | 54 B | @echo off
+pakeitimai 111\06_Internetine_Parduotuve_1_10\internetine parduotuve 7\start-local-store.cmd | 598 B | @echo off
+pakeitimai 111\06_Internetine_Parduotuve_1_10\internetine parduotuve 7\start-local-store-v7.cmd | 54 B | @echo off
+pakeitimai 111\06_Internetine_Parduotuve_1_10\internetine parduotuve 8\start-local-store.cmd | 598 B | @echo off
+pakeitimai 111\06_Internetine_Parduotuve_1_10\internetine parduotuve 8\start-local-store-v8.cmd | 54 B | @echo off
+pakeitimai 111\06_Internetine_Parduotuve_1_10\internetine parduotuve 9\start-local-store.cmd | 598 B | @echo off
+pakeitimai 111\06_Internetine_Parduotuve_1_10\internetine parduotuve 9\start-local-store-v9.cmd | 54 B | @echo off
+pakeitimai 111\06_Internetine_Parduotuve_1_10\internetine parduotuve\start-local-store.cmd | 598 B | @echo off
+pakeitimai 111\06_Vast_AI_Linux\00_BE_SSH_JUPYTER.txt | 792 B | ================================================================================
+pakeitimai 111\06_Vast_AI_Linux\00_CURSOR_SELKIES_DESKTOP.txt | 2139 B | ================================================================================
+pakeitimai 111\06_Vast_AI_Linux\00_GUACAMOLE_PATAISYTA_2026-09-22.txt | 1714 B | ================================================================================
+pakeitimai 111\06_Vast_AI_Linux\00_JUPYTER_IRANKIAI.txt | 1479 B | ================================================================================
+pakeitimai 111\06_Vast_AI_Linux\00_KELIAS.txt | 99 B | Canonical: Desktop\pakeitimai 111\06_Vast_AI_Linux\
+pakeitimai 111\06_Vast_AI_Linux\00_NIEKO_NETRINTI_BE_LEIDIMO.txt | 1107 B | ================================================================================
+pakeitimai 111\06_Vast_AI_Linux\00_SKAITYK_PIRMA.txt | 1233 B | ================================================================================
+pakeitimai 111\06_Vast_AI_Linux\00_VAST_AI_PRISIJUNGIMAS.txt | 6839 B | ================================================================================
+pakeitimai 111\06_Vast_AI_Linux\00_VAST_EXTRA_PRISIJUNGIMAS.txt | 2834 B | ================================================================================
+pakeitimai 111\06_Vast_AI_Linux\00_VAST2_PRISIJUNGIMAS.txt | 2023 B | ================================================================================
+pakeitimai 111\06_Vast_AI_Linux\00_VAST3_ZVERIS_PRISIJUNGIMAS.txt | 2201 B | # VAST3 ZVERIS KR ā€” 2026-09-27 11:54 PILNAS
+pakeitimai 111\07_Reklama_Visi_Kanalai_LT\00_KUR_REKLAMA.txt | 548 B | REKLAMA ā€” kur skaityti (PASIRUOÅ IMAS)
+pakeitimai 111\07_Reklama_Visi_Kanalai_LT\00_REKLAMA_FACEBOOK_GILIAI_LT.txt | 8477 B | ================================================================================
+pakeitimai 111\07_Reklama_Visi_Kanalai_LT\00_REKLAMA_YOUTUBE_TIKTOK.txt | 5774 B | ================================================================================
+pakeitimai 111\07_Reklama_Visi_Kanalai_LT\00_REKLAMA_SCENARIJUS_LT.txt | 712 B | ================================================================================
+pakeitimai 111\07_Reklama_Visi_Kanalai_LT\00_REKLAMA_TONAS_PENKTADIENIO_SOU.txt | 1049 B | ================================================================================
+pakeitimai 111\07_Reklama_Visi_Kanalai_LT\00_REKLAMA_VISI_KANALAI_ZEMELAPIS.txt | 10782 B | ================================================================================
+pakeitimai 111\07_Reklama_Visi_Kanalai_LT\00_REKLAMA_WOW_BOMBA_VIENAS_PROJEKTAS.txt | 5146 B | ================================================================================
+pakeitimai 111\07_Reklama_Visi_Kanalai_LT\00_SKAITYK_PIRMA.txt | 338 B | ================================================================================
+pakeitimai 111\08_B2B_Inventorius\00_SKAITYK_PIRMA.txt | 1364 B | ================================================================================
+pakeitimai 111\08_B2B_Inventorius\README.txt | 900 B | B2B INVENTORIUS - VIETINE PROGRAMA
+pakeitimai 111\08_B2B_Inventorius\start-inventorius.cmd | 81 B | @echo off
+pakeitimai 111\08_Vinted_Prekiu_Idejimas\00_SKAITYK_PIRMA.txt | 470 B | ================================================================================
+pakeitimai 111\08_Vinted_Prekiu_Idejimas\00_SUSTABDYTA_NEPALEISTI.txt | 875 B | ================================================================================
+pakeitimai 111\08_Vinted_Prekiu_Idejimas\start.cmd | 195 B | @echo off
+pakeitimai 111\08_Vinted_Prekiu_Idejimas\vast_ai_linux\00_BE_SSH_JUPYTER.txt | 800 B | ================================================================================
+pakeitimai 111\09_Bruksniniai_kodai\00_SKAITYK_PIRMA.txt | 971 B | ================================================================================
+pakeitimai 111\09_Bruksniniai_kodai\start-labels.cmd | 273 B | @echo off
+pakeitimai 111\10_AusesIrBalsas_Whisper_LT\00_SKAITYK_PIRMA.txt | 1239 B | ================================================================================
+pakeitimai 111\10_AusesIrBalsas_Whisper_LT\start-auses.cmd | 186 B | @echo off
+pakeitimai 111\11_Komercija_Mazeikiai\00_SKAITYK_PIRMA.txt | 1199 B | ================================================================================
+pakeitimai 111\11_Komercija_Mazeikiai\README.txt | 1398 B | KOMERCIJA MAZEIKIAI - VIETINE KOMERCINIU SKELBIMU LENTA
+pakeitimai 111\11_Komercija_Mazeikiai\start-komercija.cmd | 81 B | @echo off
+pakeitimai 111\12_Mano_Paslaugos\00_SKAITYK_PIRMA.txt | 1134 B | ================================================================================
+pakeitimai 111\12_Mano_Paslaugos\README.txt | 611 B | MANO PASLAUGOS - VIETINIS PROTOTIPAS
+pakeitimai 111\12_Mano_Paslaugos\start-paslaugos.cmd | 81 B | @echo off
+pakeitimai 111\13_LineageOS_T560\00_5_SALYS_SKAITMENINIS_VERSLAS.txt | 6552 B | ================================================================================
+pakeitimai 111\13_LineageOS_T560\00_ELEKTRONIKA_B2B_PALETES.txt | 6978 B | ================================================================================
+pakeitimai 111\13_LineageOS_T560\00_ELEKTRONIKA_B2B_TIEKEJAI_PLUS.txt | 6656 B | ================================================================================
+pakeitimai 111\13_LineageOS_T560\00_INSTALIACIJA.txt | 2788 B | STATUS: ĮDIEGTA IR VEIKIA — 2026-09-22
+pakeitimai 111\13_LineageOS_T560\00_LAIKAS_PASAULIS.txt | 2169 B | ================================================================================
+pakeitimai 111\13_LineageOS_T560\00_SUSTABDYTA.txt | 189 B | PASENOTE — 2026-09-22
+pakeitimai 111\13_LineageOS_T560\aria2\aria2-1.37.0-win-64bit-build1\README.html | 38343 B | <?xml version="1.0" encoding="utf-8" ?>
+pakeitimai 111\13_LineageOS_T560\laikas_kopija\00_SKAITYK.txt | 218 B | Desktop\laikas
+pakeitimai 111\13_LineageOS_T560\laikas_kopija\00_VISOS_SALYS_LAIKAS.txt | 31411 B | ==============================================================================
+pakeitimai 111\13_Mano_Skelbimai\00_SKAITYK_PIRMA.txt | 1105 B | ================================================================================
+pakeitimai 111\13_Mano_Skelbimai\README.txt | 774 B | MANO SKELBIMAI - VIETINIS SKELBIMU PORTALAS
+pakeitimai 111\13_Mano_Skelbimai\start-skelbimai.cmd | 81 B | @echo off
+pakeitimai 111\14_SecurityWatch_Network\00_SKAITYK_PIRMA.txt | 1118 B | ================================================================================
+pakeitimai 111\14_SecurityWatch_Network\start_process_guard.cmd | 108 B | @echo off
+pakeitimai 111\14_SecurityWatch_Network\start-network-discovery-monitor.cmd | 119 B | @echo off
+pakeitimai 111\15_Nuoma_Platforma\00_SKAITYK_PIRMA.txt | 664 B | ================================================================================
+pakeitimai 111\15_Nuoma_Platforma\Laiskas_Priedai\DIEGIMO_KOMANDOS.txt | 2401 B | KARSTAS LOTAS - PILNOS SVETAINES DIEGIMAS VAST.AI SERVERYJE
+pakeitimai 111\15_Nuoma_Platforma\Nuoma\00_GYVAS_ZURNALAS.txt | 31456 B | GYVAS Å½URNALAS - PROJEKTAS "NUOMA"
+pakeitimai 111\15_Nuoma_Platforma\Nuoma\00_SKAITYK_PIRMA.txt | 2704 B | PROJEKTAS "NUOMA" - KAS TAI IR KAIP VEIKIA
+pakeitimai 111\16_AI_Kodavimo_Agentai_VastAI\00_SKAITYK_PIRMA.txt | 3063 B | ================================================================================
+pakeitimai 111\16_AI_Kodavimo_Agentai_VastAI\svarbu\AI_Kodavimo_Agentai\00_PALYGINIMAS.txt | 5116 B | SAVARANKIÅ KAI DIRBANTYS AI KODAVIMO Ä®RANKIAI - PALYGINIMAS
+pakeitimai 111\16_AI_Kodavimo_Agentai_VastAI\svarbu\Notepad_Atsarga\SKAITYK_JEI_SUGES.txt | 2543 B | NOTEPAD (UÅ½RAÅ INÄ–) - ATSARGINÄ– KOPIJA IR ATSTATYMO INSTRUKCIJA
+pakeitimai 111\17_Decentralizuotas_Smart_Kontraktas\00_BUSENA.txt | 22198 B | DECENTRALIZUOTAS SMART KONTRAKTAS (anoniminis + programuojamas) ā€” BÅŖSENA
+pakeitimai 111\17_Decentralizuotas_Smart_Kontraktas\00_SKAITYK_PIRMA.txt | 3695 B | ================================================================================
+pakeitimai 111\17_Decentralizuotas_Smart_Kontraktas\community_token\SKAITYK_MANE.txt | 7468 B | BENDRUOMENÄ–S TOKENO KONTRAKTAS ā€” 2-AS JUODRAÅ TIS
+pakeitimai 111\18_Balsu_Agentas_Call\00_BUSENA.txt | 126990 B | BALSÅ² AGENTAS (balso valdymas per telefonÄ…) ā€” BÅŖSENA
+pakeitimai 111\18_Balsu_Agentas_Call\00_SKAITYK_PIRMA.txt | 768 B | ================================================================================
+pakeitimai 111\18_Balsu_Agentas_Call\PALEISTI_BALSU_AGENTA.bat | 270 B | @echo off
+pakeitimai 111\18_Balsu_Agentas_Call\README.md | 4072 B | # Balso Agentas ā€” 1-o Etapo Prototipas
+pakeitimai 111\19_Vilkas_Local_TTS\.pytest_cache\README.md | 302 B | # pytest cache directory #
+pakeitimai 111\19_Vilkas_Local_TTS\_start_portal_caddy_both.py | 6698 B | # -*- coding: utf-8 -*-
+pakeitimai 111\19_Vilkas_Local_TTS\00_APMOKEJIMAS_STATUSAS.txt | 290 B | 2026-09-25 ~11:14
+pakeitimai 111\19_Vilkas_Local_TTS\00_APPS_FIX_52650975.txt | 1284 B | ===LISTEN===
+pakeitimai 111\19_Vilkas_Local_TTS\00_APPS_FIX_52651523.txt | 1284 B | ===LISTEN===
+pakeitimai 111\19_Vilkas_Local_TTS\00_ATSTATYMAS_LOG.txt | 5215 B | [2026-09-30 13:21:00] PACK_OK C:\Users\M\AppData\Local\Temp\vilkas_restore_20260930_132059
+pakeitimai 111\19_Vilkas_Local_TTS\00_AUTONOMINIS_REZIMAS.txt | 1063 B | ================================================================================
+pakeitimai 111\19_Vilkas_Local_TTS\00_BG_SEARCH_RENT.txt | 121 B | ok=True
+pakeitimai 111\19_Vilkas_Local_TTS\00_BG_SEARCH_STATUS.txt | 93 B | 14:20:20 RENT_OK_EXTRA #52651523 Vietnam, VN $0.057777777777777775 portal=None selkies=Non
+pakeitimai 111\19_Vilkas_Local_TTS\00_BLACK_FIX_52650975.txt | 22510 B | ===BEFORE===
+pakeitimai 111\19_Vilkas_Local_TTS\00_BLACK_FIX_52651523.txt | 22510 B | ===BEFORE===
+pakeitimai 111\19_Vilkas_Local_TTS\00_BOTH_DESKTOP_FIX.txt | 318 B | #52650975 Romania, RO portal_ok=False selkies_ok=False url=http://90.84.236.149:10353/?tok
+pakeitimai 111\19_Vilkas_Local_TTS\00_BUSENA.txt | 732 B | ================================================================================
+pakeitimai 111\19_Vilkas_Local_TTS\00_CIA_VILKAS.txt | 183 B | Romania vast #52650975 ā€” VILKAS AI vedejas / local TTS (buvusi Kanada role).
+pakeitimai 111\19_Vilkas_Local_TTS\00_CONNECT_54279601.txt | 2241 B | {
+pakeitimai 111\19_Vilkas_Local_TTS\00_CONNECT_DIAG.txt | 4182 B | {
+pakeitimai 111\19_Vilkas_Local_TTS\00_CONNECT_HOOK.txt | 226 B | ok=True
+pakeitimai 111\19_Vilkas_Local_TTS\00_DEPLOY_CHECK.txt | 1258 B | === NORWAY #52635197 178.164.79.201:41218 ===
+pakeitimai 111\19_Vilkas_Local_TTS\00_DEPLOY_FULL_DESKTOP_RO.txt | 3718 B | 20
+pakeitimai 111\19_Vilkas_Local_TTS\00_DIRECT_URL_TEST.txt | 4697 B | 668:@app.get("/get-direct-url/{port}")
+pakeitimai 111\19_Vilkas_Local_TTS\00_EU_PAIESKA.txt | 2062 B | EU paieska (Wisconsin strigo ā€” Mindaugas trina). instances_now=0 []
+pakeitimai 111\19_Vilkas_Local_TTS\00_EU_STATIC_RENT.txt | 337 B | ok=True
+pakeitimai 111\19_Vilkas_Local_TTS\00_FETCH_DIRECT_BODY.txt | 1553 B | fetchDirectUrls: async function() {
+pakeitimai 111\19_Vilkas_Local_TTS\00_FINISH_RO_YESTERDAY.txt | 2975 B | 
+pakeitimai 111\19_Vilkas_Local_TTS\00_FIX_RO_APPS_API.txt | 3853 B | ===SUPERVISORD===
+pakeitimai 111\19_Vilkas_Local_TTS\00_FIX_RO_CONTAINERLABEL.txt | 1534 B | ===GET_APPS===
+pakeitimai 111\19_Vilkas_Local_TTS\00_FIX_RO_DESKTOP_VISIBLE.txt | 3509 B | /usr/bin/startplasma-x11
+pakeitimai 111\19_Vilkas_Local_TTS\00_FIX_RO_DIRECT_URL.txt | 978 B | PATCHED_OK
+pakeitimai 111\19_Vilkas_Local_TTS\00_FIX_RO_GET_APPS.txt | 13247 B | ===LOG===
+pakeitimai 111\19_Vilkas_Local_TTS\00_FIX_RO_LINUX_DESKTOP_NOW.txt | 2099 B | ===1 START SUPERVISOR===
+pakeitimai 111\19_Vilkas_Local_TTS\00_FIX_RO_NOVNC_CONNECT.txt | 4224 B | ===BEFORE===
+pakeitimai 111\19_Vilkas_Local_TTS\00_FIX_RO_OFFICIAL_VNC.txt | 6716 B | ===XCMDLINE===
+pakeitimai 111\19_Vilkas_Local_TTS\00_FIX_RO_PUBLIC_HOST.txt | 1033 B | COOKIE:
+pakeitimai 111\19_Vilkas_Local_TTS\00_FIX_RO_RES_1920.txt | 3164 B | Screen 0: minimum 1 x 1, current 1920 x 1080, maximum 8192 x 4096
+pakeitimai 111\19_Vilkas_Local_TTS\00_FIX_RO_VNC_NOPW.txt | 1100 B | srwxrwxrwx 1 root root 0 Sep 26 08:24 /tmp/.X11-unix/X20
+pakeitimai 111\19_Vilkas_Local_TTS\00_FIX_RO_X_REBOOT.txt | 5279 B | CATALINA_HOME=/opt/tomcat9
+pakeitimai 111\19_Vilkas_Local_TTS\00_FIX_RO_X11VNC_USER.txt | 3138 B | ===AUTH_FIND===
+pakeitimai 111\19_Vilkas_Local_TTS\00_GOOGLE_DABAR.txt | 35 B | login_still=False
+pakeitimai 111\19_Vilkas_Local_TTS\00_GOOGLE_LOGIN_NOW.txt | 30 B | ok=False
+pakeitimai 111\19_Vilkas_Local_TTS\00_INST_META.json | 3508 B | [
+pakeitimai 111\19_Vilkas_Local_TTS\00_INSTALL_RO_APPS.txt | 12729 B | ===1 APT BASE===
+pakeitimai 111\19_Vilkas_Local_TTS\00_JUPYTER_DEPLOY_54279601.txt | 28 B | ok=False
+pakeitimai 111\19_Vilkas_Local_TTS\00_KAIP_RENT_2_VAST.txt | 2472 B | ================================================================================
+pakeitimai 111\19_Vilkas_Local_TTS\00_KAS_MIRE_KODEL_NE_TTS.txt | 1578 B | ================================================================================
+pakeitimai 111\19_Vilkas_Local_TTS\00_NEW_SSH_KEY.json | 1017 B | {
+pakeitimai 111\19_Vilkas_Local_TTS\00_NORVEGIJA_ATKURIMAS.txt | 1733 B | ========================================================================
+pakeitimai 111\19_Vilkas_Local_TTS\00_NORWAY_CREDS.txt | 4106 B | {
+pakeitimai 111\19_Vilkas_Local_TTS\00_NORWAY_DEPLOY_LOG.txt | 23 B | ok=False jupyter down
+pakeitimai 111\19_Vilkas_Local_TTS\00_NORWAY_RESTORE_RESULT.txt | 191 B | ok=True
+pakeitimai 111\19_Vilkas_Local_TTS\00_OPEN_URLS_54279601.txt | 1833 B | {
+pakeitimai 111\19_Vilkas_Local_TTS\00_PLANAS_IR_LAIKAS.txt | 2647 B | ================================================================================
+pakeitimai 111\19_Vilkas_Local_TTS\00_PORTAL_DIAG_52650975.txt | 4642 B | Warning: Permanently added '[90.84.236.149]:10260' (ECDSA) to the list of known hosts.
+pakeitimai 111\19_Vilkas_Local_TTS\00_PORTAL_DIAG_52651523.txt | 4625 B | Warning: Permanently added '[27.77.189.193]:25115' (ECDSA) to the list of known hosts.
+pakeitimai 111\19_Vilkas_Local_TTS\00_PORTAL_FIX3_52650975.txt | 14933 B | TOKEN_LEN=64
+pakeitimai 111\19_Vilkas_Local_TTS\00_PORTAL_FIX3_52651523.txt | 14929 B | TOKEN_LEN=64
+pakeitimai 111\19_Vilkas_Local_TTS\00_PORTAL_YAML_DIAG.txt | 13967 B | ===ENV===
+pakeitimai 111\19_Vilkas_Local_TTS\00_PORTAL_JS_DIRECT.txt | 4503 B | 23:                this.renderAppGrid();
+pakeitimai 111\19_Vilkas_Local_TTS\00_PORTAL_JS_SNIP.txt | 9938 B | // Create a namespace for your application
+pakeitimai 111\19_Vilkas_Local_TTS\00_PORTAL_START_52650975.txt | 5495 B | STAT
+pakeitimai 111\19_Vilkas_Local_TTS\00_PORTAL_START_52651523.txt | 5495 B | STAT
+pakeitimai 111\19_Vilkas_Local_TTS\00_PORTAL_UI_GREP.txt | 1526 B | /opt/portal-aio/portal/static/assets/portal.js:38:                const response = await f
+pakeitimai 111\19_Vilkas_Local_TTS\00_PULL_FROM_RO_LOG.txt | 7912 B | [2026-09-30 13:30:07] CONNECTED RO
+pakeitimai 111\19_Vilkas_Local_TTS\00_REBOOT_DEPLOY_54279601.txt | 32 B | ok=False
+pakeitimai 111\19_Vilkas_Local_TTS\00_REBOOT2_SSH.txt | 10 B | ok=False
+pakeitimai 111\19_Vilkas_Local_TTS\00_RECYCLE_RESTORE_54279601.txt | 15 B | ok=True
+pakeitimai 111\19_Vilkas_Local_TTS\00_RO_CONNECT_DIAG.txt | 2663 B | {
+pakeitimai 111\19_Vilkas_Local_TTS\00_RO_PORT_PROBE.txt | 1045 B | status=running ip=90.84.236.149
+pakeitimai 111\19_Vilkas_Local_TTS\00_RO_VILKAS_DEPLOY_LOG.txt | 2266 B | extracted 18
+pakeitimai 111\19_Vilkas_Local_TTS\00_SEARCH_RAW.json | 67602 B | {"offers": [{"id": 52624348, "ask_contract_id": 52624348, "bundle_id": 1246278214, "bundle
+pakeitimai 111\19_Vilkas_Local_TTS\00_SOFT_REBOOT_RESULT.txt | 1287 B | ok=True
+pakeitimai 111\19_Vilkas_Local_TTS\00_STABILUS_ATSTATYK.txt | 142 B | ok=True
+pakeitimai 111\19_Vilkas_Local_TTS\00_TIK_APMOKEK_VAST2.txt | 494 B | ================================================================================
+pakeitimai 111\19_Vilkas_Local_TTS\00_VAST_INSTANCES_NOW.txt | 593 B | ids=[]
+pakeitimai 111\19_Vilkas_Local_TTS\00_VAST1_BROWSERS.txt | 3043 B | [32mActivated conda/uv virtual environment at [36m/venv/main[0m
+pakeitimai 111\19_Vilkas_Local_TTS\00_VAST1_CHROME_RENT2.txt | 1881 B | Activated conda/uv virtual environment at /venv/main
+pakeitimai 111\19_Vilkas_Local_TTS\00_VAST1_FF_RENT2.txt | 2786 B | Activated conda/uv virtual environment at /venv/main
+pakeitimai 111\19_Vilkas_Local_TTS\00_VAST1_OPEN_RENT2.txt | 1563 B | Activated conda/uv virtual environment at /venv/main
+pakeitimai 111\19_Vilkas_Local_TTS\00_VAST2_API_RENT.txt | 42 B | ^C
+pakeitimai 111\19_Vilkas_Local_TTS\00_VAST2_CHECK_45120304.txt | 1062 B | ========================================================================
+pakeitimai 111\19_Vilkas_Local_TTS\00_VAST2_CREDS.txt | 4176 B | {
+pakeitimai 111\19_Vilkas_Local_TTS\00_VAST2_HOST_BROKEN.txt | 465 B | Instance 52629510 host port bind failed repeatedly.
+pakeitimai 111\19_Vilkas_Local_TTS\00_VAST2_INSTANCE_NOW.txt | 3989 B | Credit: $5.38
+pakeitimai 111\19_Vilkas_Local_TTS\00_VAST2_OPEN_URLS.txt | 3086 B | FAIL ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by 
+pakeitimai 111\19_Vilkas_Local_TTS\00_VAST2_PAIESKA.txt | 1756 B | VAST #2 PAIEÅ KA (Vilkas TTS)
+pakeitimai 111\19_Vilkas_Local_TTS\00_VAST2_PICK_DABAR.txt | 1638 B | ================================================================================
+pakeitimai 111\19_Vilkas_Local_TTS\00_VAST2_PICK_RERENT.json | 2123 B | {
+pakeitimai 111\19_Vilkas_Local_TTS\00_VAST2_RENT_45120304.txt | 1523 B | ================================================================================
+pakeitimai 111\19_Vilkas_Local_TTS\00_VAST2_RENT_RESULT.txt | 42 B | ok=Partial
+pakeitimai 111\19_Vilkas_Local_TTS\00_VAST2_SEARCH_NOW.json | 6108 B | [
+pakeitimai 111\19_Vilkas_Local_TTS\00_VERDIKTAS_PC_IR_VAST.txt | 1560 B | ================================================================================
+pakeitimai 111\19_Vilkas_Local_TTS\00_VIENA_MASINA_PAIESKA.txt | 2466 B | Po trynimo: abu sudai IÅ TRINTI (Mindaugas).
+pakeitimai 111\19_Vilkas_Local_TTS\00_VIENA_RENT_RESULT.txt | 108 B | ok=True
+pakeitimai 111\19_Vilkas_Local_TTS\00_VILKAS_EU_SEARCH_NOW.json | 217 B | [
+pakeitimai 111\19_Vilkas_Local_TTS\00_VILKAS_EU_SEARCH_NOW.txt | 256 B | VAST SEARCH 2026-10-05
+pakeitimai 111\19_Vilkas_Local_TTS\00_VILKAS8_KITAS_KOMPAS.txt | 3102 B | ================================================================================
+pakeitimai 111\19_Vilkas_Local_TTS\00_VN_TOOLS_DEPLOY_LOG.txt | 1197 B | extracted 14
+pakeitimai 111\19_Vilkas_Local_TTS\00_WAIT_DEPLOY_54279601.txt | 65 B | ok=True
+pakeitimai 111\19_Vilkas_Local_TTS\00_WAIT_LOGIN_RESTORE.txt | 16 B | ok=False
+pakeitimai 111\19_Vilkas_Local_TTS\00_XTTS_INSTALL_RO.txt | 1160 B | extracted 16
+pakeitimai 111\19_Vilkas_Local_TTS\00_XTTS_SERVER_RESTART.txt | 2564 B | pid=14450
+pakeitimai 111\19_Vilkas_Local_TTS\00_XTTS_WARMUP_RO.txt | 17838 B | patched autoregressive
+pakeitimai 111\19_Vilkas_Local_TTS\docs\00_BUSENA.txt | 1816 B | ================================================================================
+pakeitimai 111\19_Vilkas_Local_TTS\docs\00_PLANAS_IR_LAIKAS.txt | 2647 B | ================================================================================
+pakeitimai 111\19_Vilkas_Local_TTS\docs\00_VERDIKTAS_PC_IR_VAST.txt | 1560 B | ================================================================================
+pakeitimai 111\19_Vilkas_Local_TTS\FROM_ROMANIA_LIVE\00_CIA_VILKAS.txt | 183 B | Romania vast #52650975 ā€” VILKAS AI vedejas / local TTS (buvusi Kanada role).
+pakeitimai 111\19_Vilkas_Local_TTS\FROM_ROMANIA_LIVE\docs\00_BUSENA.txt | 1816 B | ================================================================================
+pakeitimai 111\19_Vilkas_Local_TTS\FROM_ROMANIA_LIVE\docs\00_PLANAS_IR_LAIKAS.txt | 2647 B | ================================================================================
+pakeitimai 111\19_Vilkas_Local_TTS\FROM_ROMANIA_LIVE\docs\00_VERDIKTAS_PC_IR_VAST.txt | 1560 B | ================================================================================
+pakeitimai 111\19_Vilkas_Local_TTS\FROM_ROMANIA_LIVE\irasai_TEKSTAI_KA_SAKYTI\00_SKAITYK_PIRMA.txt | 678 B | ================================================================================
+pakeitimai 111\19_Vilkas_Local_TTS\FROM_ROMANIA_LIVE\irasai_TEKSTAI_KA_SAKYTI\00_VISOS_FRAZES.txt | 2785 B | butu z================================================================================
+pakeitimai 111\19_Vilkas_Local_TTS\irasai_TEKSTAI_KA_SAKYTI\00_SKAITYK_PIRMA.txt | 678 B | ================================================================================
+pakeitimai 111\19_Vilkas_Local_TTS\irasai_TEKSTAI_KA_SAKYTI\00_VISOS_FRAZES.txt | 2785 B | butu z================================================================================
+pakeitimai 111\19_Vilkas_Local_TTS\RO_LIVE_SNAPSHOT\00_MANIFEST_FULL.txt | 375 B | FULL saved in pakeitimai 111 ā€” 2026-09-30 13:46:37
+pakeitimai 111\19_Vilkas_Local_TTS\RO_LIVE_SNAPSHOT\extracted_full\prekiu_idejimas_auto\00_SKAITYK_PIRMA.txt | 2562 B | ================================================================================
+pakeitimai 111\19_Vilkas_Local_TTS\RO_LIVE_SNAPSHOT\extracted_full\prekiu_idejimas_auto\vast_ai_linux\00_BE_SSH_JUPYTER.txt | 792 B | ================================================================================
+pakeitimai 111\19_Vilkas_Local_TTS\RO_LIVE_SNAPSHOT\extracted_full\prekiu_idejimas_auto\vast_ai_linux\00_SKAITYK_PIRMA.txt | 1253 B | ================================================================================
+pakeitimai 111\19_Vilkas_Local_TTS\RO_LIVE_SNAPSHOT\extracted_full\vilkas_tts\00_CIA_VILKAS.txt | 183 B | Romania vast #52650975 ā€” VILKAS AI vedejas / local TTS (buvusi Kanada role).
+pakeitimai 111\19_Vilkas_Local_TTS\RO_LIVE_SNAPSHOT\extracted_full\vilkas_tts\docs\00_BUSENA.txt | 1816 B | ================================================================================
+pakeitimai 111\19_Vilkas_Local_TTS\RO_LIVE_SNAPSHOT\extracted_full\vilkas_tts\docs\00_PLANAS_IR_LAIKAS.txt | 2647 B | ================================================================================
+pakeitimai 111\19_Vilkas_Local_TTS\RO_LIVE_SNAPSHOT\extracted_full\vilkas_tts\docs\00_VERDIKTAS_PC_IR_VAST.txt | 1560 B | ================================================================================
+pakeitimai 111\19_Vilkas_Local_TTS\start_vilkas_windows.bat | 405 B | @echo off
+pakeitimai 111\19_Vinted_SMS_Diagnostika\00_SKAITYK_PIRMA.txt | 527 B | ================================================================================
+pakeitimai 111\19_Vinted_SMS_Diagnostika\start-daemon-windows.cmd | 638 B | @echo off
+pakeitimai 111\21_PaslaugosLT_Mazeikiai_Metalas\00_DARBAI_LIVE_SKAITYK.txt | 972 B | ================================================================================
+pakeitimai 111\21_PaslaugosLT_Mazeikiai_Metalas\00_INDEX_SKAITYK.txt | 593 B | ================================================================================
+pakeitimai 111\21_PaslaugosLT_Mazeikiai_Metalas\00_SUVESTINE_2026-10-05.txt | 5601 B | ========================================================================
+pakeitimai 111\21_PaslaugosLT_Mazeikiai_Metalas\00_UZKLAUSOS_2026-10-05.json | 67251 B | {
+pakeitimai 111\21_PaslaugosLT_Mazeikiai_Metalas\01_Suvestines\00_SUVESTINE_2026-10-05.txt | 5601 B | ========================================================================
+pakeitimai 111\21_PaslaugosLT_Mazeikiai_Metalas\02_Raw_duomenys\00_UZKLAUSOS_2026-10-05.json | 67251 B | {
+pakeitimai 111\21_PaslaugosLT_Mazeikiai_Metalas\04_Agentas_brief\00_AGENTAS_MZ_MAZEIKIAI_METALAS_APDAILA_2026-10-05.txt | 1264 B | ================================================================================
+pakeitimai 111\21_PaslaugosLT_Mazeikiai_Metalas\start_darbai_watch.cmd | 472 B | @echo off
+pakeitimai 111\22_Vinted_Rinkos_Statistika\00_ANALIZE_2026-10-05.json | 57122 B | {
+pakeitimai 111\22_Vinted_Rinkos_Statistika\00_ANALIZE_DEEP_2026-10-05.json | 79950 B | [
+pakeitimai 111\22_Vinted_Rinkos_Statistika\00_BROWSER_DUMP_2026-10-05.json | 29270 B | {
+pakeitimai 111\22_Vinted_Rinkos_Statistika\00_BROWSER_DUMP_DEEP_2026-10-05.json | 153 B | {
+pakeitimai 111\22_Vinted_Rinkos_Statistika\00_INDEX_SKAITYK.txt | 1396 B | ================================================================================
+pakeitimai 111\22_Vinted_Rinkos_Statistika\00_RAW_2026-10-05.json | 10667 B | {
+pakeitimai 111\22_Vinted_Rinkos_Statistika\00_SUVESTINE_2026-10-05.txt | 8441 B | ========================================================================
+pakeitimai 111\22_Vinted_Rinkos_Statistika\00_SUVESTINE_DEEP_2026-10-05.txt | 8441 B | ========================================================================
+pakeitimai 111\22_Vinted_Rinkos_Statistika\00_URMO_SANDELIAI_2026-10-05.html | 6976 B | <!DOCTYPE html>
+pakeitimai 111\22_Vinted_Rinkos_Statistika\00_URMO_SANDELIAI_UZPIRKIMUI_2026-10-05.txt | 6413 B | ========================================================================
+pakeitimai 111\22_Vinted_Rinkos_Statistika\00_URMO_TIEKEJAI_PLATUS_2026-10-05.txt | 6413 B | ========================================================================
+pakeitimai 111\22_Vinted_Rinkos_Statistika\01_Rinka_suvestines\00_ANALIZE_2026-10-05.json | 57122 B | {
+pakeitimai 111\22_Vinted_Rinkos_Statistika\01_Rinka_suvestines\00_ANALIZE_DEEP_2026-10-05.json | 79950 B | [
+pakeitimai 111\22_Vinted_Rinkos_Statistika\01_Rinka_suvestines\00_SUVESTINE_2026-10-05.txt | 8441 B | ========================================================================
+pakeitimai 111\22_Vinted_Rinkos_Statistika\01_Rinka_suvestines\00_SUVESTINE_DEEP_2026-10-05.txt | 8441 B | ========================================================================
+pakeitimai 111\22_Vinted_Rinkos_Statistika\02_Urmo_tiekejai\00_URMO_SANDELIAI_2026-10-05.html | 6976 B | <!DOCTYPE html>
+pakeitimai 111\22_Vinted_Rinkos_Statistika\02_Urmo_tiekejai\00_URMO_SANDELIAI_UZPIRKIMUI_2026-10-05.txt | 6413 B | ========================================================================
+pakeitimai 111\22_Vinted_Rinkos_Statistika\02_Urmo_tiekejai\00_URMO_TIEKEJAI_PLATUS_2026-10-05.txt | 6413 B | ========================================================================
+pakeitimai 111\22_Vinted_Rinkos_Statistika\03_Raw_dump\00_BROWSER_DUMP_2026-10-05.json | 29270 B | {
+pakeitimai 111\22_Vinted_Rinkos_Statistika\03_Raw_dump\00_BROWSER_DUMP_DEEP_2026-10-05.json | 153 B | {
+pakeitimai 111\22_Vinted_Rinkos_Statistika\03_Raw_dump\00_RAW_2026-10-05.json | 10667 B | {
+pakeitimai 111\22_Vinted_Rinkos_Statistika\05_Agentas_brief\00_AGENTAS_VT_VINTED_RINKOS_2026-10-05.txt | 1006 B | ================================================================================
+pakeitimai 111\23_Samsung_Vinted_Watch\00_SKAITYK_SAMSUNG.txt | 582 B | ================================================================================
+pakeitimai 111\23_Samsung_Vinted_Watch\Paleisti_Samsung_Tyliai.bat | 581 B | @echo off
+pakeitimai 111\ATASKAITOS_DALYVIAI\ataskaita_2026-09-24_0422\00_SUVESTINE.txt | 5950 B | ATASKAITA DALAVIÅ² / LOTÅ² ā€” 2026-09-24 12:22:46
+pakeitimai 111\ATASKAITOS_DALYVIAI\ataskaita_2026-09-24_0422\00_VISA.json | 38269 B | {
+pakeitimai 111\ATASKAITOS_DALYVIAI\PASKUTINE\00_SUVESTINE.txt | 5950 B | ATASKAITA DALAVIÅ² / LOTÅ² ā€” 2026-09-24 12:22:46
+pakeitimai 111\ATASKAITOS_DALYVIAI\PASKUTINE\00_VISA.json | 38269 B | {
+pakeitimai 111\Cursor_Billing_TMZ8YEEY-0003_2026-09-28\00_EMAIL_BODY_EN.txt | 2511 B | Hello Cursor Support Team,
+pakeitimai 111\Cursor_Billing_TMZ8YEEY-0003_2026-09-28\00_SKAITYK_SUVESTINE.txt | 1715 B | CURSOR BILLING — TMZ8YEEY-0003 — SUVESTINĖ
+pakeitimai 111\F1_GRAZINTI_DABARTINI_STABILU_LYGI\00_F1_KAS_ISSaugOTA.txt | 279 B | F1 ATKÅŖRIMO PAKETAS
+pakeitimai 111\F1_GRAZINTI_DABARTINI_STABILU_LYGI\files\proof\00_SMOKE_PASKUTINIS_PASS.txt | 2410 B | AUKCIONO STABILUMO SMOKE ā€” PASKUTINIS
+pakeitimai 111\Google_Saugykla_KOPIJA\00_AGENTUI_KAI_IJUNGIA.txt | 973 B | ================================================================================
+pakeitimai 111\Google_Saugykla_KOPIJA\00_SKAITYK_PRIES_TRYNIMA.txt | 1026 B | ================================================================================
+pakeitimai 111\Google_Saugykla_KOPIJA\PALEISTI_RAPORTA.bat | 312 B | @echo off
+pakeitimai 111\Muzika_Desktop\Paleisti_Muzika.bat | 54 B | @echo off
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\00_PRadEK_CIA.txt | 598 B | VILKO SISTEMOS PERKELIMO PAKETAS
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\02_Aukcionas_Karstas_Lotas\00_AUKCIONO_TAISYKLES.txt | 6191 B | PENKTADIENIO AUKCIONAS ā€” TAISYKLÄ–S
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\02_Aukcionas_Karstas_Lotas\00_BUSENA.txt | 2529 B | AUKCIONAS (KarÅtas Lotas) ā€” BÅŖSENA
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\02_Aukcionas_Karstas_Lotas\00_DABAR_PADARYK_SIUO.txt | 2620 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\02_Aukcionas_Karstas_Lotas\00_KAIP_VISADA_VEIKS.txt | 3345 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\02_Aukcionas_Karstas_Lotas\00_PRIVATUS_MOKEJIMAS_ISSAGOTA.txt | 993 B | PENKTADIENIO AUKCIONAS ā€” PRIVATUS MOKÄ–JIMAS
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\02_Aukcionas_Karstas_Lotas\00_SKAITYK_PIRMA.txt | 4887 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\02_Aukcionas_Karstas_Lotas\deploy\00_CLOUDFLARE_VISIEMS_PRIEINAMA.txt | 1672 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\02_Aukcionas_Karstas_Lotas\DIEGIMO_KOMANDOS.txt | 2401 B | KARSTAS LOTAS - PILNOS SVETAINES DIEGIMAS VAST.AI SERVERYJE
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\02_Aukcionas_Karstas_Lotas\PALEISTI_AUKCIONA.bat | 294 B | @echo off
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\02_Aukcionas_Karstas_Lotas\Patobulinimai\00_ZURNALAS.txt | 25439 B | AUKCIONO PATOBULINIMAS ā€” GYVAS Å½URNALAS
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\02_Aukcionas_Karstas_Lotas\Patobulinimai\app_private_pay_2026-09-27\00_SKAITYK.txt | 993 B | PENKTADIENIO AUKCIONAS ā€” PRIVATUS MOKÄ–JIMAS
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\02_Aukcionas_Karstas_Lotas\vilko_mokykla\busena.json | 129 B | {
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\02_Aukcionas_Karstas_Lotas\vps_pack\vilko_mokykla\busena.json | 129 B | {
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\02_Aukcionas_Karstas_Lotas\Zurnalas\00_GYVAS_ZURNALAS.txt | 39585 B | GYVAS Å½URNALAS Nr. 3 ā€” TÄSINYS NUO Å IO MOMENTO
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\_start_portal_caddy_both.py | 6510 B | # -*- coding: utf-8 -*-
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_APMOKEJIMAS_STATUSAS.txt | 284 B | 2026-09-25 ~11:14
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_APPS_FIX_52650975.txt | 1262 B | ===LISTEN===
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_APPS_FIX_52651523.txt | 1262 B | ===LISTEN===
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_ATSTATYMAS_LOG.txt | 5188 B | [2026-09-30 13:21:00] PACK_OK C:\Users\M\AppData\Local\Temp\vilkas_restore_20260930_132059
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_AUTONOMINIS_REZIMAS.txt | 1042 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_BG_SEARCH_RENT.txt | 113 B | ok=True
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_BG_SEARCH_STATUS.txt | 92 B | 14:20:20 RENT_OK_EXTRA #52651523 Vietnam, VN $0.057777777777777775 portal=None selkies=Non
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_BLACK_FIX_52650975.txt | 22006 B | ===BEFORE===
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_BLACK_FIX_52651523.txt | 22006 B | ===BEFORE===
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_BOTH_DESKTOP_FIX.txt | 212 B | #52650975 Romania, RO portal_ok=False selkies_ok=False url=http://90.84.236.149:10353/?tok
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_BUSENA.txt | 728 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_CIA_VILKAS.txt | 183 B | Romania vast #52650975 ā€” VILKAS AI vedejas / local TTS (buvusi Kanada role).
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_CONNECT_54279601.txt | 2194 B | {
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_CONNECT_DIAG.txt | 4041 B | {
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_CONNECT_HOOK.txt | 170 B | ok=True
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_DEPLOY_CHECK.txt | 1244 B | === NORWAY #52635197 178.164.79.201:41218 ===
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_DEPLOY_FULL_DESKTOP_RO.txt | 3656 B | 20
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_DIRECT_URL_TEST.txt | 4556 B | 668:@app.get("/get-direct-url/{port}")
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_EU_PAIESKA.txt | 2032 B | EU paieska (Wisconsin strigo ā€” Mindaugas trina). instances_now=0 []
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_EU_STATIC_RENT.txt | 282 B | ok=True
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_FETCH_DIRECT_BODY.txt | 1514 B | fetchDirectUrls: async function() {
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_FINISH_RO_YESTERDAY.txt | 2931 B | 
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_FIX_RO_APPS_API.txt | 3783 B | ===SUPERVISORD===
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_FIX_RO_CONTAINERLABEL.txt | 1570 B | ===GET_APPS===
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_FIX_RO_DESKTOP_VISIBLE.txt | 3478 B | /usr/bin/startplasma-x11
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_FIX_RO_DIRECT_URL.txt | 991 B | PATCHED_OK
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_FIX_RO_GET_APPS.txt | 12890 B | ===LOG===
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_FIX_RO_LINUX_DESKTOP_NOW.txt | 2040 B | ===1 START SUPERVISOR===
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_FIX_RO_NOVNC_CONNECT.txt | 4145 B | ===BEFORE===
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_FIX_RO_OFFICIAL_VNC.txt | 6563 B | ===XCMDLINE===
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_FIX_RO_PUBLIC_HOST.txt | 1042 B | COOKIE:
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_FIX_RO_RES_1920.txt | 3132 B | Screen 0: minimum 1 x 1, current 1920 x 1080, maximum 8192 x 4096
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_FIX_RO_VNC_NOPW.txt | 1081 B | srwxrwxrwx 1 root root 0 Sep 26 08:24 /tmp/.X11-unix/X20
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_FIX_RO_X_REBOOT.txt | 5120 B | CATALINA_HOME=/opt/tomcat9
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_FIX_RO_X11VNC_USER.txt | 3066 B | ===AUTH_FIND===
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_GOOGLE_DABAR.txt | 33 B | login_still=False
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_GOOGLE_LOGIN_NOW.txt | 28 B | ok=False
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_INST_META.json | 3345 B | [
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_INSTALL_RO_APPS.txt | 12640 B | ===1 APT BASE===
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_JUPYTER_DEPLOY_54279601.txt | 26 B | ok=False
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_KAIP_RENT_2_VAST.txt | 2421 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_KAS_MIRE_KODEL_NE_TTS.txt | 1548 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_NEW_SSH_KEY.json | 987 B | {
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_NORVEGIJA_ATKURIMAS.txt | 1694 B | ========================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_NORWAY_CREDS.txt | 3960 B | {
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_NORWAY_DEPLOY_LOG.txt | 22 B | ok=False jupyter down
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_NORWAY_RESTORE_RESULT.txt | 187 B | ok=True
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_OPEN_URLS_54279601.txt | 1803 B | {
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_PLANAS_IR_LAIKAS.txt | 2589 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_PORTAL_DIAG_52650975.txt | 4540 B | Warning: Permanently added '[90.84.236.149]:10260' (ECDSA) to the list of known hosts.
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_PORTAL_DIAG_52651523.txt | 4524 B | Warning: Permanently added '[27.77.189.193]:25115' (ECDSA) to the list of known hosts.
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_PORTAL_FIX3_52650975.txt | 14284 B | TOKEN_LEN="__SET_ON_NEW_COMPUTER__"
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_PORTAL_FIX3_52651523.txt | 14280 B | TOKEN_LEN="__SET_ON_NEW_COMPUTER__"
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_PORTAL_YAML_DIAG.txt | 13723 B | ===ENV===
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_PORTAL_JS_DIRECT.txt | 4391 B | 23:                this.renderAppGrid();
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_PORTAL_JS_SNIP.txt | 9714 B | // Create a namespace for your application
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_PORTAL_START_52650975.txt | 5348 B | STAT
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_PORTAL_START_52651523.txt | 5348 B | STAT
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_PORTAL_UI_GREP.txt | 1510 B | /opt/portal-aio/portal/static/assets/portal.js:38:                const response = await f
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_PULL_FROM_RO_LOG.txt | 7789 B | [2026-09-30 13:30:07] CONNECTED RO
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_REBOOT_DEPLOY_54279601.txt | 30 B | ok=False
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_REBOOT2_SSH.txt | 9 B | ok=False
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_RECYCLE_RESTORE_54279601.txt | 13 B | ok=True
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_RO_CONNECT_DIAG.txt | 2504 B | {
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_RO_PORT_PROBE.txt | 1034 B | status=running ip=90.84.236.149
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_RO_VILKAS_DEPLOY_LOG.txt | 2241 B | extracted 18
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_SEARCH_RAW.json | 67602 B | {"offers": [{"id": 52624348, "ask_contract_id": 52624348, "bundle_id": 1246278214, "bundle
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_SOFT_REBOOT_RESULT.txt | 1282 B | ok=True
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_STABILUS_ATSTATYK.txt | 137 B | ok=True
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_TIK_APMOKEK_VAST2.txt | 485 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_VAST_INSTANCES_NOW.txt | 556 B | ids=[]
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_VAST1_BROWSERS.txt | 2970 B | [32mActivated conda/uv virtual environment at [36m/venv/main[0m
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_VAST1_CHROME_RENT2.txt | 1871 B | Activated conda/uv virtual environment at /venv/main
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_VAST1_FF_RENT2.txt | 2769 B | Activated conda/uv virtual environment at /venv/main
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_VAST1_OPEN_RENT2.txt | 1555 B | Activated conda/uv virtual environment at /venv/main
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_VAST2_API_RENT.txt | 41 B | ^C
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_VAST2_CHECK_45120304.txt | 1030 B | ========================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_VAST2_CREDS.txt | 4030 B | {
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_VAST2_HOST_BROKEN.txt | 460 B | Instance 52629510 host port bind failed repeatedly.
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_VAST2_INSTANCE_NOW.txt | 3757 B | Credit: $5.38
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_VAST2_OPEN_URLS.txt | 2582 B | FAIL ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by 
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_VAST2_PAIESKA.txt | 1738 B | VAST #2 PAIEÅ KA (Vilkas TTS)
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_VAST2_PICK_DABAR.txt | 1601 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_VAST2_PICK_RERENT.json | 2030 B | {
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_VAST2_RENT_45120304.txt | 1496 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_VAST2_RENT_RESULT.txt | 39 B | ok=Partial
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_VAST2_SEARCH_NOW.json | 5807 B | [
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_VERDIKTAS_PC_IR_VAST.txt | 1527 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_VIENA_MASINA_PAIESKA.txt | 2430 B | Po trynimo: abu sudai IÅ TRINTI (Mindaugas).
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_VIENA_RENT_RESULT.txt | 101 B | ok=True
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_VILKAS_EU_SEARCH_NOW.json | 206 B | [
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_VILKAS_EU_SEARCH_NOW.txt | 251 B | VAST SEARCH 2026-10-05
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_VILKAS8_KITAS_KOMPAS.txt | 3030 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_VN_TOOLS_DEPLOY_LOG.txt | 1174 B | extracted 14
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_WAIT_DEPLOY_54279601.txt | 60 B | ok=True
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_WAIT_LOGIN_RESTORE.txt | 14 B | ok=False
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_XTTS_INSTALL_RO.txt | 1146 B | extracted 16
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_XTTS_SERVER_RESTART.txt | 2532 B | pid=14450
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\00_XTTS_WARMUP_RO.txt | 17815 B | patched autoregressive
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\docs\00_BUSENA.txt | 1781 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\docs\00_PLANAS_IR_LAIKAS.txt | 2589 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\docs\00_VERDIKTAS_PC_IR_VAST.txt | 1527 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\FROM_ROMANIA_LIVE\00_CIA_VILKAS.txt | 183 B | Romania vast #52650975 ā€” VILKAS AI vedejas / local TTS (buvusi Kanada role).
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\FROM_ROMANIA_LIVE\docs\00_BUSENA.txt | 1781 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\FROM_ROMANIA_LIVE\docs\00_PLANAS_IR_LAIKAS.txt | 2589 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\FROM_ROMANIA_LIVE\docs\00_VERDIKTAS_PC_IR_VAST.txt | 1527 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\FROM_ROMANIA_LIVE\irasai_TEKSTAI_KA_SAKYTI\00_SKAITYK_PIRMA.txt | 662 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\FROM_ROMANIA_LIVE\irasai_TEKSTAI_KA_SAKYTI\00_VISOS_FRAZES.txt | 2661 B | butu z================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\irasai_TEKSTAI_KA_SAKYTI\00_SKAITYK_PIRMA.txt | 662 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\irasai_TEKSTAI_KA_SAKYTI\00_VISOS_FRAZES.txt | 2661 B | butu z================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\RO_LIVE_SNAPSHOT\00_MANIFEST_FULL.txt | 366 B | FULL saved in pakeitimai 111 ā€” 2026-09-30 13:46:37
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\RO_LIVE_SNAPSHOT\extracted_full\prekiu_idejimas_auto\00_SKAITYK_PIRMA.txt | 2562 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\RO_LIVE_SNAPSHOT\extracted_full\prekiu_idejimas_auto\vast_ai_linux\00_BE_SSH_JUPYTER.txt | 792 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\RO_LIVE_SNAPSHOT\extracted_full\prekiu_idejimas_auto\vast_ai_linux\00_SKAITYK_PIRMA.txt | 1253 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\RO_LIVE_SNAPSHOT\extracted_full\vilkas_tts\00_CIA_VILKAS.txt | 183 B | Romania vast #52650975 ā€” VILKAS AI vedejas / local TTS (buvusi Kanada role).
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\RO_LIVE_SNAPSHOT\extracted_full\vilkas_tts\docs\00_BUSENA.txt | 1781 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\RO_LIVE_SNAPSHOT\extracted_full\vilkas_tts\docs\00_PLANAS_IR_LAIKAS.txt | 2589 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\RO_LIVE_SNAPSHOT\extracted_full\vilkas_tts\docs\00_VERDIKTAS_PC_IR_VAST.txt | 1527 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\19_Vilkas_Local_TTS\start_vilkas_windows.bat | 391 B | @echo off
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\deploy_assets\README_NEON_DEPLOY.txt | 2318 B | Neon deploy - instrukcija
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\DOKUMENTACIJA\README.md | 2276 B | # Vilko sistemos perkÄ—limas ÄÆ kitÄ… kompiuterÄÆ
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\HOSTBRR_GYVA_KOPIJA_BE_PASLAPCIU\opt\aukcionas\vilko_mokykla\00_VIRSUNES_ISTORIJA.json | 1787 B | {
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\HOSTBRR_GYVA_KOPIJA_BE_PASLAPCIU\opt\aukcionas\vilko_mokykla\atsargines\00_VIRSUNES_ISTORIJA.json | 2829 B | {
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\HOSTBRR_GYVA_KOPIJA_BE_PASLAPCIU\opt\aukcionas\vilko_mokykla\busena.json | 130 B | {
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PALEISTI_VIETINI_AUKCIONA.bat | 144 B | @echo off
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PALEISTI_VIETINI_AUKCIONA.ps1 | 903 B | $ErrorActionPreference = "Stop"
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\_start_aukcionas_only.py | 661 B | import paramiko
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\_start_vilkas8_stop_norai_demo.py | 5856 B | # -*- coding: utf-8 -*-
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\00_3_DIENU_IEJIMAI_VAST_IR_APMOKEJIMAI.txt | 3745 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\00_AGENTAS_NEMOKAMAS_PC_IR_VAST.txt | 1182 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\00_AUKCIONAS_24_7_PLANAS.txt | 1014 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\00_AUKCIONAS_DOMENAS_NAMED_TUNNEL_2026-09-21.txt | 6110 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\00_DIENA_2026-09-23_HOSTBRR_AUKCIONAS_24_7.txt | 6068 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\00_DU_FOLDERIAI_IZANGA_IR_VILKAS_2026-10-06.txt | 684 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\00_HOSTBRR_ACTIVATION.txt | 544 B | 
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\00_HOSTBRR_PHILIP_LAISKAS.txt | 29909 B | HOSTBRR / PHILIP ā€” Gmail (naujausi pirmi)
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\00_HOSTBRR_VPS_PRISIJUNGIMAS.txt | 1732 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\00_KAIP_AUKCIONAS_VISADA_VEIKS.txt | 3345 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\00_MINDAUGO_NORAI_IZANGA_VILKAS_NEIVYKDYTA_ARBA_NE_IKI_GALO.txt | 17466 B | MINDAUGO NORAI ā€” Ä®Å½ANGA FONAS + VILKAS
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\00_NORVEGIJA_VAST_DINGO.txt | 1694 B | ========================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\00_VAST_AI_INVENTORIUS_IR_KAS_KAM.txt | 4209 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\00_VAST_DESKTOP_DIESGimas_2026-09-22.txt | 3261 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\00_VAST_DINGO_GREITAS_ATSTATYMAS.txt | 1298 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\00_VILKAS_KLAIDOS_STEBESENA.txt | 13094 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\00_VILKAS_SYNC_PATIKRA.txt | 2509 B | VILKO TOBULINIMÅ² SYNC PATIKRA
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\00_VILKAS_SUSTABDYTA_IR_ISSaugota_2026-10-05.txt | 1166 B | VILKAS AI AUKCIONAS ā€” DARBAI SUSTABDYTI IR IÅ SAUGOTI
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\00_VILKAS_TOBULINIMAI_DEPLOY_IRASYTA.txt | 2108 B | VILKO TOBULINIMAI ā€” Ä®RAÅ YTA (Mindaugas patvirtino: SUPRATAU)
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\00_VILKAS8_HOSTBRR_PROBE.txt | 3146 B | ===== UNITS =====
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\00_VILKO_AGENTAS.md | 964 B | # Vilko agentas
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\00_VILKO_AGENTAS_KLAIDOS.txt | 19423 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\00_VILKO_IGUDZIAI_PROCENTAI.txt | 1386 B | VILKO IGUDZIAI ā€” PROCENTAI IKI 100
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\00_VILKO_MOKYKLA_ATASKAITA_PER_NAKTI_2026-10-10.txt | 4982 B | VILKO MOKYKLA ā€” ATASKAITA PO NAKTYS (PC ÄÆjungtas)
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\00_VILKO_MOKYKLA_LYGIS_2026-10-09.txt | 3740 B | VILKO MOKYKLA ā€” KÄ„ MATAI / KOKS LYGIS (2026-10-09 ~00:52 PT)
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\00_VILKO_MOKYKLA_LYGIS_DABAR.txt | 942 B | VILKO MOKYKLA ā€” LYGIS DABAR
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\00_VILKO_MOKYKLA_SUSTABDYTA.txt | 393 B | VILKO MOKYKLA ā€” SUSTABDYTA (pauzÄ—)
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\00_VILKO_MOKYMAS_BUSENA_IRASYTA.txt | 1830 B | VILKO MOKYMAS ā€” BÅŖSENA (ÄÆraÅyta ÄÆ PC, kad niekas nepradingtÅ³)
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\00_VILKO_PRAKTIKA_1000_BOTU_2026-10-09.txt | 945 B | VILKO PRAKTIKA LIVE ā€” 2026-10-09 (Mindaugo OK)
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\00_VILKO_TOBULINIMO_SRITYS.txt | 2260 B | VILKO TOBULINIMO SRITYS ā€” DABAR
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\06_Vast_AI_Linux\00_BE_SSH_JUPYTER.txt | 792 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\06_Vast_AI_Linux\00_CURSOR_SELKIES_DESKTOP.txt | 2050 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\06_Vast_AI_Linux\00_GUACAMOLE_PATAISYTA_2026-09-22.txt | 1673 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\06_Vast_AI_Linux\00_JUPYTER_IRANKIAI.txt | 1438 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\06_Vast_AI_Linux\00_KELIAS.txt | 99 B | Canonical: Desktop\pakeitimai 111\06_Vast_AI_Linux\
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\06_Vast_AI_Linux\00_NIEKO_NETRINTI_BE_LEIDIMO.txt | 1082 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\06_Vast_AI_Linux\00_SKAITYK_PIRMA.txt | 1233 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\06_Vast_AI_Linux\00_VAST_AI_PRISIJUNGIMAS.txt | 5987 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\06_Vast_AI_Linux\00_VAST_EXTRA_PRISIJUNGIMAS.txt | 2834 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\06_Vast_AI_Linux\00_VAST2_PRISIJUNGIMAS.txt | 1789 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\06_Vast_AI_Linux\00_VAST3_ZVERIS_PRISIJUNGIMAS.txt | 2144 B | # VAST3 ZVERIS KR ā€” 2026-09-27 11:54 PILNAS
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\16_AI_Kodavimo_Agentai_VastAI\00_SKAITYK_PIRMA.txt | 3018 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\16_AI_Kodavimo_Agentai_VastAI\svarbu\AI_Kodavimo_Agentai\00_PALYGINIMAS.txt | 5116 B | SAVARANKIÅ KAI DIRBANTYS AI KODAVIMO Ä®RANKIAI - PALYGINIMAS
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\16_AI_Kodavimo_Agentai_VastAI\svarbu\Notepad_Atsarga\SKAITYK_JEI_SUGES.txt | 2543 B | NOTEPAD (UÅ½RAÅ INÄ–) - ATSARGINÄ– KOPIJA IR ATSTATYMO INSTRUKCIJA
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\taisykles aukciono\00_AUKCIONO_TAISYKLES.txt | 6191 B | PENKTADIENIO AUKCIONAS ā€” TAISYKLÄ–S
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\vilkas_3_balsas_lietuviskas\00_README.txt | 2160 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\VILKAS_8_ETALONAS\00_SKAITYK.txt | 2282 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\vilkas_video_paieska\00_PAIESKOS_ATASKAITA.txt | 1451 B | VILKO VIDEO PAIEÅ KA ā€” 2026-09-24
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\vilkas_video_paieska\00_PARSIUNTA_2026-10-07.txt | 9499 B | VILKO VIDEO PARSIÅ²STA ā€” 2026-10-07
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\vilkas_video_paieska\00_PARSIUNTA_2026-10-07_A43_PIXABAY_COVERR.txt | 5368 B | VILKO VIDEO ā€” A43 PIXABAY / COVERR / VIDEVO / WIKIMEDIA
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\vilkas_video_paieska\parsiusta\00_A42.txt | 4790 B | A42 ā€” Mixkit + Pexels cartoon/3D vilkas-vedÄ—jas
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\vilkas_video_paieska\parsiusta\00_A43.txt | 6237 B | A43 ā€” Pixabay + Coverr + Videvo free + Wikimedia: cartoon/3D vilkas-vedÄ—jas
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\vilko taisykles\00_VILKO_DU_KELIAI_CHARTIJA.txt | 5534 B | VILKO BENDRUOMENÄ– ā€” DVIEJÅ² KELIÅ² CHARTIJA
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\vilko_mokykla_SAUGYKLA\00_KAIP_SAUGOMOS_KOPIJOS.txt | 818 B | KAIP SAUGOMOS VILKO MOKYKLOS KOPIJOS
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\vilko_mokykla_SAUGYKLA\00_PASKUTINIS_PULL.json | 343 B | {
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\vilko_mokykla_SAUGYKLA\00_PASKUTINIS_SYNC_I_VILKA.json | 601 B | {
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\vilko_mokykla_SAUGYKLA\00_VIRSUNES_ISTORIJA.json | 1787 B | {
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\vilko_mokykla_SAUGYKLA\atsargines\00_VIRSUNES_ISTORIJA.json | 2829 B | {
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\PAPILDOMI_ISTORINIAI_FAILAI\vilko_mokykla_SAUGYKLA\busena.json | 130 B | {
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\SEIFAS_PRIVATUS_NEPLATINTI\pakeitimai 111\00_AGENTAS1_12VAL_AUTO_SEIFE.txt | 789 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\SEIFAS_PRIVATUS_NEPLATINTI\pakeitimai 111\00_BYBIT_PRISIJUNGIMAS.txt | 2432 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\SEIFAS_PRIVATUS_NEPLATINTI\pakeitimai 111\00_BINANCE_PRISIJUNGIMAS.txt | 2332 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\SEIFAS_PRIVATUS_NEPLATINTI\pakeitimai 111\00_ELEVENLABS_RAKTAS.txt | 1099 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\SEIFAS_PRIVATUS_NEPLATINTI\pakeitimai 111\00_FABLE_STABILUMO_UZRAKTAS_BRIEF.txt | 3296 B | FABLE ā€” STABILUMO UÅ½RAKTAS (Mindaugas 2026-10-09)
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\SEIFAS_PRIVATUS_NEPLATINTI\pakeitimai 111\00_GOOGLE_IR_SEO_RAKTAI_IR_KAS_PADARYTA.txt | 6085 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\SEIFAS_PRIVATUS_NEPLATINTI\pakeitimai 111\00_HOSTBRR_VPS_PRISIJUNGIMAS.txt | 1778 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\SEIFAS_PRIVATUS_NEPLATINTI\pakeitimai 111\00_MASTER_KAS_KUR_IR_SEIFAS.txt | 4425 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\SEIFAS_PRIVATUS_NEPLATINTI\pakeitimai 111\00_MEISTRU_PORTALAI_PRISIJUNGIMAI.txt | 2713 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\SEIFAS_PRIVATUS_NEPLATINTI\pakeitimai 111\00_OPENROUTER_SEIFAS.txt | 879 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\SEIFAS_PRIVATUS_NEPLATINTI\pakeitimai 111\00_RAKTAI_IS_NEW_FOLDER.txt | 885 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\SEIFAS_PRIVATUS_NEPLATINTI\pakeitimai 111\00_SESIJA_2026-09-22_SUVESTINE_IR_SEIFAS.txt | 23190 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\SEIFAS_PRIVATUS_NEPLATINTI\pakeitimai 111\00_SESIJA_2026-09-25_SUVESTINE_IR_SEIFAS.txt | 5671 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\SEIFAS_PRIVATUS_NEPLATINTI\pakeitimai 111\00_SESIJA_2026-09-27_SUVESTINE_IR_SEIFAS.txt | 6221 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\SEIFAS_PRIVATUS_NEPLATINTI\pakeitimai 111\00_SESIJA_2026-10-01_SUVESTINE_IR_SEIFAS.txt | 3225 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\SEIFAS_PRIVATUS_NEPLATINTI\pakeitimai 111\00_SESIJA_2026-10-07_SUVESTINE_IR_SEIFAS.txt | 3599 B | SESIJA 2026-10-07
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\SEIFAS_PRIVATUS_NEPLATINTI\pakeitimai 111\00_SESIJA_2026-10-08_SUVESTINE_IR_SEIFAS.txt | 4321 B | SESIJA 2026-10-08
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\SEIFAS_PRIVATUS_NEPLATINTI\pakeitimai 111\00_SESIJA_2026-10-09_SUVESTINE_IR_SEIFAS.txt | 1686 B | SESIJA 2026-10-09
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\SEIFAS_PRIVATUS_NEPLATINTI\pakeitimai 111\00_SPECTROCOIN_PRISIJUNGIMAS.txt | 2776 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\SEIFAS_PRIVATUS_NEPLATINTI\pakeitimai 111\06_Vast_AI_Linux\00_VAST_AI_PRISIJUNGIMAS.txt | 6839 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\SEIFAS_PRIVATUS_NEPLATINTI\pakeitimai 111\06_Vast_AI_Linux\00_VAST_EXTRA_PRISIJUNGIMAS.txt | 2834 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\SEIFAS_PRIVATUS_NEPLATINTI\pakeitimai 111\06_Vast_AI_Linux\00_VAST2_PRISIJUNGIMAS.txt | 2023 B | ================================================================================
+pakeitimai 111\PERKELIMAS_KITAM_KOMPIUTERIUI_BE_SLAPTAZODZIU_20261012\SEIFAS_PRIVATUS_NEPLATINTI\pakeitimai 111\06_Vast_AI_Linux\00_VAST3_ZVERIS_PRISIJUNGIMAS.txt | 2201 B | # VAST3 ZVERIS KR ā€” 2026-09-27 11:54 PILNAS
+pakeitimai 111\projektas telefonai kompai git hub\copilot-language-server\copilot-language-server\dist\policy-templates\darwin\README.md | 4740 B | # GitHub Copilot macOS Policy Configuration
+pakeitimai 111\projektas telefonai kompai git hub\copilot-language-server\copilot-language-server\dist\policy-templates\win32\README.md | 5253 B | # GitHub Copilot Group Policy Templates for Windows
+pakeitimai 111\projektas telefonai kompai git hub\copilot-language-server\dist\policy-templates\darwin\README.md | 4740 B | # GitHub Copilot macOS Policy Configuration
+pakeitimai 111\projektas telefonai kompai git hub\copilot-language-server\dist\policy-templates\win32\README.md | 5253 B | # GitHub Copilot Group Policy Templates for Windows
+pakeitimai 111\projektas telefonai kompai git hub\README.md | 1864 B | # š“±š’» PROJEKTAS: VINTED IR FACEBOOK SKELBIMÅ² STEBÄ–TOJAS
+pakeitimai 111\taisykles aukciono\00_AUKCIONO_TAISYKLES.txt | 6343 B | PENKTADIENIO AUKCIONAS ā€” TAISYKLÄ–S
+pakeitimai 111\vilkas_3_balsas_lietuviskas\00_README.txt | 2220 B | ================================================================================
+pakeitimai 111\VILKAS_8_ETALONAS\00_SKAITYK.txt | 2324 B | ================================================================================
+pakeitimai 111\vilkas_video_paieska\00_PAIESKOS_ATASKAITA.txt | 1480 B | VILKO VIDEO PAIEÅ KA ā€” 2026-09-24
+pakeitimai 111\vilkas_video_paieska\00_PARSIUNTA_2026-10-07.txt | 9675 B | VILKO VIDEO PARSIÅ²STA ā€” 2026-10-07
+pakeitimai 111\vilkas_video_paieska\00_PARSIUNTA_2026-10-07_A43_PIXABAY_COVERR.txt | 5455 B | VILKO VIDEO ā€” A43 PIXABAY / COVERR / VIDEVO / WIKIMEDIA
+pakeitimai 111\vilkas_video_paieska\parsiusta\00_A42.txt | 4901 B | A42 ā€” Mixkit + Pexels cartoon/3D vilkas-vedÄ—jas
+pakeitimai 111\vilkas_video_paieska\parsiusta\00_A43.txt | 6360 B | A43 ā€” Pixabay + Coverr + Videvo free + Wikimedia: cartoon/3D vilkas-vedÄ—jas
+pakeitimai 111\vilko taisykles\00_VILKO_DU_KELIAI_CHARTIJA.txt | 5640 B | VILKO BENDRUOMENÄ– ā€” DVIEJÅ² KELIÅ² CHARTIJA
+pakeitimai 111\vilko_mokykla_SAUGYKLA\00_KAIP_SAUGOMOS_KOPIJOS.txt | 837 B | KAIP SAUGOMOS VILKO MOKYKLOS KOPIJOS
+pakeitimai 111\vilko_mokykla_SAUGYKLA\00_PASKUTINIS_PULL.json | 361 B | {
+pakeitimai 111\vilko_mokykla_SAUGYKLA\00_PASKUTINIS_SYNC_I_VILKA.json | 622 B | {
+pakeitimai 111\vilko_mokykla_SAUGYKLA\00_VIRSUNES_ISTORIJA.json | 1864 B | {
+pakeitimai 111\vilko_mokykla_SAUGYKLA\atsargines\00_VIRSUNES_ISTORIJA.json | 2931 B | {
+pakeitimai 111\vilko_mokykla_SAUGYKLA\busena.json | 130 B | {
+pakeitimai 111\zalias migtukas 9 grupes atiduotuves 100 proc padaryta\00_SKAITYK_ZALIAS_MYGTUKAS.txt | 1165 B | ================================================================================
+pakeitimai 111\zalias migtukas 9 grupes atiduotuves 100 proc padaryta\Paleisti_Zalia_Mygtuka.bat | 372 B | @echo off
+pakeitimai 111\zalias migtukas 9 grupes atiduotuves 100 proc padaryta\readme.txt | 461 B | Samsung Vinted price monitor
+pataisymai_arciausiai_originalo_2026-10-06\00_ATKURIMAS_KAIP.txt | 1976 B | ================================================================================
+pataisymai_arciausiai_originalo_2026-10-06\00_CHECKPOINT_2026-10-06_PATAISYMAI_ARCIAUSIAI.txt | 451 B | ================================================================================
+pataisymai_arciausiai_originalo_2026-10-06\00_DABARTINE_BUSENA.txt | 2929 B | ================================================================================
+pataisymai_arciausiai_originalo_2026-10-06\00_DU_ATSKIRI_IZANGA_IR_VILKAS.txt | 720 B | ================================================================================
+pataisymai_arciausiai_originalo_2026-10-06\00_DU_FOLDERIAI_IZANGA_IR_VILKAS_2026-10-06.txt | 700 B | ================================================================================
+pataisymai_arciausiai_originalo_2026-10-06\00_ISTORIJA_VISKA_NUO_PRADZIU.txt | 6027 B | ================================================================================
+pataisymai_arciausiai_originalo_2026-10-06\00_KONSOLIDACIJA_ATASKAITA_2026-10-06.txt | 547 B | KONSOLIDACIJA 2026-10-06 13:57:12
+pataisymai_arciausiai_originalo_2026-10-06\00_SIANDIEN_KA_PADARYTA.txt | 3028 B | ================================================================================
+pataisymai_arciausiai_originalo_2026-10-06\00_SKAITYK_PIRMIAUSIA.txt | 659 B | ================================================================================
+pataisymai_arciausiai_originalo_2026-10-06\03_ZURNALAI\00_A01_STABO_STATUSAS_2026-10-06.txt | 1504 B | ================================================================================
+pataisymai_arciausiai_originalo_2026-10-06\03_ZURNALAI\00_DIENA_ZYURNALAS_REALUS_LAIKAS_FULL_COPY.txt | 243630 B | ================================================================================
+pataisymai_arciausiai_originalo_2026-10-06\03_ZURNALAI\00_ELITO_STABAS_50_AGENTAI.md | 5746 B | # ELITO Å TABAS ā€” 50 agentÅ³
+pataisymai_arciausiai_originalo_2026-10-06\03_ZURNALAI\00_HUMANIDO_STABO_DARBO_MODELIS.txt | 2613 B | ================================================================================
+pataisymai_arciausiai_originalo_2026-10-06\03_ZURNALAI\00_LIVE_HEALTH_NOW.txt | 1538 B | === LIVE HEALTH Vilkas8 2026-10-06 06:03:43 ===
+pataisymai_arciausiai_originalo_2026-10-06\ARCHYVAS_IZANGA_2026-10-06\02_DOKUMENTAI\00_PAKEITIMAI_IZANGA.txt | 2667 B | ================================================================================
+pataisymai_arciausiai_originalo_2026-10-06\ARCHYVAS_IZANGA_FONAS\02_DOKUMENTAI\00_KAS_YRA_IZANGA.txt | 2711 B | ================================================================================
+pataisymai_arciausiai_originalo_2026-10-06\ARCHYVAS_IZANGA_FONAS\02_DOKUMENTAI\00_PAKEITIMAI_IZANGA.txt | 5258 B | ================================================================================
+pataisymai_arciausiai_originalo_2026-10-06\ARCHYVAS_IZANGA_FONAS\IZANGA_2026-10-06_v2\00_KAS_PADARYTA.txt | 1440 B | CHECKPOINT: penktadienioaukcionas.lt IZANGOS busena 2026-10-06 (v2)
+pataisymai_arciausiai_originalo_2026-10-06\ARCHYVAS_IZANGA_FONAS\IZANGA_2026-10-06_v2\00_SHA256.txt | 519 B | c86143bb7a8a449cf37ecfc4b175134bbe1d9dce14714df6171d7d89f1caf57f  00_KAS_PADARYTA.txt
+pataisymai_arciausiai_originalo_2026-10-06\ARCHYVAS_IZANGA_FONAS\IZANGA_2026-10-06_v2\00_VIDEO_SARASAS.txt | 257 B | VIDEO FAILAI (originali vieta):
+pataisymai_arciausiai_originalo_2026-10-06\ARCHYVAS_IZANGA_FONAS\IZANGA_2026-10-06_v3\00_KAS_PADARYTA.txt | 1252 B | CHECKPOINT: penktadienioaukcionas.lt IZANGOS busena 2026-10-06 (v3)
+pataisymai_arciausiai_originalo_2026-10-06\ARCHYVAS_IZANGA_FONAS\IZANGA_2026-10-06_v3\00_SHA256.txt | 74 B | c0a9150b49d871dd351fa44d8c6c81ebd400361ac8c80c7aa8ec552c88f6b6bd  app.py
+pataisymai_arciausiai_originalo_2026-10-06\ARCHYVAS_IZANGA_FONAS\IZANGA_2026-10-06_v4\00_KAS_PADARYTA.txt | 1963 B | CHECKPOINT: penktadienioaukcionas.lt IZANGOS busena 2026-10-06 (v4)
+pataisymai_arciausiai_originalo_2026-10-06\ARCHYVAS_IZANGA_FONAS\IZANGA_2026-10-06_v4\00_SHA256.txt | 74 B | c0d91aa83cd75530eb09c35bbc123650c50711c2d67346d16b922cd9f70dc767  app.py
+pataisymai_arciausiai_originalo_2026-10-06\ARCHYVAS_IZANGA_FONAS\IZANGA_2026-10-06_v4\00_VIDEO_SARASAS.txt | 872 B | VIDEO SARASAS v4 ā€” dance_club_*.mp4 is vps_pack\photos (2026-10-06)
+pataisymai_arciausiai_originalo_2026-10-06\IZANGA_2026-10-06\00_DU_FOLDERIAI_IZANGA_IR_VILKAS_2026-10-06.txt | 700 B | ================================================================================
+pataisymai_arciausiai_originalo_2026-10-06\IZANGA_2026-10-06\00_SKAITYK.txt | 1722 B | ================================================================================
+pataisymai_arciausiai_originalo_2026-10-06\IZANGA_2026-10-06\02_DOKUMENTAI\00_KAS_YRA_IZANGA.txt | 2775 B | ================================================================================
+pataisymai_arciausiai_originalo_2026-10-06\IZANGA_2026-10-06\02_DOKUMENTAI\00_PAKEITIMAI_IZANGA.txt | 2049 B | ================================================================================
+pataisymai_arciausiai_originalo_2026-10-06\IZANGA_2026-10-06\02_DOKUMENTAI\00_SUVESTINE_IZANGA_2026-10-06.txt | 3116 B | ================================================================================
+pataisymai_arciausiai_originalo_2026-10-06\IZANGA_2026-10-06\05_ZURNALAI\00_LIVE_HEALTH_NOW.txt | 1538 B | === LIVE HEALTH Vilkas8 2026-10-06 06:03:43 ===
+pataisymai_arciausiai_originalo_2026-10-06\IZANGA_2026-10-06_v5\00_KAS_PADARYTA.txt | 1904 B | CHECKPOINT: penktadienioaukcionas.lt IZANGOS busena 2026-10-06 (v5)
+pataisymai_arciausiai_originalo_2026-10-06\IZANGA_2026-10-06_v5\00_SHA256.txt | 74 B | 4ca2aa8d67eb4416cfcfcea6e06fccfc0e0c71a28d1d73e53ad38de3fcb9668a  app.py
+pataisymai_arciausiai_originalo_2026-10-06\IZANGA_FONAS\00_DU_FOLDERIAI_IZANGA_IR_VILKAS_2026-10-06.txt | 700 B | ================================================================================
+pataisymai_arciausiai_originalo_2026-10-06\IZANGA_FONAS\00_SKAITYK.txt | 1722 B | ================================================================================
+pataisymai_arciausiai_originalo_2026-10-06\IZANGA_FONAS\02_DOKUMENTAI\00_KAS_YRA_IZANGA.txt | 2775 B | ================================================================================
+pataisymai_arciausiai_originalo_2026-10-06\IZANGA_FONAS\02_DOKUMENTAI\00_PAKEITIMAI_IZANGA.txt | 2049 B | ================================================================================
+pataisymai_arciausiai_originalo_2026-10-06\IZANGA_FONAS\02_DOKUMENTAI\00_SUVESTINE_IZANGA_2026-10-06.txt | 3116 B | ================================================================================
+pataisymai_arciausiai_originalo_2026-10-06\IZANGA_FONAS\05_ZURNALAI\00_LIVE_HEALTH_NOW.txt | 1538 B | === LIVE HEALTH Vilkas8 2026-10-06 06:03:43 ===
+pataisymai_arciausiai_originalo_2026-10-06\IZANGA_FONAS\CHECKPOINT_2026-10-07\00_SKAITYK_PIRMIAUSIA.txt | 2462 B | ================================================================================
+pataisymai_arciausiai_originalo_2026-10-06\IZANGA_FONAS\CHECKPOINT_2026-10-07\deploy_docs\00_CLOUDFLARE_VISIEMS_PRIEINAMA.txt | 1706 B | ================================================================================
+pataisymai_arciausiai_originalo_2026-10-06\IZANGA_FONAS\CHECKPOINT_2026-10-07\Muzika_Desktop\Paleisti_Muzika.bat | 54 B | @echo off
+pataisymai_arciausiai_originalo_2026-10-06\IZANGA_FONAS\CHECKPOINT_2026-10-07_ATSTATYMAS\00_ATSTATYMAS_NUO_VAKAR_IKI_DABAR.txt | 1788 B | ================================================================================
+pataisymai_arciausiai_originalo_2026-10-06\VILKO_ATEJIMAS_I_SCENA\00_DU_FOLDERIAI_IZANGA_IR_VILKAS_2026-10-06.txt | 700 B | ================================================================================
+pataisymai_arciausiai_originalo_2026-10-06\VILKO_ATEJIMAS_I_SCENA\00_SKAITYK.txt | 833 B | ================================================================================
+pataisymai_arciausiai_originalo_2026-10-06\VILKO_ATEJIMAS_I_SCENA\02_DOKUMENTAI\00_KAS_YRA_VILKO_ATEJIMAS.txt | 1837 B | ================================================================================
+pataisymai_arciausiai_originalo_2026-10-06\VILKO_ATEJIMAS_I_SCENA\05_ZURNALAI\00_LIVE_HEALTH_NOW.txt | 1538 B | === LIVE HEALTH Vilkas8 2026-10-06 06:03:43 ===
+vid\_CLINE_LEAN_PACK\00_REGISTRACIJA_OUTLOOK.txt | 181 B | Cline registracija — Outlook:
+vid\_CLINE_LEAN_PACK\00_SKAITYK.txt | 167 B | CLINE I KITA KOMPA
+vid\_CLINE_LEAN_PACK\CLINE_NEMOKAMAS_PAGALBININKAS\00_SKAITYK.txt | 657 B | CLINE — KUR RASTI (Cursor 3.24)
+vid\00_3_DIENU_IEJIMAI_VAST_IR_APMOKEJIMAI.txt | 3971 B | ================================================================================
+vid\00_DIENA_2026-09-23_ELEKTRONIKA_IR_SMARTCHOICE.txt | 4679 B | ================================================================================
+vid\00_ELEKTRONIKA_B2B_REZULTATAS.txt | 934 B | REALUS REZULTATAS 2026-09-23
+vid\00_S_KLASE_PIGIAUSIAS_NUORODOS.txt | 1992 B | ================================================================================
+vid\00_S22_PIGIAUSIAS_ATIDARYK.html | 2853 B | <!DOCTYPE html>
+vid\00_SEKSUALI_INTONACIJA_MOKYMAS_2026-10-10.txt | 1261 B | VILKO SEKSUALI INTONACIJA ā€” MOKYMAS Ä®JUNGTAS
+vid\00_TIK_APMOKEK_VAST2.txt | 1402 B | ================================================================================
+vid\00_VAST2_GYVA_NUORODA.txt | 753 B | ================================================================================
+vid\00_VAST2_PICK_DABAR.txt | 1638 B | ================================================================================
+vid\1 agentas paslaugos lt  analitikas\00_12VAL_PALEIDIMU_LOGAS.txt | 77 B | [2026-10-02 04:44:00] 12:00 auto: sukurtas/patikrintas DIENOS\2026-10-02
+vid\1 agentas paslaugos lt  analitikas\00_AGENTAS1_SKAITYK_PIRMA.txt | 3286 B | ================================================================================
+vid\1 agentas paslaugos lt  analitikas\00_ISTORIJA_INDEKSAS.txt | 448 B | ================================================================================
+vid\1 agentas paslaugos lt  analitikas\00_KASDIEN_12VAL_PRIVALOMA.txt | 2358 B | ================================================================================
+vid\1 agentas paslaugos lt  analitikas\00_KASDIEN_AUTOMATIKA.txt | 2420 B | ================================================================================
+vid\1 agentas paslaugos lt  analitikas\00_METODIKA_KAIP_SKAICIUOTI.txt | 3770 B | ================================================================================
+vid\1 agentas paslaugos lt  analitikas\00_SABLONAS_DIENOS_ATASKAITA.txt | 1465 B | ================================================================================
+vid\1 agentas paslaugos lt  analitikas\DIENOS\2026-10-02\00_PALEIDIMO_ZYME.txt | 1133 B | ================================================================================
+vid\1 agentas paslaugos lt  analitikas\SKAITYK_MANE_MINDAUGUI.txt | 1007 B | ================================================================================
+vid\ADMINISTRACIJA_REGISTRACIJOS\00_ISSAUGOTA_SIANDIEN.txt | 545 B | ISSAUGOTA VISKAS 2026-10-07 08:26
+vid\ADMINISTRACIJA_REGISTRACIJOS\00_SKAITYK.txt | 1130 B | ================================================================================
+vid\ADMINISTRACIJA_REGISTRACIJOS\00_SLAPTAZODIS.txt | 229 B | Admin slaptaÅ¾odis (ÄÆvesti /admin lange):
+vid\AI_AUTOMATION_FACTORY\PALEISTI_AUKCIONA_VIESAI.bat | 818 B | @echo off
+vid\AI_AUTOMATION_FACTORY\PALEISTI_FABRIKA.bat | 1087 B | @echo off
+vid\AI_AUTOMATION_FACTORY\SKAITYK_AUKCIONAS_24_7.bat | 811 B | @echo off
+vid\atstatyk izanga\00_ARCHIVE_NE_DELETE.txt | 182 B | Agents meniu NĖRA Delete.
+vid\atstatyk izanga\00_AUKSO_VERSIJA_NE_KEISTI.txt | 164 B | AUKSO + sokejos RANDOM (2026-10-07 06:44)
+vid\atstatyk izanga\00_F8_GLOBALI_KLAVIATURA.txt | 196 B | F8 = globali klaviatura (ne .lnk Hotkey).
+vid\atstatyk izanga\00_F8_KLAVIATURA.txt | 532 B | ================================================================================
+vid\atstatyk izanga\00_F8_PAKETO_MD5.txt | 182 B | app.py md5=edf269de0d59a9cff346a57bce19cefe bytes=445952
+vid\atstatyk izanga\00_NE_TRINTI_F8_ATSARGINĖ.txt | 164 B | AUKSO + sokejos RANDOM (2026-10-07 06:44)
+vid\atstatyk izanga\00_PASKUTINIS_ISSAUGOTAS.txt | 132 B | ISSAUGOTA 2026-10-07 09:22\nCHECKPOINT_SIANDIEN_2026-10-07_ISSAUGOTA_IZANGA_NE_UZSTRIGTI\n
+vid\atstatyk izanga\00_SKAITYK.txt | 47 B | F8 = aukso + random sokejos\n2026-10-07 06:44\n
+vid\atstatyk izanga\CHECKPOINT_SIANDIEN_2026-10-07_ISSAUGOTA_IZANGA_NE_UZSTRIGTI\00_CHECKPOINT.txt | 535 B | ISSAUGOTA 2026-10-07 09:22
+vid\atstatyk izanga\CHECKPOINT_SIANDIEN_2026-10-07_ISSAUGOTA_IZANGA_NE_UZSTRIGTI\00_NE_UZSTRIGTI_IZANGA.txt | 535 B | ISSAUGOTA 2026-10-07 09:22
+vid\atstatyk izanga\CHECKPOINT_SIANDIEN_2026-10-07_ISSAUGOTA_MAIL_TEL_KONTAKTAI\00_CHECKPOINT.txt | 174 B | ISSAUGOTA 2026-10-07 07:22\nmailto + tel click (telefonas/plansete/PC)\nkontaktai sokeju l
+vid\atstatyk izanga\CHECKPOINT_SIANDIEN_2026-10-07_ISSAUGOTA_VISKAS_ADMIN_REG_TEL\00_CHECKPOINT.txt | 545 B | ISSAUGOTA VISKAS 2026-10-07 08:26
+vid\atstatyk izanga\CHECKPOINT_SIANDIEN_2026-10-07_ISSAUGOTA_VISKAS_TTS_CLEAR_PREKES\00_CHECKPOINT.txt | 494 B | ISSAUGOTA VISKAS 2026-10-07 09:11
+vid\atstatyk izanga\deploy_docs\00_CLOUDFLARE_VISIEMS_PRIEINAMA.txt | 1706 B | ================================================================================
+vid\atstatyk izanga\docs\00_ATSTATYMAS_NUO_VAKAR_IKI_DABAR.txt | 1788 B | ================================================================================
+vid\atstatyk izanga\docs\00_AUKSO_VERSIJA_2026-10-07.txt | 1014 B | ================================================================================
+vid\atstatyk izanga\docs\00_CHECKLIST_OK.txt | 405 B | CHECKLIST (atstatymo taskas):
+vid\atstatyk izanga\docs\00_SOKEJA_VOS_VOS.txt | 192 B | ATNAUJINTA 2026-10-07 — sokejos remelis VOS VOS (ne stiprus siubavimas).
+vid\atstatyk izanga\docs\00_SUREGULIUOTA_LAYOUT_2026-10-07.txt | 1228 B | ================================================================================
+vid\atstatyk izanga\docs\00_SVEICARISKAS_LAIKRODIS.txt | 320 B | Å veicariÅkas laikrodis (2026-10-07)
+vid\atstatyk izanga\docs\00_TELEFONAS_KAIP_DESKTOP.txt | 79 B | Telefone = IDENTISKAI kaip desktop (viewport width=1280 + min-width 1280).
+vid\atstatyk izanga\docs\00_VISIEMS_VIENODAI_2026-10-07.txt | 1310 B | ================================================================================
+vid\atstatyk izanga\Muzika_Desktop\Paleisti_Muzika.bat | 54 B | @echo off
+vid\aukciono prekes\00_SKAITYK.txt | 1224 B | ================================================================================
+vid\aukciono prekes\nuotraukos\00_CIA_DEK_NUOTRAUKAS.txt | 89 B | Ä®dÄ—k Ä¨ia .jpg / .png failus.
+vid\automatinis crypto arbitrazas paieska\00_SKAITYK_PIRMA.txt | 1207 B | ================================================================================
+vid\CLINE_I_KITA_KOMPA\00_REGISTRACIJA_OUTLOOK.txt | 181 B | Cline registracija — Outlook:
+vid\CLINE_I_KITA_KOMPA\00_SKAITYK.txt | 167 B | CLINE I KITA KOMPA
+vid\CLINE_I_KITA_KOMPA\CLINE_NEMOKAMAS_PAGALBININKAS\00_SKAITYK.txt | 657 B | CLINE — KUR RASTI (Cursor 3.24)
+vid\CLINE_NEMOKAMAS_PAGALBININKAS\00_SKAITYK.txt | 657 B | CLINE — KUR RASTI (Cursor 3.24)
+vid\CLINE_NEMOKAMAS_PAGALBININKAS\start_ollama.cmd | 667 B | @echo off
+vid\CLINE_NUKOPIJUOK_I_KITA\00_REGISTRACIJA_OUTLOOK.txt | 181 B | Cline registracija — Outlook:
+vid\CLINE_NUKOPIJUOK_I_KITA\00_SKAITYK.txt | 532 B | DU KOMPAI ant Ooo — telefonas dažnai BLOKUOJA PC↔PC.
+vid\CLINE_NUKOPIJUOK_I_KITA\CLINE_NEMOKAMAS_PAGALBININKAS\00_SKAITYK.txt | 657 B | CLINE — KUR RASTI (Cursor 3.24)
+vid\Cursor_Support_TMZ8YEEY-0003\00_EMAIL_BODY_EN.txt | 2511 B | Hello Cursor Support Team,
+vid\darbai\00_STEBIMA_LIVE.txt | 275 B | STEBIAMA LIVE nuo Åios minutÄ—s
+vid\exsel\00_5_SALYS_SKAITMENINIS_VERSLAS.txt | 6552 B | ================================================================================
+vid\exsel\00_ELEKTRONIKA_B2B_PALETES.txt | 6978 B | ================================================================================
+vid\exsel\00_ELEKTRONIKA_B2B_TIEKEJAI_PLUS.txt | 6656 B | ================================================================================
+vid\fable kodas vilko auksionui\00_SKAITYK_PIRMA.md | 3149 B | # FABLE KODAS VILKO AUKCIONUI ā€” viskas nuo pradinÄ—s uÅ¾duoties iki finiÅo
+vid\fable kodas vilko auksionui\00_TAISYKLE_SEKSUALUS_BALSAS_TIK_MOTERIMS.txt | 1111 B | TAISYKLÄ– ā€” SEKSUALUS BALSAS TIK MOTERÅ² VARDAMS
+vid\fable kodas vilko auksionui\00_TAISYKLE_VIRSUNE_NIEKADA_ZEMYN.txt | 768 B | TAISYKLÄ– ā€” VIRÅ ÅŖNÄ– NIEKADA Å½EMYN (Vilko mokykla)
+vid\fable kodas vilko auksionui\00_UZDUOTIS_AGENTUI_AUTO.md | 5481 B | # UÅ½DUOTIS AUTO AGENTUI (priskirtam Fable / A01) ā€” vykdyti Å¾ingsnis po Å¾ingsnio
+vid\fable kodas vilko auksionui\00_UZDUOTIS_AGENTUI_AUTO_2_VAST.md | 4642 B | # UÅ½DUOTIS AUTO AGENTUI Nr. 2 ā€” VAST.AI DARBINÄ– BAZÄ– (Fable A01 ā†’ auto agentas, mod
+vid\fable kodas vilko auksionui\00_UZDUOTIS_AGENTUI_AUTO_3_F8.md | 3097 B | # UÅ½DUOTIS AUTO AGENTUI Nr. 3 ā€” F8 100% (Vilkas + ÄÆÅ¾anga) ā€” Fable A01 ā†’ auto, mod
+vid\fable kodas vilko auksionui\00_VILKO_IGUDZIAI_PROCENTAI.txt | 1424 B | VILKO IGUDZIAI ā€” PROCENTAI IKI 100
+vid\fable kodas vilko auksionui\00_VILKO_MOKYKLA_ATASKAITA_PER_NAKTI_2026-10-10.txt | 5087 B | VILKO MOKYKLA ā€” ATASKAITA PO NAKTYS (PC ÄÆjungtas)
+vid\fable kodas vilko auksionui\00_VILKO_MOKYKLA_LYGIS_2026-10-09.txt | 3816 B | VILKO MOKYKLA ā€” KÄ„ MATAI / KOKS LYGIS (2026-10-09 ~00:52 PT)
+vid\fable kodas vilko auksionui\00_VIRSUNES_VISOS_SRITYS_2026-10-10.txt | 2120 B | VILKO MOKYKLA ā€” VISOS SRITYS NUO VIRÅ ÅŖNÄ–S IKI 100%
+vid\fable kodas vilko auksionui\04_F8_atstatyk\00_F8_100PCT.md | 1157 B | # F8 100% — Vilkas + įžanga (2026-10-09)
+vid\fable kodas vilko auksionui\04_F8_atstatyk\00_F8_PAKETO_MD5.txt | 182 B | app.py md5=32f6b9fd06c2b54861256af61525fd5c bytes=394781
+vid\fable kodas vilko auksionui\05_vast_ai_saugumo_baze\00_AGENTAS_VAST_SUSTOJO_2026-10-09.txt | 575 B | # Auto agentas [Vast.ai darbinÄ— bazÄ—] sustojo 2026-10-09 ~00:27
+vid\fable kodas vilko auksionui\05_vast_ai_saugumo_baze\00_VAST_DARBINE_BAZE.md | 2959 B | # VAST.AI = DARBINÄ– BAZÄ–, PC = ORIGINALÅ² SAUGYKLA (Mindaugo taisyklÄ— 2026-10-09)
+vid\fable kodas vilko auksionui\vilko_mokykla_SAUGYKLA\00_PASKUTINIS_PULL.json | 360 B | {
+vid\fable kodas vilko auksionui\vilko_mokykla_SAUGYKLA\00_VIRSUNES_ISTORIJA.json | 2931 B | {
+vid\fable kodas vilko auksionui\vilko_mokykla_SAUGYKLA\busena.json | 130 B | {
+vid\FREE_AI_AGENTAI_ANALIZE_2026-10-09\00_ANALIZE_NEMOKAMI_AI.txt | 6817 B | FREE AI AGENTAI ā€” ANALIZÄ– (2026-10-09)
+vid\FREE_AI_AGENTAI_ANALIZE_2026-10-09\00_OPENROUTER_SEIFAS.txt | 879 B | ================================================================================
+vid\FREE_AI_AGENTAI_ANALIZE_2026-10-09\repos\agentfetch\README.md | 23809 B | # agentfetch
+vid\FREE_AI_AGENTAI_ANALIZE_2026-10-09\repos\forge-agent\README.md | 7925 B | # š”Ø Forge Agent
+vid\FREE_AI_AGENTAI_ANALIZE_2026-10-09\repos\ii-researcher\examples\ii_search_4b\README.md | 10207 B | # II-Search-CIR 4B Demo: Code Integrated Reasoning for Research
+vid\FREE_AI_AGENTAI_ANALIZE_2026-10-09\repos\ii-researcher\README.md | 13901 B | <div align="center">
+vid\FREE_AI_AGENTAI_ANALIZE_2026-10-09\repos\nanobrowser\README.md | 12814 B | <h1 align="center">
+vid\FREE_AI_AGENTAI_ANALIZE_2026-10-09\repos\nanobrowser\README-es.md | 12544 B | <h1 align="center">
+vid\FREE_AI_AGENTAI_ANALIZE_2026-10-09\repos\nanobrowser\README-tr.md | 12312 B | <h1 align="center">
+vid\FREE_AI_AGENTAI_ANALIZE_2026-10-09\repos\nanobrowser\README-zh-Hant.md | 12451 B | <h1 align="center">
+vid\FREE_AI_AGENTAI_ANALIZE_2026-10-09\repos\nanobrowser\src\i18n\README.md | 4510 B | # I18n Package
+vid\IZANGA_FONAS\00_ATSTATYMAS_NUO_VAKAR_IKI_DABAR.txt | 1788 B | ================================================================================
+vid\IZANGA_FONAS\00_F8_ATSTATYK_IZANGA.txt | 532 B | ================================================================================
+vid\IZANGA_FONAS\00_F8_KLAVIATURA.txt | 144 B | F8 globaliai = Atstatyk izanga (daemon F8/F9/F10).
+vid\IZANGA_FONAS\00_MYGTUKAS_ATSTATYK_IZANGA.txt | 263 B | MYGTUKAS: Desktop\Atstatyk izanga.lnk  (+ Atstatyk izanga.bat)
+vid\IZANGA_FONAS\00_NE_TRINTI_F8_ATSTATYK_IZANGA.txt | 1014 B | ================================================================================
+vid\IZANGA_FONAS\00_PASKUTINIS_ISSAUGOTAS.txt | 115 B | ISSAUGOTA: CHECKPOINT_SIANDIEN_*_ISSAUGOTA_SOKEJAI_BALSAS_F8F9F10
+vid\IZANGA_FONAS\00_SKAITYK_PIRMIAUSIA.txt | 251 B | IZANGA FONAS ā€” pagrindas
+vid\IZANGA_FONAS\00_TAISYKLE_NIEKO_NETRINTI.txt | 146 B | NIEKO NETRINTI šiame folderyje.
+vid\IZANGA_FONAS\ATSTATYK_IZANGA_MYGTUKAS\00_KUR_PILNAS_PAKETAS.txt | 134 B | Pilnas mygtuko paketas Desktop: C:\Users\M\Desktop\atstatyk izanga\
+vid\IZANGA_FONAS\ATSTATYK_IZANGA_MYGTUKAS\00_SKAITYK.txt | 880 B | ================================================================================
+vid\IZANGA_FONAS\CHECKPOINT_NE_TRINTI_SUREGULIUOTA_SUPER_GERAI\00_ARCHIVE_NE_DELETE.txt | 182 B | Agents meniu NĖRA Delete.
+vid\IZANGA_FONAS\CHECKPOINT_NE_TRINTI_SUREGULIUOTA_SUPER_GERAI\00_AUKSO_VERSIJA_NE_KEISTI.txt | 1014 B | ================================================================================
+vid\IZANGA_FONAS\CHECKPOINT_NE_TRINTI_SUREGULIUOTA_SUPER_GERAI\00_F8_KLAVIATURA.txt | 532 B | ================================================================================
+vid\IZANGA_FONAS\CHECKPOINT_NE_TRINTI_SUREGULIUOTA_SUPER_GERAI\00_NE_TRINTI_F8_ATSARGINĖ.txt | 619 B | ================================================================================
+vid\IZANGA_FONAS\CHECKPOINT_NE_TRINTI_SUREGULIUOTA_SUPER_GERAI\00_SKAITYK.txt | 756 B | Pilnas įžangos atstatymo paketas — Desktop\atstatyk izanga
+vid\IZANGA_FONAS\CHECKPOINT_NE_TRINTI_SUREGULIUOTA_SUPER_GERAI\deploy_docs\00_CLOUDFLARE_VISIEMS_PRIEINAMA.txt | 1706 B | ================================================================================
+vid\IZANGA_FONAS\CHECKPOINT_NE_TRINTI_SUREGULIUOTA_SUPER_GERAI\docs\00_ATSTATYMAS_NUO_VAKAR_IKI_DABAR.txt | 1788 B | ================================================================================
+vid\IZANGA_FONAS\CHECKPOINT_NE_TRINTI_SUREGULIUOTA_SUPER_GERAI\docs\00_CHECKLIST_OK.txt | 405 B | CHECKLIST (atstatymo taskas):
+vid\IZANGA_FONAS\CHECKPOINT_NE_TRINTI_SUREGULIUOTA_SUPER_GERAI\docs\00_SOKEJA_VOS_VOS.txt | 192 B | ATNAUJINTA 2026-10-07 — sokejos remelis VOS VOS (ne stiprus siubavimas).
+vid\IZANGA_FONAS\CHECKPOINT_NE_TRINTI_SUREGULIUOTA_SUPER_GERAI\docs\00_SUREGULIUOTA_LAYOUT_2026-10-07.txt | 1228 B | ================================================================================
+vid\IZANGA_FONAS\CHECKPOINT_NE_TRINTI_SUREGULIUOTA_SUPER_GERAI\docs\00_SVEICARISKAS_LAIKRODIS.txt | 320 B | Å veicariÅkas laikrodis (2026-10-07)
+vid\IZANGA_FONAS\CHECKPOINT_NE_TRINTI_SUREGULIUOTA_SUPER_GERAI\docs\00_TELEFONAS_KAIP_DESKTOP.txt | 79 B | Telefone = IDENTISKAI kaip desktop (viewport width=1280 + min-width 1280).
+vid\IZANGA_FONAS\CHECKPOINT_NE_TRINTI_SUREGULIUOTA_SUPER_GERAI\docs\00_VISIEMS_VIENODAI_2026-10-07.txt | 1310 B | ================================================================================
+vid\IZANGA_FONAS\CHECKPOINT_NE_TRINTI_SUREGULIUOTA_SUPER_GERAI\Muzika_Desktop\Paleisti_Muzika.bat | 54 B | @echo off
+vid\IZANGA_FONAS\CHECKPOINT_SIANDIEN_2026-10-07\00_PATAISYMAI_F8_F9_F10_KLAVIATURA.txt | 1755 B | ================================================================================
+vid\IZANGA_FONAS\CHECKPOINT_SIANDIEN_2026-10-07\deploy_docs\00_CLOUDFLARE_VISIEMS_PRIEINAMA.txt | 1706 B | ================================================================================
+vid\IZANGA_FONAS\CHECKPOINT_SIANDIEN_2026-10-07\Muzika_Desktop\Paleisti_Muzika.bat | 54 B | @echo off
+vid\IZANGA_FONAS\CHECKPOINT_SIANDIEN_2026-10-07_ATSTATYMAS_PILNAS\00_ATSTATYMAS_NUO_VAKAR_IKI_DABAR.txt | 1788 B | ================================================================================
+vid\IZANGA_FONAS\CHECKPOINT_SIANDIEN_2026-10-07_ATSTATYMAS_PILNAS\00_CHECKLIST_OK.txt | 405 B | CHECKLIST (atstatymo taskas):
+vid\IZANGA_FONAS\CHECKPOINT_SIANDIEN_2026-10-07_ATSTATYMAS_PILNAS\Muzika_Desktop\Paleisti_Muzika.bat | 54 B | @echo off
+vid\IZANGA_FONAS\CHECKPOINT_SIANDIEN_2026-10-07_be_blokavimo\README_FIX.txt | 177 B | 2026-10-07 BE BLOKAVIMO
+vid\IZANGA_FONAS\CHECKPOINT_SIANDIEN_2026-10-07_final_be_blokavimo\Muzika_Desktop\Paleisti_Muzika.bat | 54 B | @echo off
+vid\IZANGA_FONAS\CHECKPOINT_SIANDIEN_2026-10-07_final_be_blokavimo\README.txt | 172 B | CHECKPOINT 2026-10-07 final_be_blokavimo
+vid\IZANGA_FONAS\CHECKPOINT_SIANDIEN_2026-10-07_garsas_fix\README_FIX.txt | 228 B | 2026-10-07 GARSO FIX
+vid\IZANGA_FONAS\CHECKPOINT_SIANDIEN_2026-10-07_ISSAUGOTA_IZANGA_NE_UZSTRIGTI\00_CHECKPOINT.txt | 535 B | ISSAUGOTA 2026-10-07 09:22
+vid\IZANGA_FONAS\CHECKPOINT_SIANDIEN_2026-10-07_ISSAUGOTA_IZANGA_NE_UZSTRIGTI\00_NE_UZSTRIGTI_IZANGA.txt | 535 B | ISSAUGOTA 2026-10-07 09:22
+vid\IZANGA_FONAS\CHECKPOINT_SIANDIEN_2026-10-07_ISSAUGOTA_MAIL_TEL_KONTAKTAI\00_CHECKPOINT.txt | 174 B | ISSAUGOTA 2026-10-07 07:22\nmailto + tel click (telefonas/plansete/PC)\nkontaktai sokeju l
+vid\IZANGA_FONAS\CHECKPOINT_SIANDIEN_2026-10-07_ISSAUGOTA_SOKEJAI_BALSAS_F8F9F10\00_PATAISYMAI_F8_F9_F10_KLAVIATURA.txt | 1338 B | ================================================================================
+vid\IZANGA_FONAS\CHECKPOINT_SIANDIEN_2026-10-07_ISSAUGOTA_SOKEJAI_BALSAS_F8F9F10\00_PATAISYMAI_SOKEJAI_BALSAS_2026-10-07.txt | 818 B | ================================================================================
+vid\IZANGA_FONAS\CHECKPOINT_SIANDIEN_2026-10-07_ISSAUGOTA_SOKEJAI_BALSAS_F8F9F10\00_SKAITYK.txt | 194 B | ISSAUGOTA 2026-10-07
+vid\IZANGA_FONAS\CHECKPOINT_SIANDIEN_2026-10-07_ISSAUGOTA_VISKAS_ADMIN_REG_TEL\00_CHECKPOINT.txt | 545 B | ISSAUGOTA VISKAS 2026-10-07 08:26
+vid\IZANGA_FONAS\CHECKPOINT_SIANDIEN_2026-10-07_ISSAUGOTA_VISKAS_TTS_CLEAR_PREKES\00_CHECKPOINT.txt | 494 B | ISSAUGOTA VISKAS 2026-10-07 09:11
+vid\IZANGA_FONAS\CHECKPOINT_SIANDIEN_2026-10-07_MAIL_TEL_CLICK\00_CHECKPOINT.txt | 41 B | mailto+tel click compose/dial\n311867 B\n
+vid\IZANGA_FONAS\CHECKPOINT_SIANDIEN_2026-10-07_SUREGULIUOTA_LAYOUT\00_CHECKPOINT.txt | 56 B | SUREGULIUOTA LAYOUT
+vid\IZANGA_FONAS\CHECKPOINT_SIANDIEN_2026-10-07_SUREGULIUOTA_LAYOUT\docs\00_SUREGULIUOTA_LAYOUT_2026-10-07.txt | 1228 B | ================================================================================
+vid\IZANGA_FONAS\CHECKPOINT_SIANDIEN_2026-10-07_VISIEMS_VIENODAI\00_CHECKPOINT.txt | 64 B | CHECKPOINT VISIEMS VIENODAI
+vid\IZANGA_FONAS\CHECKPOINT_SIANDIEN_2026-10-07_VISIEMS_VIENODAI\deploy_docs\00_CLOUDFLARE_VISIEMS_PRIEINAMA.txt | 1706 B | ================================================================================
+vid\IZANGA_FONAS\CHECKPOINT_SIANDIEN_2026-10-07_VISIEMS_VIENODAI\docs\00_ATSTATYMAS_NUO_VAKAR_IKI_DABAR.txt | 1788 B | ================================================================================
+vid\IZANGA_FONAS\CHECKPOINT_SIANDIEN_2026-10-07_VISIEMS_VIENODAI\docs\00_AUKSO_VERSIJA_2026-10-07.txt | 1014 B | ================================================================================
+vid\IZANGA_FONAS\CHECKPOINT_SIANDIEN_2026-10-07_VISIEMS_VIENODAI\docs\00_CHECKLIST_OK.txt | 405 B | CHECKLIST (atstatymo taskas):
+vid\IZANGA_FONAS\CHECKPOINT_SIANDIEN_2026-10-07_VISIEMS_VIENODAI\docs\00_SOKEJA_VOS_VOS.txt | 192 B | ATNAUJINTA 2026-10-07 — sokejos remelis VOS VOS (ne stiprus siubavimas).
+vid\IZANGA_FONAS\CHECKPOINT_SIANDIEN_2026-10-07_VISIEMS_VIENODAI\docs\00_SUREGULIUOTA_LAYOUT_2026-10-07.txt | 1228 B | ================================================================================
+vid\IZANGA_FONAS\CHECKPOINT_SIANDIEN_2026-10-07_VISIEMS_VIENODAI\docs\00_SVEICARISKAS_LAIKRODIS.txt | 320 B | Å veicariÅkas laikrodis (2026-10-07)
+vid\IZANGA_FONAS\CHECKPOINT_SIANDIEN_2026-10-07_VISIEMS_VIENODAI\docs\00_TELEFONAS_KAIP_DESKTOP.txt | 79 B | Telefone = IDENTISKAI kaip desktop (viewport width=1280 + min-width 1280).
+vid\IZANGA_FONAS\CHECKPOINT_SIANDIEN_2026-10-07_VISIEMS_VIENODAI\docs\00_VISIEMS_VIENODAI_2026-10-07.txt | 1310 B | ================================================================================
+vid\IZANGA_FONAS\CHECKPOINT_SIANDIEN_2026-10-07_VISIEMS_VIENODAI\Muzika_Desktop\Paleisti_Muzika.bat | 54 B | @echo off
+vid\IZANGA_FONAS\CHECKPOINT_SIANDIEN_2026-10-10_IZANGA_VILKAS_F9_F10_F11\00_CHECKPOINT.txt | 1354 B | CHECKPOINT: 2026-10-10
+vid\IZANGA_FONAS\deploy_docs\00_CLOUDFLARE_VISIEMS_PRIEINAMA.txt | 1706 B | ================================================================================
+vid\IZANGA_FONAS\ISENIAU_2026-10-06\00_DU_FOLDERIAI_IZANGA_IR_VILKAS_2026-10-06.txt | 700 B | ================================================================================
+vid\IZANGA_FONAS\ISENIAU_2026-10-06\00_SKAITYK.txt | 1722 B | ================================================================================
+vid\IZANGA_FONAS\ISENIAU_2026-10-06\02_DOKUMENTAI\00_KAS_YRA_IZANGA.txt | 2775 B | ================================================================================
+vid\IZANGA_FONAS\ISENIAU_2026-10-06\02_DOKUMENTAI\00_PAKEITIMAI_IZANGA.txt | 2049 B | ================================================================================
+vid\IZANGA_FONAS\ISENIAU_2026-10-06\02_DOKUMENTAI\00_SUVESTINE_IZANGA_2026-10-06.txt | 3116 B | ================================================================================
+vid\IZANGA_FONAS\ISENIAU_2026-10-06\05_ZURNALAI\00_LIVE_HEALTH_NOW.txt | 1538 B | === LIVE HEALTH Vilkas8 2026-10-06 06:03:43 ===
+vid\IZANGA_FONAS\ISENIAU_ARCHYVAS_v2_v3_v4\02_DOKUMENTAI\00_KAS_YRA_IZANGA.txt | 2711 B | ================================================================================
+vid\IZANGA_FONAS\ISENIAU_ARCHYVAS_v2_v3_v4\02_DOKUMENTAI\00_PAKEITIMAI_IZANGA.txt | 5258 B | ================================================================================
+vid\IZANGA_FONAS\ISENIAU_ARCHYVAS_v2_v3_v4\IZANGA_2026-10-06_v2\00_KAS_PADARYTA.txt | 1440 B | CHECKPOINT: penktadienioaukcionas.lt IZANGOS busena 2026-10-06 (v2)
+vid\IZANGA_FONAS\ISENIAU_ARCHYVAS_v2_v3_v4\IZANGA_2026-10-06_v2\00_SHA256.txt | 519 B | c86143bb7a8a449cf37ecfc4b175134bbe1d9dce14714df6171d7d89f1caf57f  00_KAS_PADARYTA.txt
+vid\IZANGA_FONAS\ISENIAU_ARCHYVAS_v2_v3_v4\IZANGA_2026-10-06_v2\00_VIDEO_SARASAS.txt | 257 B | VIDEO FAILAI (originali vieta):
+vid\IZANGA_FONAS\ISENIAU_ARCHYVAS_v2_v3_v4\IZANGA_2026-10-06_v3\00_KAS_PADARYTA.txt | 1252 B | CHECKPOINT: penktadienioaukcionas.lt IZANGOS busena 2026-10-06 (v3)
+vid\IZANGA_FONAS\ISENIAU_ARCHYVAS_v2_v3_v4\IZANGA_2026-10-06_v3\00_SHA256.txt | 74 B | c0a9150b49d871dd351fa44d8c6c81ebd400361ac8c80c7aa8ec552c88f6b6bd  app.py
+vid\IZANGA_FONAS\ISENIAU_ARCHYVAS_v2_v3_v4\IZANGA_2026-10-06_v4\00_KAS_PADARYTA.txt | 1963 B | CHECKPOINT: penktadienioaukcionas.lt IZANGOS busena 2026-10-06 (v4)
+vid\IZANGA_FONAS\ISENIAU_ARCHYVAS_v2_v3_v4\IZANGA_2026-10-06_v4\00_SHA256.txt | 74 B | c0d91aa83cd75530eb09c35bbc123650c50711c2d67346d16b922cd9f70dc767  app.py
+vid\IZANGA_FONAS\ISENIAU_ARCHYVAS_v2_v3_v4\IZANGA_2026-10-06_v4\00_VIDEO_SARASAS.txt | 872 B | VIDEO SARASAS v4 ā€” dance_club_*.mp4 is vps_pack\photos (2026-10-06)
+vid\IZANGA_FONAS\ISENIAU_DOKUMENTAI\00_ATKURIMAS_KAIP.txt | 1976 B | ================================================================================
+vid\IZANGA_FONAS\ISENIAU_DOKUMENTAI\00_CHECKPOINT_2026-10-06_PATAISYMAI_ARCIAUSIAI.txt | 451 B | ================================================================================
+vid\IZANGA_FONAS\ISENIAU_DOKUMENTAI\00_DABARTINE_BUSENA.txt | 2929 B | ================================================================================
+vid\IZANGA_FONAS\ISENIAU_DOKUMENTAI\00_DU_ATSKIRI_IZANGA_IR_VILKAS.txt | 720 B | ================================================================================
+vid\IZANGA_FONAS\ISENIAU_DOKUMENTAI\00_DU_FOLDERIAI_IZANGA_IR_VILKAS_2026-10-06.txt | 700 B | ================================================================================
+vid\IZANGA_FONAS\ISENIAU_DOKUMENTAI\00_ISTORIJA_VISKA_NUO_PRADZIU.txt | 6027 B | ================================================================================
+vid\IZANGA_FONAS\ISENIAU_DOKUMENTAI\00_KONSOLIDACIJA_ATASKAITA_2026-10-06.txt | 547 B | KONSOLIDACIJA 2026-10-06 13:57:12
+vid\IZANGA_FONAS\ISENIAU_DOKUMENTAI\00_SIANDIEN_KA_PADARYTA.txt | 3028 B | ================================================================================
+vid\IZANGA_FONAS\ISENIAU_DOKUMENTAI\00_SKAITYK_PIRMIAUSIA.txt | 659 B | ================================================================================
+vid\IZANGA_FONAS\ISENIAU_IZANGA_2026-10-06\00_DU_FOLDERIAI_IZANGA_IR_VILKAS_2026-10-06.txt | 700 B | ================================================================================
+vid\IZANGA_FONAS\ISENIAU_IZANGA_2026-10-06\00_SKAITYK.txt | 1722 B | ================================================================================
+vid\IZANGA_FONAS\ISENIAU_IZANGA_2026-10-06\02_DOKUMENTAI\00_KAS_YRA_IZANGA.txt | 2775 B | ================================================================================
+vid\IZANGA_FONAS\ISENIAU_IZANGA_2026-10-06\02_DOKUMENTAI\00_PAKEITIMAI_IZANGA.txt | 2049 B | ================================================================================
+vid\IZANGA_FONAS\ISENIAU_IZANGA_2026-10-06\02_DOKUMENTAI\00_SUVESTINE_IZANGA_2026-10-06.txt | 3116 B | ================================================================================
+vid\IZANGA_FONAS\ISENIAU_IZANGA_2026-10-06\05_ZURNALAI\00_LIVE_HEALTH_NOW.txt | 1538 B | === LIVE HEALTH Vilkas8 2026-10-06 06:03:43 ===
+vid\IZANGA_FONAS\ISENIAU_IZANGA_2026-10-06_v5\00_KAS_PADARYTA.txt | 1904 B | CHECKPOINT: penktadienioaukcionas.lt IZANGOS busena 2026-10-06 (v5)
+vid\IZANGA_FONAS\ISENIAU_IZANGA_2026-10-06_v5\00_SHA256.txt | 74 B | 4ca2aa8d67eb4416cfcfcea6e06fccfc0e0c71a28d1d73e53ad38de3fcb9668a  app.py
+vid\IZANGA_FONAS\Muzika_Desktop\Dainos\00_DAINU_SARASAS.txt | 1491 B | GRUPÄ–: BLOODHOUND GANG | DAINA: ALONG COMES MARY
+vid\IZANGA_FONAS\Muzika_Desktop\Paleisti_Muzika.bat | 54 B | @echo off
+vid\laikas\00_5_SALYS_SKAITMENINIS_VERSLAS.txt | 6552 B | ================================================================================
+vid\laikas\00_DIENA_2026-09-23_ELEKTRONIKA_IR_SMARTCHOICE.txt | 4679 B | ================================================================================
+vid\laikas\00_ELEKTRONIKA_B2B_PALETES.txt | 6978 B | ================================================================================
+vid\laikas\00_ELEKTRONIKA_B2B_TIEKEJAI_PLUS.txt | 6656 B | ================================================================================
+vid\laikas\00_S_KLASE_PIGIAUSIAS_NUORODOS.txt | 1992 B | ================================================================================
+vid\laikas\00_S22_PIGIAUSIAS_ATIDARYK.html | 2853 B | <!DOCTYPE html>
+vid\laikas\00_SKAITYK.txt | 218 B | Desktop\laikas
+vid\laikas\00_VISOS_SALYS_LAIKAS.txt | 31411 B | ==============================================================================
+vid\minimaliu uzduociu darymas\00_SKAITYK_PIRMA.txt | 348 B | ================================================================================
+vid\minimaliu uzduociu darymas\paleisti_mini.py | 249 B | # -*- coding: utf-8 -*-
+vid\Muzika\00_DAINU_SARASAS.txt | 1575 B | 
+vid\Muzika\00_PASIRINK_DAINA.html | 471 B | <!doctype html>
+vid\New folder\AusesIrBalsas\start-auses.cmd | 186 B | @echo off
+vid\New folder\B2B Inventorius\README.txt | 900 B | B2B INVENTORIUS - VIETINE PROGRAMA
+vid\New folder\B2B Inventorius\start-inventorius.cmd | 81 B | @echo off
+vid\New folder\EmailAssistant\start-email-assistant.cmd | 197 B | @echo off
+vid\New folder\internetine parduotuve 10\start-local-store.cmd | 598 B | @echo off
+vid\New folder\internetine parduotuve 10\start-local-store-v10.cmd | 54 B | @echo off
+vid\New folder\internetine parduotuve 2\start-local-store.cmd | 598 B | @echo off
+vid\New folder\internetine parduotuve 2\start-local-store-v2.cmd | 54 B | @echo off
+vid\New folder\internetine parduotuve 3\start-local-store.cmd | 598 B | @echo off
+vid\New folder\internetine parduotuve 3\start-local-store-v3.cmd | 54 B | @echo off
+vid\New folder\internetine parduotuve 4\start-local-store.cmd | 598 B | @echo off
+vid\New folder\internetine parduotuve 4\start-local-store-v4.cmd | 54 B | @echo off
+vid\New folder\internetine parduotuve 5\start-local-store.cmd | 598 B | @echo off
+vid\New folder\internetine parduotuve 5\start-local-store-v5.cmd | 54 B | @echo off
+vid\New folder\internetine parduotuve 6\start-local-store.cmd | 598 B | @echo off
+vid\New folder\internetine parduotuve 6\start-local-store-v6.cmd | 54 B | @echo off
+vid\New folder\internetine parduotuve 7\start-local-store.cmd | 598 B | @echo off
+vid\New folder\internetine parduotuve 7\start-local-store-v7.cmd | 54 B | @echo off
+vid\New folder\internetine parduotuve 8\start-local-store.cmd | 598 B | @echo off
+vid\New folder\internetine parduotuve 8\start-local-store-v8.cmd | 54 B | @echo off
+vid\New folder\internetine parduotuve 9\start-local-store.cmd | 598 B | @echo off
+vid\New folder\internetine parduotuve 9\start-local-store-v9.cmd | 54 B | @echo off
+vid\New folder\internetine parduotuve\start-local-store.cmd | 598 B | @echo off
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\Aukciono_Patobulinimas_ISPAKAUTAS\Aukciono_Patobulinimas\00_ZURNALAS.txt | 25439 B | AUKCIONO PATOBULINIMAS ā€” GYVAS Å½URNALAS
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\Istorija_Nr3_2026-09-07_ISPAKAUTAS\Istorija_Nr3_2026-09-07\00_GYVAS_ZURNALAS.txt | 39585 B | GYVAS Å½URNALAS Nr. 3 ā€” TÄSINYS NUO Å IO MOMENTO
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\Laiskas_Priedai_2_ISPAKAUTAS\Laiskas_Priedai\DIEGIMO_KOMANDOS.txt | 2401 B | KARSTAS LOTAS - PILNOS SVETAINES DIEGIMAS VAST.AI SERVERYJE
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\Nauja_Siunta_5003_ISPAKAUTAS\svarbu\AI_Kodavimo_Agentai\00_PALYGINIMAS.txt | 5116 B | SAVARANKIÅ KAI DIRBANTYS AI KODAVIMO Ä®RANKIAI - PALYGINIMAS
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\Nauja_Siunta_5003_ISPAKAUTAS\svarbu\Notepad_Atsarga\SKAITYK_JEI_SUGES.txt | 2543 B | NOTEPAD (UÅ½RAÅ INÄ–) - ATSARGINÄ– KOPIJA IR ATSTATYMO INSTRUKCIJA
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\Naujausia_Siunta_5003_ISPAKAUTAS\Aukciono_Patobulinimas_ISPAKAUTAS\Aukciono_Patobulinimas\00_ZURNALAS.txt | 25439 B | AUKCIONO PATOBULINIMAS ā€” GYVAS Å½URNALAS
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\Nuoma_ISPAKAUTAS\Laiskas_Priedai\DIEGIMO_KOMANDOS.txt | 2401 B | KARSTAS LOTAS - PILNOS SVETAINES DIEGIMAS VAST.AI SERVERYJE
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\Nuoma_ISPAKAUTAS\Nuoma\00_GYVAS_ZURNALAS.txt | 31456 B | GYVAS Å½URNALAS - PROJEKTAS "NUOMA"
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\Nuoma_ISPAKAUTAS\Nuoma\00_SKAITYK_PIRMA.txt | 2704 B | PROJEKTAS "NUOMA" - KAS TAI IR KAIP VEIKIA
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\PROJEKTAI_4_ISPAKAUTAS\PROJEKTAI\00_INDEKSAS.txt | 10408 B | VISI PROJEKTAI ā€” BENDRAS INDEKSAS
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\PROJEKTAI_4_ISPAKAUTAS\PROJEKTAI\Apmokejimai_Finansai\00_BUSENA.txt | 14491 B | APMOKÄ–JIMAI IR FINANSAI ā€” mokesÄ¨iÅ³/apmokÄ—jimÅ³ tyrimo uÅ¾raÅai
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\PROJEKTAI_4_ISPAKAUTAS\PROJEKTAI\Aukcionas\00_BUSENA.txt | 2330 B | AUKCIONAS (KarÅtas Lotas) ā€” BÅŖSENA
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\PROJEKTAI_4_ISPAKAUTAS\PROJEKTAI\Aukcionas\DIEGIMO_KOMANDOS.txt | 2401 B | KARSTAS LOTAS - PILNOS SVETAINES DIEGIMAS VAST.AI SERVERYJE
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\PROJEKTAI_4_ISPAKAUTAS\PROJEKTAI\Aukcionas\PALEISTI_AUKCIONA.bat | 294 B | @echo off
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\PROJEKTAI_4_ISPAKAUTAS\PROJEKTAI\Aukcionas\Patobulinimai\00_ZURNALAS.txt | 25439 B | AUKCIONO PATOBULINIMAS ā€” GYVAS Å½URNALAS
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\PROJEKTAI_4_ISPAKAUTAS\PROJEKTAI\Aukcionas\Zurnalas\00_GYVAS_ZURNALAS.txt | 39585 B | GYVAS Å½URNALAS Nr. 3 ā€” TÄSINYS NUO Å IO MOMENTO
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\PROJEKTAI_4_ISPAKAUTAS\PROJEKTAI\Balsu_Agentas\00_BUSENA.txt | 126990 B | BALSÅ² AGENTAS (balso valdymas per telefonÄ…) ā€” BÅŖSENA
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\PROJEKTAI_4_ISPAKAUTAS\PROJEKTAI\Balsu_Agentas\PALEISTI_BALSU_AGENTA.bat | 270 B | @echo off
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\PROJEKTAI_4_ISPAKAUTAS\PROJEKTAI\Balsu_Agentas\README.md | 4072 B | # Balso Agentas ā€” 1-o Etapo Prototipas
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\PROJEKTAI_4_ISPAKAUTAS\PROJEKTAI\Decentralizuotas_Prekiu_Pardavimas\00_BUSENA.txt | 5094 B | DECENTRALIZUOTAS PREKIÅ² PARDAVIMAS ā€” BÅŖSENA
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\PROJEKTAI_4_ISPAKAUTAS\PROJEKTAI\Decentralizuotas_Smart_Kontraktas\00_BUSENA.txt | 22198 B | DECENTRALIZUOTAS SMART KONTRAKTAS (anoniminis + programuojamas) ā€” BÅŖSENA
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\PROJEKTAI_4_ISPAKAUTAS\PROJEKTAI\Decentralizuotas_Smart_Kontraktas\community_token\SKAITYK_MANE.txt | 7468 B | BENDRUOMENÄ–S TOKENO KONTRAKTAS ā€” 2-AS JUODRAÅ TIS
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\PROJEKTAI_4_ISPAKAUTAS\PROJEKTAI\Nuoma\00_BUSENA.txt | 4954 B | NUOMA (daiktÅ³ nuomos platforma) ā€” BÅŖSENA
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\PROJEKTAI_4_ISPAKAUTAS\PROJEKTAI\Nuoma\00_GYVAS_ZURNALAS.txt | 31456 B | GYVAS Å½URNALAS - PROJEKTAS "NUOMA"
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\PROJEKTAI_4_ISPAKAUTAS\PROJEKTAI\Nuoma\00_SKAITYK_PIRMA.txt | 2704 B | PROJEKTAS "NUOMA" - KAS TAI IR KAIP VEIKIA
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\PROJEKTAI_4_ISPAKAUTAS\PROJEKTAI\Nuoma\PALEISTI_NUOMA.bat | 254 B | @echo off
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\PROJEKTAI_4_ISPAKAUTAS\PROJEKTAI\PALEISTI_PROJEKTA.bat | 1098 B | @echo off
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\PROJEKTAI_4_ISPAKAUTAS\PROJEKTAI\Tokenai_Mano\00_BUSENA.txt | 13673 B | TOKENAI MANO (vidinÄ— bendruomenÄ—s valiuta / nuolaidÅ³ taÅkai) ā€” BÅŖSENA
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\Tiesioginis_1789638285619_ISPAKAUTAS\Istorija_Nr3_ISPAKAUTAS\Istorija_Nr3_2026-09-07\00_GYVAS_ZURNALAS.txt | 39585 B | GYVAS Å½URNALAS Nr. 3 ā€” TÄSINYS NUO Å IO MOMENTO
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\Tiesioginis_1789638530281_ISPAKAUTAS\Laiskas_Priedai\DIEGIMO_KOMANDOS.txt | 2401 B | KARSTAS LOTAS - PILNOS SVETAINES DIEGIMAS VAST.AI SERVERYJE
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\Tiesioginis_1789638597857_ISPAKAUTAS\Laiskas_Priedai\DIEGIMO_KOMANDOS.txt | 2401 B | KARSTAS LOTAS - PILNOS SVETAINES DIEGIMAS VAST.AI SERVERYJE
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\Tiesioginis_1789638701986_ISPAKAUTAS\Laiskas_Priedai\DIEGIMO_KOMANDOS.txt | 2401 B | KARSTAS LOTAS - PILNOS SVETAINES DIEGIMAS VAST.AI SERVERYJE
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\Tiesioginis_1789638701986_ISPAKAUTAS\Nuoma\00_GYVAS_ZURNALAS.txt | 31456 B | GYVAS Å½URNALAS - PROJEKTAS "NUOMA"
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\Tiesioginis_1789638701986_ISPAKAUTAS\Nuoma\00_SKAITYK_PIRMA.txt | 2704 B | PROJEKTAS "NUOMA" - KAS TAI IR KAIP VEIKIA
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\Tiesioginis_1789638701986_ISPAKAUTAS\PROJEKTAI\00_INDEKSAS.txt | 10408 B | VISI PROJEKTAI ā€” BENDRAS INDEKSAS
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\Tiesioginis_1789638701986_ISPAKAUTAS\PROJEKTAI\Apmokejimai_Finansai\00_BUSENA.txt | 14491 B | APMOKÄ–JIMAI IR FINANSAI ā€” mokesÄ¨iÅ³/apmokÄ—jimÅ³ tyrimo uÅ¾raÅai
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\Tiesioginis_1789638701986_ISPAKAUTAS\PROJEKTAI\Aukcionas\00_BUSENA.txt | 2330 B | AUKCIONAS (KarÅtas Lotas) ā€” BÅŖSENA
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\Tiesioginis_1789638701986_ISPAKAUTAS\PROJEKTAI\Aukcionas\DIEGIMO_KOMANDOS.txt | 2401 B | KARSTAS LOTAS - PILNOS SVETAINES DIEGIMAS VAST.AI SERVERYJE
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\Tiesioginis_1789638701986_ISPAKAUTAS\PROJEKTAI\Aukcionas\PALEISTI_AUKCIONA.bat | 294 B | @echo off
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\Tiesioginis_1789638701986_ISPAKAUTAS\PROJEKTAI\Aukcionas\Patobulinimai\00_ZURNALAS.txt | 25439 B | AUKCIONO PATOBULINIMAS ā€” GYVAS Å½URNALAS
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\Tiesioginis_1789638701986_ISPAKAUTAS\PROJEKTAI\Aukcionas\Zurnalas\00_GYVAS_ZURNALAS.txt | 39585 B | GYVAS Å½URNALAS Nr. 3 ā€” TÄSINYS NUO Å IO MOMENTO
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\Tiesioginis_1789638701986_ISPAKAUTAS\PROJEKTAI\Balsu_Agentas\00_BUSENA.txt | 126990 B | BALSÅ² AGENTAS (balso valdymas per telefonÄ…) ā€” BÅŖSENA
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\Tiesioginis_1789638701986_ISPAKAUTAS\PROJEKTAI\Balsu_Agentas\PALEISTI_BALSU_AGENTA.bat | 270 B | @echo off
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\Tiesioginis_1789638701986_ISPAKAUTAS\PROJEKTAI\Balsu_Agentas\README.md | 4072 B | # Balso Agentas ā€” 1-o Etapo Prototipas
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\Tiesioginis_1789638701986_ISPAKAUTAS\PROJEKTAI\Decentralizuotas_Prekiu_Pardavimas\00_BUSENA.txt | 5094 B | DECENTRALIZUOTAS PREKIÅ² PARDAVIMAS ā€” BÅŖSENA
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\Tiesioginis_1789638701986_ISPAKAUTAS\PROJEKTAI\Decentralizuotas_Smart_Kontraktas\00_BUSENA.txt | 22198 B | DECENTRALIZUOTAS SMART KONTRAKTAS (anoniminis + programuojamas) ā€” BÅŖSENA
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\Tiesioginis_1789638701986_ISPAKAUTAS\PROJEKTAI\Decentralizuotas_Smart_Kontraktas\community_token\SKAITYK_MANE.txt | 7468 B | BENDRUOMENÄ–S TOKENO KONTRAKTAS ā€” 2-AS JUODRAÅ TIS
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\Tiesioginis_1789638701986_ISPAKAUTAS\PROJEKTAI\Nuoma\00_BUSENA.txt | 4954 B | NUOMA (daiktÅ³ nuomos platforma) ā€” BÅŖSENA
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\Tiesioginis_1789638701986_ISPAKAUTAS\PROJEKTAI\Nuoma\00_GYVAS_ZURNALAS.txt | 31456 B | GYVAS Å½URNALAS - PROJEKTAS "NUOMA"
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\Tiesioginis_1789638701986_ISPAKAUTAS\PROJEKTAI\Nuoma\00_SKAITYK_PIRMA.txt | 2704 B | PROJEKTAS "NUOMA" - KAS TAI IR KAIP VEIKIA
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\Tiesioginis_1789638701986_ISPAKAUTAS\PROJEKTAI\Nuoma\PALEISTI_NUOMA.bat | 254 B | @echo off
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\Tiesioginis_1789638701986_ISPAKAUTAS\PROJEKTAI\PALEISTI_PROJEKTA.bat | 1098 B | @echo off
+vid\New folder\istorijos pradzia pro claude 1 2 3 nr\Kito_Kompiuterio_Duomenys\Tiesioginis_1789638701986_ISPAKAUTAS\PROJEKTAI\Tokenai_Mano\00_BUSENA.txt | 13673 B | TOKENAI MANO (vidinÄ— bendruomenÄ—s valiuta / nuolaidÅ³ taÅkai) ā€” BÅŖSENA
+vid\New folder\KAIP_PADARYTI_ZIP.txt | 704 B | KAIP SUSTUMTI / SUARCHYVUOTI APLANK? ? ZIP (WINDOWS):
+vid\New folder\Kito_Kompiuterio_Duomenys\Aukciono_Patobulinimas_ISPAKAUTAS\Aukciono_Patobulinimas\00_ZURNALAS.txt | 25439 B | AUKCIONO PATOBULINIMAS ā€” GYVAS Å½URNALAS
+vid\New folder\Komercija Mazeikiai\README.txt | 1398 B | KOMERCIJA MAZEIKIAI - VIETINE KOMERCINIU SKELBIMU LENTA
+vid\New folder\Komercija Mazeikiai\start-komercija.cmd | 81 B | @echo off
+vid\New folder\Mano Paslaugos\README.txt | 611 B | MANO PASLAUGOS - VIETINIS PROTOTIPAS
+vid\New folder\Mano Paslaugos\start-paslaugos.cmd | 81 B | @echo off
+vid\New folder\Mano Skelbimai\README.txt | 774 B | MANO SKELBIMAI - VIETINIS SKELBIMU PORTALAS
+vid\New folder\Mano Skelbimai\start-skelbimai.cmd | 81 B | @echo off
+vid\New folder\SECURITY_CHECKPOINT_20260919\KAIP_RASTI_IR_PRAVERTI.txt | 2555 B | ===============================================================================
+vid\New folder\SECURITY_CHECKPOINT_20260919\README.txt | 7140 B | ===============================================================================
+vid\New folder\SECURITY_CHECKPOINT_20260919\Start_Security_Monitor.vbs | 890 B | ' Security Monitor - Hidden Background Launcher
+vid\New folder\SecurityWatch\start_process_guard.cmd | 108 B | @echo off
+vid\New folder\SecurityWatch\start-network-discovery-monitor.cmd | 119 B | @echo off
+vid\New folder\Syncthing\start-syncthing.cmd | 178 B | @echo off
+vid\New folder\Start local store.cmd | 92 B | @echo off
+vid\New folder\Start_Security_Monitor.vbs | 890 B | ' Security Monitor - Hidden Background Launcher
+vid\New folder\Visi_Mindaugo_Projektai\00_AUKCIONAS_DOMENAS_NAMED_TUNNEL_2026-09-21.txt | 6246 B | ================================================================================
+vid\New folder\Visi_Mindaugo_Projektai\00_REGISTRUOTOS_SVETAINES_IR_PASKYROS.txt | 3548 B | ================================================================================
+vid\New folder\Visi_Mindaugo_Projektai\00_SLAPTAZODZIU_SEIFAS.txt | 4414 B | ================================================================================
+vid\New folder\Visi_Mindaugo_Projektai\00_VISU_PROJEKTU_STATUSAS.txt | 2605 B | ================================================================================
+vid\New folder\XXX Token App\README.md | 2152 B | # Lojalumo kortelÄ— - vietinio serverio prototipas
+vid\New folder\XXX Token\README.md | 1701 B | # XXX tokenas
+vid\pakeitimai\Edge Wallet\128.18367.18366.1\json\wallet\README.md | 86 B | # Discription
+vid\Paslaugos_Mazeikiai_Metalas_Apdaila_2026-10-05\00_SKAITYK_CIA.txt | 918 B | ================================================================================
+vid\Paslaugos_Mazeikiai_Metalas_Apdaila_2026-10-05\01_SKAITYK_PIRMA\00_INDEX_SKAITYK.txt | 1173 B | ================================================================================
+vid\Paslaugos_Mazeikiai_Metalas_Apdaila_2026-10-05\02_Suvestines\00_SUVESTINE_2026-10-05.txt | 5601 B | ========================================================================
+vid\Paslaugos_Mazeikiai_Metalas_Apdaila_2026-10-05\03_Raw_uzklausos\00_UZKLAUSOS_2026-10-05.json | 67251 B | {
+vid\Paslaugos_Mazeikiai_Metalas_Apdaila_2026-10-05\05_Agentas_brief\00_AGENTAS_MZ_MAZEIKIAI_METALAS_APDAILA_2026-10-05.txt | 1264 B | ================================================================================
+vid\prekiu idejimas auto\00_SKAITYK_PIRMA.txt | 2562 B | ================================================================================
+vid\prekiu idejimas auto\automatinis_crypto_arbitrazas_paieska\00_SKAITYK_PIRMA.txt | 1207 B | ================================================================================
+vid\prekiu idejimas auto\start.cmd | 319 B | @echo off
+vid\prekiu idejimas auto\vast_ai_linux\00_SKAITYK_PIRMA.txt | 1253 B | ================================================================================
+vid\projektai nr 111\00_GALUTINE_ATASKAITA_VISI_100PROC.txt | 6470 B | ================================================================================
+vid\projektai nr 111\00_VISU_PROJEKTU_STATUSAS.txt | 4572 B | ================================================================================
+vid\projektai nr 111\100procentu veikiantys\00_BUSENA_PO_SUTVARKYMO.txt | 2028 B | ================================================================================
+vid\projektai nr 111\100procentu veikiantys\00_KAS_PADARYTA.txt | 1261 B | ================================================================================
+vid\projektai nr 111\100procentu veikiantys\00_MOKEJIMAI.json | 447 B | {
+vid\projektai nr 111\100procentu veikiantys\00_PAYPAL_PRIJUNGTAS.txt | 633 B | ================================================================================
+vid\projektai nr 111\100procentu veikiantys\00_PATIKRINTI_VISKA.ps1 | 5000 B | #Requires -Version 5.1
+vid\projektai nr 111\100procentu veikiantys\00_RAKTAI_IS_NEW_FOLDER.txt | 885 B | ================================================================================
+vid\projektai nr 111\100procentu veikiantys\01_XXX_Token_App_Lojalumas\00_SKAITYK_PIRMA.txt | 3823 B | ================================================================================
+vid\projektai nr 111\100procentu veikiantys\01_XXX_Token_App_Lojalumas\README.md | 2152 B | # Lojalumo kortelÄ— - vietinio serverio prototipas
+vid\projektai nr 111\100procentu veikiantys\02_Aukcionas_Karstas_Lotas\00_BUSENA.txt | 2330 B | AUKCIONAS (KarÅtas Lotas) ā€” BÅŖSENA
+vid\projektai nr 111\100procentu veikiantys\02_Aukcionas_Karstas_Lotas\00_DABAR_PADARYK_SIUO.txt | 2719 B | ================================================================================
+vid\projektai nr 111\100procentu veikiantys\02_Aukcionas_Karstas_Lotas\00_KAIP_VISADA_VEIKS.txt | 3417 B | ================================================================================
+vid\projektai nr 111\100procentu veikiantys\02_Aukcionas_Karstas_Lotas\00_SKAITYK_PIRMA.txt | 4234 B | ================================================================================
+vid\projektai nr 111\100procentu veikiantys\02_Aukcionas_Karstas_Lotas\deploy\00_STABILUS_VPS_PIRKIMAS.txt | 1152 B | ================================================================================
+vid\projektai nr 111\100procentu veikiantys\02_Aukcionas_Karstas_Lotas\DIEGIMO_KOMANDOS.txt | 2401 B | KARSTAS LOTAS - PILNOS SVETAINES DIEGIMAS VAST.AI SERVERYJE
+vid\projektai nr 111\100procentu veikiantys\02_Aukcionas_Karstas_Lotas\PALEISTI_AUKCIONA.bat | 294 B | @echo off
+vid\projektai nr 111\100procentu veikiantys\02_Aukcionas_Karstas_Lotas\Patobulinimai\00_ZURNALAS.txt | 25439 B | AUKCIONO PATOBULINIMAS ā€” GYVAS Å½URNALAS
+vid\projektai nr 111\100procentu veikiantys\02_Aukcionas_Karstas_Lotas\Zurnalas\00_GYVAS_ZURNALAS.txt | 39585 B | GYVAS Å½URNALAS Nr. 3 ā€” TÄSINYS NUO Å IO MOMENTO
+vid\projektai nr 111\100procentu veikiantys\03_EmailAssistant\00_SKAITYK_PIRMA.txt | 3798 B | ================================================================================
+vid\projektai nr 111\100procentu veikiantys\03_EmailAssistant\start-email-assistant.cmd | 197 B | @echo off
+vid\projektai nr 111\100procentu veikiantys\03_Prekiu_idejimas_auto\SKAITYK_VISKAS_PAKEITIMAI_111.txt | 362 B | ================================================================================
+vid\projektai nr 111\100procentu veikiantys\04_Vinted_ir_Facebook_Watcher\00_SKAITYK_PIRMA.txt | 618 B | ================================================================================
+vid\projektai nr 111\100procentu veikiantys\04_Vinted_ir_Facebook_Watcher\readme.txt | 461 B | Samsung Vinted price monitor
+vid\projektai nr 111\100procentu veikiantys\04_Vinted_ir_Facebook_Watcher\start-watcher.cmd | 330 B | @echo off
+vid\projektai nr 111\100procentu veikiantys\05_Samsung_S8_Sorter\00_SKAITYK_PIRMA.txt | 403 B | # Samsung S8 Sorter
+vid\projektai nr 111\100procentu veikiantys\05_Samsung_S8_Sorter\Paleisti_Sorter.cmd | 237 B | @echo off
+vid\projektai nr 111\100procentu veikiantys\05_Security_Monitor_ir_LibreWolf\00_SKAITYK_PIRMA.txt | 4279 B | ================================================================================
+vid\projektai nr 111\100procentu veikiantys\05_Security_Monitor_ir_LibreWolf\KAIP_RASTI_IR_PRAVERTI.txt | 2555 B | ===============================================================================
+vid\projektai nr 111\100procentu veikiantys\05_Security_Monitor_ir_LibreWolf\README.txt | 7140 B | ===============================================================================
+vid\projektai nr 111\100procentu veikiantys\05_Security_Monitor_ir_LibreWolf\Start_Security_Monitor.vbs | 890 B | ' Security Monitor - Hidden Background Launcher
+vid\projektai nr 111\100procentu veikiantys\06_Internetine_Parduotuve_1_10\00_SKAITYK_PIRMA.txt | 3025 B | ================================================================================
+vid\projektai nr 111\100procentu veikiantys\06_Internetine_Parduotuve_1_10\internetine parduotuve 10\start-local-store.cmd | 598 B | @echo off
+vid\projektai nr 111\100procentu veikiantys\06_Internetine_Parduotuve_1_10\internetine parduotuve 10\start-local-store-v10.cmd | 54 B | @echo off
+vid\projektai nr 111\100procentu veikiantys\06_Internetine_Parduotuve_1_10\internetine parduotuve 2\start-local-store.cmd | 598 B | @echo off
+vid\projektai nr 111\100procentu veikiantys\06_Internetine_Parduotuve_1_10\internetine parduotuve 2\start-local-store-v2.cmd | 54 B | @echo off
+vid\projektai nr 111\100procentu veikiantys\06_Internetine_Parduotuve_1_10\internetine parduotuve 3\start-local-store.cmd | 598 B | @echo off
+vid\projektai nr 111\100procentu veikiantys\06_Internetine_Parduotuve_1_10\internetine parduotuve 3\start-local-store-v3.cmd | 54 B | @echo off
+vid\projektai nr 111\100procentu veikiantys\06_Internetine_Parduotuve_1_10\internetine parduotuve 4\start-local-store.cmd | 598 B | @echo off
+vid\projektai nr 111\100procentu veikiantys\06_Internetine_Parduotuve_1_10\internetine parduotuve 4\start-local-store-v4.cmd | 54 B | @echo off
+vid\projektai nr 111\100procentu veikiantys\06_Internetine_Parduotuve_1_10\internetine parduotuve 5\start-local-store.cmd | 598 B | @echo off
+vid\projektai nr 111\100procentu veikiantys\06_Internetine_Parduotuve_1_10\internetine parduotuve 5\start-local-store-v5.cmd | 54 B | @echo off
+vid\projektai nr 111\100procentu veikiantys\06_Internetine_Parduotuve_1_10\internetine parduotuve 6\start-local-store.cmd | 598 B | @echo off
+vid\projektai nr 111\100procentu veikiantys\06_Internetine_Parduotuve_1_10\internetine parduotuve 6\start-local-store-v6.cmd | 54 B | @echo off
+vid\projektai nr 111\100procentu veikiantys\06_Internetine_Parduotuve_1_10\internetine parduotuve 7\start-local-store.cmd | 598 B | @echo off
+vid\projektai nr 111\100procentu veikiantys\06_Internetine_Parduotuve_1_10\internetine parduotuve 7\start-local-store-v7.cmd | 54 B | @echo off
+vid\projektai nr 111\100procentu veikiantys\06_Internetine_Parduotuve_1_10\internetine parduotuve 8\start-local-store.cmd | 598 B | @echo off
+vid\projektai nr 111\100procentu veikiantys\06_Internetine_Parduotuve_1_10\internetine parduotuve 8\start-local-store-v8.cmd | 54 B | @echo off
+vid\projektai nr 111\100procentu veikiantys\06_Internetine_Parduotuve_1_10\internetine parduotuve 9\start-local-store.cmd | 598 B | @echo off
+vid\projektai nr 111\100procentu veikiantys\06_Internetine_Parduotuve_1_10\internetine parduotuve 9\start-local-store-v9.cmd | 54 B | @echo off
+vid\projektai nr 111\100procentu veikiantys\06_Internetine_Parduotuve_1_10\internetine parduotuve\start-local-store.cmd | 598 B | @echo off
+vid\projektai nr 111\100procentu veikiantys\08_B2B_Inventorius\00_SKAITYK_PIRMA.txt | 1364 B | ================================================================================
+vid\projektai nr 111\100procentu veikiantys\08_B2B_Inventorius\README.txt | 900 B | B2B INVENTORIUS - VIETINE PROGRAMA
+vid\projektai nr 111\100procentu veikiantys\08_B2B_Inventorius\start-inventorius.cmd | 81 B | @echo off
+vid\projektai nr 111\100procentu veikiantys\09_Bruksniniai_kodai\00_SKAITYK_PIRMA.txt | 971 B | ================================================================================
+vid\projektai nr 111\100procentu veikiantys\09_Bruksniniai_kodai\start-labels.cmd | 273 B | @echo off
+vid\projektai nr 111\100procentu veikiantys\10_AusesIrBalsas_Whisper_LT\00_SKAITYK_PIRMA.txt | 1239 B | ================================================================================
+vid\projektai nr 111\100procentu veikiantys\10_AusesIrBalsas_Whisper_LT\start-auses.cmd | 186 B | @echo off
+vid\projektai nr 111\100procentu veikiantys\11_Komercija_Mazeikiai\00_SKAITYK_PIRMA.txt | 1199 B | ================================================================================
+vid\projektai nr 111\100procentu veikiantys\11_Komercija_Mazeikiai\README.txt | 1398 B | KOMERCIJA MAZEIKIAI - VIETINE KOMERCINIU SKELBIMU LENTA
+vid\projektai nr 111\100procentu veikiantys\11_Komercija_Mazeikiai\start-komercija.cmd | 81 B | @echo off
+vid\projektai nr 111\100procentu veikiantys\12_Mano_Paslaugos\00_SKAITYK_PIRMA.txt | 1134 B | ================================================================================
+vid\projektai nr 111\100procentu veikiantys\12_Mano_Paslaugos\README.txt | 611 B | MANO PASLAUGOS - VIETINIS PROTOTIPAS
+vid\projektai nr 111\100procentu veikiantys\12_Mano_Paslaugos\start-paslaugos.cmd | 81 B | @echo off
+vid\projektai nr 111\100procentu veikiantys\13_Mano_Skelbimai\00_SKAITYK_PIRMA.txt | 1105 B | ================================================================================
+vid\projektai nr 111\100procentu veikiantys\13_Mano_Skelbimai\README.txt | 774 B | MANO SKELBIMAI - VIETINIS SKELBIMU PORTALAS
+vid\projektai nr 111\100procentu veikiantys\13_Mano_Skelbimai\start-skelbimai.cmd | 81 B | @echo off
+vid\projektai nr 111\100procentu veikiantys\14_SecurityWatch_Network\00_SKAITYK_PIRMA.txt | 1118 B | ================================================================================
+vid\projektai nr 111\100procentu veikiantys\14_SecurityWatch_Network\start_process_guard.cmd | 108 B | @echo off
+vid\projektai nr 111\100procentu veikiantys\14_SecurityWatch_Network\start-network-discovery-monitor.cmd | 119 B | @echo off
+vid\projektai nr 111\100procentu veikiantys\15_Nuoma_Platforma\00_SKAITYK_PIRMA.txt | 664 B | ================================================================================
+vid\projektai nr 111\100procentu veikiantys\15_Nuoma_Platforma\Laiskas_Priedai\DIEGIMO_KOMANDOS.txt | 2401 B | KARSTAS LOTAS - PILNOS SVETAINES DIEGIMAS VAST.AI SERVERYJE
+vid\projektai nr 111\100procentu veikiantys\15_Nuoma_Platforma\Nuoma\00_GYVAS_ZURNALAS.txt | 31456 B | GYVAS Å½URNALAS - PROJEKTAS "NUOMA"
+vid\projektai nr 111\100procentu veikiantys\15_Nuoma_Platforma\Nuoma\00_SKAITYK_PIRMA.txt | 2704 B | PROJEKTAS "NUOMA" - KAS TAI IR KAIP VEIKIA
+vid\projektai nr 111\100procentu veikiantys\16_AI_Kodavimo_Agentai_VastAI\00_SKAITYK_PIRMA.txt | 3063 B | ================================================================================
+vid\projektai nr 111\100procentu veikiantys\16_AI_Kodavimo_Agentai_VastAI\svarbu\AI_Kodavimo_Agentai\00_PALYGINIMAS.txt | 5116 B | SAVARANKIÅ KAI DIRBANTYS AI KODAVIMO Ä®RANKIAI - PALYGINIMAS
+vid\projektai nr 111\100procentu veikiantys\16_AI_Kodavimo_Agentai_VastAI\svarbu\Notepad_Atsarga\SKAITYK_JEI_SUGES.txt | 2543 B | NOTEPAD (UÅ½RAÅ INÄ–) - ATSARGINÄ– KOPIJA IR ATSTATYMO INSTRUKCIJA
+vid\projektai nr 111\100procentu veikiantys\17_Decentralizuotas_Smart_Kontraktas\00_BUSENA.txt | 22198 B | DECENTRALIZUOTAS SMART KONTRAKTAS (anoniminis + programuojamas) ā€” BÅŖSENA
+vid\projektai nr 111\100procentu veikiantys\17_Decentralizuotas_Smart_Kontraktas\00_SKAITYK_PIRMA.txt | 3695 B | ================================================================================
+vid\projektai nr 111\100procentu veikiantys\17_Decentralizuotas_Smart_Kontraktas\community_token\SKAITYK_MANE.txt | 7468 B | BENDRUOMENÄ–S TOKENO KONTRAKTAS ā€” 2-AS JUODRAÅ TIS
+vid\projektai nr 111\100procentu veikiantys\18_Balsu_Agentas_Call\00_BUSENA.txt | 126990 B | BALSÅ² AGENTAS (balso valdymas per telefonÄ…) ā€” BÅŖSENA
+vid\projektai nr 111\100procentu veikiantys\18_Balsu_Agentas_Call\00_SKAITYK_PIRMA.txt | 768 B | ================================================================================
+vid\projektai nr 111\100procentu veikiantys\18_Balsu_Agentas_Call\PALEISTI_BALSU_AGENTA.bat | 270 B | @echo off
+vid\projektai nr 111\100procentu veikiantys\18_Balsu_Agentas_Call\README.md | 4072 B | # Balso Agentas ā€” 1-o Etapo Prototipas
+vid\projektai nr 111\100procentu veikiantys\19_Vinted_SMS_Diagnostika\00_SKAITYK_PIRMA.txt | 515 B | ================================================================================
+vid\projektai nr 111\100procentu veikiantys\19_Vinted_SMS_Diagnostika\start-daemon-windows.cmd | 638 B | @echo off
+vid\projektai nr 111\100procentu veikiantys\projektas telefonai kompai git hub\copilot-language-server\copilot-language-server\dist\policy-templates\darwin\README.md | 4740 B | # GitHub Copilot macOS Policy Configuration
+vid\projektai nr 111\100procentu veikiantys\projektas telefonai kompai git hub\copilot-language-server\copilot-language-server\dist\policy-templates\win32\README.md | 5253 B | # GitHub Copilot Group Policy Templates for Windows
+vid\projektai nr 111\100procentu veikiantys\projektas telefonai kompai git hub\copilot-language-server\dist\policy-templates\darwin\README.md | 4740 B | # GitHub Copilot macOS Policy Configuration
+vid\projektai nr 111\100procentu veikiantys\projektas telefonai kompai git hub\copilot-language-server\dist\policy-templates\win32\README.md | 5253 B | # GitHub Copilot Group Policy Templates for Windows
+vid\projektai nr 111\100procentu veikiantys\projektas telefonai kompai git hub\README.md | 1864 B | # š“±š’» PROJEKTAS: VINTED IR FACEBOOK SKELBIMÅ² STEBÄ–TOJAS
+vid\projektai nr 111\100procentu veikiantys\www.penktadienioaukcionas.lt\00_DABAR_PADARYK_SIUO.txt | 2719 B | ================================================================================
+vid\projektai nr 111\100procentu veikiantys\www.penktadienioaukcionas.lt\00_KAIP_VISADA_VEIKS.txt | 3417 B | ================================================================================
+vid\projektai nr 111\100procentu veikiantys\www.penktadienioaukcionas.lt\00_SKAITYK.txt | 1062 B | ================================================================================
+vid\projektai nr 111\100procentu veikiantys\www.penktadienioaukcionas.lt\00_SKAITYK_PIRMA.txt | 4234 B | ================================================================================
+vid\projektai nr 111\100procentu veikiantys\www.penktadienioaukcionas.lt\PALEISTI_AUKCIONA.bat | 294 B | @echo off
+vid\projektai nr 111\100procentu veikiantys\zalias migtukas 9 grupes atiduotuves 100 proc padaryta\readme.txt | 461 B | Samsung Vinted price monitor
+vid\reklama visi kanalai LT\00_KUR_REKLAMA.txt | 548 B | REKLAMA ā€” kur skaityti (PASIRUOÅ IMAS)
+vid\reklama visi kanalai LT\00_REKLAMA_FACEBOOK_GILIAI_LT.txt | 8477 B | ================================================================================
+vid\reklama visi kanalai LT\00_REKLAMA_YOUTUBE_TIKTOK.txt | 5774 B | ================================================================================
+vid\reklama visi kanalai LT\00_REKLAMA_SCENARIJUS_LT.txt | 712 B | ================================================================================
+vid\reklama visi kanalai LT\00_REKLAMA_TONAS_PENKTADIENIO_SOU.txt | 1049 B | ================================================================================
+vid\reklama visi kanalai LT\00_REKLAMA_VISI_KANALAI_ZEMELAPIS.txt | 10782 B | ================================================================================
+vid\reklama visi kanalai LT\00_REKLAMA_WOW_BOMBA_VIENAS_PROJEKTAS.txt | 5146 B | ================================================================================
+vid\reklama visi kanalai LT\00_SKAITYK_PIRMA.txt | 338 B | ================================================================================
+vid\SAMSUNG\00_SKAITYK.txt | 582 B | ================================================================================
+vid\SAMSUNG\PALEISTI_STEBETI.bat | 581 B | @echo off
+vid\Samsung_Vinted_Watch\00_SKAITYK_SAMSUNG.txt | 1170 B | ================================================================================
+vid\taisykles aukciono\00_AUKCIONO_TAISYKLES.txt | 6343 B | PENKTADIENIO AUKCIONAS ā€” TAISYKLÄ–S
+vid\taisykles aukciono\noriu.txt | 444 B | noriu kad zmones ieje i mano penktadienio aukcionas puslapi susipazintu su taisyklemis pay
+vid\taisykles aukciono\Vienas tokenas, kartu esantis lojalumo tašku, atsiskaitymo priemone ir palūkaniniu skolinimo objektu, yra blogiausias derinys reguliavimo prasme. Du atskiri sluoksniai — lojalumo taškai aukcionui ir vėliau ats.txt | 285 B | Vienas tokenas, kartu esantis lojalumo taÅku, atsiskaitymo priemone ir palÅ«kaniniu skoli
+vid\taisykles aukciono\VILKO_LOJALUMO_TAISYKLES_2026-09-26.txt | 3789 B | VILKO LOJALUMO PROGRAMOS IR PREMIJOS LOTÅ² TAISYKLÄ–S
+vid\Vast_AI_Linux\00_SKAITYK_PIRMA.txt | 1253 B | ================================================================================
+vid\Vast_AI_Linux\SKAITYK_VISKAS_PAKEITIMAI_111.txt | 354 B | ================================================================================
+vid\vilkas opus\00_PRIES_KEITIMA\app_pries_opus.py | 366894 B | # -*- coding: utf-8 -*-
+vid\vilkas opus\00_PRIES_PAKEITIMA\app.py | 367084 B | # -*- coding: utf-8 -*-
+vid\vilkas opus\00_README_KAS_IJUNGTA.txt | 3460 B | ================================================================================
+vid\vilkas opus\02_vilkas8_tts_brain\00_CIA_VILKAS.txt | 183 B | Romania vast #52650975 ā€” VILKAS AI vedejas / local TTS (buvusi Kanada role).
+vid\vilkas opus\02_vilkas8_tts_brain\docs\00_BUSENA.txt | 1816 B | ================================================================================
+vid\vilkas opus\02_vilkas8_tts_brain\docs\00_PLANAS_IR_LAIKAS.txt | 2647 B | ================================================================================
+vid\vilkas opus\02_vilkas8_tts_brain\docs\00_VERDIKTAS_PC_IR_VAST.txt | 1560 B | ================================================================================
+vid\vilkas opus\02_vilkas8_tts_brain\irasai_TEKSTAI_KA_SAKYTI\00_SKAITYK_PIRMA.txt | 678 B | ================================================================================
+vid\vilkas opus\02_vilkas8_tts_brain\irasai_TEKSTAI_KA_SAKYTI\00_VISOS_FRAZES.txt | 2785 B | butu z================================================================================
+vid\vilkas opus\03_VILKAS_8_ETALONAS\00_SKAITYK.txt | 2324 B | ================================================================================
+vid\vilkas opus\03_VILKAS8_ETALONAS\00_SKAITYK.txt | 2324 B | ================================================================================
+vid\vilkas opus\README.txt | 3000 B | VILKAS OPUS ā€” GYVUMAS UÅ½BAIGTA (2026-10-08 ~12:00)
+vid\vilkas\vilkas 1\00_VILKAS_1_APRASAS.txt | 2539 B | ================================================================================
+vid\vilkas\vilkas 2\00_VILKAS_2_APRASAS.txt | 5003 B | VILKAS 2 ā€” aukciono vedÄ—jo versija (2026-09-23)
+vid\vilkas\VILKAS 4\00_README_SNAPSHOT.txt | 3121 B | ================================================================================
+vid\vilkas\VILKAS 4\00_VILKAS_4_SUVESTINE.txt | 3766 B | ================================================================================
+vid\vilkas\VILKAS 4\pavyzdziai_balsas\00_README.txt | 2220 B | ================================================================================
+vid\vilkas\VILKAS 4\vilkas_3_balsas\00_README.txt | 2220 B | ================================================================================
+vid\vilkas\VILKAS 5\00_README_SNAPSHOT.txt | 3308 B | ================================================================================
+vid\vilkas\VILKAS 6\00_README_SNAPSHOT.txt | 2586 B | ================================================================================
+vid\vilkas\VILKAS 7\_start_pirkimo_maratona.py | 4425 B | # -*- coding: utf-8 -*-
+vid\vilkas\VILKAS 7\deploy\_start_pirkimo_maratona.py | 4425 B | # -*- coding: utf-8 -*-
+vid\vilkas\VILKAS 8\_start_pirkimo_maratona.py | 4425 B | # -*- coding: utf-8 -*-
+vid\vilkas\VILKAS 8\deploy\_start_pirkimo_maratona.py | 4425 B | # -*- coding: utf-8 -*-
+vid\vilkas\VILKAS 8\README.md | 667 B | # VILKAS 8 ā€” atsarginÄ— kopija (2026-09-24)
+vid\vilko atejimas\00_F11_TELEFONAS.txt | 400 B | F11 = Vilko telefono atsiliepimas (globali klaviatÅ«ra)
+vid\vilko atejimas\00_PATAISYMAI_F8_F9_F10_KLAVIATURA.txt | 1755 B | ================================================================================
+vid\vilko atejimas\00_PATAISYMAI_SOKEJAI_BALSAS_2026-10-07.txt | 818 B | ================================================================================
+vid\vilko atejimas\00_TAISYKLES.txt | 996 B | ================================================================================
+vid\vilko atejimas\Paleisti_F8_F9_F10_dabar.vbs | 242 B | ' GlobalÅ«s F6/F7/F8/F9/F10 ā€” paleidÅ¾ia iÅ pakeitimai 111 (pilnas + live HostBrr)
+vid\vilko atejimas\Paleisti_F9_F10_dabar.vbs | 287 B | ' Paleidzia globalius F9/F10 tyliai (be juodo lango)
+vid\vilko smegenys gabumai ka moka\vilko taisykles\00_VILKO_DU_KELIAI_CHARTIJA.txt | 5889 B | VILKO BENDRUOMENÄ– ā€” DVIEJÅ² KELIÅ² CHARTIJA
+vid\vilko taisykles\00_VILKO_DU_KELIAI_CHARTIJA.txt | 5640 B | VILKO BENDRUOMENÄ– ā€” DVIEJÅ² KELIÅ² CHARTIJA
+vid\VILKO_ATEJIMAS_I_SCENA_2026-10-06\00_DU_FOLDERIAI_IZANGA_IR_VILKAS_2026-10-06.txt | 700 B | ================================================================================
+vid\VILKO_ATEJIMAS_I_SCENA_2026-10-06\00_SKAITYK.txt | 833 B | ================================================================================
+vid\VILKO_ATEJIMAS_I_SCENA_2026-10-06\02_DOKUMENTAI\00_KAS_YRA_VILKO_ATEJIMAS.txt | 1837 B | ================================================================================
+vid\VILKO_ATEJIMAS_I_SCENA_2026-10-06\05_ZURNALAI\00_LIVE_HEALTH_NOW.txt | 1538 B | === LIVE HEALTH Vilkas8 2026-10-06 06:03:43 ===
+vid\vinted  visa imformacija\Vinted_Rinka_Ir_Urmas_2026-10-05\00_SKAITYK_CIA.txt | 898 B | ================================================================================
+vid\vinted  visa imformacija\Vinted_Rinka_Ir_Urmas_2026-10-05\01_SKAITYK_PIRMA\00_INDEX_SKAITYK.txt | 1396 B | ================================================================================
+vid\vinted  visa imformacija\Vinted_Rinka_Ir_Urmas_2026-10-05\02_Rinka_statistika\00_ANALIZE_2026-10-05.json | 57122 B | {
+vid\vinted  visa imformacija\Vinted_Rinka_Ir_Urmas_2026-10-05\02_Rinka_statistika\00_ANALIZE_DEEP_2026-10-05.json | 79950 B | [
+vid\vinted  visa imformacija\Vinted_Rinka_Ir_Urmas_2026-10-05\02_Rinka_statistika\00_SUVESTINE_2026-10-05.txt | 8441 B | ========================================================================
+vid\vinted  visa imformacija\Vinted_Rinka_Ir_Urmas_2026-10-05\02_Rinka_statistika\00_SUVESTINE_DEEP_2026-10-05.txt | 8441 B | ========================================================================
+vid\vinted  visa imformacija\Vinted_Rinka_Ir_Urmas_2026-10-05\03_Urmo_tiekejai\00_URMO_SANDELIAI_2026-10-05.html | 6976 B | <!DOCTYPE html>
+vid\vinted  visa imformacija\Vinted_Rinka_Ir_Urmas_2026-10-05\03_Urmo_tiekejai\00_URMO_SANDELIAI_UZPIRKIMUI_2026-10-05.txt | 6413 B | ========================================================================
+vid\vinted  visa imformacija\Vinted_Rinka_Ir_Urmas_2026-10-05\03_Urmo_tiekejai\00_URMO_TIEKEJAI_PLATUS_2026-10-05.txt | 6413 B | ========================================================================
+vid\vinted  visa imformacija\Vinted_Rinka_Ir_Urmas_2026-10-05\04_Raw_duomenys\00_BROWSER_DUMP_2026-10-05.json | 29270 B | {
+vid\vinted  visa imformacija\Vinted_Rinka_Ir_Urmas_2026-10-05\04_Raw_duomenys\00_BROWSER_DUMP_DEEP_2026-10-05.json | 153 B | {
+vid\vinted  visa imformacija\Vinted_Rinka_Ir_Urmas_2026-10-05\04_Raw_duomenys\00_RAW_2026-10-05.json | 10667 B | {
+vid\vinted  visa imformacija\Vinted_Rinka_Ir_Urmas_2026-10-05\06_Agentas_brief\00_AGENTAS_VT_VINTED_RINKOS_2026-10-05.txt | 1006 B | ================================================================================
+vid\vinted  visa imformacija\Vinted_Rinka_Ir_Urmas_2026-10-05\SKAITYK_PIRMA_INDEX.txt | 1396 B | ================================================================================
+vid\zalias migtukas 9 grupes atiduotuves 100 proc padaryta\00_SKAITYK_ZALIAS_MYGTUKAS.txt | 828 B | ================================================================================
+vid\zalias migtukas 9 grupes atiduotuves 100 proc padaryta\Paleisti_Zalia_Mygtuka.bat | 525 B | @echo off
+vid\zalias migtukas 9 grupes atiduotuves 100 proc padaryta\readme.txt | 461 B | Samsung Vinted price monitor

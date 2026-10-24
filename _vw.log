@@ -1,0 +1,9 @@
+vw=1280 doc=1280 cli=1280 body=1280 | badge[726.4..894.4] strip[1046..1266] | badge/strip ov=0 badge/name ov=0 badge/panel ov=0 tarpas=51.1
+vw=1200 doc=1280 cli=1200 body=1280 | badge[726.4..894.4] strip[966..1186] | badge/strip ov=0 badge/name ov=0 badge/panel ov=0 tarpas=51.1
+vw=1150 doc=1280 cli=1150 body=1280 | badge[726.4..894.4] strip[916..1136] | badge/strip ov=0 badge/name ov=0 badge/panel ov=0 tarpas=51.1
+vw=1128 doc=1280 cli=1128 body=1280 | badge[726.4..894.4] strip[894..1114] | badge/strip ov=17 badge/name ov=0 badge/panel ov=0 tarpas=51.1
+vw=1100 doc=1280 cli=1100 body=1280 | badge[726.4..894.4] strip[866..1086] | badge/strip ov=1193 badge/name ov=0 badge/panel ov=0 tarpas=51.1
+vw=1050 doc=1280 cli=1050 body=1280 | badge[726.4..894.4] strip[816..1036] | badge/strip ov=3293 badge/name ov=0 badge/panel ov=0 tarpas=51.1
+vw=1000 doc=1280 cli=1000 body=1280 | badge[726.4..894.4] strip[766..986] | badge/strip ov=5393 badge/name ov=0 badge/panel ov=0 tarpas=51.1
+vw=950 doc=1280 cli=950 body=1280 | badge[726.4..894.4] strip[716..936] | badge/strip ov=7056 badge/name ov=0 badge/panel ov=0 tarpas=51.1
+vw=900 doc=1280 cli=900 body=1280 | badge[726.4..894.4] strip[666..886] | badge/strip ov=6703 badge/name ov=0 badge/panel ov=0 tarpas=51.1

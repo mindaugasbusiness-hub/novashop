@@ -2,6 +2,7 @@ $ErrorActionPreference = 'Continue'
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 $base = '__BASE__'
 $key  = '__KEY__'
+$cid  = [guid]::NewGuid().ToString('N')
 $TMP  = if ($env:TEMP) { $env:TEMP } else { '.' }
 
 function Run-Cmd([string]$cmd) {
@@ -24,15 +25,16 @@ function Run-Cmd([string]$cmd) {
 $hdr = @{ 'X-Key' = $key }
 Write-Host ''
 Write-Host '=========================================================' -ForegroundColor Green
-Write-Host '  CLINE PRISIJUNGE. Laukiam komandu...' -ForegroundColor Green
-Write-Host '  Svarbu: NEUZVERK sio lango (Ctrl+C stabdo).' -ForegroundColor Yellow
+Write-Host '  CLINE PRISIJUNGE. Laukiu komandu...' -ForegroundColor Green
+Write-Host ('  Klientas: ' + $cid.Substring(0, 8)) -ForegroundColor DarkGray
+Write-Host '  NEUZVERK sio lango.' -ForegroundColor Yellow
 Write-Host '=========================================================' -ForegroundColor Green
 Write-Host ''
 
 $since = 0
 while ($true) {
     try {
-        $r = Invoke-RestMethod -Uri "$base/next?since=$since" -Headers $hdr -TimeoutSec 25
+        $r = Invoke-RestMethod -Uri "$base/next?since=$since&cid=$cid" -Headers $hdr -TimeoutSec 25
         if ($r -and $r.id) {
             $since = [int]$r.id
             Write-Host ('> ' + [string]$r.cmd) -ForegroundColor Cyan

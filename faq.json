@@ -1,0 +1,127 @@
+{
+  "versija": 1,
+  "atnaujinta": "2026-10-24",
+  "pastaba": "Raktai ir tekstas normalizuojami (mazosios raides, be diakritiku). Atsakymai sugeneruojami i MP3 tik pagal poreiki: /opt/aukcionas/voice/faq_<nr>.mp3",
+  "irasa": [
+    {
+      "nr": 1,
+      "tema": "Prekiu priemimas",
+      "raktai": ["priemimas", "priimti prekes", "perduoti preke", "priduoti", "atiduoti preke", "noriu perduoti", "prekiu priemimas", "ka priimate"],
+      "atsakymas": "Priimame telefonus, kompiuterius ir buitinę techniką. Norėdami perduoti prekę aukcionui, palikite žinutę ir Vilkas su jumis susisieks."
+    },
+    {
+      "nr": 2,
+      "tema": "Kur atvezti preke",
+      "raktai": ["kur atvezti", "kur nuvezti", "kur pristatyti", "adresas", "kur randates", "atvezti preke"],
+      "atsakymas": "Tikslų priėmimo adresą ir laiką suderiname telefonu. Palikite žinutę, ir mes jums perskambinsime."
+    },
+    {
+      "nr": 3,
+      "tema": "Kada vyksta aukcionas",
+      "raktai": ["kada aukcionas", "kada vyksta", "kelinta valanda", "penktadieni", "aukciono laikas", "kada prasideda", "kokiu laiku"],
+      "atsakymas": "Aukcionas vyksta kiekvieną penktadienį dvidešimtą valandą. Prisijungti galite svetainėje penktadienioaukcionas.lt."
+    },
+    {
+      "nr": 4,
+      "tema": "Kaip registruotis",
+      "raktai": ["registracija", "registruotis", "kaip uzsiregistruoti", "prisijungti", "paskyra", "kaip dalyvauti", "kaip pradeti"],
+      "atsakymas": "Registracija paprasta: svetainėje įveskite vardą ir elektroninį paštą. Registracija nemokama ir užtrunka mažiau nei minutę."
+    },
+    {
+      "nr": 5,
+      "tema": "Kaip kelti kaina",
+      "raktai": ["kelti kaina", "kaip statyti", "statymas", "pasiulyti kaina", "padidinti kaina", "kaip nupirkti"],
+      "atsakymas": "Kai lotas prasideda, spauskite mygtuką Kelti ir pasirinkite sumą. Sistema iškart praneš, jei kas nors jus pralenkė."
+    },
+    {
+      "nr": 6,
+      "tema": "Mokejimas",
+      "raktai": ["mokejimas", "kaip moketi", "apmoketi", "pavedimas", "bankas", "saskaita", "atsiskaitymas", "pervesti pinigus"],
+      "atsakymas": "Atsiskaityti galima banko pavedimu arba grynaisiais atsiimant prekę. Sąskaitą atsiunčiame laimėjus lotą."
+    },
+    {
+      "nr": 7,
+      "tema": "Siuntimas",
+      "raktai": ["siuntimas", "siusti", "pastomatas", "pristatymas", "kurjeris", "kada gausiu", "ar siunciate prekes"],
+      "atsakymas": "Prekes siunčiame į paštomatus arba per kurjerį, paprastai per vieną ar dvi darbo dienas. Siuntimo išlaidas pridedame prie sąskaitos."
+    },
+    {
+      "nr": 8,
+      "tema": "Garantija ir grazinimas",
+      "raktai": ["garantija", "grazinimas", "grazinti", "48 valandos", "garantinis", "ar yra garantija"],
+      "atsakymas": "Naudotai prekei suteikiame keturiasdešimt aštuonių valandų patikrinimo garantiją. Jei prekė neatitinka aprašymo, grąžinkite ją ir pinigus atgausite."
+    },
+    {
+      "nr": 9,
+      "tema": "Komisiniai",
+      "raktai": ["komisiniai", "komisinis", "mokestis", "kiek imate", "procentai", "nuo pardavimo", "ar reikia moketi uz dalyvavima"],
+      "atsakymas": "Pardavėjui komisinis mokestis taikomas nuo pardavimo sumos, tikslų dydį suderiname perduodant prekę. Pirkėjui papildomų mokesčių nėra."
+    },
+    {
+      "nr": 10,
+      "tema": "Atsiemimas vietoje",
+      "raktai": ["atsiemimas", "atsiimti vietoje", "pasiimti", "atvykti", "ar galiu atsiimti"],
+      "atsakymas": "Laimėtą prekę galite atsiimti vietoje arba užsisakyti siuntimą. Atsiimdami turėkite asmens dokumentą."
+    },
+    {
+      "nr": 11,
+      "tema": "Loto laikas",
+      "raktai": ["loto", "kiek laiko", "trukme", "viena minute", "kiek trunka", "kaip vyksta lotas"],
+      "atsakymas": "Vienas lotas trunka apie vieną minutę. Baigiantis laikui dar galima pakelti kainą, todėl stebėkite ekraną."
+    },
+    {
+      "nr": 12,
+      "tema": "Kaip suzinoti laimetoja",
+      "raktai": ["laimetojas", "kaip suzinoti", "ar laimejau", "pranesimas", "kas laimejo", "ar as laimejau"],
+      "atsakymas": "Laimėtoją paskelbiame iškart po loto pabaigos ekrane, o pranešimą atsiunčiame elektroniniu paštu."
+    },
+    {
+      "nr": 13,
+      "tema": "Kontaktai",
+      "raktai": ["kontaktai", "telefonas", "numeris", "el pastas", "elektroninis pastas", "susisiekti", "rasyti"],
+      "atsakymas": "Su mumis galite susisiekti elektroniniu paštu mindaugasbusiness eta gmail taškas com arba telefonu nulis šeši šeši trys trys vienas devyni trys."
+    },
+    {
+      "nr": 14,
+      "tema": "Kas yra Vilkas",
+      "raktai": ["vilkas", "kas tu", "kas yra vilkas", "kas kalba", "vedejas", "administratorius", "kas veda"],
+      "atsakymas": "Vilkas yra mūsų aukciono vedėjas, kuris veda penktadienio vakarus ir priima prekes. Jei jo nėra, palikite žinutę ir jis perskambins."
+    },
+    {
+      "nr": 15,
+      "tema": "Ar galima apziureti preke",
+      "raktai": ["apziureti", "pamatyti preke", "nuotraukos", "bukle", "ar veikia preke", "aprasymas"],
+      "atsakymas": "Kiekvienos prekės nuotraukos ir aprašymas skelbiami svetainėje prieš lotą. Apžiūrėti prekę vietoje galima suderinus laiką."
+    },
+    {
+      "nr": 16,
+      "tema": "Atsiskaitymas vietoje",
+      "raktai": ["atsiskaityti vietoje", "grynaisiais", "gryni pinigai", "kortele", "moketi vietoje", "ar galima vietoje"],
+      "atsakymas": "Taip, vietoje galima atsiskaityti grynaisiais. Kortele atsiskaityti galima tik suderinus iš anksto."
+    },
+    {
+      "nr": 17,
+      "tema": "Kiek prekiu per vakara",
+      "raktai": ["kiek prekiu", "kiek lotu", "per vakara", "kiek daiktu", "kiek per aukciona", "prekiu skaicius"],
+      "atsakymas": "Per vieną vakarą paprastai parduodame keliasdešimt prekių. Tikslų sąrašą matote svetainėje prieš aukcioną."
+    },
+    {
+      "nr": 18,
+      "tema": "Siuntimas i uzsieni",
+      "raktai": ["uzsienis", "i uzsieni", "uzsienio", "kita salis", "ar siunciate i uzsieni", "uzsienyje"],
+      "atsakymas": "Šiuo metu siunčiame tik Lietuvos teritorijoje. Dėl siuntimo į užsienį atskirai susisiekite elektroniniu paštu."
+    },
+    {
+      "nr": 19,
+      "tema": "Ka daryti jei preke neveikia",
+      "raktai": ["neveikia", "sugedusi", "defektas", "sulauzytas", "blogai veikia", "preke neveikia"],
+      "atsakymas": "Jei prekė neveikia, susisiekite per keturiasdešimt aštuonias valandas nuo atsiėmimo. Mes ją pakeisime arba grąžinsime pinigus."
+    },
+    {
+      "nr": 20,
+      "tema": "Kaip atsiimti laimeta preke",
+      "raktai": ["kaip atsiimti", "atsiimti laimeta", "pasiimti laimeta", "kur atsiimti", "laimetos prekes atsiemimas"],
+      "atsakymas": "Laimėtą prekę galite atsiimti vietoje arba užsisakyti siuntimą. Dėl laiko susitariame atsakydami į laimėtojo pranešimą."
+    }
+  ]
+}
