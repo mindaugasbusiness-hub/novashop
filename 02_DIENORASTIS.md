@@ -146,3 +146,50 @@ nes dokumentai keliauja į tą patį viešą repo). Patikrinta: `grep -c '<slapt
 **Ko nepadariau:** nekeitau VPS slaptažodžio (tai tavo sprendimas), netryniau ir
 neperrašiau `cline/ejzcxn55` istorijos (tai sunaikintų tavo duomenis), nesijungiau prie VPS.
 
+---
+
+## 2026-10-25 (dar tęsinys) — KONTEKSTO APSAUGA (atsakymas į pagrindinę problemą)
+
+**Vartotojo nurodymas:** „nieko neleidžiu išvalyti, tegul viskas būna kaip yra“.
+→ **Įvykdyta:** `cline/ejzcxn55` neliesta, jokie failai netrinti ir nearchyvuoti.
+
+**Problema, kurią vartotojas aprašė:** gavus užduotį įsijungė raudonas tekstas, agentas
+nereagavo, bandymai „prikelti“ nepadėjo; teko kurti naują agentą ir vėl gaišti laiką
+sugrįžimui. Vartotojas prašė, kad tai **nebesikartotų niekada**.
+
+**Diagnozė:** tai konteksto lango viršijimas — modeliui kiekvienu žingsniu siunčiama visa
+pokalbio istorija, ir kai ji viršija limitą, sesija miršta be įspėjimo. Tai techninis
+limitas, o ne „per mažai proto“.
+
+**Ką padariau:**
+
+1. Sukurtas įrankis `tools/konteksto-sargas.py` (be išorinių priklausomybių, Python 3):
+   - `check` — randa Cline sesijų katalogus (VS Code / Cursor / Windsurf / VSCodium
+     `globalStorage/saoudrizwan.claude-dev/tasks`, `~/.cline/data/sessions`), suskaičiuoja
+     kiekvienos sesijos apimtį ir parodo **% limito** su 4 lygiais:
+     `OK` (<60 %) → `DEMESIO` (<80 %) → `PAVOJUS` (<90 %) → `LIMITAS`.
+     Parodo, kuri sesija paskutinė dirbta, ir duoda sprendimą.
+   - `handoff` — iš `00_START_HERE.md` (pradžia) + `02_DIENORASTIS.md` (paskutinės 25 eil.)
+     + `04_TODO.md` (paskutinės 25 eil.) surenka `PRADZIOS_PROMPTAS.txt` (~900 tokenų),
+     kad nauja sesija per 1 minutę būtų pilname kontekste.
+   - NIEKO netrina — tik skaito ir įrašo vieną naują failą.
+
+2. `00_START_HERE.md` pridėtas **10 skyrius** „KONTEKSTO APSAUGA“:
+   kodėl tai atsitiko, 7 taisyklės, ką daryti kai raudona jau įsijungė, įrankio naudojimas,
+   rekomenduojama rutina, ir ko nedaryti su dokumentais (archyvavimas — tik vartotojo sprendimu).
+
+**Patikra (realus paleidimas):**
+- `python3 -m py_compile tools/konteksto-sargas.py` → OK
+- `check` su testiniais katalogais: 800 000 B → `200 000` tokenų → **100.0 % LIMITAS**;
+  660 000 B → **82.5 % PAVOJUS**; 400 000 B → **50.0 % OK**; tuščias katalogas praleistas;
+  „paskutine dirbta“ žyma teisinga
+- `check` su nerastu keliu → aiškus pranešimas + patarimas naudoti `--sessions-root`
+- `handoff --dir /workspace` → 3 613 B, 92 eilutės, sekcijos `00_START_HERE.md`,
+  `02_DIENORASTIS.md`, `04_TODO.md`, `KITAS ZINGSNIS`
+- `handoff` su pilnu katalogu (įskaitant `04_TODO.md`) → 3 677 B, 96 eilutės, TODO dalis
+  įtraukta teisingai
+
+**Kitas žingsnis:** nukopijuoti `tools/konteksto-sargas.py` į `C:\Users\M\CLINE\tools\`
+ir įtraukti `check` į `swiss.ps1` (kad įspėjimas būtų matomas autostarto metu).
+
+

@@ -223,3 +223,88 @@ ir tas pats slaptažodis `_ssh.py` kode (`PWD = "***"`).
 - **Nesijungiau prie 5.175.171.113**, kad „patikrinčiau, ar slaptažodis veikia“ — tai
   nereikalingas jungimasis prie svetimo serverio.
 
+---
+
+## 10. KONTEKSTO APSAUGA — kad raudona klaida NIEKADA nebesikartotų
+
+### 10.1 Kodėl tai atsitiko (ne tavo ir ne modelio kaltė)
+
+Modeliui kiekvienu žingsniu iš naujo siunčiama **visa pokalbio istorija**: visi pranešimai,
+visi komandų išvedimai, visi įklijuoti failai. Kai bendras tekstas viršija modelio
+**konteksto langą**, sesija miršta su raudona klaida ir nebeatsako — **be įspėjimo**.
+Tai kietas techninis limitas, o ne „per mažai proto“.
+
+Dažniausios priežastys, kodėl limitas pasiekiamas:
+
+1. Ilga sesija be pertraukos (10, 50, 100 žingsnių toje pačioje sesijoje)
+2. Į pokalbį įklijuoti dideli failai ar kelių šimtų eilučių išvedimai
+3. Komandos be `-Tail` / `Select-Object -Last N` → kiekviena atsako viską
+4. Base64 „push“ komandos (kaip `_mcmd/*.ps1`) — vienas toks blokas gali būti keli tūkstančiai tokenų
+
+### 10.2 Septynios taisyklės
+
+1. **Viena sesija = viena užduotis.** Užduotį baigei → uždaryk sesiją ir atidaryk naują.
+   Ilga sesija nėra efektyvesnė — ji tik tyliai kaupia kontekstą.
+2. **Dideli duomenys — į failus, ne į pokalbį.** Niekada neklijuok šimtų eilučių į chat'ą:
+   įrašyk į failą ir pasakyk kelią. Išvedimus visada trumpink
+   (`... | Select-Object -Last 20`, `head`, `tail`).
+3. **Checkpoint kas 5–10 žingsnių.** Įrašyk būseną į `02_DIENORASTIS.md` ir `04_TODO.md`,
+   padaryk `git commit` (+ push). Tada raudona klaida kainuoja **0** — nieko neprarandi.
+4. **Matuok apimtį.** `python tools\konteksto-sargas.py check` parodo, kiek % limito jau
+   užimta. 60 % — OK, **80 % — pradėk baigti**, 90 % — baik iš karto.
+5. **Visada turėk paruoštą handoff.** `python tools\konteksto-sargas.py handoff` sukuria
+   `PRADZIOS_PROMPTAS.txt` (~900 tokenų). Nauja sesija paleidžiama **vienu priklijuotu failu**
+   vietoj pusvalandžio aiškinimo.
+6. **Didžiausią darbą daryk pirmame žingsnyje, ne paskutiniame.** Jei žinai, kad reikės
+   didelio įklijavimo — daryk jį kol sesija dar „švari“.
+7. **Git ir kopijos — tavo draugas.** `swiss.ps1` daro `BACKUPS` / `BACKUPS_VPS`, o git
+   branch'ai saugo kodą. Sesija gali mirti — darbas ne.
+
+### 10.3 Ką daryti, kai raudona jau įsijungė (greičiausias kelias)
+
+1. **Nebandyk „prikelti“ tos pačios sesijos.** Ji nebeatsakys — kiekvienas bandymas tik
+   gaisto laiką (būtent tai ir nutiko: „ką tik nebandžiau — jis nereagavo“).
+2. Atidaryk **NAUJĄ** sesiją.
+3. Įklijuok `C:\Users\M\CLINE\PRADZIOS_PROMPTAS.txt` turinį (arba `00_START_HERE.md` pradžią
+   + `02_DIENORASTIS.md` paskutines ~25 eilutes).
+4. Tęsk nuo `04_TODO.md` paskutinio nepažymėto punkto.
+
+**Praktiškai:** per 1 minutę naujas agentas žino projektą, būseną ir ką daryti toliau —
+be „sugrįžimo“ laiko.
+
+### 10.4 Įrankis
+
+```powershell
+# 1) Patikrinti, kiek konteksto jau užimta
+python C:\Users\M\CLINE\tools\konteksto-sargas.py check
+
+# 2) Sukurti pradžios promtą naujai sesijai
+python C:\Users\M\CLINE\tools\konteksto-sargas.py handoff
+```
+
+Papildomi parametrai:
+
+- `check --budget 200000` — konteksto limitas tokenais (jei modelis didesnis — didink)
+- `check --top 15` — kiek sesijų rodyti
+- `check --sessions-root "C:\Users\M\.cline\data\sessions"` — jei sesijos yra nestandartinėje vietoje
+- `handoff --dir "C:\Users\M\CLINE" --head 45 --tail 25`
+
+Jei `check` nieko neranda, jis parodo, kur ieškojo — tada nurodyk kelią per `--sessions-root`.
+
+### 10.5 Rekomenduojama rutina (kad būtų automatiška)
+
+1. **Sesijos pradžioje:** `python tools\konteksto-sargas.py check`
+2. **Kas ~30 min arba kas 10 žingsnių:** vėl `check`; jei ≥ 80 % → `handoff` + commit + nauja sesija
+3. **Sesijos pabaigoje (arba prieš priverstinį uždarymą):** papildyti `02_DIENORASTIS.md`,
+   `04_TODO.md`, `git commit` + `git push`, `handoff`
+4. **`swiss.ps1`** jau paleidžiamas įjungus PC — verta į jį įtraukti ir
+   `konteksto-sargas.py check`, kad įspėjimas būtų matomas autostarto metu
+
+### 10.6 Ko NEDARYTI su šiais dokumentais
+
+- **Netrink ir nearchyvuok nieko be savo sprendimo.** Dokumentai gali augti — bet jei
+  `02_DIENORASTIS.md` tampa labai ilgas, jį skaityti brangiai kainuoja. Tada (tavo
+  sprendimu) senus įrašus perkelti į `02_DIENORASTIS_ARCHYVAS.md`, o šiame palikti
+  paskutinius ~50. **Šiuo metu nieko nearchyvuota** — viskas kaip yra.
+
+
