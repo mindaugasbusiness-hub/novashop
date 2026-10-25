@@ -1,7 +1,9 @@
 # CLINE ATASKAITA — 2026-10-25 (vakaro darbai)
 
 **Kompiuteris:** DESKTOP-7LPGR90 · **Savininkas:** M
-**Šis failas:** sugeneruotas automatiškai, senosios ataskaitos neperrašo.
+**Šis failas:** sugeneruotas automatiškai; senosios ataskaitos neperrašo.
+**Kopijos:** `C:\Users\M\CLINE\VISKAS\CLINE_ATASKAITA_2026-10-25_VISKAS_AUTOMATIKA.md`
+**Pastaba:** tavo kompiuteryje veikia tvarkytojas, kuris laisvus darbalaukio failus sukelia į `Desktop\2026010.24d\`. Jei šio failo darbalaukyje neberasi — jis bus ten (ten jau yra ir šios ataskaitos kopija).
 
 ---
 
