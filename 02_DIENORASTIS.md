@@ -322,3 +322,23 @@ ir logas auga, kopijos `2026-10-25_0544` (VPS) / `2026-10-25_0300` (vietinė) š
 **Nepaliesta:** jokie M failai netrinti/perkelti/pervardinti. Tik 4 pakeitimai aukščiau,
 kiekvienas su atskira kopija — grąžinama vienu žingsniu.
 
+
+## 2026-10-25 (tęsinys 6) — SUKURTAS APLANKAS `C:\Users\M\CLINE\VISKAS\`
+
+M paprašė **vieno aplanko**, kuriame būtų visi prisijungimai, visi raktai ir visi darbai —
+kad duotų jį naujam agentui ir tas iš karto žinotų viską.
+
+**Sukurta (62 failai):**
+- `00_SKAITYK_PIRMA.md` — įėjimas (skaitymo eilė, taisyklės, sistema, kaip prisijungti per relay)
+- `01_PRISIJUNGIMAI_IR_RAKTAI.md` — VISI prisijungimai: HostBrr, VPS, aukciono admin, Gmail,
+  ElevenLabs, OpenRouter, vast.ai ×4, Bybit, Binance, SpectroCoin, Meistrų portalai, Twilio+SIP,
+  Anthropic, Vinted, Nuoma, kripto piniginė, BTOKEN, perkėlimo paketas, SSH
+- `02_ATLIKTI_DARBAI.md` — visi darbai 10-22 → 10-25
+- `03_SISTEMA_IR_SERVISAI.md` — sistema, 9 servisai, VPS, 6 grafikai, projektai
+- `04_SIANDIENOS_TVARKYMAS.md` — šios dienos pataisos + kopijų keliai
+- `05_TODO.md` — likę 5 punktai su smulkiais žingsniais
+- `SEIFAS\` — 56 originalūs seifo failai (105,6 KB), nepakeisti
+
+**Darbalaukyje:** `CLINE VISKAS.lnk` (1 804 B) → atidaro aplanką vienu paspaudimu.
+
+**SVARBU:** šis aplankas turi slaptažodžių → **niekada neį viešą repo**. Jis yra tik M kompiuteryje.
