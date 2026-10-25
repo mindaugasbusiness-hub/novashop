@@ -192,4 +192,50 @@ limitas, o ne „per mažai proto“.
 **Kitas žingsnis:** nukopijuoti `tools/konteksto-sargas.py` į `C:\Users\M\CLINE\tools\`
 ir įtraukti `check` į `swiss.ps1` (kad įspėjimas būtų matomas autostarto metu).
 
+---
+
+## 2026-10-25 (tęsinys 3) — RASTAS TIKSLUS TRIGGERIS: „peržiūrėk http://127.0.0.1:8790/“
+
+**Vartotojo informacija:** raudonas tekstas įsijungė būtent tada, kai buvo pasakyta
+„peržiūrėk, netvarka yra čia http://127.0.0.1:8790/“.
+
+**Patikra:**
+- `curl http://127.0.0.1:8790/` iš sandbox → **`000`** (nepasiekiama). Tai vartotojo
+  kompiuterio servisas, sandbox'as jo nepasiekia.
+- `git log --all --diff-filter=A --name-only | grep -iE 'pultas|panel'` → rasti tik
+  `_panel.cjs` ir `_pan.log`, bet jie yra apie **aukciono svetainės** panelę `#aqrPanel`,
+  ne apie :8790. **`pultas.py` repo istorijoje nėra** → paties „netvarkos“ pamatyti negalima.
+
+**Diagnozė:** „peržiūrėk puslapį“ agentui reiškia įtraukti **visą HTML į pokalbį**.
+100 KB puslapis ≈ 25 000 tokenų vienu žingsniu → konteksto limitas → raudona klaida.
+Tai paaiškina, kodėl būtent ši užduotis nulaužė sesiją.
+
+**Ką padariau:** sukurtas įrankis `tools/pulto-tikrintuvas.py` — saugus puslapio tikrinimas:
+- parsiunčia puslapį ir įrašo į `pulto-raw.html` (į pokalbį NEkeliama)
+- į ekraną išveda tik ~40 eilučių ataskaitą (~500 tokenų)
+- randa: pasikartojančius `id`, nerastus lokalius failus (404), inline `onclick`,
+  `<button>` be `type`, `<img>` be `alt`, `href="#"`/`TODO`/`undefined`, mojibake,
+  nesubalansuotus tag'us, ilgiausias eilutes su numeriais
+- įrašo tą pačią ataskaitą į `pulto-ataskaita.txt`
+
+`00_START_HERE.md` papildytas: 10.2 taisyklė **Nr. 8** ir naujas skyrius **10.7**.
+
+**Patikra (realus paleidimas su testiniu „netvarkingu“ puslapiu):**
+- HTTP 200, 11 547 B, 15 eil. aptikta teisingai
+- pasikartojantys `id`: `"btn" x3` → rasta
+- nerasti lokalūs failai: `3 is 4` (`/nera.css`, `/nera.js`, `/x.png`) → rasta
+- inline `onclick`: 6 → rasta; `<button>` be `type`: 6 → rasta; `<img>` be `alt`: 1 → rasta
+- placeholder'iai: `TODO x2`, `undefined x1`, `href="#" x2` → rasta
+- mojibake: `'A su stogeliu' x5`, `'?' rombas x2` → rasta
+- nesubalansuoti tag'ai: `div 4/3` → rasta
+- ilgiausios eilutės: eil. 13, **10 837 simb.** → rasta
+- ataskaita: **39 eilutės / 1 907 B / ~476 tokenų** (raw HTML būtų ~2 884 tokenų;
+  realiame pulte būtų 12 000–50 000)
+- nepasiekiamo URL atvejis → „NEPASIEKTA“ + patarimas `netstat -ano | findstr 8790`, `exit=1`
+
+**Kitas žingsnis:** nukopijuoti `tools/pulto-tikrintuvas.py` į `C:\Users\M\CLINE\tools\`,
+paleisti jį prieš duodant agentui bet kokią „peržiūrėk puslapį“ užduotį, o agentui duoti
+tik ataskaitą.
+
+
 

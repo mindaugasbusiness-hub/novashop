@@ -259,6 +259,8 @@ Dažniausios priežastys, kodėl limitas pasiekiamas:
    didelio įklijavimo — daryk jį kol sesija dar „švari“.
 7. **Git ir kopijos — tavo draugas.** `swiss.ps1` daro `BACKUPS` / `BACKUPS_VPS`, o git
    branch'ai saugo kodą. Sesija gali mirti — darbas ne.
+8. **NIEKADA nesakyk „peržiūrėk šitą puslapį / panelę“.** Būtent tai nulaužė kontekstą.
+   Vietoj to naudok `tools\pulto-tikrintuvas.py` (žr. **10.7**).
 
 ### 10.3 Ką daryti, kai raudona jau įsijungė (greičiausias kelias)
 
@@ -306,5 +308,45 @@ Jei `check` nieko neranda, jis parodo, kur ieškojo — tada nurodyk kelią per 
   `02_DIENORASTIS.md` tampa labai ilgas, jį skaityti brangiai kainuoja. Tada (tavo
   sprendimu) senus įrašus perkelti į `02_DIENORASTIS_ARCHYVAS.md`, o šiame palikti
   paskutinius ~50. **Šiuo metu nieko nearchyvuota** — viskas kaip yra.
+
+### 10.7 SVARBU: „peržiūrėk, netvarka yra čia http://127.0.0.1:8790/“ — taip NEGALIMA
+
+Būtent ši užduotis nulaužė kontekstą. „Peržiūrėk puslapį“ agentui reiškia: **įtraukti visą
+puslapio HTML į pokalbį**. 100 KB puslapis ≈ **25 000 tokenų vienu žingsniu** — ir sesija miršta.
+
+**Taisyklingai (saugus būdas):**
+
+```powershell
+python C:\Users\M\CLINE\tools\pulto-tikrintuvas.py
+```
+
+Ką jis padaro:
+
+- parsiunčia `http://127.0.0.1:8790/` ir įrašo į `pulto-raw.html` — **failas NEkeliamas į pokalbį**
+- į ekraną išveda tik **~40 eilučių ataskaitą (~500 tokenų)** su konkrečia netvarka:
+  - pasikartojantys `id`
+  - **nerasti lokalūs failai (404)** — tikrina kiekvieną `<link>` / `<script>` / `<img>`
+  - inline `onclick` / `onchange` kiekis
+  - `<button>` be `type`, `<img>` be `alt`
+  - tušti `href="#"` / `href=""`, `TODO`, `undefined`, `NaN`
+  - mojibake (blogo encoding) požymiai
+  - nesubalansuoti tag'ai (pvz. `div 4/3`)
+  - **ilgiausios eilutės su numeriais** — ten, kur dažniausiai slepiasi netvarka
+- tą pačią ataskaitą įrašo į `pulto-ataskaita.txt`
+
+Tada agentui duodi **tą ataskaitą** (arba tik `[!]` eilutes) — o ne puslapį.
+
+**Lygis:** ataskaita ≈ 500 tokenų, puslapis ≈ 25 000 tokenų → **50× pigiau**.
+
+Parametrai:
+
+- `--url http://127.0.0.1:8790/` (numatytas)
+- `--out-dir "C:\Users\M\CLINE"` (kur įrašyti raw + ataskaitą)
+- `--no-asset-check` (jei nereikia tikrinti kiekvieno failo atskirai — greičiau)
+- `--quiet` (nieko nespausdinti, tik įrašyti ataskaitą)
+
+Jei pultas nepaleistas, įrankis tai pasakys ir patars:
+`netstat -ano | findstr 8790`.
+
 
 
