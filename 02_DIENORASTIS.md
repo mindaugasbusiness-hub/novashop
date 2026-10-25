@@ -283,3 +283,42 @@ būti VPS slaptažodis (kaip buvo `_ssh.py`).
 
 
 
+
+---
+
+## 2026-10-25 (tęsinys 5) — RYŠYS ATKURTAS, PULTAS IR CDP SUTVARKYTI
+
+**Ryšys:** relay + cloudflared iš Cline pusės veikia. M prisijungė
+`iex (irm https://amino-beneath-plugins-allergy.trycloudflare.com/agent.ps1)` → klientas
+`c822ead8`. Sukurtas `tools/relay/pc.py` (komandos į PC; išvestis į failus — saugomas kontekstas).
+
+**Perskaityta:** Desktop'as (889 aplankai, 6 898 tekstiniai failai), `CLINE\00–10`,
+`INVENTORIUS\01–08` (13 090 eil.), **seifas** `SEIFAS_PRIVATUS_NEPLATINTI` (55 failai),
+`00_KUR_SLAPTAZODZIAI`, `00_MASTER_KAS_KUR_IR_SEIFAS`, visi raktai. Žemėlapis →
+`03_DESKTOP_ZEMELAPIS.md` (be slaptažodžių — repo viešas).
+
+**Pakeitimai M kompiuteryje (visi su kopijomis):**
+
+| # | Failas | Ką pakeista | Kopija |
+|---|---|---|---|
+| 1 | `pultas\pultas.py` | VEIKIA/NEVEIKIA (buvo RODOMAS/NE/is-active/active), diakritikai, skaičiai lietuviškai, kopijų amžius ŠVIEŽIAS/PASENĘS, `align-items:start`, `podėlis` (buvo `cache`), `[icy]` pašalintas | `pultas.py.bak-2026-10-25-cline` (28 642 B) |
+| 2 | `pultas\pultas.py` | G) rodo **tikrą** naujausią VPS kopiją iš failų sistemos (buvo tik rankinis logas) | tas pats |
+| 3 | `tools\sesijos-pradzia.ps1` | Žingsnis **5b**: paleidžia Chrome su `--remote-debugging-port=9222` (atskiras profilis `chrome_agent`). `(Test-Path)` → `YRA`/`NERA` (buvo `True`) | `sesijos-pradzia.ps1.bak-2026-10-25-cline` (3 830 B) |
+| 4 | Grafikas `CLINE Būdėjimas` | Buvo **įstrigęs „Running"** → `IgnoreNew` atmesdavo (rez. 2147946720). Perregistruota su 5 min trigeriu | `tools\grafiko-CLINE_Budejimas.bak-2026-10-25.xml` (1 551 B) |
+| 5 | Visi 6 `CLINE*` grafikai | `StartWhenAvailable`, leidžiama ant baterijos, limitas 15 min | — |
+
+**Patikrinta gyvai:** pultas 200, **6/6 servisai VEIKIA**, `Naršyklės CDP` →
+`Chrome/156.0.8078.48`, mygtukas „VPS kopija" → `rc=0`, `CLINE Būdėjimas` → rez. **0**
+ir logas auga, kopijos `2026-10-25_0544` (VPS) / `2026-10-25_0300` (vietinė) šviežios.
+
+**M nurodė neliesti („tegul būna viskas kaip yra"):**
+1. `aukcionas.service` — admin slaptažodis atviru tekstu (keliauja į kopijas)
+2. Žvėris keepalive tikrina `:8090` → turi būti `:8091`
+3. `ntfy.sh` DNS klaida `PRANESIMU_LOG.txt`
+4. CDP paleidžiamas tik per `sesijos-pradzia.ps1`
+5. VPS root slaptažodis viešame repo (prieiga veikia per raktą)
+6. vast.ai `$0.00` · 3 migracijos paketai
+
+**Nepaliesta:** jokie M failai netrinti/perkelti/pervardinti. Tik 4 pakeitimai aukščiau,
+kiekvienas su atskira kopija — grąžinama vienu žingsniu.
+
