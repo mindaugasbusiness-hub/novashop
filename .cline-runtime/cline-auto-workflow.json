@@ -1,0 +1,124 @@
+{
+  "id": "clineAuto0000001",
+  "name": "CLINE - Žvėris ir VISKAS automatiškai",
+  "active": true,
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutesInterval": 5
+            }
+          ]
+        }
+      },
+      "id": "a1000000-0000-4000-8000-000000000001",
+      "name": "Kas 5 min",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [0, 0]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:8792/ensure",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "X-Automation-Key",
+              "value": "__AUTOMATION_KEY__"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 130000,
+          "response": {
+            "response": {
+              "fullResponse": true,
+              "neverError": true
+            }
+          }
+        }
+      },
+      "id": "a1000000-0000-4000-8000-000000000002",
+      "name": "Tikrinti ir taisyti Žvėrį",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [240, 0],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:8792/collect",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "X-Automation-Key",
+              "value": "__AUTOMATION_KEY__"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 130000,
+          "response": {
+            "response": {
+              "fullResponse": true,
+              "neverError": true
+            }
+          }
+        }
+      },
+      "id": "a1000000-0000-4000-8000-000000000003",
+      "name": "Surinkti VISKAS istoriją",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [480, 0],
+      "onError": "continueRegularOutput"
+    }
+  ],
+  "connections": {
+    "Kas 5 min": {
+      "main": [
+        [
+          {
+            "node": "Tikrinti ir taisyti Žvėrį",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Tikrinti ir taisyti Žvėrį": {
+      "main": [
+        [
+          {
+            "node": "Surinkti VISKAS istoriją",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "executionTimeout": 240,
+    "saveDataSuccessExecution": "all",
+    "saveDataErrorExecution": "all"
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "pinData": {},
+  "versionId": "b2000000-0000-4000-8000-000000000001",
+  "triggerCount": 1,
+  "isArchived": false,
+  "versionCounter": 1,
+  "description": "Kas 5 min tikrina Žvėris UI, prireikus atkuria ir atnaujina agento naršyklę; atnaujina VISKAS istorijos failą."
+}

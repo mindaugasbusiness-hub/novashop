@@ -1,0 +1,17 @@
+# Niekada nekeliama i repo: raktai ir sugeneruoti slapti failai
+agent_key
+operator_key
+public_url
+server.pid
+cloudflared.pid
+agent-rendered.ps1
+agent-short.ps1
+cloudflared.log
+server.log
+*.txt
+!deploy-*.template.ps1
+
+# Dideli / generuojami failai
+cloudflared
+__pycache__/
+*.pyc

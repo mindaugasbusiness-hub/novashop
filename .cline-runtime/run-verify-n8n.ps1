@@ -1,0 +1,5 @@
+$p='C:\Users\M\CLINE\n8n_verify_workflow.py'
+[IO.File]::WriteAllBytes($p,[Convert]::FromBase64String('aW1wb3J0IHNxbGl0ZTMsIGpzb24KZnJvbSBwYXRobGliIGltcG9ydCBQYXRoCnA9UGF0aChyJ0M6XFVzZXJzXE1cRGVza3RvcFxLdW1zdGlzXHJ1bnRpbWVcbjhuLWRhdGFcLm44blxkYXRhYmFzZS5zcWxpdGUnKQpkYj1zcWxpdGUzLmNvbm5lY3QocC5hc191cmkoKSsnP21vZGU9cm8nLHVyaT1UcnVlKTtkYi5yb3dfZmFjdG9yeT1zcWxpdGUzLlJvdwpmb3IgciBpbiBkYi5leGVjdXRlKCJzZWxlY3QgaWQsbmFtZSxhY3RpdmUsYWN0aXZlVmVyc2lvbklkLHRyaWdnZXJDb3VudCx1cGRhdGVkQXQgZnJvbSB3b3JrZmxvd19lbnRpdHkgb3JkZXIgYnkgYWN0aXZlIGRlc2MsbmFtZSIpOgogICAgcHJpbnQoZGljdChyKSkKcHJpbnQoJy0tLSBFWEVDVVRJT05TIC0tLScpCmZvciByIGluIGRiLmV4ZWN1dGUoInNlbGVjdCBpZCx3b3JrZmxvd0lkLHN0YXR1cyxtb2RlLHN0YXJ0ZWRBdCxzdG9wcGVkQXQgZnJvbSBleGVjdXRpb25fZW50aXR5IG9yZGVyIGJ5IGlkIGRlc2MgbGltaXQgOCIpOgogICAgcHJpbnQoZGljdChyKSkKZGIuY2xvc2UoKQo='))
+& 'C:\Users\M\AppData\Local\Programs\Python\Python312\python.exe' -X utf8 $p 2>&1 | Out-String -Width 3000
+& curl.exe -sS -o NUL -w 'N8N_HEALTH=%{http_code}
+' --max-time 10 http://127.0.0.1:5678/healthz

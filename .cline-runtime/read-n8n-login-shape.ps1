@@ -1,0 +1,1 @@
+Get-Content -LiteralPath 'C:\Users\M\Desktop\Kumstis\n8n-prisijungimas.txt' -Encoding UTF8 | ForEach-Object { if($_ -match '^([^:=]+)[:=](.*)$'){Write-Output ($Matches[1].Trim()+' = [PASLEPTA, ilgis='+$Matches[2].Trim().Length+']')} else {Write-Output ($_ -replace '\S{6,}','[PASLEPTA]')} }
