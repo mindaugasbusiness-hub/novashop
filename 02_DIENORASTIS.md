@@ -97,3 +97,52 @@ Papildomi artefaktai šakoje: `ivr.py`, `faq.json`, `_ataskaita_vilko_mokykla.md
    `cline/ejzcxn55`), ar paliekama kaip informacinė sekcija?
 3. Koks tikrasis karštosios linijos numeris (vietoje `+37060000000`)?
 4. Ar Bitė papildymo puslapį (`cline/f6ggtezn`) jungiam į `main`?
+5. ⚠️ **Nauja ir skubiausia:** ar keiti VPS root slaptažodį ir ar leidi man pašalinti
+   slaptažodį iš `cline/ejzcxn55` šakos (ir/ar padaryti `novashop` repo privatų)?
+
+---
+
+## 2026-10-25 (tęsinys) — vartotojo likučiai + saugumo radinys
+
+Vartotojas atsiuntė PowerShell sesijos išrašą („likučius“) iš savo Windows mašinos, kurioje
+veikia nuotolinis Cline agentas per cloudflared tunelį. Iš jo ir iš dviejų base64 skriptų
+atkurtas aplinkos vaizdas (viskas surašyta į `00_START_HERE.md` 8 skyrių).
+
+### Ką sužinojau / iššifravau
+
+- Vietiniai servisai: `5678` n8n, `8099` naršyklė, `8766` F6 dainos (`/api/list`),
+  `8091` ZVERIS, `8090` tools, `8790` PULTAS, `9222` chrome CDP.
+- `tools\swiss.ps1` („SVEICARISKAS LAIKRODIS“) — vieno paleidimo sveikatos/sutvarkymo
+  rutina: paleidžia servisus, prikelia pultą :8790, daro vietines ir VPS kopijas, jei
+  senesnės nei 20 h, nustato `CLINE*` planuotojo darbams `StartWhenAvailable`, per SSH
+  tikrina VPS servisus, rašo `SVEICARISKAS_LOG.txt`, apkerpa logą ties 1 MB.
+- `tools\_fix_swiss.py` — pataisymas, kuris VPS SSH bloke įrašo `UserKnownHostsFile`
+  ir prideda `aukcionas` / `vilko-mokykla` / `cloudflared-penktadienio` patikras.
+- Autostartas: `CLINE-PULTAS.lnk` ir `CLINE-SVEICARISKAS.lnk`; planuotojo darbai `CLINE*`.
+- VPS: `root@5.175.171.113`, servisai `aukcionas`, `vilko-mokykla`,
+  `cloudflared-penktadienio`; svetainė `penktadienioaukcionas.lt`.
+- `cline-agent.ps1` generuoja atsitiktinį 28 simbolių `TOKEN` ir reikalauja `X-Token`
+  antraštės — vadinasi, pats agentas nėra visiškai atviras.
+
+### ⚠️ Saugumo radinys (kritinis)
+
+Repo `mindaugasbusiness-hub/novashop` yra **PUBLIC**, o šakoje `cline/ejzcxn55`
+(commit `1f40256`, 2026-10-24) yra **gyvas VPS `root` slaptažodis** trijuose failuose:
+`.aukc_env`, `_ssh.py`, `__pycache__/_ssh.cpython-311.pyc`.
+
+Patvirtinta komandomis:
+- `gh repo view ... --json visibility` → `"visibility": "PUBLIC"`
+- `git grep -l '<AUKC_PW>' origin/cline/ejzcxn55` → tie 3 failai
+- `git log --all -- .aukc_env` → `1f40256`, jau nupushinta
+- `git cat-file -e origin/main:.aukc_env` → neegzistuoja (nutekėjimas tik toje šakoje)
+
+Poveikis: bet kas gali `git clone` šaką ir gauti root SSH prie VPS su `aukcionas`,
+`vilko-mokykla`, `cloudflared-penktadienio`. Veiksmų sąrašas — `00_START_HERE.md` 9.3.
+
+**Ką padariau:** užfiksavau radinį dokumentuose **be paties slaptažodžio** (jis redaguotas,
+nes dokumentai keliauja į tą patį viešą repo). Patikrinta: `grep -c '<slaptažodis>'` →
+`0` abiejuose failuose.
+
+**Ko nepadariau:** nekeitau VPS slaptažodžio (tai tavo sprendimas), netryniau ir
+neperrašiau `cline/ejzcxn55` istorijos (tai sunaikintų tavo duomenis), nesijungiau prie VPS.
+
