@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitė papildymas | NovaShop</title>
+    <meta
+      name="description"
+      content="Bitė papildymo puslapis – greitai papildykite Bitė, Telia, Pildyk, Ežys ar Tele2 išankstinio mokėjimo numerį."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand-wrap">
+        <div class="logo">N</div>
+        <div>
+          <p class="brand-name">NovaShop</p>
+          <p class="brand-tag">Papildymo centras</p>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Pagrindinė navigacija">
+        <a href="index.html#products">Produktai</a>
+        <a href="index.html#featured">Pasiūlymai</a>
+        <a href="papildymas.html" aria-current="page">Papildymas</a>
+        <a href="index.html#reviews">Atsiliepimai</a>
+      </nav>
+
+      <a class="cart-btn" href="index.html">← Į parduotuvę</a>
+    </header>
+
+    <main>
+      <section class="topup-hero">
+        <div class="topup-hero-copy">
+          <span class="eyebrow">Papildymas internetu</span>
+          <h1>Bitė papildymas</h1>
+          <p>
+            Papildykite išankstinio mokėjimo numerį per kelias sekundes. Pasirinkite operatorių,
+            įveskite numerį ir sumą – pinigai sąskaitoje atsiras iš karto.
+          </p>
+          <ul class="hero-stats">
+            <li><strong>5</strong><span>operatoriai</span></li>
+            <li><strong>0 €</strong><span>komisinis</span></li>
+            <li><strong>iš karto</strong><span>įskaitymas</span></li>
+          </ul>
+        </div>
+
+        <div class="topup-card" id="papildymas">
+          <h2>Papildyti sąskaitą</h2>
+          <p class="topup-card-sub">
+            Visi laukai privalomi. Tai demo papildymo puslapis – tikri mokėjimai neatliekami.
+          </p>
+
+          <form id="topup-form" class="topup-form" novalidate>
+            <div class="field">
+              <label for="operator">Operatorius</label>
+              <select id="operator" name="operator" required>
+                <option value="bite" selected>Bitė</option>
+                <option value="telia">Telia</option>
+                <option value="pildyk">Pildyk</option>
+                <option value="ezys">Ežys</option>
+                <option value="tele2">Tele2</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="phone">Telefono numeris</label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                inputmode="tel"
+                autocomplete="tel"
+                placeholder="+370 6XX XXXXX"
+                pattern="^\+3706\d{7}$"
+                required
+              />
+              <small class="field-hint">Formatas: +3706XXXXXXX (be tarpų).</small>
+            </div>
+
+            <fieldset class="field amount-fieldset">
+              <legend>Papildymo suma</legend>
+              <div class="amount-grid">
+                <label class="amount-option">
+                  <input type="radio" name="amount" value="1" /><span>1 €</span>
+                </label>
+                <label class="amount-option">
+                  <input type="radio" name="amount" value="3" /><span>3 €</span>
+                </label>
+                <label class="amount-option">
+                  <input type="radio" name="amount" value="5" checked /><span>5 €</span>
+                </label>
+                <label class="amount-option">
+                  <input type="radio" name="amount" value="10" /><span>10 €</span>
+                </label>
+                <label class="amount-option">
+                  <input type="radio" name="amount" value="20" /><span>20 €</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <button type="submit" class="primary-btn full-width">Papildyti</button>
+          </form>
+
+          <p id="topup-status" class="topup-status" role="status" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <section class="topup-steps">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Kaip tai veikia</p>
+            <h2>Trys žingsniai iki papildymo</h2>
+          </div>
+        </div>
+
+        <ol class="steps">
+          <li>
+            <span class="num">1</span>
+            <div>
+              <strong>Pasirinkite operatorių</strong>
+              <p>Bitė, Telia, Pildyk, Ežys arba Tele2 – visi populiariausi Lietuvos operatoriai.</p>
+            </div>
+          </li>
+          <li>
+            <span class="num">2</span>
+            <div>
+              <strong>Įveskite numerį ir sumą</strong>
+              <p>Nurodykite numerį formatu +3706XXXXXXX ir pasirinkite papildymo sumą.</p>
+            </div>
+          </li>
+          <li>
+            <span class="num">3</span>
+            <div>
+              <strong>Patvirtinkite</strong>
+              <p>Paspauskite „Papildyti“ – lėšos sąskaitoje atsiras iškart po apmokėjimo.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> NovaShop · Papildymo centras</p>
+      <p><a href="index.html">Grįžti į parduotuvę</a></p>
+    </footer>
+
+    <script src="papildymas.js"></script>
+  </body>
+</html>
