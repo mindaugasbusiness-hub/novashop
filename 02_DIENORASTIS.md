@@ -237,5 +237,49 @@ Tai paaiškina, kodėl būtent ši užduotis nulaužė sesiją.
 paleisti jį prieš duodant agentui bet kokią „peržiūrėk puslapį“ užduotį, o agentui duoti
 tik ataskaitą.
 
+---
+
+## 2026-10-25 (tęsinys 4) — PULTO NETVARKA: gautos 5 ekrano nuotraukos
+
+**Vartotojas atsiuntė 5 pulto (`:8790`) ekrano nuotraukas** ir prašė sutvarkyti netvarką.
+Tai reiškia, kad pultą dabar **matau** (anksčiau `curl` → `000`, nepasiekiamas).
+
+**Ką pamačiau ir ką užfiksavau** (visas sąrašas — `PULTO_TVARKYMAS.md`):
+
+1. **Būsena rodoma 4 skirtingais žodžiais:** `Servisai rodomas 5/6` (antraštė, netaisyklinga
+   lietuvių kalba), `RODOMAS: 5  NE: 1` (A sekcija), `active` / `is-active` (C sekcija),
+   `RODOMAS` (D kopijose — reikšmė neaiški). Tas pats faktas trimis kalbomis ir žodžiais.
+2. **10 vietų trūksta diakritikų:** `is`, `uzimta`, `failu`, `aplanku`, `dainu`, `ivykiu`,
+   `botu`, `07_ZINIOS.md`, `PRANESIMU_LOG.txt`, `BUDEJIMAS_LOG.txt`.
+3. **Python `True` išlindo į ekraną:** `E) SESIJOS_ATASKAITA.txt` rodo `07_ZINIOS.md = True`.
+4. **Skaičiai su tašku ir neteisingas procentas:** `1.76 MB`, `18.9 s`, `7.8G`,
+   o `43% uzimta` turi būti **44 %** (7,8 GB laisva iš 14 GB).
+5. **Trys skirtingi laikai be juostos:** antraštė `02:54:15`, B) `08:04:38`,
+   C) VPS `09:40–09:50`, E) `2026-10-24 23:50:07`.
+6. **Žalias `RODOMAS` prie pasenusių kopijų** — rimčiausia funkcinė klaida: kopijos
+   2026-10-24, o `swiss.ps1` atnaujina kas 20 h → pultas turi rodyti `PASENĘS`, o rodo žalią.
+7. **Didelės tuščios skylės** D/E/F sekcijose (CSS grid be `align-items: start`).
+8. Smulkmenos: `[icy]` radijo eilutėje, `groja: -`, `cache 18.9 s`, `modelis=...`,
+   `uploads=0`, nesuderinti servisų pavadinimai, dublikuota `5/6` informacija.
+9. **Realios klaidos:** `ntfy KLAIDA: The remote name could not be resolved: 'ntfy.sh'`;
+   `Naršyklės CDP :9222 → NE`; `auto-atnaujinimas po N s` — N keičiasi tarp kadrų
+   (`5`→`2`→`1`→`4`→`5`), tai gali būti bug'as.
+
+**Ką padariau:**
+
+1. `PULTO_TVARKYMAS.md` — tikslus sąrašas su „dabar → turi būti“ lentelėmis, suskirstytas
+   10 dalių, įskaitant tai, kas yra kosmetika, o kas funkcinė klaida.
+2. `tools/pultas-taisymai.py` — paruoštos funkcijos pulto kodui:
+   `zenklas()`, `taip_ne()`, `sk()`, `dydis()`, `proc_uzimta()`, `disko_eilute()`,
+   `isvalyti_icy()`, `amzius()`, `laikas()`, `pataisyk()`, `PATAISYMAI` (21 pataisymas),
+   ir `CSS` blokas išdėstymo skylėms.
+   Savitikra: `python tools/pultas-taisymai.py --self-test` → **22/22 PASS**.
+
+**Ko negalėjau padaryti:** pataisyti paties `pultas.py`, nes jo neturiu (repo istorijoje
+nėra, sandbox'as `:8790` nepasiekia). Paprašyta duoti **tik reikalingas ištraukas** per
+`Select-String` (ne visą failą), ir **neįkelti `pultas.py` į viešą repo**, nes jame gali
+būti VPS slaptažodis (kaip buvo `_ssh.py`).
+
+
 
 
