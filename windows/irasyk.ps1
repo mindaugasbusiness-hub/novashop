@@ -1,4 +1,4 @@
-﻿<#
+<#
   irasyk.ps1 - vienintele eilute, kuria sutvarkoma visa M kompiuterio puse.
 
   Ka daro:
@@ -27,15 +27,24 @@ function Imk([string]$saltinis, [string]$katalogas, [string]$failas) {
     if (-not (Test-Path $katalogas)) { New-Item -ItemType Directory -Force -Path $katalogas | Out-Null }
     $tikslas = Join-Path $katalogas $failas
     $url = $Baze + '/' + $saltinis
+    $tmp = if ($env:TEMP) { $env:TEMP } else { [System.IO.Path]::GetTempPath() }
+    $laikinas = Join-Path $tmp ('cline-imk-' + [guid]::NewGuid().ToString('N') + '.tmp')
+    # Siunčiamės Į FAILĄ (ne į tekstą): taip baitai išlieka tiksliai tokie, kokie yra repo.
+    # Tai svarbu .cmd failams (BOM juos sugadintų) ir lietuviškiems raštams .ps1 failuose.
     try {
-        $naujas = (Invoke-WebRequest -Uri $url -UseBasicParsing -TimeoutSec 20 -ErrorAction Stop).Content
+        Invoke-WebRequest -Uri $url -OutFile $laikinas -UseBasicParsing -TimeoutSec 30 -ErrorAction Stop
     } catch {
         Rasyk ('  [X] ' + $failas + ' - nepavyko atsisiusti: ' + $_.Exception.Message) 'Red'
         return $false
     }
     if (Test-Path $tikslas) {
-        try { $senas = Get-Content -Path $tikslas -Raw -ErrorAction Stop } catch { $senas = $null }
-        if ($senas -ne $null -and $senas.Trim() -eq $naujas.Trim()) {
+        try {
+            $nauji = [Convert]::ToBase64String([System.IO.File]::ReadAllBytes($laikinas))
+            $seni = [Convert]::ToBase64String([System.IO.File]::ReadAllBytes($tikslas))
+            $tiePatys = ($nauji -eq $seni)
+        } catch { $tiePatys = $false }
+        if ($tiePatys) {
+            Remove-Item $laikinas -Force -ErrorAction SilentlyContinue
             Rasyk ('  [=] ' + $failas + ' - jau toks pat, palieku') 'DarkGray'
             return $true
         }
@@ -48,9 +57,10 @@ function Imk([string]$saltinis, [string]$katalogas, [string]$failas) {
         }
     }
     try {
-        Set-Content -Path $tikslas -Value $naujas -Encoding UTF8 -NoNewline
+        Move-Item -Path $laikinas -Destination $tikslas -Force
     } catch {
         Rasyk ('  [X] ' + $failas + ' - nepavyko irasyti: ' + $_.Exception.Message) 'Red'
+        Remove-Item $laikinas -Force -ErrorAction SilentlyContinue
         return $false
     }
     Rasyk ('  [OK] ' + $tikslas) 'Green'
