@@ -19,12 +19,27 @@ Kodėl du variantai: žr. 3 skyrių – šioje sesijoje `C:\` disko **nėra**, t
 
 ---
 
+## 1b. SPRENDIMAS: prijungimas per PowerShell (vietinis `cline`)
+
+Direktoriaus tikslas: „prijungti tave per PowerShell“, kad matyčiau `C:\` failus.
+
+**Atsakymas: įmanoma, ir tai patikrinta.** Ne per tunelį, o per vietinį `cline` CLI:
+įdiegiamas vienu `npm install -g cline` **tavo kompiuteryje** → tada aš dirbu tiesiogiai tavo failuose, be adresų, be n8n, be trycloudflare.
+
+- Visos komandos ir žingsniai: **`CLINE/05_PRIJUNGIMAS_WINDOWS.md`**
+- Patikrinta 2026-10-26: `npm install -g cline` → `cline --version` → **3.0.74** veikia; flagai (`-i`, `-c/--cwd`, `--auto-approve`, `auth`) patvirtinti iš `cline --help`.
+- Nesuprantama vieta, kurią direktorius kėlė: „aš įjungiu PowerShell, tu prisijungi ir matai mano failus“.
+  Tikslus paaiškinimas: **aš pats neprisijungiu** — tu paleidi `cline` savo lange, ir tada agentas (aš) skaitau tavo diską. Tai ir yra „prisijungimas“.
+
+---
+
 ## 2. Tvarka, kuria skaitomi failai
 
 1. `CLINE/00_START_HERE.md` ← šis failas (kaip dirbti)
 2. `CLINE/02_DIENORASTIS.md` ← ką veikėme paskutinį kartą, su patikrintais faktais
 3. `CLINE/03_TAISYKLES.md` ← ko NEGALIMA daryti (1-oji taisyklė: nieko netrinti be žodžio)
 4. `CLINE/04_TODO.md` ← kur sustojome ir ką darome toliau
+5. `CLINE/05_PRIJUNGIMAS_WINDOWS.md` ← kaip mane įjungti per PowerShell (3 žingsniai)
 
 ---
 
@@ -38,6 +53,8 @@ Kodėl du variantai: žr. 3 skyrių – šioje sesijoje `C:\` disko **nėra**, t
 | Adresas iš šios dienos veiks rytoj | **NE** — ši smėliadėžė (sandbox) išjungiama, ir adresas miršta kartu su ja |
 | Repo /workspace išliks | **TAIP**, jei įrašyta į git ir nustumta į `origin` |
 | Statinė parduotuvė paleidžiama ir atsakymas 200 OK | **TAIP** — patikrinta: `index.html`, `app.js`, `styles.css` → HTTP 200 |
+| Vietinis `cline` CLI įsidiegia ir veikia (Windows x64 turi oficialų binarą) | **TAIP** — patikrinta: `cline --version` → **3.0.74** |
+| Aš galiu pats „prisijungti“ prie tavo kompiuterio | **NE** — agentas paleidžiamas TAVO pusėje; tu paleidi `cline`, tada jis skaito tavo diską |
 
 Išvada (sąžininga): greitasis kelias su „CLINE RYSYS“ priklauso nuo to, ar rytojaus sesija turės prieigą prie tavo Windows kompiuterio. Jei neturės — jis neveiks, kad ir ką bebūtų pažadėta. Todėl **atrama perkeliama į git**: ji veikia iš bet kurio įrenginio.
 

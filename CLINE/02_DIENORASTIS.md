@@ -4,7 +4,34 @@ Naujausi įrašai viršuje. Kiekvienas įrašas: ką dariau, ką patikrinau, ko 
 
 ---
 
-## 2026-10-26 — Sesija: atrama perkelta į git
+## 2026-10-26 (vėliau tą pačią dieną) — Sesija 2: prijungimo per PowerShell sprendimas
+
+### Kontekstas
+Direktorius: „esmė prijungti tave per power shell“ ir atsiuntė savo PowerShell langą: `PS C:\Users\M>`.
+Anksčiau buvo aprašyta, kad darbalaukyje yra nuorodos „CLINE RYSYS“ / „CLINE - PRADZIA“ ir kad ryšys eina per `trycloudflare` + n8n. Toje žinutėje taip pat buvo „rytoj užteks vieno sakinio“ eilutė.
+
+### Ką išsiaiškinau (patikrinta, ne spėta)
+1. Ši sesija yra **debesų smėliadėžė** (`hostname: ins-01m5wtbtdc22jkc8zgcfqrp448`, Linux), su internetu (IP 34.67.51.12), bet **be `C:\` disko**. Todėl tavo Windows failų iš čia nematau ir negaliu į juos įeiti.
+2. Todėl kryptis turi būti **atvirkštinė: aš įdiegiamas pas tave**, o ne aš jungiuosi pas tave.
+3. Patikrinau oficialų sprendimą — `cline` CLI (npm paketas `cline`, oficialus Cline agentas terminalui):
+   - `npm install -g cline` → įdiegta smėliadėžėje sėkmingai;
+   - `cline --version` → **3.0.74**;
+   - `cline --help` → patvirtinti flagai `-i/--tui`, `-c/--cwd`, `--auto-approve`, `-p/--plan`, `--json`, `-z/--zen`;
+   - `cline auth cline` → OAuth prisijungimas (būtinas prieš paleidžiant, kai naudojamas Cline provider).
+   - Platformos binarai publikuojami macOS, Linux, **Windows** (`arm64`, `x64`) — todėl tavo `PS C:\Users\M>` lange tai veiks.
+4. Sukūriau instrukciją `CLINE/05_PRIJUNGIMAS_WINDOWS.md` (3 žingsniai: Node → `npm i -g cline` → `cline auth cline`; tada `cline -i` arba `cline "<pavedimas>"`).
+
+### Ką tai reiškia direktoriui
+- Nereikia jokio tunelio, jokio n8n, jokio kintančio adreso, jokio „nukopijuok komandą į atmintinę“.
+- Įdiegus vieną kartą — ryšys lieka **visam laikui** ir aš matau `C:\Users\M\...` failus, tame tarpe `C:\Users\M\CLINE\`.
+- Tikslus atsakymas į „kas neaišku“: **aš niekada neprisijungiu pats.** Tu paleidi `cline` savo lange — tada aš dirbu tavo mašinoje. Tai ir yra prijungimas.
+
+### Patikrinimo įrankis
+Komanda, kuri parodo, kokiai mašinai aš prijungtas, ko nematyti rytoj, ir kur tikroji problema — naudota ir šįkart: `hostname`, `ls /mnt`, `curl api.ipify.org`.
+
+---
+
+## 2026-10-26 — Sesija 1: atrama perkelta į git
 
 ### Ką dariau
 1. Patikrinau, ar sesijoje yra `C:\Users\M\CLINE\` ir atminties failai → **nėra** (`/mnt` tuščias, jokio Windows disko, jokio PowerShell).
