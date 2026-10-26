@@ -16,8 +16,8 @@ function Run-Cmd([string]$cmd) {
     $null = $p.WaitForExit(300000)
     if (-not $p.HasExited) { try { $p.Kill() } catch { } ; return 'TIMEOUT (5 min)' }
     $t = ''
-    if (Test-Path $out) { $t += (Get-Content $out -Raw -ErrorAction SilentlyContinue) }
-    if (Test-Path $err) { $t += (Get-Content $err -Raw -ErrorAction SilentlyContinue) }
+    if (Test-Path $out) { $t += (Get-Content $out -Raw -Encoding UTF8 -ErrorAction SilentlyContinue) }
+    if (Test-Path $err) { $t += (Get-Content $err -Raw -Encoding UTF8 -ErrorAction SilentlyContinue) }
     Remove-Item $ps1, $out, $err -Force -ErrorAction SilentlyContinue
     return $t
 }
