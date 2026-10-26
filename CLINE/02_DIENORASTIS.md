@@ -52,3 +52,27 @@ ir aprašė, kaip tai veiks rytoj (trys žingsniai, ~10 sek.).
   → prisijungimas per 2–3 sek. **Tiksliai taip, kaip aprašei.**
 - Be kopijavimo: jei repo bus privatus, galiu paskelbti adresą lentoje ir tada užteks vieno paspaudimo.
 - Ilgalaikis kelias be jokių adresų — `CLINE/05_PRIJUNGIMAS_WINDOWS.md` (`cline` CLI tavo kompiuteryje).
+## 2026-10-26 (vakaras) — F6/F10 gedimo šaknis + 40 dainų
+
+### F6 ir F10 neveikė: priežastis rasta, ne spėta
+- Klavišų daemonas `_vilkas_global_hotkeys.py` **mirdavo iškart po registracijos**: kodas rašė į
+  `sys.stderr`, o paleistas per `pythonw.exe` tas objektas yra `None` → `AttributeError` → programa baigiasi.
+- F1 užimtas kito proceso, todėl tas įspėjimas buvo rašomas **visada** → daemonas mirdavo kiekvieną kartą.
+- Daemonas talpina ir F6 panelį (:8766), todėl kartu nustodavo F6 IR F9/F10 — būtent M simptomas.
+- Pataisyta: saugus `_log()`; patikra `_vilkas_hotkeys.log` rodo `daemonas paleistas, PID 8160` ir
+  `klavisai uzregistruoti: F6-F11 veikia`.
+- Apsauga: `tools\hotkeys-sargas.ps1` + grafikas **CLINE Hotkeys** kas 1 min.; `vilkas-budejimas.ps1`
+  papildytas 3b bloku; `sesijos-pradzia.ps1` paleidžia daemoną su `python.exe` ir logais.
+- Testas: daemonas nužudytas → sargas prikėlė panelį (:8766 KLAUSO).
+
+### F10 nekeitė šokėjos
+- Serveris suko šokėjas kas `DANCER_ROTATE_S = 150`; F10 tik perjungdavo režimą.
+- Pataisyta VPS `app.py`: F10 (OFF) → `dancer_next_public()` + klientas iškart paima naują.
+- Įrodyta: `stage True→False`, šokėja `28 → 29`.
+
+### Dainos į F6 grotuvą
+- yt-dlp 2026.08.19 + ffmpeg 9.0.2; atsisiųsta **40/41** (nepavyko: Zairi Torrez — Progressive World).
+- Įkeltos kaip **36–75**; VPS `DESK_SONG_TITLES` papildyti; lokalus `_desk_songs.py` CATALOG — 71 įrašas.
+- Įrankiai: `tools/songs/atsiust-naujas.py`, `tools/songs/ikelk-i-grotuva.py`, `tools/songs/README.md`.
+- Patikra: F6 panelė 71 daina (visos ok=True); `/api/desk_songs` 71; `/desk-songs/36..75` → 200.
+- Ataskaita M darbalaukyje: `Desktop\ataskaita\CLINE_ATASKAITA_2026-10-26_F10_F6_DAINOS.md`.
