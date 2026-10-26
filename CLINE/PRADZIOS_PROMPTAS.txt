@@ -1,0 +1,1 @@
+Perskaityk CLINE/00_START_HERE.md, CLINE/01_RYSYS.md ir CLINE/02_DIENORASTIS.md is repo mindaugasbusiness-hub/novashop – tęsiam. Pirmas zingsnis: bash tools/relay/start.sh, tada python3 tools/relay/test-relay.py, ir duok man eilute su iex (irm .../agent.ps1).
