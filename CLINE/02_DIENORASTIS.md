@@ -4,6 +4,38 @@ Naujausi įrašai viršuje. Kiekvienas įrašas: ką dariau, ką patikrinau, ko 
 
 ---
 
+## 2026-10-27 — Sesija 4 (tęsinys 6): BLUETOOTH IŠJUNGTAS KOMPIUTERYJE (JBL ausinėms)
+
+### M prašymas
+Vakar bandė prijungti JBL Bluetooth ausines prie kompiuterio (nepavyko iki galo). Po to telefonas ausinių nebemato.
+Prašymas: „kompiuteryje išjunk Bluetooth“, kad ausinės vėl veiktų telefone.
+
+### Ką padariau (patikrinta)
+- Teisės: `admin=False` → `Disable-PnpDevice` netinka, todėl naudojau **Windows radijo API**
+  (WinRT `Windows.Devices.Radios.Radio.SetStateAsync`) — tam admin nereikia.
+- Būsena prieš: `WiFi = On`, `Bluetooth = On`.
+- Įvykdyta: Bluetooth → **Off**, atsakymas `Allowed`; po 2 s patikra: `Bluetooth = Off`, `WiFi = On` (neliestas).
+- `Get-PnpDevice | Where FriendlyName -match 'JBL|Bluetooth|Hands-Free'` → **jokio JBL įrenginio nėra**
+  (tik Broadcom Bluetooth 4.0 adapteris ir Windows enumeratoriai). Vadinasi, kompiuteris ausinių
+  „nelaikė“ kaip garso įrenginio — jos liko neporuotos.
+
+### Įrankiai (M kompiuteryje)
+- `C:\Users\M\CLINE\tools\_bt_off.ps1` — išjungia Bluetooth (be admin)
+- `C:\Users\M\CLINE\tools\_bt_on.ps1` — įjungia atgal (be admin)
+
+### Ką toliau daro M (telefone)
+1. Įjungti ausines; telefone: Bluetooth → ieškoti → „JBL…“.
+2. Jei nemato: ausines į **pairing režimą** (laikyti mygtuką, kol pradeda greitai mirksėti LED),
+   o telefone ištrinti seną „JBL…“ įrašą ir ieškoti iš naujo.
+3. Jei vis tiek nemato — ausinių „factory reset“ (JBL instrukcija: laikyti garso+/garso− ir power).
+
+### Pastaba
+Bluetooth adapteris šiame kompiuteryje — **Broadcom 4.0** (senas). Jei M vėl norės jungti ausines
+prie PC, gali tekti poravimo režimas + kantrybė (4.0 adapteriai su naujesnėmis ausinėmis kartais
+neporuoja iš pirmo karto).
+
+---
+
 ## 2026-10-27 — Sesija 4 (tęsinys 5): PULTO KLAIDOS — /api/state 500 + panelės išsipūtimas
 
 ### M pranešimai
