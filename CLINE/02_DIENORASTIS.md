@@ -4,6 +4,36 @@ Naujausi įrašai viršuje. Kiekvienas įrašas: ką dariau, ką patikrinau, ko 
 
 ---
 
+## 2026-10-27 — Sesija 4 (tęsinys 3): KODĖL NEBUVO MATOMA + v2 PATAISA
+
+### Priežastis (ne spėjimas — išmatuota)
+M atsiuntė ekrano nuotrauką: plytelės po registracijos forma **nebuvo**.
+Išmatavau jo kompiuterį: **ekranas 1093×614**, darbinis plotas 1093×574,
+Chrome klientas 1096×624 → **puslapio laukas ~540 px aukščio**.
+Mano v1 taisyklė `@media (max-height:660px){.neon-dancer{display:none}}` — dėl to plytelė buvo paslėpta.
+Klaida buvo mano: slėpimo slenkstis per aukštas.
+
+### Ką pakeičiau (v2, `tools/neon-dancer/patch_neon_dancer_v2.py`)
+- Slėpiama tik labai žemame ekrane (`max-height:520px`).
+- `max-height:700px` → plytelė 110 px, dalyvių sąrašas `min-height:40px`.
+- `max-height:620px` → plytelė 88 px, sąrašas `min-height:32px`.
+- Registruotam: 172 → 150 px.
+- **Nieko netrinta**: tik 3 eilutės pakeistos į 5 (žr. diff žemiau), kopija `app.py.bak-neonv2-20261027-222042`.
+
+### Patikra (Chrome DevTools, būtent M dydis 1078×540)
+| Kas | Rezultatas |
+|---|---|
+| Plytelė | **168 × 88 px**, x=16, y=359, `display:block` |
+| Panelis | y=8, h=447 → apačia 455; plytelės apačia 447 → **telpa, nesukirpta** |
+| Video | `readyState=4`, `paused=false`, 6,4 s iš 12,9 s, klaidos nėra |
+| Serveris | `aukcionas` active, svetainė 200, blokas 1, video 200 |
+
+### Kas liko M
+- **Ctrl+F5** (perkrauti puslapį) — HTML/CSS yra pačiame `app.py`, todėl sena versija gali būti naršyklės cache.
+- Jei nori didesnės plytelės: mažinam registracijos pastabos tekstą arba didinam iki 110–132 px.
+
+---
+
 ## 2026-10-27 — Sesija 4 (tęsinys 2): RYŠYS PER POWERSHELL + NEONINĖ ŠOKĖJA ĮDIEGTA SERVERYJE
 
 ### Ryšys
