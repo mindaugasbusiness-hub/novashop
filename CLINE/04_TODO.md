@@ -14,16 +14,12 @@ Atnaujinta: 2026-10-27 (Sesija 4) · Branch: `cline/g2zpktej` (nuo `origin/cline
 ### Laukia direktoriaus sprendimo (1 atsakymas iš 3)
 1. **Atidaryti parduotuvę?** (`STORE_PAUSED = false`) — ar dar laikom uždarytą?
 2. **Deploy į GitHub Pages?** — nuolatinis nemokamas adresas, jokio tunelio.
-3. ~~Nebaigtas „neonine šokėja“ darbas~~ → **PARUOŠTA 2026-10-27**: `tools/neon-dancer/`
-   (`patch_neon_dancer.py` + `savitikra.py` 35/35 PASS + `README.md`). Liko TIK įdiegti serveryje:
-
-```bash
-scp tools/neon-dancer/patch_neon_dancer.py root@<serveris>:/tmp/
-python3 /tmp/patch_neon_dancer.py --dry      # sausi patikra
-python3 /tmp/patch_neon_dancer.py            # įrašymas + .bak kopija
-systemctl restart aukcionas
-curl -s http://127.0.0.1:8000/ | grep -c 'class="neon-dancer"'   # turi būti 1
-```
+3. ~~Nebaigtas „neonine šokėja“ darbas~~ → **ĮDIEGTA SERVERYJE 2026-10-27 22:13** ✅
+   - `/opt/aukcionas/app.py` +2090 B, kopija `app.py.bak-neon-20261027-221303`, `aukcionas` → active,
+     svetainė 200, `class="neon-dancer"` = 1, video 200.
+   - Išmatuota per Chrome DevTools: plytelė 168×160 px (x=16, y=359), video groja (4,4 s / 12,9 s).
+   - Jei nepatiks dydis — keičiama viena eilutė (`height`) ir vėl `systemctl restart aukcionas`.
+   - Grąžinimas: `cp /opt/aukcionas/app.py.bak-neon-20261027-221303 /opt/aukcionas/app.py && systemctl restart aukcionas`
 
 ---
 

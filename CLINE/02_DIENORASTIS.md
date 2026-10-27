@@ -4,6 +4,49 @@ Naujausi įrašai viršuje. Kiekvienas įrašas: ką dariau, ką patikrinau, ko 
 
 ---
 
+## 2026-10-27 — Sesija 4 (tęsinys 2): RYŠYS PER POWERSHELL + NEONINĖ ŠOKĖJA ĮDIEGTA SERVERYJE
+
+### Ryšys
+- Paleidau `tools/relay/relay.py` (8798) + `cloudflared 2026.10.5` (atsisiųstas į `/workspace/.tools/`).
+  Adresas: `spend-cited-diego-moisture.trycloudflare.com` (gyvas tik šios sesijos metu).
+- **ntfy budėtojas nepakėlė ryšio** (per ~2 min neprisijungė) — direktorius įklijavo eilutę
+  `iex (irm .../agent.ps1)` rankiniu būdu → klientas prisijungė iš karto.
+- Relay savitikra: **11/11 OK** (relay.py → agent.ps1 → pc.py grandis).
+
+### Ką mačiau M kompiuteryje (patikrinta)
+- `DESKTOP-7LPGR90`, paskyra `desktop-7lpgr90\m`, PowerShell 5.1, Python 3.12.
+- `paramiko 5.0.0`, `websocket-client 1.9.2`, `websockets 17.1`, OpenSSH portable — yra.
+- `C:\Users\M\CLINE\` (~30 katalogų) ir `VISKAS\` (44 failai + `SEIFAS\`):
+  naudingiausia: `VISKAS\00_SKAITYK_NAUJAUSIA.md`, `07_SESIJA_2026-10-27.md`, `11_POKYCIAI.md`,
+  `SEIFAS\00_KUR_SLAPTAZODZIAI.txt`, `tools\vps_*.py` (juose ir VPS prisijungimo duomenys).
+
+### Įdiegimas serveryje (pavyko)
+VPS `penktadienio` (`5.175.171.113`, `/opt/aukcionas/app.py`, 446 547 B):
+1. `--dry` → būtų +2090 baitų.
+2. Tikras įrašymas → **`.bak-neon-20261027-221303`** (kopija prieš).
+3. `systemctl restart aukcionas` → **active**.
+4. `ast.parse` → sintaksė OK; `grep -c 'class="neon-dancer"'` → **1**; svetainė **200**; video **200** (5 100 845 B).
+- Slaptažodis **nespausdintas**: scriptas jį paėmė iš esamo M įrankio (`tools\add_env.py`) ir panaudojo tik kodui.
+
+### Vaizdo patikra (ne akimis, o matavimu — Chrome DevTools)
+- Plytelė: **168 × 160 px**, `x=16, y=359`, `display:block`, `opacity:1`.
+- Panelis: 184 × 519 px, `overflow:hidden` → plytelė **pilnai telpa** (apačia 519 < 527).
+- Video: `readyState=4`, `paused=false`, laikas 4,4 s iš 12,9 s, `error=null` → **tikrai groja**.
+- Ekrano nuotrauka: `C:\Users\M\CLINE\_neon_out\po.png` (1600×900).
+
+### Ko NEDARIAU
+- Nieko netryniau ir nepervardinau; serveryje liko ir sena atsarginė kopija `app.py.bak-neon-2026-10-25`.
+- Netryniau jokių M programų; Chrome naudotas atskiruose temp profiliuose (headless).
+- Sukūriau pagalbinius failus (galiu pašalinti, kai pasakysi):
+  `tools\_peek.py`, `tools\deploy_neon.py`, `tools\neon_run.py`, `tools\_check_shot.ps1`,
+  `tools\_check_shot2.ps1`, `tools\_cdp_check.py`, `_neon_out\po.png`.
+
+### Kas toliau
+- Direktorius žiūri svetainę: ar 160 px aukštis tinka, ar nori mažesnio/didesnio.
+- Grąžinimas atgal (jei nepatiks): `cp /opt/aukcionas/app.py.bak-neon-20261027-221303 /opt/aukcionas/app.py && systemctl restart aukcionas`.
+
+---
+
 ## 2026-10-27 — Sesija 4 (tęsinys): NEONINĖ ŠOKĖJA (#12) — PARUOŠTA ĮDIEGIMUI
 
 ### Tikslas
