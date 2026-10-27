@@ -12,7 +12,7 @@ Atnaujinta: 2026-10-27 (Sesija 4) · Branch: `cline/g2zpktej` (nuo `origin/cline
       (šįkart padėjo rankinis `iex (irm .../agent.ps1)`)
 - [ ] Kur laikomas VPS slaptažodis: M įrankiuose `C:\Users\M\CLINE\tools\add_env.py` ir kt. `vps_*.py`
       (patikrinta, kad veikia). **Vertės niekada nerašyti į repo ar į pokalbį.**
-- [ ] Šioje sesijoje `C:\` nėra, `cloudflared` nėra → dirbu tik su repo per git
+- [x] Šioje sesijoje `C:\` pasiekiamas **per relay** (ne tiesiogiai); `cloudflared` 2026.10.5 → `/workspace/.tools/`
 - [ ] Parduotuvė vis dar uždaryta (`STORE_PAUSED = true`), svetainė atsako 200 OK
 
 ### Laukia direktoriaus sprendimo (1 atsakymas iš 3)
