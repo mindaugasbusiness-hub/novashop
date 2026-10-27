@@ -4,6 +4,38 @@ Naujausi įrašai viršuje. Kiekvienas įrašas: ką dariau, ką patikrinau, ko 
 
 ---
 
+## 2026-10-27 — Sesija 4: nauja sesija, atmintis perskaityta, C:\ IR VĖL NĖRA
+
+### Ką dariau
+1. Gavau direktoriaus „PRADŽIA“ tekstą (jame nuoroda į `C:\Users\M\CLINE\VISKAS\00_SKAITYK_NAUJAUSIA.md`).
+2. To failo šioje sesijoje **nėra**, todėl atmintį paėmiau iš git repo `mindaugasbusiness-hub/novashop`:
+   - `cline/0xjxer93` (naujausia, 2026-10-27) → `CLINE/00_START_HERE.md`, `02_DIENORASTIS.md`, `03_TAISYKLES.md`, `04_TODO.md`;
+   - `cline/ejzcxn55` → `VISKAS/10_DARBU_ZURNALAS.md` (įrašas 2026-10-27 21:49 apie nebaigtą „neonine šokėja“ darbą);
+   - `cline/wfbfjc1p` → relay įrankiai ir ankstesnis TODO (2026-10-26).
+3. Sukūriau darbinį branch `cline/g2zpktej` **nuo `origin/cline/0xjxer93`** (kad atmintis keliautų kartu). `main` neliestas.
+4. Patikrinau parduotuvę: `python3 -m http.server` → `index.html`, `app.js`, `styles.css` → **200 OK**.
+
+### Patikrinta šiandien (ne spėjama)
+| Teiginys | Būsena |
+|---|---|
+| `C:\` diskas šioje sesijoje | **NĖRA** — `/mnt` tuščias, PowerShell nėra |
+| `cloudflared` | **NĖRA** (nė vienoje vietoje) → relay/tunelio kelio šiandien nepaleisiu |
+| `STORE_PAUSED` | **true** (`app.js` 15 eilutė) — parduotuvė uždaryta, kaip ir buvo |
+| `paused-banner` | yra `index.html` (1 vieta) |
+| Parduotuvė atsako | **200 OK** visiems 3 failams |
+
+### Ko NEDARIAU ir kodėl
+- **Neduosiu jokio tunelio adreso** — `cloudflared` nėra, o ir praeitas adresas buvo miręs (DNS). Nekartoju praeitos klaidos.
+- **Nieko netryniau, nepervardinau, neperrašiau** — tik **papildžiau** šį dienoraštį ir `04_TODO.md`.
+- **Neliečiau `main`**, nespausdinau jokių raktų, „neoninės šokėjos“ darbo neliečiau (jis VISKAS žurnale, ne šiame repo).
+
+### Išvada
+Atmintis išliko, darbas tęsiamas. Bet **ryšio su direktoriaus kompiuteriu šioje sesijoje nėra** — vienintelis patikimas kelias:
+direktorius paleidžia `cline -i` savo `PS C:\Users\M>` lange (įdiegta 2026-10-27) ir tada aš matau `C:\` failus.
+Kol to nėra — dirbu tik su repo (git), ir viską sąžiningai sakau.
+
+---
+
 ## 2026-10-27 — Sesija 3: DIREKTORIUS ĮDIEGĖ `cline` SAVO KOMPIUTERYJE (pavyko)
 
 ### Kas įvyko (patvirtinta iš direktoriaus PowerShell ištraukos)

@@ -1,8 +1,24 @@
 # 04 · TODO — kur sustojome ir ką darome toliau
 
-Atnaujinta: 2026-10-26 · Branch: `cline/7at5cm57`
+Atnaujinta: 2026-10-27 (Sesija 4) · Branch: `cline/g2zpktej` (nuo `origin/cline/0xjxer93`)
 
 ---
+
+## BŪSENA 2026-10-27 (Sesija 4)
+
+- [x] `cline` CLI įdiegtas direktoriaus kompiuteryje (`npm install -g cline` → 3.0.74) — **padaryta**
+- [ ] `cline auth cline` patvirtinimas naršyklėje — **nežinau, ar pabaigtas** (reikia direktoriaus „taip“)
+- [ ] Šioje sesijoje `C:\` nėra, `cloudflared` nėra → dirbu tik su repo per git
+- [ ] Parduotuvė vis dar uždaryta (`STORE_PAUSED = true`), svetainė atsako 200 OK
+
+### Laukia direktoriaus sprendimo (1 atsakymas iš 3)
+1. **Atidaryti parduotuvę?** (`STORE_PAUSED = false`) — ar dar laikom uždarytą?
+2. **Deploy į GitHub Pages?** — nuolatinis nemokamas adresas, jokio tunelio.
+3. **Nebaigtas „neonine šokėja“ darbas** (`VISKAS/10_DARBU_ZURNALAS.md`, 2026-10-27 21:49) — tęsiam ar paliekam?
+
+---
+
+## (2026-10-26 įrašas, paliktas nepakeistas)
 
 ## ⭐ DABAR SVARBIAUSIA (1 žingsnis direktoriui)
 
