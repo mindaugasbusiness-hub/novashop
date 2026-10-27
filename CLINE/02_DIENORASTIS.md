@@ -4,6 +4,46 @@ Naujausi įrašai viršuje. Kiekvienas įrašas: ką dariau, ką patikrinau, ko 
 
 ---
 
+## 2026-10-27 — Sesija 4 (tęsinys 4): REGISTRACIJA SUTRAUKTA + DALYVIAI VIRŠUJE (v3 + v4)
+
+### M noras
+„Registracijos lange neturi matytis išskleistas — sutrauk į viršų, dalyviai aukciono.“
+
+### Ką padariau (nieko netrinant, tik pridedant)
+**v3** (`patch_neon_dancer_v3.py`, `app.py.bak-neonv3-20261027-222658`, +677 B):
+- JS: `syncRegPanel()` dabar sutraukia registraciją **visuose pločiuose**
+  (buvo tik `window.innerWidth<=640`). Eilutė pakeista 1:1, ta pati logika.
+- HTML: panelė gimsta su klase `reg-collapsed` (kad neblyksėtų atidaryta forma).
+- CSS (pridėta, neperrašyta): `.pp-list{display:flex!important}` (anksčiau sąrašas buvo
+  paslėptas `display:none !important` — tos eilutės **neliečiau**, permušu savo vėlesne taisykle);
+  globalios `reg-collapsed` taisyklės + užrašas „▾ atidaryti“ / „▴ sutraukti“ ant pavadinimo.
+- Plytelė trumpame ekrane: 88 → 120 px, o kai forma atidaryta — 88 px.
+
+**v4** (`patch_neon_dancer_v4.py`, `app.py.bak-neonv4-20261027-222811`, +81 B):
+- Sutrauktoje būsenoje dalyvių sąrašui **110 px** (buvo 32), atidarytoje — 32 px.
+
+### Išmatuota M dydžiu (1078×540, Chrome DevTools)
+| Kas | Rezultatas |
+|---|---|
+| Panelės klasė | `participants-panel reg-collapsed` |
+| Panelės aukštis | **358 px** (anksčiau 447 su atidaryta forma) |
+| Registracijos forma | 46 px — tik pavadinimas; vardo laukas **paslėptas** (h=0) |
+| Dalyvių sąrašas | `display:flex`, y=64, **110 px**, tekstas „Kol kas nieko“ |
+| Plytelė | y=238, **120 px**, matoma |
+| Video | groja (6,6 s), `readyState=4` |
+| Serveris | active, svetainė 200, video 200, blokas 1 |
+
+### Kaip naudoti
+- Norint užsiregistruoti: spausti „1. REGISTRACIJA“ (arba „▾ atidaryti“) — forma išsiskleidžia,
+  plytelė sumažėja iki 88 px, kad viskas tilptų.
+- Mobiliame (≤640 px) palikta kaip buvo (ten sąrašas paslėptas, forma suskleidžiama).
+
+### Kas liko
+- M turi paspausti **Ctrl+F5** (HTML/CSS yra `app.py` viduje).
+- Laisvos vietos yra (~180 px), todėl plytelę galima didinti iki 160 px — laukiu M sprendimo.
+
+---
+
 ## 2026-10-27 — Sesija 4 (tęsinys 3): KODĖL NEBUVO MATOMA + v2 PATAISA
 
 ### Priežastis (ne spėjimas — išmatuota)
