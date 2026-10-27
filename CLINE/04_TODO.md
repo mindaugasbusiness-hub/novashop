@@ -21,7 +21,8 @@ Atnaujinta: 2026-10-27 (Sesija 4) · Branch: `cline/g2zpktej` (nuo `origin/cline
 3. ~~Nebaigtas „neonine šokėja“ darbas~~ → **ĮDIEGTA SERVERYJE 2026-10-27 22:13** ✅
    - `/opt/aukcionas/app.py` +2090 B, kopija `app.py.bak-neon-20261027-221303`, `aukcionas` → active,
      svetainė 200, `class="neon-dancer"` = 1, video 200.
-   - Išmatuota per Chrome DevTools: plytelė 168×160 px (x=16, y=359), video groja (4,4 s / 12,9 s).
+   - Matuota Chrome DevTools: 1600×900 → 168×160 px; **M dydis (1078×540) → 168×88 px**, y=359, panelis 447,
+     video groja (6,4 s / 12,9 s). v2 pataisa: `app.py.bak-neonv2-20261027-222042`.
    - Jei nepatiks dydis — keičiama viena eilutė (`height`) ir vėl `systemctl restart aukcionas`.
    - Grąžinimas: `cp /opt/aukcionas/app.py.bak-neon-20261027-221303 /opt/aukcionas/app.py && systemctl restart aukcionas`
 
