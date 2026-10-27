@@ -7,7 +7,11 @@ Atnaujinta: 2026-10-27 (Sesija 4) · Branch: `cline/g2zpktej` (nuo `origin/cline
 ## BŪSENA 2026-10-27 (Sesija 4)
 
 - [x] `cline` CLI įdiegtas direktoriaus kompiuteryje (`npm install -g cline` → 3.0.74) — **padaryta**
-- [ ] `cline auth cline` patvirtinimas naršyklėje — **nežinau, ar pabaigtas** (reikia direktoriaus „taip“)
+- [x] Ryšys per PowerShell (relay + cloudflared) — **veikia**, klientas `96f8c40d`, savitikra 11/11
+- [ ] **ntfy budėtojas nepakėlė ryšio automatiškai** — reikia sutvarkyti `autoconnect.ps1`
+      (šįkart padėjo rankinis `iex (irm .../agent.ps1)`)
+- [ ] Kur laikomas VPS slaptažodis: M įrankiuose `C:\Users\M\CLINE\tools\add_env.py` ir kt. `vps_*.py`
+      (patikrinta, kad veikia). **Vertės niekada nerašyti į repo ar į pokalbį.**
 - [ ] Šioje sesijoje `C:\` nėra, `cloudflared` nėra → dirbu tik su repo per git
 - [ ] Parduotuvė vis dar uždaryta (`STORE_PAUSED = true`), svetainė atsako 200 OK
 
