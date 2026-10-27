@@ -4,6 +4,44 @@ Naujausi įrašai viršuje. Kiekvienas įrašas: ką dariau, ką patikrinau, ko 
 
 ---
 
+## 2026-10-27 — Sesija 4 (tęsinys 7): ŠOKĖJA ATRAKINTA + F10 KEISTI ŠOKĖJĄ (mažoji plytelė lieka #12)
+
+### M prašymas
+„Atrakinti šokėją (kad F5 keistų šokėjas kai paspaudžiu), o ta neoninė maža kairiame kampe nesikeistų.“
+
+### A) Šokėjos rotacija atrakinta (serveris)
+- `get_dancer_public()` / `dancer_next_public()` grąžintos į **originalią logiką** iš
+  `app.py.bak-sokeja-20261027_194351` (auto-rotacija kas `DANCER_ROTATE_S`, `next` → kita).
+- Įrankis: `tools/neon-dancer/patch_dancer_unlock.py` (eilutės keičiamos pagal funkcijų ribas,
+  ne pagal trapią tekstą; prieš įrašymą `ast.parse`).
+- Kopija serveryje: `app.py.bak-unlock-<data>`; tarnyba `active`.
+- **Patikra:** `GET /api/dancer` → `dance_club_15` → `POST /api/dancer/next` → `dance_club_17`,
+  per puslapį matėsi `dance_club_15/17` (rotacija veikia).
+
+### B) F10 dabar TIKRAI keičia šokėją (M kompiuteris)
+- Paaiškėjo: daemone F10 darė **tik** `run_stage("off")` (Vilkas OFF) — šokėjos nekeitė,
+  nors pultas rašė „F10 Vilkas OFF + kita šokėja“.
+- Pridėta: `DANCER_NEXT = ROOT / "_dancer_next.py"`, funkcija `run_dancer_next()`,
+  o F10 šakoje `run_stage("off")` + `run_dancer_next()`.
+- Sukurtas `C:\Users\M\Desktop\pakeitimai 111\_dancer_next.py` (POST `/api/dancer/next`).
+- Kopija: `_vilkas_global_hotkeys.py.bak-dancer-<data>`.
+- Daemonas perkrautas: senas PID 11652 → **naujas PID 12884**, logas „klavisai uzregistruoti: F6-F11 veikia“,
+  portas 8766 vėl klauso.
+- **Patikra (rankinis kelias, be klaviso):** `_dancer_next.py` → „OK sokeja: /photos/dance_club_18.mp4“,
+  API po to: `dance_club_18`.
+
+### C) Mažoji neoninė plytelė NESIKEIČIA
+- Ji turi savo `<video class="nd-video" src="/photos/dance_club_12.mp4">`; JS rotacija dirba su `.dd-video`,
+  todėl plytelės neliečia.
+- **Patikra po visų pakeitimų:** puslapyje `neonine: /photos/dance_club_12.mp4`, aukštis **64 px**,
+  o didžioji `dance_club_17/18` — keičiasi.
+
+### Liko M sprendimas
+- Ar F10 turi kartu ir **išjungti Vilką** (kaip dabar), ar F10 tegul tik keičia šokėją, o Vilkas OFF
+  lieka atskiras klavišas? Tai viena eilutė pakeisti.
+
+---
+
 ## 2026-10-27 — Sesija 4 (tęsinys 6): BLUETOOTH IŠJUNGTAS KOMPIUTERYJE (JBL ausinėms)
 
 ### M prašymas
