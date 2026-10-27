@@ -67,6 +67,13 @@ Prašymas: „kompiuteryje išjunk Bluetooth“, kad ausinės vėl veiktų telef
    o telefone ištrinti seną „JBL…“ įrašą ir ieškoti iš naujo.
 3. Jei vis tiek nemato — ausinių „factory reset“ (JBL instrukcija: laikyti garso+/garso− ir power).
 
+### Papildymas: USB laidas (2026-10-27 ~15:58, M įkišo)
+- Patikrinta 3 būdais: `Get-PnpDevice` (USB/AudioEndpoint), garso plokštės, garso įrenginių registras.
+- **Joks naujas įrenginys nepasirodė**: tie patys 2 `USB Composite Device`
+  (VID_1A2C&PID_2D23, VID_05C8&PID_0369 — klaviatūra/kamera), jokių naujų AudioEndpoint.
+- Išvada: JBL ausinių USB lizdas **tik įkrovimui** (garso per USB nėra) arba įrenginys nesiskelbia.
+- Liko keliai: 3,5 mm AUX laidas į žalią lizdą, arba USB Bluetooth 5 dongle (adapteris 2015 m. per senas).
+
 ### Pastaba
 Bluetooth adapteris šiame kompiuteryje — **Broadcom 4.0** (senas). Jei M vėl norės jungti ausines
 prie PC, gali tekti poravimo režimas + kantrybė (4.0 adapteriai su naujesnėmis ausinėmis kartais
