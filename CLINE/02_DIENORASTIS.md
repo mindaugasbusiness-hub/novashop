@@ -4,6 +4,50 @@ Naujausi įrašai viršuje. Kiekvienas įrašas: ką dariau, ką patikrinau, ko 
 
 ---
 
+## 2026-10-27 — Sesija 4 (tęsinys 5): PULTO KLAIDOS — /api/state 500 + panelės išsipūtimas
+
+### M pranešimai
+1. „F9 neperjungia į Vilką ON“, „F5 paspaudus šokėjos nesikeičia“, „patikrink ir kitus mygtukus“.
+2. „Šitą sutrauk — jo tokio didelio neturi būti“ (panelė/plytelė).
+
+### Rasta ir ištaisyta (viskas patikrinta, ne spėta)
+**A) Tikra klaida serveryje: `/api/state` → HTTP 500**
+- Priežastis: `NameError: name 'DESK_SONG_TITLES' is not defined` (`app.py` 118 eil., `get_desk_song_n`).
+- Kada dingo: 2026-10-27 **19:46** pataisa „sokeja2“ — palyginta su kopijomis:
+  `app.py.bak-sokeja-20261027_194351` (449 903 B, apibrėžimas YRA) →
+  `app.py.bak-sokeja2-20261027_194633` (446 626 B, apibrėžimo NĖRA). Tai ne mano pataisa
+  (mano pirmoji buvo 22:13), bet pasekmė buvo didelė: puslapis negalėjo perskaityti būsenos,
+  todėl **Vilkas ON/OFF, šokėja, registracijos būsena ir daina neatrodydavo ekrane**.
+- Sutvarkyta: grąžintas `DESK_SONG_TITLES` (71 raktas, 2 851 B) iš 19:43 kopijos prieš
+  `def get_desk_song_n()`. Kopija: `app.py.bak-titulai-fix-<data>`.
+- Patikra: `/api/state` → **200**, `vilkas_stage_on` skaitomas; toggle off → `false`, on → `true`.
+
+**B) F9 grandinė veikia**
+- `_vilkas_stage_toggle.py on` → „OK Vilkas stage: ON“ (rankinis paleidimas).
+- Klavišų daemonas: `C:\Users\M\Desktop\pakeitimai 111\_vilkas_global_hotkeys.py` (PID 11652),
+  registruoti F6–F11 (F1 užimtas kito proceso). F9 → `_vilkas_stage_toggle.py on`.
+
+**C) „F5 ir šokėja nesikeičia“ — taip ir turi būti**
+- Serveryje šokėja **užrakinta**: `get_dancer_public()` / `dancer_next_public()` grąžina
+  `dance_club_12.mp4` su komentaru „SOKEJA 12 visada (M nurodymu 2026-10-27)“.
+- Jei M nori, kad vėl keistųsi — reikia atrakinti (viena funkcija), bet tam reikia jo „taip“.
+
+**D) Panelės išsipūtimas (M: „tokio didelio neturi būti“)**
+- Įjungus dalyvių sąrašą paaiškėjo: jame **500 mokymosi botų** → panelė 3 375 px, plytelė nusistūmė už ekrano.
+- v6: sąrašas fiksuotas **110 px su slinkimu**, rodoma iki 60 vardų.
+- v5: neoninė plytelė **sutraukta 64 px**, paspaudus išsiskleidžia iki 170 px (▸/▾).
+- Išmatuota (1078×540): panelė **302 px**, sąrašas 110, forma 46 (sutraukta), plytelė 64→170.
+
+### Kodėl forma neišsiskleidžia iki galo
+- Registracija **uždaryta** (mokymosi režimas): `regClosedNote` rodomas, laukai paslėpti — taip ir turi būti.
+  Paspaudus „1. REGISTRACIJA“ matosi tik pastaba „Registracija uždaryta…“.
+
+### Įrankiai, kuriuos pasidariau (M kompiuteryje, galiu ištrinti)
+`tools\vps_sh.py` (SSH komandos + `--put`/`--get`), `_fix_titles.py`, `neon_run*.py`,
+`_probe.py`, `_probe_titles.py`, `_cdp_check*.py`, `_check_shot*.ps1`, `_win_measure.ps1`.
+
+---
+
 ## 2026-10-27 — Sesija 4 (tęsinys 4): REGISTRACIJA SUTRAUKTA + DALYVIAI VIRŠUJE (v3 + v4)
 
 ### M noras
