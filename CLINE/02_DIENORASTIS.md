@@ -4,6 +4,42 @@ Naujausi įrašai viršuje. Kiekvienas įrašas: ką dariau, ką patikrinau, ko 
 
 ---
 
+## 2026-10-27 — Sesija 4 (tęsinys): NEONINĖ ŠOKĖJA (#12) — PARUOŠTA ĮDIEGIMUI
+
+### Tikslas
+Direktorius pasirinko 3 variantą: „Tvarkyti ‚neoninę šokėją‘ nebaigtą darbą“ (VISKAS žurnalas, 2026-10-27 21:49).
+
+### Ką radau (faktai)
+- Tai **ne NovaShop**, o `penktadienioaukcionas.lt` serveris, failas `/opt/aukcionas/app.py`.
+- To darbo pėdsakų `app.py` **nebuvo** — žodžio `neon-dancer` faile nebuvo nė karto, t. y. pakeitimas nebuvo įrašytas.
+- 2026-10-27 21:49 įrašas sako: bandyta įdėti `dance_club_12.mp4` kairėje po registracijos forma, bet dėl ryšio nepavyko.
+- Panelės struktūra: `.participants-panel` (`left:8px`, plotis 228 px), viduje `#joinForm` (registracija) ir `#ppDone`.
+
+### Ką padariau
+Sukūriau `tools/neon-dancer/`:
+- `patch_neon_dancer.py` — įterpia CSS bloką (neoninis rėmelis + pulsavimas) ir HTML bloką
+  (`<video /photos/dance_club_12.mp4 autoplay muted loop>` 160 px aukščio) **po registracijos formos, prieš `ppDone`**.
+  Saugikliai: `.bak-neon-<data>` kopija prieš įrašymą, ankerių unikalumo patikra (jei ne 1 → STABDO),
+  „jau įdiegta“ apsauga, CRLF išsaugojimas.
+- `savitikra.py` — 35 patikrinimų ant kopijos: **35/35 PASS** (vieta, HTML/CSS vientisumas, skliaustai,
+  CRLF, dubliuoti `id`, `.bak` turinys, idempotencija, `compile()`, `--dry`, sugadinto ankerio testas).
+- `README.md` — kaip įdiegti, kaip grąžinti atgal, ko nepatikrinau.
+
+Mobiliame (≤640 px) ir žemame (≤660 px) ekrane plokštė paslėpta, kad neuždengtų formos.
+
+### Ko NEDARIAU ir kodėl
+- **Neįdiegiau į serverį** — šioje sesijoje nėra prieigos prie VPS (jokio `AUKC_PW`, jokio ryšio).
+  Duodu paruoštą įrankį ir tikslias komandas; įdiegimas — 3 komandos serveryje.
+- **Nieko netryniau** ir neperrašinėjau `app.py`; net `.pyc` failą tik išėmiau iš git (diske liko).
+- **Nemačiau vaizdo naršyklėje** — sesijoje naršyklės nėra; tai sąžiningai parašyta README 6 skyriuje.
+
+### Nuo ko tęsti
+1. Direktorius įdeda įrankį į serverį ir paleidžia `--dry`, tada be jo, tada `systemctl restart aukcionas`.
+2. Patikra: `curl -s http://127.0.0.1:8000/ | grep -c 'class="neon-dancer"'` → turi būti 1.
+3. Jei vaizdas netinka — koreguojama viena CSS eilutė (`height`, `object-position`), be rizikos.
+
+---
+
 ## 2026-10-27 — Sesija 4: nauja sesija, atmintis perskaityta, C:\ IR VĖL NĖRA
 
 ### Ką dariau

@@ -14,7 +14,16 @@ Atnaujinta: 2026-10-27 (Sesija 4) · Branch: `cline/g2zpktej` (nuo `origin/cline
 ### Laukia direktoriaus sprendimo (1 atsakymas iš 3)
 1. **Atidaryti parduotuvę?** (`STORE_PAUSED = false`) — ar dar laikom uždarytą?
 2. **Deploy į GitHub Pages?** — nuolatinis nemokamas adresas, jokio tunelio.
-3. **Nebaigtas „neonine šokėja“ darbas** (`VISKAS/10_DARBU_ZURNALAS.md`, 2026-10-27 21:49) — tęsiam ar paliekam?
+3. ~~Nebaigtas „neonine šokėja“ darbas~~ → **PARUOŠTA 2026-10-27**: `tools/neon-dancer/`
+   (`patch_neon_dancer.py` + `savitikra.py` 35/35 PASS + `README.md`). Liko TIK įdiegti serveryje:
+
+```bash
+scp tools/neon-dancer/patch_neon_dancer.py root@<serveris>:/tmp/
+python3 /tmp/patch_neon_dancer.py --dry      # sausi patikra
+python3 /tmp/patch_neon_dancer.py            # įrašymas + .bak kopija
+systemctl restart aukcionas
+curl -s http://127.0.0.1:8000/ | grep -c 'class="neon-dancer"'   # turi būti 1
+```
 
 ---
 
