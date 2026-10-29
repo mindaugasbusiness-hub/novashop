@@ -1,0 +1,7 @@
+.env
+work/
+node_modules/
+test/
+n8n-workflow-example.json
+README.md
+*.log

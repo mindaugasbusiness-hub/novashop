@@ -1,0 +1,46 @@
+name: ai-stack
+
+# n8n = orkestratorius (trigger + logika)
+# cline-worker = "rankos ir smegenys" (Cline CLI headless, be jokio UI)
+services:
+  n8n:
+    image: n8nio/n8n:latest
+    restart: unless-stopped
+    ports:
+      - "5678:5678"
+    environment:
+      - N8N_HOST=${N8N_HOST:-localhost}
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=http
+      - WEBHOOK_URL=${WEBHOOK_URL:-http://localhost:5678/}
+      - GENERIC_TIMEZONE=${GENERIC_TIMEZONE:-Europe/Vilnius}
+      - N8N_SECURE_COOKIE=false
+      - N8N_DIAGNOSTICS_ENABLED=false
+      # kad workflow galėtų naudoti {{ $env.WORKER_TOKEN }}
+      - N8N_BLOCK_ENV_ACCESS_IN_NODE=false
+      - "WORKER_TOKEN=${WORKER_TOKEN:?sugeneruok: openssl rand -hex 32}"
+    volumes:
+      - n8n_data:/home/node/.n8n
+
+  cline-worker:
+    build:
+      context: .
+    restart: unless-stopped
+    # Svarbu: jokių ports: -> worker pasiekiamas TIK iš n8n vidinio tinklo
+    environment:
+      - WORKER_TOKEN=${WORKER_TOKEN:?sugeneruok-su-openssl}
+      - CLINE_PROVIDER=${CLINE_PROVIDER:-}
+      - CLINE_MODEL=${CLINE_MODEL:-}
+      - CLINE_API_KEY=${CLINE_API_KEY:-}
+      - CLINE_RETRIES=${CLINE_RETRIES:-3}
+      - TASK_TIMEOUT_SECONDS=${TASK_TIMEOUT_SECONDS:-1800}
+      - WORKSPACE_ROOT=/work
+    volumes:
+      - cline_data:/data
+      - ./work:/work
+    # Užduotis su daug failų gali valgyti daug RAM – ribojam, kad nenugriautų VM
+    mem_limit: 4g
+
+volumes:
+  n8n_data:
+  cline_data:
