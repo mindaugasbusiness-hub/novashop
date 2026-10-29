@@ -51,6 +51,9 @@ if (Test-Tcp $N8nPort) {
   if (-not $env:N8N_LISTEN_ADDRESS) { $env:N8N_LISTEN_ADDRESS = '127.0.0.1' }
   if (-not $env:N8N_RUNNERS_MODE) { $env:N8N_RUNNERS_MODE = 'internal' }
   if (-not $env:GENERIC_TIMEZONE) { $env:GENERIC_TIMEZONE = 'Europe/Vilnius' }
+  # ta pati failu prieigos riba, kaip start-native.ps1 (170-173 eil.)
+  if (-not $env:REPORTS_DIR) { $env:REPORTS_DIR = (Join-Path $N8nRoot 'DeFi ataskaitos') }
+  if (-not $env:N8N_RESTRICT_FILE_ACCESS_TO) { $env:N8N_RESTRICT_FILE_ACCESS_TO = $env:REPORTS_DIR }
   $env:PATH = (Split-Path $N8nNode) + ';' + $env:PATH
   Write-Output ('n8n - krauta kintamuju is .env: ' + $loaded)
 
