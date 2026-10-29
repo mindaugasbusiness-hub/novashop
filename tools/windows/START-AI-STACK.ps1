@@ -1,12 +1,15 @@
 # START-AI-STACK.ps1 - vienu paspaudimu: n8n + Cline worker + patikra.
 # NIEKO NETRINA ir neperraso. Jei kas jau veikia - praleidzia.
 #
-#   powershell -ExecutionPolicy Bypass -File START-AI-STACK.ps1
+# n8n paleidziamas TIESIOGIAI (ne per start-native.ps1), nes tas krenta ties
+# embedding'u patikra (truksta sentence-transformers modelio) ir n8n nepaleidzia.
+# Trukstamiems kintamiesiems (N8N_ENCRYPTION_KEY ir kt.) nuskaitomas Kumstis .env.
 param(
   [string]$Root = 'C:\Users\M\CLINE\ai-stack',
   [int]$Port = 7070,
   [int]$N8nPort = 5678,
-  [int]$WaitSec = 60,
+  [int]$WaitSec = 120,
+  [string]$N8nRoot = 'C:\Users\M\Desktop\Kumstis',
   [string]$N8nNode = 'C:\Users\M\Desktop\Kumstis\runtime\node24\node.exe',
   [string]$N8nCli = 'C:\Users\M\Desktop\Kumstis\runtime\n8n\node_modules\n8n\bin\n8n'
 )
@@ -30,14 +33,34 @@ Write-Output ('Laikas: ' + (Get-Date -Format 'yyyy-MM-dd HH:mm:ss'))
 if (Test-Tcp $N8nPort) {
   Write-Output ("n8n :$N8nPort - jau veikia, neperleidziu")
 } elseif ((Test-Path $N8nNode) -and (Test-Path $N8nCli)) {
-  $n8nDir = Split-Path (Split-Path $N8nCli)
+  $envFile = Join-Path $N8nRoot '.env'
+  $loaded = 0
+  if (Test-Path $envFile) {
+    foreach ($line in (Get-Content $envFile -Encoding UTF8)) {
+      $t = $line.Trim()
+      if ($t -eq '' -or $t.StartsWith('#')) { continue }
+      $i = $t.IndexOf('=')
+      if ($i -lt 1) { continue }
+      $k = $t.Substring(0, $i).Trim()
+      $v = $t.Substring($i + 1).Trim().Trim('"')
+      Set-Item -Path ('Env:' + $k) -Value $v
+      $loaded++
+    }
+  }
+  if (-not $env:N8N_PORT) { $env:N8N_PORT = "$N8nPort" }
+  if (-not $env:N8N_LISTEN_ADDRESS) { $env:N8N_LISTEN_ADDRESS = '127.0.0.1' }
+  if (-not $env:N8N_RUNNERS_MODE) { $env:N8N_RUNNERS_MODE = 'internal' }
+  if (-not $env:GENERIC_TIMEZONE) { $env:GENERIC_TIMEZONE = 'Europe/Vilnius' }
+  $env:PATH = (Split-Path $N8nNode) + ';' + $env:PATH
+  Write-Output ('n8n - krauta kintamuju is .env: ' + $loaded)
+
   Start-Process -FilePath $N8nNode -ArgumentList ("`"$N8nCli`"", 'start') `
-    -WorkingDirectory $n8nDir -WindowStyle Hidden `
+    -WorkingDirectory $N8nRoot -WindowStyle Hidden `
     -RedirectStandardOutput (Join-Path $logDir 'n8n.log') `
     -RedirectStandardError (Join-Path $logDir 'n8n.err.log') | Out-Null
   Write-Output ("n8n :$N8nPort - paleistas")
 } else {
-  Write-Output 'n8n - NERASTAS (patikrink kelią N8nNode / N8nCli)'
+  Write-Output 'n8n - NERASTAS (patikrink N8nNode / N8nCli)'
 }
 
 # --- 2. Cline worker ---
@@ -53,7 +76,7 @@ if (Get-WorkerHealth) {
   }
 }
 
-# --- 3. laukiam, kol abu atsakys ---
+# --- 3. laukiam ---
 $deadline = (Get-Date).AddSeconds($WaitSec)
 while ((Get-Date) -lt $deadline) {
   if ((Test-Tcp $N8nPort) -and (Get-WorkerHealth)) { break }
@@ -75,4 +98,5 @@ if ($h) {
 } else {
   Write-Output ('  log: ' + (Join-Path $logDir 'worker.err.log'))
 }
+if (-not $n8nOk) { Write-Output ('  n8n log: ' + (Join-Path $logDir 'n8n.err.log')) }
 if ($n8nOk -and $h) { exit 0 } else { exit 1 }

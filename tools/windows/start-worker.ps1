@@ -37,6 +37,15 @@ $env:WORKSPACE_ROOT = $work
 if ($Provider) { $env:CLINE_PROVIDER = $Provider }
 if ($Model) { $env:CLINE_MODEL = $Model }
 
+# Git (nesiojamas MinGit) - tik sis procesas mato, sistema neliesta
+$gitCmd = Join-Path $Root 'tools\git\cmd'
+if (Test-Path (Join-Path $gitCmd 'git.exe')) {
+  $env:PATH = $gitCmd + ';' + $env:PATH
+  Write-Output ('git: ' + (& (Join-Path $gitCmd 'git.exe') --version))
+} else {
+  Write-Output 'git: nerastas (worker veiks, bet be diff/checkpoint)'
+}
+
 $log = Join-Path $Root 'worker.log'
 $errLog = Join-Path $Root 'worker.err.log'
 $p = Start-Process -FilePath 'node' -ArgumentList 'server.js' `
