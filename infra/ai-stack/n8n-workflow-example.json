@@ -47,7 +47,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "http://cline-worker:7070/run",
+        "url": "http://127.0.0.1:7070/run",
         "sendHeaders": true,
         "headerParameters": {
           "parameters": [

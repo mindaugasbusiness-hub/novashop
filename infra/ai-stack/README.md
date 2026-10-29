@@ -54,6 +54,30 @@ docker compose logs -f cline-worker
 
 Katalogas `./work` (agento smėlio dėžė) ir `./.env` nėra versijuojami – `work/` susikuria automatiškai paleidus `docker compose up`.
 
+### Windows, be Docker (tavo atvejis: n8n jau veikia :5678)
+
+Reikia: Node 20+, `npm i -g cline`, `cline auth` (vieną kartą) — daugiau nieko.
+
+```powershell
+# 1. failai i nauja aplanka
+mkdir C:\Users\M\CLINE\ai-stack
+#    ideti: server.js  +  tools\windows\start-worker.ps1  +  tools\windows\e2e-test.ps1
+
+# 2. paleist worker'i fone
+powershell -ExecutionPolicy Bypass -File C:\Users\M\CLINE\ai-stack\start-worker.ps1
+
+# 3. patikrinti, ar grandine tikrai veikia (sukuria faila per agenta)
+powershell -ExecutionPolicy Bypass -File C:\Users\M\CLINE\ai-stack\e2e-test.ps1
+```
+
+Windows `server.js` automatiškai:
+- naudoja tavo `%USERPROFILE%\.cline` (ten prenumerata/nemokamas modelis — **jokio rakto nereikia**),
+- paleidžia CLI per `node` (apeina `cline.cmd`/PowerShell apribojimus),
+- timeout'ą žudo per `taskkill /T` (nužudo ir agento vaikus).
+
+n8n workflow (`n8n-workflow-example.json`) jau nukreiptas į `http://127.0.0.1:7070/run` — tinka, kai n8n ir worker viename PC.
+
+
 Patikrinimas iš n8n konteinerio:
 
 ```bash
@@ -178,7 +202,7 @@ sukuria `C:\Users\M\CLINE\ai-stack` → įrašo `server.js` (tik jei nėra) → 
 - [x] Docker kelias + be Docker kelias + prenumeratos autentifikacija
 - [x] Diegimo skriptai (Windows per relay, Linux/macOS lokaliai)
 - [ ] `cline auth` tavo mašinoje (vienintelis žmogiškas žingsnis)
-- [ ] `bash scripts/e2e-test.sh` → turi parašyti „✅ END-TO-END VEIKIA“
+- [ ] e2e testas: `bash scripts/e2e-test.sh` (Linux/macOS) arba `e2e-test.ps1` (Windows) → turi parašyti „END-TO-END VEIKIA"
 - [ ] n8n: importuoti `n8n-workflow-example.json`
 
 
