@@ -25,7 +25,7 @@
             {
               "id": "a1",
               "name": "prompt",
-              "value": "Patikrink repozitorijos testus, sutvarkyk tai, kas krenta, ir trumpai aprašyk, ką pakeitei.",
+              "value": "Paleisk `node check.js` kataloge. Jei kas nors krenta – sutvarkyk failus (nieko netrink ir nepervardink) ir trumpai aprašyk, ką pakeitei.",
               "type": "string"
             },
             {

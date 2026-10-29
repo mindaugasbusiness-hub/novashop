@@ -122,6 +122,66 @@ Tada Cline į grandinę nededamas – tiesiog pakeisk modelį (Open Interpreter 
 export OPENROUTER_API_KEY=...
 interpreter --model openrouter/deepseek/deepseek-chat-v3.1:free -y "sutvarkyk failus"
 
+## 10. Su Cline prenumerata (ClinePass / nemokamas modelis) — be jokio rakto
+
+Jei turi Cline account su prenumerata ar naudoji nemokamus modelius, **API rakto nereikia**.
+Worker'is naudoja tą pačią `~/.cline` konfigūraciją, kuria naudojiesi IDE/CLI:
+
+| Būdas | Ką daryti |
+| - | - |
+| Be Docker (paprasčiausia) | `bash scripts/run-local.sh` — naudoja tavo `~/.cline` |
+| Docker | `bash scripts/bootstrap-auth.sh from-host` (nukopijuoja `~/.cline` į volume) arba `bash scripts/bootstrap-auth.sh` (interaktyvus `cline auth` konteineryje) |
+
+Tada `CLINE_PROVIDER` ir `CLINE_MODEL` gali likti tušti — imama iš prisijungimo.
+`/healthz` parodys `authMode: "mounted-config"`, o `clineVersion` — tikrą CLI versiją.
+
+```bash
+curl -s localhost:7070/healthz
+# { "ok": true, "clineVersion": "3.0.74", "authMode": "mounted-config", ... }
+```
+
+Nemokamą modelį pasirink taip pat, kaip IDE: `cline` → `/model` → ieškok žymos **FREE**,
+arba `cline auth` → provider `Cline` / `ClinePass`. Jei nori fiksuoti modelį worker'yje:
+`CLINE_MODEL=<model-id>` (ir `CLINE_PROVIDER=<provider-id>`).
+
+## 11. Diegimas M PC (Windows) per relay
+
+Grandinė iš `00_START_HERE.md`: relay + cloudflared + ntfy → PC prisijungia pats.
+
+Cline pusėje (ši aplinka):
+
+```bash
+python3 tools/relay/relay.py            # portas 8798, tokenas /tmp/relay.token
+cloudflared tunnel --url http://127.0.0.1:8798 --no-autoupdate
+curl -s -d "CLINE|<secret>|https://<host>/agent.ps1" https://ntfy.sh/<topic>
+```
+
+PC pusėje (PowerShell, viena eilutė):
+
+```powershell
+iex (irm https://<host>/agent.ps1)
+```
+
+Tada worker'io diegimas PC (nieko netrina, neperrašo — tik praleidžia esamus failus):
+
+```powershell
+powershell -ExecutionPolicy Bypass -File install-worker.ps1 -WorkerJsBase64 <base64 server.js>
+```
+
+Failas: `tools/windows/install-worker.ps1`. Jis: parodo kas įdiegta → įdiegia `cline`, jei nėra →
+sukuria `C:\Users\M\CLINE\ai-stack` → įrašo `server.js` (tik jei nėra) → pasako ką daryti su `cline auth`.
+
+## 12. Kas liko (checklist)
+
+- [x] Worker'is (HTTP, auth, timeout, eilė, NDJSON) — 17/17 testų
+- [x] n8n workflow JSON
+- [x] Docker kelias + be Docker kelias + prenumeratos autentifikacija
+- [x] Diegimo skriptai (Windows per relay, Linux/macOS lokaliai)
+- [ ] `cline auth` tavo mašinoje (vienintelis žmogiškas žingsnis)
+- [ ] `bash scripts/e2e-test.sh` → turi parašyti „✅ END-TO-END VEIKIA“
+- [ ] n8n: importuoti `n8n-workflow-example.json`
+
+
 export GEMINI_API_KEY=...
 interpreter --model gemini/gemini-2.5-flash -y "sutvarkyk failus"
 ```

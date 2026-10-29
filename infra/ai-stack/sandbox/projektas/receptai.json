@@ -1,0 +1,7 @@
+{
+  "receptai": [
+    { "pavadinimas": "Cepelinai", "sudetingumas": "vidutinis" },
+    { "pavadinimas": "Šaltibarščiai", "sudetingumas": "lengvas" },
+    { "pavadinimas": "Kibinai", "sudetingumas": "vidutinis" }
+  ]
+}

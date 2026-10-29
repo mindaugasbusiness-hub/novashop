@@ -13,7 +13,7 @@
 const http = require('node:http');
 const path = require('node:path');
 const fs = require('node:fs');
-const { spawn } = require('node:child_process');
+const { spawn, execFileSync } = require('node:child_process');
 
 const PORT = Number(process.env.PORT || 7070);
 const TOKEN = process.env.WORKER_TOKEN || '';
@@ -26,7 +26,26 @@ const CLINE_API_KEY = process.env.CLINE_API_KEY || '';
 const WORKSPACE_ROOT = process.env.WORKSPACE_ROOT || '/work';
 const TASK_TIMEOUT = Number(process.env.TASK_TIMEOUT_SECONDS || 1800);
 const RETRIES = Number(process.env.CLINE_RETRIES || 3);
+const CLINE_THINKING = process.env.CLINE_THINKING || '';
 const MAX_BODY = 1024 * 1024;
+
+// Du autentifikavimo būdai:
+//  - 'api-key'        – raktas per CLINE_API_KEY (OpenRouter / Gemini / Anthropic ...)
+//  - 'mounted-config' – prisijungta `cline auth` (ClinePass / Cline account) ir
+//                       konfigūracija įmontuota į /data/cline
+const AUTH_MODE = CLINE_API_KEY ? 'api-key' : 'mounted-config';
+
+let clineVersion = 'nenustatytas';
+try {
+  clineVersion = execFileSync(CLINE_BIN, ['--version'], { encoding: 'utf8', timeout: 15000 })
+    .trim()
+    .split('\n')
+    .pop()
+    .trim();
+} catch {
+  clineVersion = 'nepaleidžiamas';
+}
+
 
 // Agentas valgo daug atminties -> vykdome po vieną užduotį.
 let chain = Promise.resolve();
@@ -69,6 +88,7 @@ function buildArgs(prompt, cwd, timeout) {
   if (CLINE_PROVIDER) args.push('-P', CLINE_PROVIDER);
   if (CLINE_MODEL) args.push('-m', CLINE_MODEL);
   if (CLINE_API_KEY) args.push('-k', CLINE_API_KEY);
+  if (CLINE_THINKING) args.push('--thinking', CLINE_THINKING);
   args.push(prompt);
   return args;
 }
@@ -228,8 +248,13 @@ const server = http.createServer(async (req, res) => {
     return send(res, 200, {
       ok: true,
       cline: CLINE_BIN,
-      provider: CLINE_PROVIDER || null,
-      model: CLINE_MODEL || null,
+      clineVersion,
+      authMode: AUTH_MODE,
+      provider: CLINE_PROVIDER || '(iš įmontuotos konfigūracijos)',
+      model: CLINE_MODEL || '(iš įmontuotos konfigūracijos)',
+      thinking: CLINE_THINKING || 'provider default',
+      workspaceRoot: WORKSPACE_ROOT,
+      timeoutSeconds: TASK_TIMEOUT,
     });
   }
 
