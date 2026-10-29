@@ -13,17 +13,23 @@
 const http = require('node:http');
 const path = require('node:path');
 const fs = require('node:fs');
+const os = require('node:os');
 const { spawn, execFileSync } = require('node:child_process');
+
+const isWin = process.platform === 'win32';
 
 const PORT = Number(process.env.PORT || 7070);
 const TOKEN = process.env.WORKER_TOKEN || '';
 const CLINE_BIN = process.env.CLINE_BIN || 'cline';
-const CLINE_CONFIG = process.env.CLINE_CONFIG || '/data/cline';
-const CLINE_DATA = process.env.CLINE_DATA_DIR || '/data/cline/data';
+// Windows: ~/.cline (ten tavo prisijungimas), Linux/Docker: /data/cline
+const CLINE_CONFIG =
+  process.env.CLINE_CONFIG || (isWin ? path.join(os.homedir(), '.cline') : '/data/cline');
+const CLINE_DATA =
+  process.env.CLINE_DATA_DIR || (isWin ? path.join(os.homedir(), '.cline', 'data') : '/data/cline/data');
 const CLINE_PROVIDER = process.env.CLINE_PROVIDER || '';
 const CLINE_MODEL = process.env.CLINE_MODEL || '';
 const CLINE_API_KEY = process.env.CLINE_API_KEY || '';
-const WORKSPACE_ROOT = process.env.WORKSPACE_ROOT || '/work';
+const WORKSPACE_ROOT = process.env.WORKSPACE_ROOT || (isWin ? path.join(process.cwd(), 'work') : '/work');
 const TASK_TIMEOUT = Number(process.env.TASK_TIMEOUT_SECONDS || 1800);
 const RETRIES = Number(process.env.CLINE_RETRIES || 3);
 const CLINE_THINKING = process.env.CLINE_THINKING || '';
@@ -35,9 +41,45 @@ const MAX_BODY = 1024 * 1024;
 //                       konfigūracija įmontuota į /data/cline
 const AUTH_MODE = CLINE_API_KEY ? 'api-key' : 'mounted-config';
 
+// Windows: npm daro cline.cmd/.ps1, kurių negalima paleisti be shell'o.
+// Todėl ieškome tikro JS įėjimo taško ir paleidžiame per node – jokių kabučių problemų.
+function resolveCliEntry() {
+  if (process.env.CLINE_CLI_ENTRY) return process.env.CLINE_CLI_ENTRY;
+  const roots = [
+    path.join(process.env.APPDATA || '', 'npm', 'node_modules', 'cline'),
+    path.join(process.env.LOCALAPPDATA || '', 'npm', 'node_modules', 'cline'),
+    '/usr/local/lib/node_modules/cline',
+    '/usr/lib/node_modules/cline',
+  ];
+  for (const dir of roots) {
+    try {
+      const pkg = JSON.parse(fs.readFileSync(path.join(dir, 'package.json'), 'utf8'));
+      const bin = typeof pkg.bin === 'string' ? pkg.bin : pkg.bin && (pkg.bin.cline || Object.values(pkg.bin)[0]);
+      if (!bin) continue;
+      const entry = path.join(dir, bin);
+      if (fs.existsSync(entry)) return entry;
+    } catch {
+      /* bandome toliau */
+    }
+  }
+  return null;
+}
+
+const CLINE_ENTRY = resolveCliEntry();
+
+function cliArgv(args) {
+  return CLINE_ENTRY ? [process.execPath, [CLINE_ENTRY, ...args]] : [CLINE_BIN, args];
+}
+
 let clineVersion = 'nenustatytas';
 try {
-  clineVersion = execFileSync(CLINE_BIN, ['--version'], { encoding: 'utf8', timeout: 15000 })
+  const [file, args] = cliArgv(['--version']);
+  clineVersion = execFileSync(file, args, {
+    encoding: 'utf8',
+    timeout: 20000,
+    shell: !CLINE_ENTRY && isWin,
+    windowsHide: true,
+  })
     .trim()
     .split('\n')
     .pop()
@@ -45,6 +87,7 @@ try {
 } catch {
   clineVersion = 'nepaleidžiamas';
 }
+
 
 
 // Agentas valgo daug atminties -> vykdome po vieną užduotį.
@@ -97,12 +140,15 @@ function runCline({ prompt, cwd, timeout }) {
   return new Promise((resolve) => {
     const started = Date.now();
     const args = buildArgs(prompt, cwd, timeout);
-    const child = spawn(CLINE_BIN, args, {
+    const [cliFile, cliArgs] = cliArgv(args);
+    const child = spawn(cliFile, cliArgs, {
       cwd,
       env: { ...process.env, CI: '1', NO_COLOR: '1' },
       stdio: ['ignore', 'pipe', 'pipe'],
-      // atskira procesų grupė: timeout'as nužudo ir agento paleistus vaikus
-      detached: true,
+      // atskira procesų grupė (Linux): timeout'as nužudo ir agento paleistus vaikus
+      detached: !isWin,
+      windowsHide: true,
+      shell: !CLINE_ENTRY && isWin,
     });
 
     let stderr = '';
@@ -120,6 +166,14 @@ function runCline({ prompt, cwd, timeout }) {
     };
 
     const killTree = () => {
+      if (isWin) {
+        try {
+          spawn('taskkill', ['/pid', String(child.pid), '/T', '/F'], { windowsHide: true });
+        } catch {
+          /* jau mirė */
+        }
+        return;
+      }
       try {
         process.kill(-child.pid, 'SIGKILL');
       } catch {
@@ -248,6 +302,7 @@ const server = http.createServer(async (req, res) => {
     return send(res, 200, {
       ok: true,
       cline: CLINE_BIN,
+      clineEntry: CLINE_ENTRY || '(bin iš PATH)',
       clineVersion,
       authMode: AUTH_MODE,
       provider: CLINE_PROVIDER || '(iš įmontuotos konfigūracijos)',
