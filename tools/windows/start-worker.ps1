@@ -4,7 +4,9 @@
 #   powershell -ExecutionPolicy Bypass -File start-worker.ps1
 param(
   [string]$Root = 'C:\Users\M\CLINE\ai-stack',
-  [int]$Port = 7070
+  [int]$Port = 7070,
+  [string]$Provider = 'cline-pass',
+  [string]$Model = 'cline-free/nemotron-3.5-super-vl'
 )
 $ErrorActionPreference = 'Stop'
 
@@ -31,6 +33,9 @@ if (-not (Test-Path $work)) { New-Item -ItemType Directory -Path $work -Force | 
 $env:PORT = "$Port"
 $env:WORKER_TOKEN = $token
 $env:WORKSPACE_ROOT = $work
+# provider/model: cline-pass = prenumerata, cline-free/... = nemokamas modelis
+if ($Provider) { $env:CLINE_PROVIDER = $Provider }
+if ($Model) { $env:CLINE_MODEL = $Model }
 
 $log = Join-Path $Root 'worker.log'
 $errLog = Join-Path $Root 'worker.err.log'

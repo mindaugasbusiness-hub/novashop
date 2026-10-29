@@ -77,6 +77,26 @@ Windows `server.js` automatiškai:
 
 n8n workflow (`n8n-workflow-example.json`) jau nukreiptas į `http://127.0.0.1:7070/run` — tinka, kai n8n ir worker viename PC.
 
+### Patikrinta M PC (2026-10-29)
+
+| Kas | Rezultatas |
+| - | - |
+| Cline CLI | 3.0.74, `cline auth` jau buvo |
+| Provider | **`cline-pass`** (prenumerata) |
+| Modelis | **`cline-free/nemotron-3.5-super-vl`** (nemokamas) |
+| Provider `cline` + `anthropic/claude-sonnet-5.5` | **NETINKA** — „Insufficient balance, $-0.11" |
+| e2e testas | **END-TO-END VEIKIA**, 4 iteracijos, 38 s, failas sukurtas |
+| n8n | :5678, workflow importuotas (`cline-pass` nustatymai), liko įjungti `Active` |
+
+Paleidimas su teisingu modeliu:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File C:\Users\M\CLINE\ai-stack\start-worker.ps1 -Provider cline-pass -Model "cline-free/nemotron-3.5-super-vl"
+```
+
+⚠️ **Po PC perkrovimo** worker'is pats nepasisuka — reikia arba rankiniu būdu paleisti aukščiau esančią eilutę, arba užduoties „CLINE Worker" startuolyje (sutvarkoma tik su M leidimu).
+
+
 
 Patikrinimas iš n8n konteinerio:
 
