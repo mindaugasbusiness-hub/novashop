@@ -52,6 +52,8 @@ curl -s localhost:5678            # n8n UI
 docker compose logs -f cline-worker
 ```
 
+Katalogas `./work` (agento smėlio dėžė) ir `./.env` nėra versijuojami – `work/` susikuria automatiškai paleidus `docker compose up`.
+
 Patikrinimas iš n8n konteinerio:
 
 ```bash
