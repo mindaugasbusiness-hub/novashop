@@ -120,9 +120,14 @@ perrašomą failą palieka su `.bak-pries-atstatyma-<data>`.
 | Dalis | Būsena |
 |---|---|
 | Git dalis (`tools/`, `CLINE/`) | ✅ **PILNA** — žyma `atstatymas-1` |
-| Mašinos dalis (pultas, tools, n8n DB, užduotys) | ⏳ **Reikia paleisti** `sukurkti-taskas.ps1 -Numer 1` tavo kompiuteryje |
+| Mašinos dalis (pultas, tools, n8n DB, užduotys) | ✅ **PILNA** — 2026-10-31 05:46, 504 failai / 508,1 MB, `TASKAS.json` yra |
 | VPS dalis (app.py) | ⏳ **Reikia paleisti** `vps-taskas.sh sukurkti 1` VPS |
-| Patikrinta, ar 11/11 | ✅ Taip — pulto ataskaita 2026-10-31 04:16:04 |
+| Patikrinta, ar 11/11 | ✅ Taip — pulto atstatyta 2026-10-31 05:46 (11/11, 5 s) |
+
+Mašinos dalis jau veikia: `atstatyti-tasku.ps1 -Numer 1` suras `TASKAS-1_2026-10-31_0546`,
+patikrins 504 failų SHA256 ir atkurs. VPS dalis dar neturima — kol ji nesukurta,
+„atstatyti į Nr. 1" neatkurs `penktadienioaukcionas.lt` `app.py`.
+
 
 Kol mašinos ir VPS dalys nepaleistos, atstatymas iš taško Nr. 1 atkurs **kodą ir nustatymus**,
 bet ne tavo mašinos failų turinį. Todėl pirmas žingsnis tavo kompiuteryje — `sukurkti-taskas.ps1 -Numer 1`.

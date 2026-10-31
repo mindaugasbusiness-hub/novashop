@@ -48,9 +48,20 @@ CLINE VISKAS folderyje… atstatymo numeris 1. Kai pasakysiu viską atstatyti į
 - `savitikra.py` (n8n) atstatymo aplankui — **3/3 PASS** (koduotė)
 
 ### E) Kas liko M (kad taškas Nr. 1 būtų PILNAS)
-1. `sukurkti-taskas.ps1 -Numer 1` — mašinos dalis (pultas, tools, n8n DB, užduotys)
-2. `vps-taskas.sh sukurkti 1` — VPS dalis (app.py)
-3. Registro lentelėje pakeisti ⏳ į ✅
+1. `sukurkti-taskas.ps1 -Numer 1` — mašinos dalis → **PADARYTA 2026-10-31 05:46**
+   (`TASKAS-1_2026-10-31_0546`, 504 failai / 508,1 MB, DB 271,3 MB, 11 XML užduočių, 11/11 būklė)
+2. `vps-taskas.sh sukurkti 1` — VPS dalis → **dar nepadaryta**
+3. Registro lentelėje ⏳ → ✅ → mašinos dalis atnaujinta
+
+### F) Klaida, rasta diegiant (ištaisyta)
+- Pirmas bandymas sustojo po „atmintis: 114 failų" — kaltas n8n CLI **workflow eksportas**
+  (stringa, kai n8n veikia ir SQLite užrakinta). Sprendimas: eksportas **nebėra numatytas**
+  (DB kopija yra tikroji atsarginė kopija), pridetas `-SuEksportu` su 45 s nutraukimu,
+  matomi žingsniai ir `trap` su aiškiu pranešimu. Po pataisymo: DB nukopijuota (271,3 MB), taškas pilnas.
+- `WS 5.1` nepriima `[CmdletBinding()]` per `| iex` → sukurtas `GET.ps1` (be param/exit),
+  o `INSTALL.ps1` imamas iš šakos, ne iš žymos (kad pataisymai pasiektų iškart).
+- `atstatyti-tasku.ps1` dabar renkasi tik tašką su `TASKAS.json` (nepilno neima).
+
 
 Kol šie du nepaleisti, „atstatyti į Nr. 1" atkurs **kodą ir nustatymus**, bet ne mašinos failų turinį.
 
