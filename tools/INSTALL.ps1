@@ -29,6 +29,11 @@ try { [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::
 $baze = "https://raw.githubusercontent.com/mindaugasbusiness-hub/novashop/$Ref"
 $stamp = Get-Date -Format 'yyyyMMdd_HHmmss'
 
+# GitHub CDN (Fastly) laiko senas kopijas iki ~5 min. Todėl prie kiekvieno URL
+# pridedame unikalų laiko žymeklį -- taip visada gaunama NAUJAUSIA versija.
+# (2026-10-31: be šito buvo atsiųsta sena 10326 B versija vietoj pataisytos 10313 B.)
+$cacheBuster = '?t=' + [DateTimeOffset]::UtcNow.ToUnixTimeSeconds()
+
 # --- Failų sąrašas: kur imti -> kur dėti ---------------------------------
 $failai = @(
     @{ Url = 'tools/n8n/n8n-konfig.ps1';             Dir = "$ClineHome\tools\n8n" },
@@ -81,7 +86,7 @@ foreach ($f in $failai) {
         if (Test-Path -LiteralPath $tikslas) {
             Copy-Item -LiteralPath $tikslas -Destination "$tikslas.bak-$stamp" -Force
         }
-        Invoke-WebRequest -Uri "$baze/$($f.Url)" -OutFile $tikslas -UseBasicParsing -TimeoutSec 60
+        Invoke-WebRequest -Uri "$baze/$($f.Url)$cacheBuster" -OutFile $tikslas -UseBasicParsing -TimeoutSec 60
         $dydis = (Get-Item -LiteralPath $tikslas).Length
         if ($dydis -lt 50) { throw "failas per mažas ($dydis B)" }
         Write-Output "OK    $vardas ($dydis B)"

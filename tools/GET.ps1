@@ -15,10 +15,12 @@ try {
 
 $saltinis = 'https://raw.githubusercontent.com/mindaugasbusiness-hub/novashop/cline/da6qq3k9/tools/INSTALL.ps1'
 $laikinas = Join-Path $env:TEMP 'novashop-INSTALL.ps1'
+# Laiko žymeklis apeina GitHub CDN podėlį (kitaip galima gauti seną failą)
+$cacheBuster = '?t=' + [DateTimeOffset]::UtcNow.ToUnixTimeSeconds()
 
 Write-Output "Atsiunčiu diegimo failą..."
 Write-Output "  $saltinis"
-Invoke-WebRequest -Uri $saltinis -OutFile $laikinas -UseBasicParsing -TimeoutSec 60
+Invoke-WebRequest -Uri "$saltinis$cacheBuster" -OutFile $laikinas -UseBasicParsing -TimeoutSec 60
 
 if (-not (Test-Path -LiteralPath $laikinas)) {
     throw "KLAIDA: nepavyko atsisiųsti diegimo failo. Patikrink internetą arba atidaryk adresą naršyklėje."
