@@ -147,6 +147,20 @@ def tikrinti_dokumentus():
     return klaidos
 
 
+def tikrinti_join_path(tekstas):
+    """Join-Path su VIENU argumentu iššaukia interaktyvų klausimą (ChildPath) ir užstringa.
+
+    Būtent taip įvyko 2026-10-31: `Join-Path $CLINE_HOME` be antro argumento paklausė
+    „Supply values for the following parameters: ChildPath:" ir skriptas sustojo.
+    """
+    klaidos = []
+    for m in re.finditer(r'Join-Path\s+("[^"]+"|\$[\w:]+|\'[^\']+\')\s*(?=[\)\|,;\r\n])', tekstas):
+        eilute = tekstas[:m.start()].count('\n') + 1
+        klaidos.append("eilutė {0}: Join-Path su vienu argumentu (klaus interaktyviai): {1}".format(
+            eilute, m.group(0).strip()))
+    return klaidos
+
+
 def tikrinti_tikrintuvo_prievadus():
     """Ar patikrinti-servisus.ps1 tikrina būtent tuos 11 prievadų."""
     kelias = os.path.join(CIAPRASTAS, 'patikrinti-servisus.ps1')
@@ -199,6 +213,7 @@ def savitikra():
         else:
             continue
         klaidos += tikrinti_sauguma(tekstas, f)
+        klaidos += tikrinti_join_path(tekstas)
         viso += 1
         if klaidos:
             klaidos_viso += 1

@@ -86,7 +86,7 @@ if ($Sausai) {
     Sakyk "SAUSAS REŽIMAS: būčiau atkūręs:"
     Sakyk "  pultas   -> $(Join-Path $CLINE_HOME 'pultas')"
     Sakyk "  tools    -> $(Join-Path $CLINE_HOME 'tools')"
-    Sakyk "  atmintis -> $(Join-Path $CLINE_HOME)"
+    Sakyk "  atmintis -> $CLINE_HOME"
     Sakyk "  užduotys -> Task Scheduler (N8N/CLINE/KUMSTIS)"
     Sakyk "  n8n DB   -> $(if ($BeDuomenuBazes) { 'NE (-BeDuomenuBazes): DB liks dabartinė' } else { 'TAIP (bus atstatyta)' })"
     Sakyk "Nieko nepakeičiau."
