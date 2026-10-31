@@ -32,11 +32,19 @@ function Sakyk([string]$t) { if (-not $Tyliai) { Write-Output $t } }
 function Klaida([string]$t) { Write-Output "KLAIDA: $t" }
 
 # --- 1) Rasti tašką -------------------------------------------------------
-$kandidatai = @(Get-ChildItem -Path $TASKU_ROOT -Directory -Filter "TASKAS-$Numer`_*" -ErrorAction SilentlyContinue |
-                Sort-Object Name -Descending)
+# Imamas NAUJAUSIAS taškas, kuris turi TASKAS.json (t. y. tikrai užbaigtas).
+$visiKandidatai = @(Get-ChildItem -Path $TASKU_ROOT -Directory -Filter "TASKAS-$Numer`_*" -ErrorAction SilentlyContinue |
+                    Sort-Object Name -Descending)
+$kandidatai = @($visiKandidatai | Where-Object { Test-Path -LiteralPath (Join-Path $_.FullName 'TASKAS.json') })
+
 if ($kandidatai.Count -eq 0) {
-    Klaida "nera atstatymo taško Nr. $Numer ($TASKU_ROOT\TASKAS-$Numer`_*)"
-    Sakyk "Sąrašas: atstatyti-tasku.ps1 -Numer 0   (0 parodo visus taškus)"
+    if ($visiKandidatai.Count -gt 0) {
+        Klaida "taškas Nr. $Numer yra, bet NEPILNAS (nėra TASKAS.json): $($visiKandidatai[0].FullName)"
+        Sakyk "Sukurk jį iš naujo: sukurkti-taskas.ps1 -Numer $Numer"
+    } else {
+        Klaida "nera atstatymo taško Nr. $Numer ($TASKU_ROOT\TASKAS-$Numer`_*)"
+        Sakyk "Sukurk: sukurkti-taskas.ps1 -Numer $Numer"
+    }
     exit 1
 }
 $taskas = $kandidatai[0].FullName

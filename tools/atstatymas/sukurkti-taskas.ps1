@@ -20,10 +20,23 @@ param(
     [int]$Numer = 0,
     [string]$Pastaba = '',
     [switch]$BeDuomenuBazes,
+    [switch]$SuEksportu,
     [switch]$Tyliai
 )
 
 $ErrorActionPreference = 'Continue'
+
+# Jei kas nors vis tiek sustabdytų skriptą -- pasakome AIŠKIAI, o ne tyliai.
+trap {
+    Write-Output ""
+    Write-Output "=============================================="
+    Write-Output "NEPAVYKO: $($_.Exception.Message)"
+    Write-Output "  eilutė: $($_.InvocationInfo.ScriptLineNumber)"
+    Write-Output "  Taškas gali būti nepilnas: $tikslas"
+    Write-Output "  Ką daryti: paleisk dar kartą; jei kartoja -- atsiųsk šias eilutes"
+    Write-Output "=============================================="
+    exit 1
+}
 
 if (-not $env:N8N_ROOT)      { $env:N8N_ROOT      = 'C:\Users\M\Desktop\Kumstis' }
 if (-not $env:N8N_TOOLS_DIR) { $env:N8N_TOOLS_DIR = 'C:\Users\M\CLINE\tools\n8n' }
@@ -110,37 +123,64 @@ if (Test-Path -LiteralPath $pidsFile) {
     $n8nInfo += 'pids.json: TAIP'
 } else { $n8nInfo += 'pids.json: NĖRA' }
 
+Sakyk "  n8n:           kopijuoju..."
 $db = Join-Path $runtime 'n8n-data\.n8n\database.sqlite'
 if ((Test-Path -LiteralPath $db) -and (-not $BeDuomenuBazes)) {
-    $mb = [math]::Round((Get-Item -LiteralPath $db).Length / 1MB, 1)
-    if ($mb -lt 500) {
-        Copy-Item -LiteralPath $db -Destination (Join-Path $n8nTikslas 'database.sqlite') -Force
-        $n8nInfo += "database.sqlite: TAIP ($mb MB)"
-    } else {
-        $n8nInfo += "database.sqlite: PRALEISTA (per didelė: $mb MB)"
+    try {
+        $mb = [math]::Round((Get-Item -LiteralPath $db).Length / 1MB, 1)
+        if ($mb -lt 500) {
+            Copy-Item -LiteralPath $db -Destination (Join-Path $n8nTikslas 'database.sqlite') -Force -ErrorAction Stop
+            $n8nInfo += "database.sqlite: TAIP ($mb MB)"
+        } else {
+            $n8nInfo += "database.sqlite: PRALEISTA (per didelė: $mb MB)"
+        }
+    } catch {
+        $n8nInfo += "database.sqlite: NEPAVYKO kopijuoti ($($_.Exception.Message))"
+        $n8nInfo += '  -> naudok -BeDuomenuBazes arba sustabdyk n8n'
     }
 } elseif ($BeDuomenuBazes) { $n8nInfo += 'database.sqlite: praleista (-BeDuomenuBazes)' }
 else { $n8nInfo += 'database.sqlite: NĖRA' }
 
-$cli = Join-Path $env:N8N_TOOLS_DIR 'n8n-cli.ps1'
-if (Test-Path -LiteralPath $cli) {
-    & powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -File $cli `
-        'export:workflow' '--all' "--output=$(Join-Path $n8nTikslas 'workflows.json')" 2>&1 | Out-Null
-    if (Test-Path -LiteralPath (Join-Path $n8nTikslas 'workflows.json')) {
-        $n8nInfo += 'workflows.json: TAIP'
-    } else {
-        $n8nInfo += 'workflows.json: nepavyko (DB kopija yra atsarginis kelias)'
-    }
-} else { $n8nInfo += 'workflows.json: praleista (nėra n8n-cli.ps1)' }
+if ($SuEksportu) {
+    $cli = Join-Path $env:N8N_TOOLS_DIR 'n8n-cli.ps1'
+    $wf = Join-Path $n8nTikslas 'workflows.json'
+    if (Test-Path -LiteralPath $cli) {
+        Sakyk "  n8n:           eksportuoju workflow (max 45 s)..."
+        try {
+            $p = Start-Process -FilePath 'powershell.exe' `
+                -ArgumentList @('-NoProfile', '-NonInteractive', '-ExecutionPolicy', 'Bypass',
+                                '-File', "`"$cli`"", 'export:workflow', '--all', "--output=`"$wf`"") `
+                -WindowStyle Hidden -PassThru
+            if (-not $p.WaitForExit(45000)) {
+                Stop-Process -Id $p.Id -Force -ErrorAction SilentlyContinue
+                $n8nInfo += 'workflows.json: NUTRAUKTA po 45 s (DB kopija yra atsarginis kelias)'
+            } elseif (Test-Path -LiteralPath $wf) {
+                $n8nInfo += 'workflows.json: TAIP'
+            } else {
+                $n8nInfo += 'workflows.json: nepavyko (DB kopija yra atsarginis kelias)'
+            }
+        } catch { $n8nInfo += "workflows.json: klaida ($($_.Exception.Message))" }
+    } else { $n8nInfo += 'workflows.json: praleista (nėra n8n-cli.ps1)' }
+} else {
+    $n8nInfo += 'workflows.json: praleista (nereikia -- DB nukopijuota; norint: -SuEksportu)'
+}
+
 
 foreach ($i in $n8nInfo) { Sakyk "  n8n:           $i" }
 
 # --- 6) Task Scheduler užduotys (XML) ------------------------------------
+Sakyk "  užduotys:      skaitau..."
 $uzduociuTikslas = Join-Path $tikslas 'uzduotys'
 New-Item -ItemType Directory -Force -Path $uzduociuTikslas | Out-Null
 $uzduociuKiekis = 0
-$uzduotys = Get-ScheduledTask -ErrorAction SilentlyContinue |
-            Where-Object { $_.TaskName -match 'N8N|CLINE|KUMSTIS|PULTAS|HOTKEY' }
+try {
+    $uzduotys = Get-ScheduledTask -ErrorAction SilentlyContinue |
+                Where-Object { $_.TaskName -match 'N8N|CLINE|KUMSTIS|PULTAS|HOTKEY' }
+} catch {
+    Sakyk "  užduotys:      Get-ScheduledTask neprieinamas -- bandau per schtasks"
+    $uzduotys = @(schtasks /Query /FO CSV /NH 2>$null |
+                  ForEach-Object { $n = ($_ -split '","')[0].Trim('"'); if ($n -match 'N8N|CLINE|KUMSTIS|PULTAS|HOTKEY') { [pscustomobject]@{ TaskName = $n } } })
+}
 foreach ($u in $uzduotys) {
     $failas = Join-Path $uzduociuTikslas (($u.TaskName -replace '[\\/:*?"<>|]', '_') + '.xml')
     $xml = schtasks /Query /TN $u.TaskName /XML 2>&1

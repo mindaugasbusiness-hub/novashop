@@ -15,7 +15,9 @@
 # NIEKO NETRINA: jei failas jau yra -- padaroma .bak-<data> kopija (1 taisyklė).
 
 param(
-    [string]$Ref = 'atstatymas-1',   # iš kurios žymos imti failus (užfiksuota būsena Nr. 1)
+    # Imama iš ŠAKOS, o ne iš žymos: taip pataisymai pasiekia tave iš karto.
+    # Žyma `atstatymas-1` lieka kaip užfiksuota būsena dokumentuose.
+    [string]$Ref = 'cline/da6qq3k9',
     [switch]$Tikrinti,              # tik patikrinti, ar viskas jau yra
     [string]$ClineHome = 'C:\Users\M\CLINE'
 )
