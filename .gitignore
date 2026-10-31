@@ -1,0 +1,9 @@
+# Įrankiai, kurių NEGALIMA kelti į repo (dideliai, vietiniai)
+.tools/
+__pycache__/
+*.pyc
+
+# Vietinės kopijos / atsarginiai failai
+*.bak
+*.bak-*
+*.log
