@@ -63,6 +63,17 @@ CLINE VISKAS folderyje… atstatymo numeris 1. Kai pasakysiu viską atstatyti į
 - `WS 5.1` nepriima `[CmdletBinding()]` per `| iex` → sukurtas `GET.ps1` (be param/exit),
   o `INSTALL.ps1` imamas iš šakos, ne iš žymos (kad pataisymai pasiektų iškart).
 - `atstatyti-tasku.ps1` dabar renkasi tik tašką su `TASKAS.json` (nepilno neima).
+- `Join-Path $CLINE_HOME` be antro argumento → PowerShell klausė `ChildPath:` ir skriptas
+  sustojo sauso režimo atvaizdavime. Pataisyta; `savitikra.py` dabar pagauna šį bug'ą.
+- **GitHub CDN (Fastly)** ~5 min dalijo seną `atstatyti-tasku.ps1` (10326 B) vietoj pataisyto
+  (10313 B), net su `?v=2`. Sprendimas: `INSTALL.ps1` ir `GET.ps1` prideda `?t=<unix>` prie
+  kiekvieno URL; M mašinoje failas pataisytas ir vietoje (`.Replace(...)`).
+
+### G) Patvirtinta 2026-10-31 06:09 (M mašina)
+- `atstatyti-tasku.ps1 -Numer 1 -Sausai` → **SHA256 OK (504 failai)**, planas teisingas,
+  `n8n DB -> TAIP`, `Nieko nepakeičiau.`
+- **Taškas Nr. 1 uždarytas.** Tikras atstatymas nepaleistas (nereikia, kol veikia 11/11).
+
 
 
 Kol šie du nepaleisti, „atstatyti į Nr. 1" atkurs **kodą ir nustatymus**, bet ne mašinos failų turinį.

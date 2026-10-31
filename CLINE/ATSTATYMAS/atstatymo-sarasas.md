@@ -22,6 +22,28 @@ Naujausi viršuje. Kiekvienas taškas turi tris dalis: git žymą, mašinos kopi
 Nepilnas bandymas `TASKAS-1_2026-10-31_0539` (be manifesto) paliktas, bet atstatymas jo nenaudoja —
 imamas tik taškas su `TASKAS.json`.
 
+### Patikros istorija
+
+| Data | Patikra | Rezultatas |
+|---|---|---|
+| 2026-10-31 05:46 | Taško kūrimas | ✅ 504 failai / 508,1 MB, `TASKAS.json` |
+| 2026-10-31 06:09 | `atstatyti-tasku.ps1 -Numer 1 -Sausai` | ✅ SHA256 OK (504), planas teisingas, `Nieko nepakeičiau.` |
+| — | Tikras atstatymas | ⏳ dar nepaleistas (nereikia, kol sistema veikia 11/11) |
+
+Sauso patikrinimo išvestis (M, 2026-10-31):
+
+```
+SHA256 patikra: OK (visi 504 failai sveiki)
+SAUSAS REŽIMAS: būčiau atkūręs:
+  pultas   -> C:\Users\M\CLINE\pultas
+  tools    -> C:\Users\M\CLINE\tools
+  atmintis -> C:\Users\M\CLINE
+  užduotys -> Task Scheduler (N8N/CLINE/KUMSTIS)
+  n8n DB   -> TAIP (bus atstatyta)
+Nieko nepakeičiau.
+```
+
+
 
 ---
 
