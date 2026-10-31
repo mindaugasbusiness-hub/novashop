@@ -3,21 +3,23 @@
 # Kodėl reikia: įrankiai sukurti repo šakoje `cline/da6qq3k9` ir užfiksuoti žyma `atstatymas-1`,
 # o tavo mašinoje jų dar nėra. Šis failas nukopijuoja juos ten, kur jų tikisi pultas ir budėtojas.
 #
-# Naudojimas (viena eilutė PowerShell lange):
-#   iwr -useb https://raw.githubusercontent.com/mindaugasbusiness-hub/novashop/cline/da6qq3k9/tools/INSTALL.ps1 | iex
+# NAUDOJIMAS (Windows PowerShell 5.1 ir 7.x):
+#   iwr -useb https://raw.githubusercontent.com/mindaugasbusiness-hub/novashop/cline/da6qq3k9/tools/GET.ps1 | iex
 #
-# Arba, jei failą jau turi:
+# Pastaba: `iwr ... | iex` ŠIO failo tiesiogiai vykdyti NEGALIMA senoje PowerShell 5.1 --
+# ji nepriima `[CmdletBinding()]` per iex. Todėl yra GET.ps1, kuris parsiunčia ir paleidžia
+# šį failą kaip failą (-File). Arba išsaugok ir paleisk tiesiogiai:
 #   powershell -NoProfile -ExecutionPolicy Bypass -File INSTALL.ps1
 #   powershell -NoProfile -ExecutionPolicy Bypass -File INSTALL.ps1 -Tikrinti
 #
 # NIEKO NETRINA: jei failas jau yra -- padaroma .bak-<data> kopija (1 taisyklė).
 
-[CmdletBinding()]
 param(
     [string]$Ref = 'atstatymas-1',   # iš kurios žymos imti failus (užfiksuota būsena Nr. 1)
     [switch]$Tikrinti,              # tik patikrinti, ar viskas jau yra
     [string]$ClineHome = 'C:\Users\M\CLINE'
 )
+
 
 $ErrorActionPreference = 'Continue'
 try { [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 } catch { }
