@@ -53,7 +53,9 @@ $failai = @(
     @{ Url = 'tools/atstatymas/savitikra.py';            Dir = "$ClineHome\tools\atstatymas" },
     @{ Url = 'tools/atstatymas/vps-taskas.sh';           Dir = "$ClineHome\tools\atstatymas" },
     @{ Url = 'tools/atstatymas/test-vps-taskas.sh';      Dir = "$ClineHome\tools\atstatymas" },
-    @{ Url = 'tools/pulto-mygtukas-restart-n8n.py';  Dir = "$ClineHome\tools" }
+    @{ Url = 'tools/pulto-mygtukas-restart-n8n.py';  Dir = "$ClineHome\tools" },
+    # Atminties dokumentas -- į VISKAS aplanką (ten, kur M laiko savo žinias)
+    @{ Url = 'CLINE/VISKAS/12_ATLIKTA_2026-10-31.md'; Dir = "$ClineHome\VISKAS" }
 )
 
 Write-Output "=== n8n ir atstatymo įrankių diegimas ==="
