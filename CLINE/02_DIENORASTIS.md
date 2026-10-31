@@ -50,7 +50,9 @@ CLINE VISKAS folderyje… atstatymo numeris 1. Kai pasakysiu viską atstatyti į
 ### E) Kas liko M (kad taškas Nr. 1 būtų PILNAS)
 1. `sukurkti-taskas.ps1 -Numer 1` — mašinos dalis → **PADARYTA 2026-10-31 05:46**
    (`TASKAS-1_2026-10-31_0546`, 504 failai / 508,1 MB, DB 271,3 MB, 11 XML užduočių, 11/11 būklė)
-2. `vps-taskas.sh sukurkti 1` — VPS dalis → **dar nepadaryta**
+2. `vps-taskas.sh sukurkti 1` — VPS dalis → **ATŠAUKTA**: M 2026-10-31 pasakė
+   „aš nenoriu jokio VPS, viskas yra iš mano kompiuterio". Failas paliktas repo (nieko netriname),
+   bet nenaudojamas. Svetainė turi savo automatinius `BACKUPS_VPS` ir `vilkas-watchdog`.
 3. Registro lentelėje ⏳ → ✅ → mašinos dalis atnaujinta
 
 ### F) Klaida, rasta diegiant (ištaisyta)

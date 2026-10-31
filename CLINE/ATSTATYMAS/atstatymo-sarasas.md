@@ -2,9 +2,9 @@
 
 Naujausi viršuje. Kiekvienas taškas turi tris dalis: git žymą, mašinos kopiją, VPS kopiją.
 
-| Nr. | Data | Git žyma | Mašinos kopija | VPS kopija | Būsena tą akimirką | Pastaba |
-|---|---|---|---|---|---|---|
-| **1** | 2026-10-31 05:46 | `atstatymas-1` | ✅ **PILNA** — 504 failai, 508,1 MB (`TASKAS-1_2026-10-31_0546`, SHA256 manifestas) | ⏳ reikia `vps-taskas.sh sukurkti 1` | **11/11 servisai, svetainė 200** | Auksinė būsena, patvirtinta direktoriaus. Aprašas: `01_TASKAS.md` |
+| Nr. | Data | Git žyma | Mašinos kopija | Būsena tą akimirką | Pastaba |
+|---|---|---|---|---|---|
+| **1** | 2026-10-31 05:46 | `atstatymas-1` | ✅ **PILNA** — 504 failai, 508,1 MB (`TASKAS-1_2026-10-31_0546`, SHA256 manifestas) | **11/11 servisai** | Auksinė būsena. **VPS dalis NEDAROMA** — M sprendimas 2026-10-31: „viskas yra iš mano kompiuterio". Aprašas: `01_TASKAS.md` |
 
 ### Kas įtraukta į mašinos kopiją Nr. 1 (patikrinta 2026-10-31 05:46)
 

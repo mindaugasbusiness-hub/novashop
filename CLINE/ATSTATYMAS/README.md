@@ -1,7 +1,12 @@
 # ATSTATYMO TAŠKAI — kaip visada grąžinti veikiančią būseną
 
-Tikslas: kai direktorius pasako **„atstatyk į Nr. N"**, visa sistema (pultas, įrankiai, n8n,
-`penktadienioaukcionas.lt`) grąžinama į tą būseną, kuri tuo metu veikė.
+Tikslas: kai direktorius pasako **„atstatyk į Nr. N"**, sistema (pultas, įrankiai, n8n)
+grąžinama į tą būseną, kuri tuo metu veikė.
+
+> **SVARBU (M sprendimas 2026-10-31):** „aš nenoriu jokio VPS, viskas yra iš mano kompiuterio."
+> Todėl VPS dalis (`vps-taskas.sh`) **nenaudojama**. Tašką sudaro tik **git žyma + mašinos kopija**.
+> Svetainė `penktadienioaukcionas.lt` turi savo automatinius `BACKUPS_VPS` ir `vilkas-watchdog`.
+
 
 ---
 

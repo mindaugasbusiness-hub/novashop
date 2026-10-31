@@ -12,8 +12,8 @@ Atnaujinta: 2026-10-27 (Sesija 4) · Branch: `cline/g2zpktej` (nuo `origin/cline
 - [x] Sukurta atstatymo sistema (`tools/atstatymas/`) su SHA256 patikra ir privalomomis kopijomis
 - [x] Testai: VPS skriptas 23/23, sistemos savitikra 13/13, PS parseris 0 klaidų
 - [x] **M žingsnis 1:** mašinos taškas Nr. 1 sukurtas — **504 failai / 508,1 MB** (2026-10-31 05:46)
-- [ ] **M žingsnis 2:** VPS: `vps-taskas.sh sukurkti 1` (app.py dalis)
-- [ ] **M žingsnis 3:** registre VPS ⏳ → ✅
+- [x] **Sprendimas:** VPS dalis **NEDAROMA** — M: „aš nenoriu jokio VPS, viskas yra iš mano kompiuterio"
+- [x] Taškas Nr. 1 baigtas: git žyma + mašinos kopija. Daugiau žingsnių nereikia.
 
 ### Kaip atstatyti į Nr. 1 (kai M pasakys)
 
