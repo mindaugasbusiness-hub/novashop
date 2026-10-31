@@ -14,7 +14,10 @@
 param(
     [int]$Numer = 1,
     [switch]$Sausai,
-    [switch]$SuDuomenuBaze,
+    # Duomenų bazė atstatoma NUTYLĖJUS (nes „atstatyti į Nr. 1" = visa būsena).
+    # Jei nori atstatyti tik failus, o DB palikti dabartinę -- naudok -BeDuomenuBazes.
+    [switch]$BeDuomenuBazes,
+    [switch]$SuDuomenuBaze,      # senas vardas; paliktas suderinamumui (dabar ir taip įtraukta)
     [switch]$NepaleistiServisu,
     [switch]$Tyliai
 )
@@ -85,7 +88,7 @@ if ($Sausai) {
     Sakyk "  tools    -> $(Join-Path $CLINE_HOME 'tools')"
     Sakyk "  atmintis -> $(Join-Path $CLINE_HOME)"
     Sakyk "  užduotys -> Task Scheduler (N8N/CLINE/KUMSTIS)"
-    Sakyk "  n8n DB   -> $(if ($SuDuomenuBaze) { 'TAIP' } else { 'NE (naudok -SuDuomenuBaze)' })"
+    Sakyk "  n8n DB   -> $(if ($BeDuomenuBazes) { 'NE (-BeDuomenuBazes): DB liks dabartinė' } else { 'TAIP (bus atstatyta)' })"
     Sakyk "Nieko nepakeičiau."
     exit 3
 }
@@ -106,13 +109,47 @@ foreach ($pora in @(
 }
 Sakyk "  (jei atstatymas bus neteisingas -- viską galima grąžinti iš šio aplanko)"
 
+# --- 3b) Sustabdyti n8n, kad DB failas nebūtų užrakintas ar pusiau įrašytas ---
+if (-not $NepaleistiServisu) {
+    $restartSkriptas = Join-Path $env:N8N_TOOLS_DIR 'restart-n8n.ps1'
+    if (Test-Path -LiteralPath $restartSkriptas) {
+        Sakyk "Stabdau n8n (kad DB būtų galima saugiai nukopijuoti)..."
+        & powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -File $restartSkriptas -TikStop | Out-Null
+        Start-Sleep -Seconds 4
+        $liko = (@(5678, 5679 | ForEach-Object {
+            (Get-NetTCPConnection -LocalPort $_ -State Listen -ErrorAction SilentlyContinue | Measure-Object).Count
+        }) | Measure-Object -Sum).Sum
+        Sakyk "  n8n sustabdytas (likę klausantys prievadai: $liko)"
+    } else {
+        Sakyk "  restart-n8n.ps1 nerastas -- n8n nestabdau"
+    }
+}
+
+# Dabar, kai n8n neveikia, išsaugome DABARTINĘ duomenų bazę (kitaip prarastume naujus duomenis)
+if (-not $BeDuomenuBazes) {
+    $dbDabartine = Join-Path (Join-Path $env:N8N_ROOT 'runtime') 'n8n-data\.n8n\database.sqlite'
+    if (Test-Path -LiteralPath $dbDabartine) {
+        try {
+            New-Item -ItemType Directory -Force -Path (Join-Path $priesTikslas 'n8n') | Out-Null
+            Copy-Item -LiteralPath $dbDabartine -Destination (Join-Path $priesTikslas 'n8n\database.sqlite') -Force -ErrorAction Stop
+            Sakyk "  dabartinė n8n DB išsaugota PRADINE-BUKLE aplanke"
+        } catch {
+            Sakyk "  ĮSPĖJIMAS: nepavyko išsaugoti dabartinės DB ($($_.Exception.Message))"
+            Sakyk "  -> atstatymą darau, bet DB nebus liesta"
+            $BeDuomenuBazes = [switch]$true
+        }
+    }
+}
+
+
+
 # --- 4) Failų atstatymas --------------------------------------------------
 $atkurta = 0
 foreach ($f in $manifestas.Failai) {
     $saltinis = Join-Path $taskas $f.Kelias
     if (-not (Test-Path -LiteralPath $saltinis)) { continue }
 
-    if ($f.Kelias -like 'n8n\database.sqlite' -and -not $SuDuomenuBaze) { continue }
+    if ($f.Kelias -like 'n8n\database.sqlite' -and $BeDuomenuBazes) { continue }
 
     if ($f.Kelias -like 'pultas\*')      { $tikslas = Join-Path $CLINE_HOME $f.Kelias }
     elseif ($f.Kelias -like 'tools\*')   { $tikslas = Join-Path $CLINE_HOME $f.Kelias }

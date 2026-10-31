@@ -52,12 +52,25 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\sukurkti-taskas.ps1 -Numer
 # Ką tai darytų (nieko nekeičia) -- VISADA pirmiausia šitai
 powershell -NoProfile -ExecutionPolicy Bypass -File .\atstatyti-tasku.ps1 -Numer 1 -Sausai
 
-# Tikras atstatymas
+# Tikras atstatymas -- atstato VISKĄ (ir n8n duomenų bazę)
 powershell -NoProfile -ExecutionPolicy Bypass -File .\atstatyti-tasku.ps1 -Numer 1
 
-# Su n8n duomenų baze (workflow, credentials) -- tik jei tikrai reikia
-powershell -NoProfile -ExecutionPolicy Bypass -File .\atstatyti-tasku.ps1 -Numer 1 -SuDuomenuBaze
+# Jei nori atstatyti tik failus, o dabartinę n8n DB PALIKTI:
+powershell -NoProfile -ExecutionPolicy Bypass -File .\atstatyti-tasku.ps1 -Numer 1 -BeDuomenuBazes
 ```
+
+Ką daro atstatymas (eilės tvarka):
+
+1. patikrina visų taško failų **SHA256** (sugadintą tašką atmeta),
+2. sustabdo **n8n** (kad DB failas nebūtų užrakintas),
+3. išsaugo dabartinę būklę į `PRADINE-BUKLE_<data>` — **įskaitant dabartinę n8n DB**,
+4. atstato pultą, tools, atmintį, `pids.json` ir **`database.sqlite`**,
+5. atstato Task Scheduler užduotis iš XML,
+6. paleidžia n8n ir pultą,
+7. paleidžia 11 servisų patikrinimą ir pasako, ar **11/11**.
+
+Trukmė: ~2–4 min (271 MB duomenų bazės kopija).
+
 
 ```bash
 # VPS pusė
