@@ -4,6 +4,59 @@ Naujausi įrašai viršuje. Kiekvienas įrašas: ką dariau, ką patikrinau, ko 
 
 ---
 
+## 2026-10-31 — Sesija 6: ATSTATYMO TAŠKAS Nr. 1 (auksinė būsena 11/11) užfiksuotas
+
+**Šaka:** `cline/da6qq3k9` · **Git žyma:** `atstatymas-1`
+
+### M prašymas (citata)
+„pulto duomenys viskas veikia labai gerai — ko aš noriu, aš noriu, kad taip sistema visada veiktų…
+viskas kas iki dabar padaryta yra labai geras ir tikslus darbas, kuris turi būti išsaugotas
+CLINE VISKAS folderyje… atstatymo numeris 1. Kai pasakysiu viską atstatyti į Nr. 1 — turi būti atstatyta."
+
+### A) Ką M patvirtino kaip veikiančią būseną (pulto ataskaita 2026-10-31 04:16:04)
+- **Servisai: 11/11**, Širdis 10/11, Riktai 11/11, klavisai 7/8 (F1 užimtas kito proceso — priimta)
+- `https://penktadienioaukcionas.lt` → HTTP 200; VPS AUKCIONAS/MOKYKLA/CLOUDFLARED AKTYVUS
+- Kopijos šviežios (VPS 0,8 h · vietinė 1,3 h); n8n vykdymų 119, workflow aktyvus
+
+### B) Kas sukurta (atstatymo taškų sistema)
+
+| Failas | Paskirtis |
+|---|---|
+| `CLINE/ATSTATYMAS/01_TASKAS.md` | Taško Nr. 1 aprašas: 11 servisų lentelė, VPS būsena, automatika |
+| `CLINE/ATSTATYMAS/README.md` | Kaip kurti/atstatyti taškus, apsaugos, grąžinimas |
+| `CLINE/ATSTATYMAS/atstatymo-sarasas.md` | Taškų registras (Nr. 1 įrašytas) |
+| `tools/atstatymas/patikrinti-servisus.ps1` | Tikrina visus **11** pulto servisų (kaip pultas) |
+| `tools/atstatymas/sukurkti-taskas.ps1` | Kuria tašką: pultas + tools + atmintis + n8n DB + užduotys + `TASKAS.json` (SHA256) |
+| `tools/atstatymas/atstatyti-tasku.ps1` | Atstato į tašką Nr. N (SHA256 patikra, PRADINE-BUKLE kopija, `-Sausai`) |
+| `tools/atstatymas/vps-taskas.sh` | VPS taškas/atstatymas (app.py + .bak istorija + unit + manifestas) |
+| `tools/atstatymas/test-vps-taskas.sh` | VPS skripto savitikra |
+| `tools/atstatymas/savitikra.py` | Sistemos savitikra (koduotė, saugumo taisyklės, dokumentų darna) |
+
+### C) Saugumo taisyklės, įdiegtos atstatyme
+- **SHA256 patikra prieš atstatymą** — sugadintas taškas atmetamas (`exit 2`), nestatoma.
+- **PRADINE-BUKLE_<data>** — dabartinė būklė visada išsaugoma prieš atstatymą.
+- **`.bak-pries-atstatyma-<data>`** — kiekvienas perrašomas failas paliekamas su kopija.
+- **`-Sausai`** — parodo planą, nieko nekeičia.
+- **Slapti duomenys** — n8n prieigos duomenys/VPS slaptažodžiai **neįrašyti** į repo; lieka tik
+  vietiniame `C:\Users\M\CLINE\VISKAS\` (3 taisyklė).
+
+### D) Patikrinta šioje sesijoje
+- `test-vps-taskas.sh` — **23 atvejai, 0 klaidų** (taško kūrimas, sąrašas, sausas režimas,
+  atstatymas, sugadinto taško atmetimas, nerasto taško atmetimas, saugumo patikros)
+- `savitikra.py` (atstatymo) — **13/13 PASS**
+- PowerShell 7.4.6 parseris — 3 nauji `.ps1` failai, **0 klaidų**
+- `savitikra.py` (n8n) atstatymo aplankui — **3/3 PASS** (koduotė)
+
+### E) Kas liko M (kad taškas Nr. 1 būtų PILNAS)
+1. `sukurkti-taskas.ps1 -Numer 1` — mašinos dalis (pultas, tools, n8n DB, užduotys)
+2. `vps-taskas.sh sukurkti 1` — VPS dalis (app.py)
+3. Registro lentelėje pakeisti ⏳ į ✅
+
+Kol šie du nepaleisti, „atstatyti į Nr. 1" atkurs **kodą ir nustatymus**, bet ne mašinos failų turinį.
+
+---
+
+
 ## 2026-10-28 — Sesija 5: n8n :5678 / :5679 SUTVARKYMAS (brokerio konfliktas išaiškintas)
 
 **Šaka:** `cline/da6qq3k9` (nuo `main`; `CLINE/` atmintis atkurta iš `origin/cline/g2zpktej`)

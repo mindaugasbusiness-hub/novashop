@@ -3,6 +3,36 @@
 Atnaujinta: 2026-10-27 (Sesija 4) · Branch: `cline/g2zpktej` (nuo `origin/cline/0xjxer93`)
 
 ---
+## BŪSENA 2026-10-31 (Sesija 6) · Branch: `cline/da6qq3k9` · Žyma: `atstatymas-1`
+
+### ATSTATYMO TAŠKAS Nr. 1 — 11/11 auksinė būsena
+
+- [x] Užfiksuota M patvirtinta būsena: **11/11 servisai**, svetainė HTTP 200, VPS tarnybos AKTYVIOS
+- [x] Aprašas: `CLINE/ATSTATYMAS/01_TASKAS.md`; registras: `CLINE/ATSTATYMAS/atstatymo-sarasas.md`
+- [x] Sukurta atstatymo sistema (`tools/atstatymas/`) su SHA256 patikra ir privalomomis kopijomis
+- [x] Testai: VPS skriptas 23/23, sistemos savitikra 13/13, PS parseris 0 klaidų
+- [ ] **M žingsnis 1:** `sukurkti-taskas.ps1 -Numer 1` (mašinos dalis: pultas, tools, n8n DB, užduotys)
+- [ ] **M žingsnis 2:** VPS: `vps-taskas.sh sukurkti 1` (app.py dalis)
+- [ ] **M žingsnis 3:** registre ⏳ → ✅
+
+### Kaip atstatyti į Nr. 1 (kai M pasakys)
+
+```powershell
+# pirma pažiūrėti planą
+...\tools\atstatymas\atstatyti-tasku.ps1 -Numer 1 -Sausai
+# tikras atstatymas
+...\tools\atstatymas\atstatyti-tasku.ps1 -Numer 1
+```
+VPS: `/root/BACKUPS_VPS/atstatymas/vps-taskas.sh atstatyti 1`
+
+### Laukia M sprendimo
+
+1. Ar jungti šią šaką į `main`, ar su `cline/g2zpktej` (ten naujausia atmintis)?
+2. Ar daryti tašką Nr. 2 po kiekvieno didesnio pakeitimo (rekomenduoju: taip, prieš rizikingus darbus)?
+
+---
+
+
 ## BŪSENA 2026-10-28 (Sesija 5) · Branch: `cline/da6qq3k9`
 
 ### n8n :5678 / :5679 — sutvarkyta repo pusėje, laukia 3 žingsnių M mašinoje
