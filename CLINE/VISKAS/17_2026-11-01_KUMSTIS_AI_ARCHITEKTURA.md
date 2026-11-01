@@ -35,7 +35,8 @@ n8n (kas 6 val. arba rankiniu paleidimu)
 - [ ] **Marsrutizavimas**: dabar nera taisykles, kuri automatiskai nusprestu "si uzduotis - Nemotronui, ana - Cline'ui".
       Sprendimas: uzduoties sablonas su zyme `TIPAS: skaityti` arba `TIPAS: veikti`.
 - [ ] **Narsykles receptas** Nemotronui: be jo jis negali apeiti svetainiu apsaugu (autoplius 403).
-- [ ] **Stipresnis modelis** (DeepSeek V4 Flash) - kai bus kreditu; tada jis galetu atlikti ir veiksmus.
+- [x] **Mokami modeliai NENAUDOJAMI** (M sprendimas 2026-11-01). Veiksmai atliekami taip:
+      jei Nemotron nemoka - uzduotis duodama Cline'ui, arba Nemotronui duodamas tikslus receptas (komandos).
 - [ ] **Pultas**: mygtukas "Paleisti KUMSTIS AI" ir uzduoties tipas.
 
 ## 5. Praktinis sablonas uzduociai
